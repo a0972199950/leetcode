@@ -3,116 +3,103 @@ import { TreeNode, BinaryTree } from '~/data-structure/BinaryTree'
 
 console.clear()
 
-/**
- * Definition for a binary tree node.
- * class TreeNode {
- *     val: number
- *     left: TreeNode | null
- *     right: TreeNode | null
- *     constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
- *         this.val = (val===undefined ? 0 : val)
- *         this.left = (left===undefined ? null : left)
- *         this.right = (right===undefined ? null : right)
- *     }
- * }
- */
-
 /*
  * Encodes a tree to a single string.
  */
 function serialize(root: TreeNode | null): string {
-  const arr = []
-  let queue: (TreeNode | null)[] = []
-
-  if (root) {
-    queue.push(root)
-    arr.push(root.val)
+  if (!root) {
+    return ''
   }
 
-  while (queue.length) {
-    let hasNode = false
+  const result: (number | null)[] = [root.val]
+  let layer = [root]
+  let nullCount = 0
 
-    const nextArr = []
+  while (layer.length) {
+    layer = layer.reduce((sum, node) => {
+      const nextNodes = [node.left, node.right].reduce((sum, node) => {
+        if (!node) {
+          nullCount++
+        } else {
+          result.push(
+            ...Array(nullCount).fill(null),
+            node.val
+          )
 
-    queue = queue.reduce((sum, node: TreeNode) => {
-      nextArr.push(node.left?.val ?? null)
-      nextArr.push(node.right?.val ?? null)
+          nullCount = 0
+          sum.push(node)
+        }
 
-      node.left && sum.push(node.left)
-      node.right && sum.push(node.right)
+        return sum
+      }, [])
 
-      hasNode = !!node.left || !!node.right
-
-      return sum
+      return [...sum, ...nextNodes]
     }, [])
-
-    console.log('nextArr: ', nextArr)
-
-    arr.push(...nextArr)
-
-    if (hasNode) {
-      break
-    }
   }
 
-  return JSON.stringify(arr)
+  return JSON.stringify(result)
 }
 
 /*
  * Decodes your encoded data to tree.
  */
 function deserialize(data: string): TreeNode | null {
-  const createNode = (val: number | string | null | undefined) => {
-    if (val === null || val === undefined) {
-      return null
-    } else {
-      return new TreeNode(Number(val))
+  let arr: (number | null)[] = []
+
+  try {
+    arr = JSON.parse(data)
+    if (!Array.isArray(arr)) {
+      throw ''
     }
+  } catch (e) {
+    return null
   }
 
-  const arr: (number | null)[] = JSON.parse(data)
+  let index = 0
+  const queue = []
+  let root: null | TreeNode = null
 
-  const root = createNode(arr[0])
-  let queue = [{ index: 0, node: root }]
+  while (index < arr.length) {
+    let node = typeof arr[index] === 'number' ? new TreeNode(arr[index]) : null
 
-  while (queue.length) {
-    queue = queue.reduce((sum, { index, node }) => {
-      const leftChildIndex = index * 2 + 1
-      const rightChildIndex = index * 2 + 2
-
-      if (leftChildIndex < arr.length) {
-        if (node) {
-          node.left = createNode(arr[leftChildIndex])
-        }
-
-        sum.push({ index: leftChildIndex, node: node.left })
+    if (!queue.length) {
+      if (node) {
+        queue.push(node)
       }
+      root = node
+      index++
+      continue
+    }
+    
+    const parent = queue.shift()
+    parent.left = node
+    if (node) {
+      queue.push(node)
+    }
 
-      if (rightChildIndex < arr.length) {
-        if (node) {
-          node.right = createNode(arr[rightChildIndex])
-        }
+    index++
+    node = typeof arr[index] === 'number' ? new TreeNode(arr[index]) : null
+    parent.right = node
+    if (node) {
+      queue.push(node)
+    }
 
-        sum.push({ index: rightChildIndex, node: node.right })
-      }
-
-      return sum
-    }, [])
+    index++
   }
 
   return root
 }
 
-console.log(serialize(new BinaryTree([1, 2, 3, null, null, 4, 5, 6, 7]).data))
+// console.log(deserialize('[1, 2, 3]'))
+// console.log(deserialize('[1,2,3,null,null,4,5]'))
 // console.log(deserialize('[1,2,3,null,null,4,5,6,7]'))
-
-// console.log(serialize(null))
 // console.log(deserialize('[]'))
+// console.log(deserialize('null'))
 
-
-/**
- * Your functions will be called as such:
- * deserialize(serialize(root));
- */
+// console.log(serialize(deserialize('[1, 2, 3]')))
+// console.log(serialize(deserialize('[1,2,3,null,null,4,5]')))
+// console.log(serialize(deserialize('[1,2,3,null,null,4,5,6,7]')))
+// console.log(serialize(deserialize('[]')))
+console.log(serialize(new BinaryTree([4, -7, -3, null, null, -9, -3, 9, -7, -4, null, 6, null, -6, -6, null, null, 0, 6, 5, null, 9, null, null, -1, -4, null, null, null, -2]).root))
 
 export {}

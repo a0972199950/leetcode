@@ -46,8 +46,8 @@ const fn = (head: TreeNode | null): number => {
   return result
 }
 
-console.log(fn(new BinaryTree([2, 2, 4, 1, 3, 1, 1]).data))
-console.log(fn(new BinaryTree([1, 2, 5, 1, 3, 1, 1]).data))
-console.log(fn(new BinaryTree([2, 2, 5, 1, 3, 1, 1]).data))
+console.log(fn(new BinaryTree([2, 2, 4, 1, 3, 1, 1]).root))
+console.log(fn(new BinaryTree([1, 2, 5, 1, 3, 1, 1]).root))
+console.log(fn(new BinaryTree([2, 2, 5, 1, 3, 1, 1]).root))
 
 export {}
