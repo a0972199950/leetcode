@@ -5,95 +5,110 @@
 // (23 or 23)
 // 23 and (23 or 23)
 
-function isValid (expr: string): any {
+console.clear()
+
+function isValid (expr: string): boolean {
   const stack = []
 
-  const isNum = (char: string) => {
-    return /^\d/.test(char)
-  }
+  const isBlank = (str: string) => str === ' '
+  const isNumber = (str: string) => /^\d/i.test(str)
+  const isLeftBracket = (str: string) => str === '('
+  const isRightBracket = (str: string) => str === ')'
+  const isAlphabet = (str: string) => /^[a-z]/i.test(str)
+  const isOperator = (str: string) => str === 'and' || str === 'or'
 
-  let isLastAnOperator = false
+  const getLatest = (arr: any[]) => arr[arr.length - 1]
 
-  mainLoop:
+  let leftBracketCount = 0
+
+  i_loop:
   for (let i = 0; i < expr.length; i++) {
-    let partExpr = expr[i]
+    const char = expr[i]
 
-    if (
-      partExpr !== ' '
-        && partExpr !== '('
-        && partExpr !== ')'
-        && partExpr !== 'a'
-        && partExpr !== 'o'
-        && !isNum(partExpr)
-    ) { return false }
-
-    // 跳過
-    if (partExpr === ' ') {
+    // 空格
+    if (isBlank(char)) {
       continue
     }
 
-    // 只需要進堆疊
-    if (partExpr === '(') {
-      stack.push(partExpr)
-      isLastAnOperator = false
+    // 數字
+    if (isNumber(char)) {
+      
+      if (isNumber(getLatest(stack))) {
+        const last = stack.pop()
+        stack.push(last + char)
+      } else {
+        stack.push(char)
+      }
+
       continue
     }
 
-    // 只需要進堆疊
-    if (isNum(partExpr)) {
-      for (var j = i + 1; j < expr.length; j++) {
-        if (isNum(expr[j])) {
-          partExpr += expr[j]
-        } else {
-          break
-        }
-      }
-
-      stack.push(partExpr)
-      isLastAnOperator = false
-      i = j - 1
+    // 左括號
+    if (isLeftBracket(char)) {
+      stack.push(char)
+      leftBracketCount++
+      continue
     }
 
-    // 檢查堆疊
-    if (partExpr === ')') {
-      while (stack.length) {
-        const item = stack.pop()
-        partExpr = item + partExpr
-
-        if (item === '(') {
-          stack.push(partExpr)
-          isLastAnOperator = false
-          continue mainLoop
+    // 右括號
+    if (isRightBracket(char)) {
+      // 往前找要有左括號，找到左括號就削掉一對
+      for (let j = stack.length - 1; j >= 0; j--) {
+        if (isLeftBracket(stack[j])) {
+          stack.splice(j, 1)
+          leftBracketCount--
+          continue i_loop
         }
       }
 
+      // 沒找到左括號
       return false
     }
 
-    // 檢查堆疊
-    if (partExpr === 'o') {
-      if (expr[i + 1] !== 'r' || stack.length <= 0 || isLastAnOperator) {
+    // 英文字母
+    if (isAlphabet(char)) {
+      if (char !== 'a' && char !== 'o') {
         return false
-      } else {
-        i++
-        stack.push('or')
-        isLastAnOperator = true
       }
+
+      let operator = ''
+
+      if (char === 'a') {
+        operator = char + expr[i + 1] + expr[i + 2]
+        i = i + 2
+      }
+
+      if (char === 'o') {
+        operator = char + expr[i + 1]
+        i = i + 1
+      }
+
+      if (!isOperator(operator) || isOperator(getLatest(stack))) {
+        return false
+      }
+
+      // 前一個必須要是 number
+      if (isNumber(getLatest(stack))) {
+        stack.push(operator)
+        continue
+      }
+
+      // 前一個不是 number
+      return false
     }
 
-    // 檢查堆疊
-    if (partExpr === 'a') {
-      if (expr[i + 1] !== 'n' || expr[i + 2] !== 'd' || stack.length <= 0 || isLastAnOperator) {
-        return false
-      } else {
-        i += 2
-        stack.push('and')
-        isLastAnOperator = true
-      }
-    }
+    // char 是不包含在題目內的字元
+    return false
   }
 
-  return stack[stack.length - 1] !== 'or' && stack[stack.length - 1] !== 'and' && !stack.includes('(')
+  // 檢查 stack 最後剩下甚麼
+  const lastest = getLatest(stack)
+
+  if (isLeftBracket(lastest) || isOperator(lastest) || leftBracketCount !== 0) {
+    return false
+  }
+
+  return true
 }
 
 console.log(isValid('23'))
@@ -116,5 +131,6 @@ console.log(isValid('23 or'))
 console.log(isValid('23 or and 23'))
 console.log(isValid('and'))
 console.log(isValid('or'))
+console.log(isValid(']'))
 
 export default {}
