@@ -58,57 +58,48 @@ console.clear()
 // }
 
 function exist(board: string[][], word: string): boolean {
-  const startLetter = word[0]
+  const history = new Set<string>()
 
-  const matchAndExist = (i: number, j: number, word: string) => {
-    // console.log('matchAndExist', i, j, `${word} === ${board[i]?.[j]} => ${word === board[i]?.[j]}`)
+  const isValidPosition = (col: number, row: number, wordIndex: number) => {
     if (
-      (i > 0 && i < board.length)
-      && (j > 0 && j < board[0].length)
-      && board[i][j] === word
+      board[col]?.[row] !== undefined
+      && board[col][row] === word[wordIndex]
+      && !history.has(`${col},${row}`)
     ) {
       return true
+    }
+
+    return false
+  }
+
+  const treverse = (col: number, row: number, wordIndex: number): boolean => {
+    if (wordIndex >= word.length) {
+      return true
+    }
+
+    if (!isValidPosition(col, row, wordIndex)) {
+      return false
+    }
+
+    history.add(`${col},${row}`)
+
+    const found = 
+      treverse(col - 1, row, wordIndex + 1) // up
+      || treverse(col, row + 1, wordIndex + 1) // right
+      || treverse(col + 1, row, wordIndex + 1) // down
+      || treverse(col, row - 1, wordIndex + 1) // left
+
+    if (found) {
+      return true
     } else {
+      history.delete(`${col},${row}`)
       return false
     }
   }
 
-  const startMaze = (hasStepped: Set<string>, i: number, j: number, wordIndex: number): boolean => {
-    console.log('startMaze', i, j, word[wordIndex])
-    if (wordIndex === word.length - 1) {
-      return true
-    }
-
-    hasStepped.add(`${i},${j}`)
-
-    const nextWordIndex = wordIndex + 1
-    const nextWord = word[nextWordIndex]
-
-    if (
-      (matchAndExist(i - 1, j, nextWord) && startMaze(hasStepped, i - 1, j, nextWordIndex + 1)) // 上
-      || (matchAndExist(i, j + 1, nextWord) && startMaze(hasStepped, i, j + 1, nextWordIndex + 1)) // 右
-      || (matchAndExist(i + 1, j, nextWord) && startMaze(hasStepped, i + 1, j, nextWordIndex + 1)) // 下
-      || (matchAndExist(i, j - 1, nextWord) && startMaze(hasStepped, i, j - 1, nextWordIndex + 1)) // 左
-    ) {
-      return true
-    } else {
-      hasStepped.delete(`${i},${j}`)
-      return false
-    }
-  }
-  
-  for (let i = 0; i < board.length; i++) {
-    for (let j = 0; j < board[0].length; j++) {
-      if (board[i][j] !== startLetter) {
-        continue
-      }
-
-      // if (i === 2 && j === 0) {
-      //   throw ''
-      // }
-
-      const found = startMaze(new Set(), i, j, 0)
-      if (found) {
+  for (let col = 0; col < board.length; col++) {
+    for (let row = 0; row < board[0].length; row++) {
+      if (treverse(col, row, 0)) {
         return true
       }
     }
@@ -118,9 +109,9 @@ function exist(board: string[][], word: string): boolean {
 }
 
 console.log(exist([['A', 'B', 'C', 'E'], ['S', 'F', 'C', 'S'], ['A', 'D', 'E', 'E']], 'ABCCED')) // true
-// console.log(exist([['A', 'B', 'C', 'E'], ['S', 'F', 'C', 'S'], ['A', 'D', 'E', 'E']], 'SEE')) // true
-// console.log(exist([['A', 'B', 'C', 'E'], ['S', 'F', 'C', 'S'], ['A', 'D', 'E', 'E']], 'ABCB')) // false
-// console.log(exist([['a', 'a', 'a', 'a'], ['a', 'a', 'a', 'a'], ['a', 'a', 'a', 'a']], 'aaaaaaaaaaaa')) // true
-// console.log(exist([['a', 'a', 'b', 'a', 'a', 'b'], ['a', 'a', 'b', 'b', 'b', 'a'], ['a', 'a', 'a', 'a', 'b', 'a'], ['b', 'a', 'b', 'b', 'a', 'b'], ['a', 'b', 'b', 'a', 'b', 'a'], ['b', 'a', 'a', 'a', 'a', 'b']], 'bbbaabbbbbab')) // false
+console.log(exist([['A', 'B', 'C', 'E'], ['S', 'F', 'C', 'S'], ['A', 'D', 'E', 'E']], 'SEE')) // true
+console.log(exist([['A', 'B', 'C', 'E'], ['S', 'F', 'C', 'S'], ['A', 'D', 'E', 'E']], 'ABCB')) // false
+console.log(exist([['a', 'a', 'a', 'a'], ['a', 'a', 'a', 'a'], ['a', 'a', 'a', 'a']], 'aaaaaaaaaaaa')) // true
+console.log(exist([['a', 'a', 'b', 'a', 'a', 'b'], ['a', 'a', 'b', 'b', 'b', 'a'], ['a', 'a', 'a', 'a', 'b', 'a'], ['b', 'a', 'b', 'b', 'a', 'b'], ['a', 'b', 'b', 'a', 'b', 'a'], ['b', 'a', 'a', 'a', 'a', 'b']], 'bbbaabbbbbab')) // false
 
 export {}
