@@ -18,7 +18,7 @@ function generate(numRows: number): number[][] {
   }
 
   return result
-};
+}
 
 console.log(generate(0))
 

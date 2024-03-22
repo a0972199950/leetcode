@@ -41,7 +41,7 @@
     "@typescript-eslint/no-explicit-any": "off",
     "comma-dangle": ["warn", "never"],
     "array-bracket-spacing": ["warn", "never"],
-    "comma-spacing": ["warn", { "before": false, "after": true }],
+    "comma-spacing": ["error", { "before": false, "after": true }],
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": [
       "warn",

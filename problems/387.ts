@@ -33,7 +33,7 @@ function firstUniqChar(s: string): number {
   }
 
   return -1
-};
+}
 
 console.log(firstUniqChar('aabb'))
 

@@ -37,4 +37,4 @@ function detectCycle(head: ListNode | null): ListNode | null {
   console.log(checker)
 
   return checker
-};
+}

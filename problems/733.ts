@@ -17,7 +17,7 @@ function floodFill(image: number[][], sr: number, sc: number, color: number): nu
       [sr, sc - 1] // left
     ]
 
-    for (let connect of connects) {
+    for (const connect of connects) {
       // console.log(connect[0], connect[1], image[connect[0]]?.[connect[1]])
       if (image[connect[0]]?.[connect[1]] === originColor && image[connect[0]]?.[connect[1]] !== color) {
         queue.push(connect)
@@ -28,10 +28,10 @@ function floodFill(image: number[][], sr: number, sc: number, color: number): nu
   }
 
   return image
-};
+}
 
 console.log(floodFill(
-  [[0,0,0],[0,0,0]],
+  [[0, 0, 0], [0, 0, 0]],
   0,
   0,
   0

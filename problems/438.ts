@@ -14,7 +14,7 @@ function findAnagrams(s: string, p: string): number[] {
 
   const pHash = pHashTable.reduce((sum: string, count, index) => (sum + `${index}${count}`), '')
 
-  let result: number[] = []
+  const result: number[] = []
 
   for (let i = 0; i <= (s.length - p.length); i++) {
     if (currentHashTable.length <= 0) {
@@ -36,7 +36,7 @@ function findAnagrams(s: string, p: string): number[] {
   }
 
   return result
-};
+}
 
 console.log(findAnagrams('aaaaaaaaaa', 'aaa'))
 console.log(findAnagrams('cbaebabacd', 'abc'))

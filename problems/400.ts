@@ -12,7 +12,7 @@ function findNthDigit(n: number): number {
   }
 
   return Number(str[n - 1])
-};
+}
 
 // console.log(findNthDigit(3))
 // console.log(findNthDigit(11))

@@ -50,6 +50,6 @@ function findTarget(root: TreeNode | null, k: number): boolean {
   }
 
   return false
-};
+}
 
 export {}

@@ -1,7 +1,7 @@
 /**
  Do not return anything, modify nums in-place instead.
  */
- function sortColors(nums: number[]): void {
+function sortColors(nums: number[]): void {
   const swap = (index1: number, index2: number) => {
     const temp = nums[index1]
     nums[index1] = nums[index2]
@@ -22,8 +22,8 @@
       console.log(nums)
     }
   }
-};
+}
 
-sortColors([2,0,2,1,1,0])
+sortColors([2, 0, 2, 1, 1, 0])
 
 export {}

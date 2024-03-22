@@ -27,7 +27,7 @@ function decodeString(s: string): string {
   }
 
   return stack.join('')
-};
+}
 
 console.log(decodeString('10[hi]'))
 

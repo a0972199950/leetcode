@@ -79,8 +79,8 @@ function copyRandomList(head: Node | null): Node | null {
   const originNodeArray = []
   const resultNodeArray = []
 
-  let originCurrent = head
-  let resultCurrent = null
+  const originCurrent = head
+  const resultCurrent = null
 
   while (originCurrent) {
     originNodeArray

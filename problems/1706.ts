@@ -12,7 +12,7 @@ function findBall(grid: Item[][]): number[] {
     }
   }
 
-  let result = []
+  const result = []
 
   loop_1:
   for (let col = 0; col < grid[0].length; col++) {
@@ -33,8 +33,8 @@ function findBall(grid: Item[][]): number[] {
   }
 
   return result
-};
+}
 
-findBall([[1,1,1,-1,-1],[1,1,1,-1,-1],[-1,-1,-1,1,1],[1,1,1,1,-1],[-1,-1,-1,-1,-1]])
+findBall([[1, 1, 1, -1, -1], [1, 1, 1, -1, -1], [-1, -1, -1, 1, 1], [1, 1, 1, 1, -1], [-1, -1, -1, -1, -1]])
 
 export {}

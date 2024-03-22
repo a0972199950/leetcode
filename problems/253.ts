@@ -29,9 +29,9 @@ function minMeetingRooms(intervals: number[][]): number {
   }
 
   return maxRooms
-};
+}
 
-console.log(minMeetingRooms([[0,30],[5,10],[15,20]]))
-console.log(minMeetingRooms([[7,10],[2,4]]))
+console.log(minMeetingRooms([[0, 30], [5, 10], [15, 20]]))
+console.log(minMeetingRooms([[7, 10], [2, 4]]))
 
 export {}

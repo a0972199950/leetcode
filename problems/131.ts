@@ -54,7 +54,7 @@ function partition(s: string): string[][] {
   }
 
   return ans
-};
+}
 
 console.log(partition('aab'))
 // console.log(partition('a'))

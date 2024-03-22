@@ -35,8 +35,8 @@ const isRegularWordOrEqual = (str?: string) => {
 }
 
 function calculateWeight(selector: string) {
-  let weight = 0;
-  let stack: string[] = [];
+  let weight = 0
+  let stack: string[] = []
 
   const calculateAndResetStack = () => {
     if (!stack.length) {
@@ -48,11 +48,11 @@ function calculateWeight(selector: string) {
     return result
   }
 
-  for (let char of selector.split("")) {
+  for (const char of selector.split('')) {
 
     // no need calculate
     if (BYBASS_CHAR.has(char)) {
-      continue;
+      continue
     }
 
     if (isRegularWordOrEqual(char)) {
@@ -77,15 +77,15 @@ function calculateWeight(selector: string) {
 
   weight += calculateAndResetStack()
 
-  return weight;
+  return weight
 }
 
-console.log(calculateWeight("#container")) //1000​
-console.log(calculateWeight("body .element")) // 110​
-console.log(calculateWeight("body.element")) // 110​
-console.log(calculateWeight("input[type=button]:hover")) // 210​
-console.log(calculateWeight("#container .section > .header::before")) // 1210
-console.log(calculateWeight("#container.section>.header::before")) // 1210
-console.log(calculateWeight("::before")) // 10
-console.log(calculateWeight(":hover")) // 100
-console.log(calculateWeight("[type=button][type=button][type=button]")) // 300
+console.log(calculateWeight('#container')) //1000​
+console.log(calculateWeight('body .element')) // 110​
+console.log(calculateWeight('body.element')) // 110​
+console.log(calculateWeight('input[type=button]:hover')) // 210​
+console.log(calculateWeight('#container .section > .header::before')) // 1210
+console.log(calculateWeight('#container.section>.header::before')) // 1210
+console.log(calculateWeight('::before')) // 10
+console.log(calculateWeight(':hover')) // 100
+console.log(calculateWeight('[type=button][type=button][type=button]')) // 300

@@ -58,7 +58,7 @@ function backspaceCompare(s: string, t: string): boolean {
 
   console.log(sIndex, tIndex)
   return sIndex === tIndex
-};
+}
 
 console.log(backspaceCompare('y#fo##f', 'y#f#o##f'))
 

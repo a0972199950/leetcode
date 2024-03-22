@@ -55,7 +55,7 @@ const getNextCoor = (coor: Coor, direction: Direction): Coor => {
 function generateMatrix(n: number): Matrix {
   let coor: Coor = [0, 0]
   let direction = Direction.RIGHT
-  let matrix: Matrix = []
+  const matrix: Matrix = []
 
   for (let value = 1; value <= n * n; value++) {
     setMatrixValue(matrix, coor, value)
@@ -68,7 +68,7 @@ function generateMatrix(n: number): Matrix {
   }
 
   return matrix
-};
+}
 
 console.log(generateMatrix(5))
 

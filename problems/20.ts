@@ -24,7 +24,7 @@ function isValid(s: string): boolean {
 
 
   return openBrackets.length === 0
-};
+}
 
 console.log('result: ', isValid('([)]'))
 

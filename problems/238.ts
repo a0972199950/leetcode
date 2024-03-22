@@ -50,7 +50,7 @@ console.clear()
 // }
 
 function productExceptSelf(nums: number[]): number[] {
-  let ans = []
+  const ans = []
 
   let prefix = 1
   for (let i = 0; i < nums.length; i++) {

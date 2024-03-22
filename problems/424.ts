@@ -29,7 +29,7 @@ function characterReplacement(s: string, k: number): number {
   }
 
   return maxLength
-};
+}
 
 console.log(characterReplacement('AABABBA', 1))
 console.log(characterReplacement('AABCABBB', 2))

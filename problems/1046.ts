@@ -3,7 +3,7 @@
 function lastStoneWeight(stones: number[]): number {
   class PriorityQueue {
     maxHeap: number[] = []
-    length: number = 0
+    length = 0
 
     private bubbleUp () {
       let index = this.maxHeap.length - 1
@@ -79,7 +79,7 @@ function lastStoneWeight(stones: number[]): number {
 
   const priotiryStones = new PriorityQueue()
 
-  for (let stone of stones) {
+  for (const stone of stones) {
     priotiryStones.enqueue(stone)
   }
 
@@ -96,7 +96,7 @@ function lastStoneWeight(stones: number[]): number {
   }
 
   return priotiryStones.dequeue()! || 0
-};
+}
 
 console.log(lastStoneWeight([3, 7, 2]))
 

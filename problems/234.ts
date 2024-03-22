@@ -93,7 +93,7 @@ function isPalindrome(head: ListNode | null): boolean {
   console.log('tail: ', slow)
 
   return false
-};
+}
 
 const input = [1, 2, 3, 4, 5, 6, 7].map(val => new ListNode(val))
 for (let i = 0; i < input.length; i++) {

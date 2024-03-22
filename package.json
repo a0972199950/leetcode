@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node -r tsconfig-paths/register ./scripts/start.ts",
-    "template": "ts-node ./scripts/template.ts"
+    "template": "ts-node ./scripts/template.ts",
+    "lint": "eslint **/*.ts",
+    "lint:fix": "eslint **/*.ts --fix"
   },
   "keywords": [],
   "author": "",

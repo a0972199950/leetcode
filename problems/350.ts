@@ -7,7 +7,7 @@ function intersect(nums1: number[], nums2: number[]): number[] {
 
   const nums = {
     short: nums1.length <= nums2.length ? nums1 : nums2,
-    long: nums2.length >= nums1.length ? nums2 : nums1,
+    long: nums2.length >= nums1.length ? nums2 : nums1
   }
 
   const result: number[] = []
@@ -29,11 +29,11 @@ function intersect(nums1: number[], nums2: number[]): number[] {
   console.log(nums.long)
 
   return result
-};
+}
 
 console.log(intersect(
-  [1,2,2,1],
-  [2,2]
+  [1, 2, 2, 1],
+  [2, 2]
 ))
 
 export {}

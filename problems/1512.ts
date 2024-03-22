@@ -1,7 +1,7 @@
 function numIdenticalPairs(nums: number[]): number {
   const hashTable: Record<number, number> = {}
 
-  for (let num of nums) {
+  for (const num of nums) {
     hashTable[num] = ++hashTable[num] || 1
   }
 
@@ -20,8 +20,8 @@ function numIdenticalPairs(nums: number[]): number {
     })
 
   return total
-};
+}
 
-console.log(numIdenticalPairs([1,2,3,1,1,3]))
+console.log(numIdenticalPairs([1, 2, 3, 1, 1, 3]))
 
 export {}

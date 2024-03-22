@@ -49,11 +49,11 @@ function sortLinkedList(head: ListNode | null): ListNode | null {
   }
 
   return finalHead
-};
+}
 
 // console.log(sortLinkedList(new LinkedList([0,2,-5,5,10,-10]).data))
 // console.log(sortLinkedList(new LinkedList([0,1,2]).data))
 // console.log(sortLinkedList(new LinkedList([1]).data))
-console.log(sortLinkedList(new LinkedList([0,0,0,0,0,0,0]).data))
+console.log(sortLinkedList(new LinkedList([0, 0, 0, 0, 0, 0, 0]).data))
 
 export {}
