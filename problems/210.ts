@@ -38,83 +38,155 @@ console.clear()
 //   return order
 // }
 
+// function findOrder(numCourses: number, prerequisites: number[][]): number[] {
+//   const agencyList: Record<number, { next: Set<number>, prev: Set<number> }> = Array.from(Array(numCourses)).reduce((sum, _item, index) => {
+//     return {
+//       ...sum,
+//       [index]: {
+//         prev: new Set<number>(),
+//         next: new Set<number>()
+//       }
+//     }
+//   }, {})
+
+//   try {
+//     prerequisites.forEach(([nextCourse, prevCourse]) => {
+//       agencyList[nextCourse].prev.add(prevCourse)
+//       agencyList[prevCourse].next.add(nextCourse)
+//     })
+//   } catch (e) {
+//     return []
+//   }
+
+//   console.log(agencyList)
+
+//   const findFirstNoPrevCourse = () => {
+//     const course = Object
+//       .entries(agencyList)
+//       .find(([_course, { prev }]) => {
+//         return prev.size === 0
+//       })?.[0] ?? null
+
+//     if (course === null) {
+//       throw 'impossible'
+//     }
+
+//     return Number(course)
+//   }
+
+//   const result = []
+
+//   try {
+//     const startCourse = findFirstNoPrevCourse()
+//     const queue = [startCourse]
+
+//     while (result.length < numCourses) {
+//       const currentCourse = queue.shift()
+//       result.push(currentCourse)
+//       console.log('currentCourse: ', currentCourse, agencyList)
+
+//       const currentCourseNext = agencyList[currentCourse].next
+//       delete agencyList[currentCourse]
+
+//       currentCourseNext.forEach(nextCourse => {
+//         agencyList[nextCourse].prev.delete(currentCourse)
+
+//         if (agencyList[nextCourse].prev.size === 0) {
+//           queue.push(nextCourse)
+//         }
+//       })
+
+//       if (!queue.length && result.length < numCourses) {
+//         const nextCourse = findFirstNoPrevCourse()
+//         queue.push(nextCourse)
+//       }
+
+//       console.log(`Deal with: ${currentCourse}, `, agencyList, queue)
+//     }
+//   } catch (e) {
+//     return []
+//   }
+
+//   return result
+// }
+
 function findOrder(numCourses: number, prerequisites: number[][]): number[] {
-  const agencyList: Record<number, { next: Set<number>, prev: Set<number> }> = Array.from(Array(numCourses)).reduce((sum, _item, index) => {
-    return {
-      ...sum,
-      [index]: {
-        prev: new Set<number>(),
-        next: new Set<number>()
-      }
-    }
-  }, {})
+  const graph = Array(numCourses).fill(null).map(() => ([]))
 
-  try {
-    prerequisites.forEach(([nextCourse, prevCourse]) => {
-      agencyList[nextCourse].prev.add(prevCourse)
-      agencyList[prevCourse].next.add(nextCourse)
-    })
-  } catch (e) {
-    return []
+  for (const [course, pre] of prerequisites) {
+    graph[course].push(pre)
   }
 
-  console.log(agencyList)
+  // console.log(graph)
 
-  const findFirstNoPrevCourse = () => {
-    const course = Object
-      .entries(agencyList)
-      .find(([_course, { prev }]) => {
-        return prev.size === 0
-      })?.[0] ?? null
+  const visited = new Set()
 
-    if (course === null) {
-      throw 'impossible'
+  const dfs = (course: number, history: Set<number>): number[] | false => {
+    if (history.has(course)) {
+      return false
     }
 
-    return Number(course)
-  }
+    if (!graph[course].length) {
+      return [course]
+    }
 
-  const result = []
+    history.add(course)
+    let preOrder = []
 
-  try {
-    const startCourse = findFirstNoPrevCourse()
-    const queue = [startCourse]
-
-    while (result.length < numCourses) {
-      const currentCourse = queue.shift()
-      result.push(currentCourse)
-      console.log('currentCourse: ', currentCourse, agencyList)
-
-      const currentCourseNext = agencyList[currentCourse].next
-      delete agencyList[currentCourse]
-
-      currentCourseNext.forEach(nextCourse => {
-        agencyList[nextCourse].prev.delete(currentCourse)
-
-        if (agencyList[nextCourse].prev.size === 0) {
-          queue.push(nextCourse)
-        }
-      })
-
-      if (!queue.length && result.length < numCourses) {
-        const nextCourse = findFirstNoPrevCourse()
-        queue.push(nextCourse)
+    for (const pre of graph[course]) {
+      if (visited.has(pre)) {
+        continue
       }
 
-      console.log(`Deal with: ${currentCourse}, `, agencyList, queue)
+      const result = dfs(pre, history)
+
+      // 有環
+      if (!result) {
+        return false
+      }
+
+      // console.log(pre, result)
+
+      preOrder = result.length > preOrder.length ? result : preOrder
     }
-  } catch (e) {
-    return []
+
+    history.delete(course)
+
+    return [...preOrder, course]
   }
 
-  return result
+  const order = []
+  const history = new Set<number>()
+
+  for (const course in graph) {
+    if (visited.has(Number(course))) {
+      continue
+    }
+
+    const result = dfs(Number(course), history)
+
+    // console.log(`check ${course}, got `, result, visited)
+
+    // 有環
+    if (!result) {
+      return []
+    }
+
+    result.forEach(course => visited.add(course))
+    order.push(...result)
+  }
+
+  return order
 }
 
+// console.log(findOrder(2, [[1, 0]]))
 // console.log(findOrder(4, [[1, 0], [2, 0], [3, 1], [3, 2]]))
-// findOrder(2, [[1, 0]])
-// findOrder(1, [])
+// console.log(findOrder(6, [[5, 0], [4, 0], [0, 1], [0, 2], [1, 3], [3, 2]]))
+// console.log(findOrder(1, []))
 // console.log(findOrder(2, [[0, 1], [1, 0]]))
 // console.log(findOrder(3, [[2, 0], [2, 1]]))
-console.log(findOrder(3, [[1, 0], [0, 2], [2, 1]]))
+// console.log(findOrder(3, [[1, 0], [0, 2], [2, 1]]))
+console.log(findOrder(3, [[1, 0], [1, 2], [0, 1]]))
+// console.log(findOrder(7, [[1, 0], [0, 3], [0, 2], [3, 2], [2, 5], [4, 5], [5, 6], [2, 4]]))
 
 export {}
