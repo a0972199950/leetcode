@@ -110,6 +110,118 @@ console.clear()
 //   return result
 // }
 
+// function findOrder(numCourses: number, prerequisites: number[][]): number[] {
+//   const graph = Array(numCourses).fill(null).map(() => ([]))
+
+//   for (const [course, pre] of prerequisites) {
+//     graph[course].push(pre)
+//   }
+
+//   // console.log(graph)
+
+//   const visited = new Set()
+
+//   const dfs = (course: number, history: Set<number>): number[] | false => {
+//     if (history.has(course)) {
+//       return false
+//     }
+
+//     if (!graph[course].length) {
+//       return [course]
+//     }
+
+//     history.add(course)
+//     let preOrder = []
+
+//     for (const pre of graph[course]) {
+//       if (visited.has(pre)) {
+//         continue
+//       }
+
+//       const result = dfs(pre, history)
+
+//       // 有環
+//       if (!result) {
+//         return false
+//       }
+
+//       // console.log(pre, result)
+
+//       preOrder = result.length > preOrder.length ? result : preOrder
+//     }
+
+//     history.delete(course)
+
+//     return [...preOrder, course]
+//   }
+
+//   const order = []
+//   const history = new Set<number>()
+
+//   for (const course in graph) {
+//     if (visited.has(Number(course))) {
+//       continue
+//     }
+
+//     const result = dfs(Number(course), history)
+
+//     // console.log(`check ${course}, got `, result, visited)
+
+//     // 有環
+//     if (!result) {
+//       return []
+//     }
+
+//     result.forEach(course => visited.add(course))
+//     order.push(...result)
+//   }
+
+//   return order
+// }
+
+// function findOrder(numCourses: number, prerequisites: number[][]): number[] {
+//   const graph = Array(numCourses).fill(null).map(() => (new Set))
+
+//   for (const [course, pre] of prerequisites) {
+//     graph[course].add(pre)
+//   }
+
+//   console.log(graph)
+
+//   const orders = []
+//   const taken = new Set()
+
+//   while (orders.length < numCourses) {
+//     console.log(orders)
+//     const order = []
+
+//     for (let course = 0; course < graph.length; course++) {
+//       if (taken.has(course)) {
+//         continue
+//       }
+
+//       if (graph[course].size === 0) {
+//         order.push(course)
+//         taken.add(course)
+//       }
+//     }
+
+//     if (!order.length) {
+//       break
+//     }
+
+//     orders.push(...order)
+
+//     for (const pres of graph) {
+//       if (pres.size) {
+//         order.forEach(course => pres.delete(course))
+//       }
+//     }
+//   }
+
+//   return orders.length === numCourses ? orders : []
+// }
+
 function findOrder(numCourses: number, prerequisites: number[][]): number[] {
   const graph = Array(numCourses).fill(null).map(() => ([]))
 
@@ -117,76 +229,69 @@ function findOrder(numCourses: number, prerequisites: number[][]): number[] {
     graph[course].push(pre)
   }
 
-  // console.log(graph)
+  const orders = []
+  const taken = new Set()
+  const history = new Set()
 
-  const visited = new Set()
-
-  const dfs = (course: number, history: Set<number>): number[] | false => {
+  const dfs = (course: number) => {
+    // 有環
     if (history.has(course)) {
+      console.log(course, '有環')
       return false
     }
 
-    if (!graph[course].length) {
-      return [course]
+    const pres = graph[course].filter(pre => !taken.has(pre))
+
+    // 遇到葉節點
+    if (!pres.length) {
+      orders.push(course)
+      taken.add(course)
+      console.log(course, '遇到葉節點', orders)
+      return true
     }
 
     history.add(course)
-    let preOrder = []
-
-    for (const pre of graph[course]) {
-      if (visited.has(pre)) {
-        continue
+    const isPossible = pres.every(pre => {
+      if (taken.has(pre)) {
+        return true
       }
 
-      const result = dfs(pre, history)
-
-      // 有環
-      if (!result) {
-        return false
-      }
-
-      // console.log(pre, result)
-
-      preOrder = result.length > preOrder.length ? result : preOrder
-    }
-
+      return dfs(pre)
+    }) 
     history.delete(course)
 
-    return [...preOrder, course]
+    // 子節點都遍歷完了
+    if (isPossible) {
+      orders.push(course)
+      taken.add(course)
+      console.log(course, '子節點都遍歷完了', orders)
+    }
+
+    return isPossible
   }
 
-  const order = []
-  const history = new Set<number>()
-
-  for (const course in graph) {
-    if (visited.has(Number(course))) {
+  for (let course = 0; course < graph.length; course++) {
+    if (taken.has(course)) {
       continue
     }
 
-    const result = dfs(Number(course), history)
-
-    // console.log(`check ${course}, got `, result, visited)
-
-    // 有環
-    if (!result) {
+    if (!dfs(course)) {
       return []
     }
-
-    result.forEach(course => visited.add(course))
-    order.push(...result)
   }
 
-  return order
+  return orders
 }
 
-// console.log(findOrder(2, [[1, 0]]))
-// console.log(findOrder(4, [[1, 0], [2, 0], [3, 1], [3, 2]]))
+console.log(findOrder(2, [[1, 0]]))
+console.log(findOrder(4, [[1, 0], [2, 0], [3, 1], [3, 2]]))
+console.log(findOrder(5, [[1, 2], [1, 3], [3, 4], [0, 1], [0, 3]]))
 // console.log(findOrder(6, [[5, 0], [4, 0], [0, 1], [0, 2], [1, 3], [3, 2]]))
 // console.log(findOrder(1, []))
-// console.log(findOrder(2, [[0, 1], [1, 0]]))
+console.log(findOrder(2, [[0, 1], [1, 0]]))
 // console.log(findOrder(3, [[2, 0], [2, 1]]))
 // console.log(findOrder(3, [[1, 0], [0, 2], [2, 1]]))
-console.log(findOrder(3, [[1, 0], [1, 2], [0, 1]]))
+// console.log(findOrder(3, [[1, 0], [1, 2], [0, 1]]))
 // console.log(findOrder(7, [[1, 0], [0, 3], [0, 2], [3, 2], [2, 5], [4, 5], [5, 6], [2, 4]]))
 
 export {}
