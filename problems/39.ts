@@ -146,9 +146,8 @@ function combinationSum(candidates: number[], target: number): number[][] {
   return results
 }
 
-
-combinationSum([2, 3, 6, 7], 7)
-combinationSum([2, 3, 5], 8)
-combinationSum([2], 1)
+console.log(combinationSum([2, 3, 6, 7], 7))
+console.log(combinationSum([2, 3, 5], 8))
+console.log(combinationSum([2], 1))
 
 export {}

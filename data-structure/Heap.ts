@@ -8,6 +8,10 @@ class MinHeap {
     this.getVal = getVal
   }
 
+  get size () {
+    return this.data.length
+  }
+
   enqueue (node?: any) {
     if (node === undefined) {
       return
@@ -62,43 +66,43 @@ class MinHeap {
   }
 }
 
-const minHeap = new MinHeap((node) => node.value)
+const heap = new MinHeap((node) => node.value)
 
-minHeap.enqueue({ key: 'a', value: 41 })
-minHeap.enqueue({ key: 'a', value: 39 })
-minHeap.enqueue({ key: 'a', value: 39 })
-minHeap.enqueue({ key: 'a', value: 39 })
-minHeap.enqueue({ key: 'a', value: 39 })
-minHeap.enqueue({ key: 'a', value: 33 })
-minHeap.enqueue({ key: 'a', value: 18 })
-minHeap.enqueue({ key: 'a', value: 27 })
-minHeap.enqueue({ key: 'a', value: 12 })
-minHeap.enqueue({ key: 'a', value: 50 })
-minHeap.enqueue({ key: 'a', value: 67 })
-minHeap.enqueue({ key: 'a', value: 13 })
-minHeap.enqueue({ key: 'a', value: 44 })
-minHeap.enqueue({ key: 'a', value: 57 })
-minHeap.enqueue({ key: 'a', value: 99 })
+heap.enqueue({ key: 'a', value: 41 })
+heap.enqueue({ key: 'a', value: 39 })
+heap.enqueue({ key: 'a', value: 39 })
+heap.enqueue({ key: 'a', value: 39 })
+heap.enqueue({ key: 'a', value: 39 })
+heap.enqueue({ key: 'a', value: 33 })
+heap.enqueue({ key: 'a', value: 18 })
+heap.enqueue({ key: 'a', value: 27 })
+heap.enqueue({ key: 'a', value: 12 })
+heap.enqueue({ key: 'a', value: 50 })
+heap.enqueue({ key: 'a', value: 67 })
+heap.enqueue({ key: 'a', value: 13 })
+heap.enqueue({ key: 'a', value: 44 })
+heap.enqueue({ key: 'a', value: 57 })
+heap.enqueue({ key: 'a', value: 99 })
 
-console.log('next: ', minHeap.dequeue())
-console.log('next: ', minHeap.dequeue())
-console.log('next: ', minHeap.dequeue())
-console.log('next: ', minHeap.dequeue())
-console.log('next: ', minHeap.dequeue())
-console.log('next: ', minHeap.dequeue())
-console.log('next: ', minHeap.dequeue())
-console.log('next: ', minHeap.dequeue())
-console.log('next: ', minHeap.dequeue())
-console.log('next: ', minHeap.dequeue())
-console.log('next: ', minHeap.dequeue())
-console.log('next: ', minHeap.dequeue())
-console.log('next: ', minHeap.dequeue())
-console.log('next: ', minHeap.dequeue())
-console.log('next: ', minHeap.dequeue())
-console.log('next: ', minHeap.dequeue())
-console.log('next: ', minHeap.dequeue())
-console.log('next: ', minHeap.dequeue())
-console.log('next: ', minHeap.dequeue())
-console.log('next: ', minHeap.dequeue())
+console.log('next: ', heap.dequeue())
+console.log('next: ', heap.dequeue())
+console.log('next: ', heap.dequeue())
+console.log('next: ', heap.dequeue())
+console.log('next: ', heap.dequeue())
+console.log('next: ', heap.dequeue())
+console.log('next: ', heap.dequeue())
+console.log('next: ', heap.dequeue())
+console.log('next: ', heap.dequeue())
+console.log('next: ', heap.dequeue())
+console.log('next: ', heap.dequeue())
+console.log('next: ', heap.dequeue())
+console.log('next: ', heap.dequeue())
+console.log('next: ', heap.dequeue())
+console.log('next: ', heap.dequeue())
+console.log('next: ', heap.dequeue())
+console.log('next: ', heap.dequeue())
+console.log('next: ', heap.dequeue())
+console.log('next: ', heap.dequeue())
+console.log('next: ', heap.dequeue())
 
 export default MinHeap

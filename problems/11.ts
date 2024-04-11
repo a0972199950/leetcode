@@ -14,20 +14,42 @@ console.clear()
 //   return max
 // }
 
+// function maxArea(heights: number[]): number {
+//   let left = 0
+//   let right = heights.length - 1
+//   let max = -Infinity
+
+//   while (right > left) {
+//     const water = (right - left) * Math.min(heights[left], heights[right])
+//     max = Math.max(max, water)
+
+//     if (heights[left] < heights[right]) {
+//       left++
+//     }
+//     else if (heights[left] >= heights[right]) {
+//       right--
+//     }
+//   }
+
+//   return max
+// }
+
 function maxArea(heights: number[]): number {
   let left = 0
   let right = heights.length - 1
+
   let max = -Infinity
 
   while (right > left) {
-    const water = (right - left) * Math.min(heights[left], heights[right])
+    const water = Math.min(heights[left], heights[right]) * (right - left)
     max = Math.max(max, water)
 
     if (heights[left] < heights[right]) {
       left++
-    }
-    else if (heights[left] >= heights[right]) {
+    } else if (heights[left] > heights[right]) {
       right--
+    } else {
+      left++
     }
   }
 

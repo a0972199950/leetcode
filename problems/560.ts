@@ -39,24 +39,24 @@ console.clear()
 // }
 
 function subarraySum(nums: number[], k: number): number {
-  const leftSums = {}
-  let currentSum = 0
+  let sum = 0
+  const prefixSums = {}
   let result = 0
 
   for (const num of nums) {
-    currentSum += num
+    sum += num
 
-    if (currentSum === k) {
+    if (sum === k) {
       result++
     }
 
-    const numShouldSubToEqualK = currentSum - k
+    const diff = sum - k
 
-    if (leftSums[numShouldSubToEqualK]) {
-      result += leftSums[numShouldSubToEqualK]
+    if (prefixSums[diff]) {
+      result += prefixSums[diff]
     }
 
-    leftSums[currentSum] = ++leftSums[currentSum] || 1
+    prefixSums[sum] = ++prefixSums[sum] || 1
   }
 
   return result
