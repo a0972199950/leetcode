@@ -3,47 +3,47 @@
 console.clear()
 
 // 一維 dp
-function canPartition(nums: number[]): boolean {
-  const sum = nums.reduce((lastResult, num) => lastResult + num, 0)
+// function canPartition(nums: number[]): boolean {
+//   const sum = nums.reduce((lastResult, num) => lastResult + num, 0)
 
-  if (sum % 2 !== 0) {
-    return false
-  }
+//   if (sum % 2 !== 0) {
+//     return false
+//   }
 
-  const halfSum = sum / 2
-  let dp: boolean[] = Array.from(new Array(halfSum + 1)).fill(false)
+//   const halfSum = sum / 2
+//   let dp: boolean[] = Array.from(new Array(halfSum + 1)).fill(false)
 
-  for (let i = 0; i < nums.length; i++) {
-    // console.log(dp)
-    const num = nums[i]
-    const nextDp: boolean[] = []
+//   for (let i = 0; i < nums.length; i++) {
+//     // console.log(dp)
+//     const num = nums[i]
+//     const nextDp: boolean[] = []
 
-    for (let targetSum = 0; targetSum <= halfSum; targetSum++) {
-      if (targetSum === 0) {
-        nextDp[targetSum] = true
-      }
-      else if (i === 0) {
-        nextDp[targetSum] = targetSum === num
-      }
-      else {
-        // 有機會使用 num
-        if (targetSum >= num) {
-          nextDp[targetSum] = 
-            dp[targetSum - num] // 使用 num
-            || dp[targetSum] // 不使用 num
-        }
-        // 沒機會使用 num
-        else {
-          nextDp[targetSum] = dp[targetSum]
-        }
-      }
-    }
+//     for (let targetSum = 0; targetSum <= halfSum; targetSum++) {
+//       if (targetSum === 0) {
+//         nextDp[targetSum] = true
+//       }
+//       else if (i === 0) {
+//         nextDp[targetSum] = targetSum === num
+//       }
+//       else {
+//         // 有機會使用 num
+//         if (targetSum >= num) {
+//           nextDp[targetSum] = 
+//             dp[targetSum - num] // 使用 num
+//             || dp[targetSum] // 不使用 num
+//         }
+//         // 沒機會使用 num
+//         else {
+//           nextDp[targetSum] = dp[targetSum]
+//         }
+//       }
+//     }
 
-    dp = nextDp
-  }
+//     dp = nextDp
+//   }
 
-  return dp[dp.length - 1]
-}
+//   return dp[dp.length - 1]
+// }
 
 // 暴力遍歷 + cache
 // function canPartition(nums: number[]): boolean {
@@ -82,9 +82,40 @@ function canPartition(nums: number[]): boolean {
 //   return false
 // }
 
+function canPartition(nums: number[]): boolean {
+  const sum = nums.reduce((last, num) => last + num, 0)
+
+  if (sum % 2 !== 0) {
+    return false
+  }
+
+  const half = sum / 2
+  const dp = new Set<number>()
+  dp.add(0)
+
+  for (const num of nums) {
+    const values = [...dp.values()]
+
+    for (const value of values) {
+      const newValue = value + num
+
+      if (newValue === half) {
+        return true
+      }
+
+      if (newValue < half) {
+        dp.add(newValue)
+      }
+    }
+  }
+
+  return false
+}
+
 console.log(canPartition([1, 11, 5, 5]))
-console.log(canPartition([3, 3, 3, 4, 5]))
 console.log(canPartition([1, 2, 3, 5]))
+console.log(canPartition([3, 3, 3, 4, 5]))
 console.log(canPartition([1, 2, 5]))
+console.log(canPartition([100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 99, 97]))
 
 export {}
