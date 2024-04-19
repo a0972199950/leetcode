@@ -8,7 +8,7 @@ class ListNode {
 }
 
 class LinkedList {
-  data: ListNode
+  head: ListNode
 
   constructor (val: number[]) {
     const nodes = val.map(num => new ListNode(num))
@@ -17,7 +17,7 @@ class LinkedList {
       nodes.reduce((prev, next) => prev.next = next)
     }
 
-    this.data = nodes[0] || null
+    this.head = nodes[0] || null
   }
 }
 

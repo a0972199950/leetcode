@@ -30,7 +30,7 @@ function sortList(head: ListNode | null): ListNode | null {
   return nodes[0] || null
 }
 
-console.log(sortList(new LinkedList([4, 2, 1, 3]).data))
-console.log(sortList(new LinkedList([]).data))
+console.log(sortList(new LinkedList([4, 2, 1, 3]).head))
+console.log(sortList(new LinkedList([]).head))
 
 export {}
