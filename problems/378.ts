@@ -66,7 +66,7 @@ function kthSmallest(matrix: number[][], k: number): number {
   for (let row = 0; row < matrix.length; row++) {
     for (let col = 0; col < matrix[0].length; col++) {
       minHeap.insert(matrix[row][col])
-      console.log(minHeap.data)
+      // console.log(minHeap.data)
     }
   }
 
