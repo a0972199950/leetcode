@@ -35,35 +35,53 @@ interface Node {
 //   return result
 // }
 
+// function dailyTemperatures(temperatures: number[]): number[] {
+//   const stack = []
+//   const ans = Array(temperatures.length).fill(0)
+
+//   for (let i = 0; i < temperatures.length; i++) {
+//     const node = { index: i, temperature: temperatures[i] }
+
+//     if (!stack.length) {
+//       stack.push(node)
+//       continue
+//     }
+
+//     let last = stack[stack.length - 1]
+
+//     if (node.temperature <= last.temperature) {
+//       stack.push(node)
+//       continue
+//     }
+
+//     while (!!last && last.temperature < node.temperature) {
+//       ans[last.index] = node.index - last.index
+//       stack.pop()
+//       last = stack[stack.length - 1]
+//     }
+
+//     stack.push(node)
+//   }
+
+//   return ans
+// }
+
 function dailyTemperatures(temperatures: number[]): number[] {
-  const stack = []
-  const ans = Array(temperatures.length).fill(0)
+  const result = Array(temperatures.length).fill(0)
+  const stack: { i: number, temperature: number }[] = []
 
   for (let i = 0; i < temperatures.length; i++) {
-    const node = { index: i, temperature: temperatures[i] }
+    const temperature = temperatures[i]
 
-    if (!stack.length) {
-      stack.push(node)
-      continue
+    while (stack.at(-1)?.temperature < temperature) {
+      const date = stack.pop()
+      result[date.i] = i - date.i
     }
 
-    let last = stack[stack.length - 1]
-
-    if (node.temperature <= last.temperature) {
-      stack.push(node)
-      continue
-    }
-
-    while (!!last && last.temperature < node.temperature) {
-      ans[last.index] = node.index - last.index
-      stack.pop()
-      last = stack[stack.length - 1]
-    }
-
-    stack.push(node)
+    stack.push({ i, temperature })
   }
 
-  return ans
+  return result
 }
 
 console.log(dailyTemperatures([73, 74, 75, 71, 69, 72, 76, 73]))
