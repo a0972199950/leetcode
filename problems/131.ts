@@ -3,60 +3,59 @@
 console.clear()
 
 function partition(s: string): string[][] {
-  const isPalindromeRecord = new Set()
-  const isNotPalindromeRecord = new Set()
+  const results = []
+  const result = []
 
-  const isPalindrome = (str: string) => {
-    if (isNotPalindromeRecord.has(str)) {
+  const palindromes = new Set()
+  const notPalindromes = new Set()
+
+  const isPalindrome = (start: number, end: number) => {
+    const str = s.slice(start, end + 1)
+
+    if (palindromes.has(str)) {
       return true
     }
 
-    if (isNotPalindromeRecord.has(str)) {
+    if (notPalindromes.has(str)) {
       return false
     }
 
-    let isPalindrome = true
-
-    for (let start = 0; start < str.length / 2; start++) {
-      const end = str.length - start - 1
-      if (str[start] !== str[end]) {
-        isPalindrome = false
-        break
+    while (end > start) {
+      if (s[start] !== s[end]) {
+        notPalindromes.add(str)
+        return false
       }
+
+      start++
+      end--
     }
 
-    if (isPalindrome) {
-      isPalindromeRecord.add(str)
-    } else {
-      isNotPalindromeRecord.add(str)
-    }
-
-    return isPalindrome
+    palindromes.add(str)
+    return true
   }
 
-  const ans = []
-
-  const treverse = (palindromes: string[], remain: string) => {
-    if (!remain) {
-      ans.push(palindromes)
+  const dfs = (start: number) => {
+    if (start === s.length) {
+      results.push([...result])
       return
     }
 
-    if (isPalindrome(remain)) {
-      ans.push([...palindromes, remain])
+    for (let i = start; i < s.length; i++) {
+      if (isPalindrome(start, i)) {
+        result.push(s.slice(start, i + 1))
+        dfs(i + 1)
+        result.pop()
+      }
     }
-
-    treverse([...palindromes, remain[0]], remain.slice(1))
   }
 
-  for (let i = 0; i < s.length; i++) {
-    treverse([], s)
-  }
+  dfs(0)
 
-  return ans
+  return results
 }
 
-console.log(partition('aab'))
+// console.log(partition('aab'))
 // console.log(partition('a'))
+console.log(partition('abbacc'))
 
 export {}
