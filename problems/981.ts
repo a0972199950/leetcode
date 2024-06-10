@@ -54,4 +54,4 @@ console.log(timeMap.set('foo', 'bar2', 4)) // store the key "foo" and value "bar
 console.log(timeMap.get('foo', 4))         // return "bar2"
 console.log(timeMap.get('foo', 5))         // return "bar2"
 
-export {}
+

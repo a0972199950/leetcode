@@ -49,4 +49,4 @@ console.log(scoreOfParentheses('(()())h'))
 console.log(scoreOfParentheses('()()('))
 console.log(scoreOfParentheses(')('))
 
-export {}
+

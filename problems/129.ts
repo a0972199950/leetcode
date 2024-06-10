@@ -33,4 +33,4 @@ function sumNumbers(root: TreeNode | null): number {
 
 console.log(sumNumbers(new BinaryTree([4, 9, 0, 5, 1]).root))
 
-export {}
+

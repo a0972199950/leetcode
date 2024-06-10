@@ -24,4 +24,3 @@ function numIdenticalPairs(nums: number[]): number {
 
 console.log(numIdenticalPairs([1, 2, 3, 1, 1, 3]))
 
-export {}

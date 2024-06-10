@@ -24,4 +24,4 @@ function decode(s: string): string[] {
 console.log(encode(['Hello', 'World']))
 console.log(decode('Hello😀World'))
 
-export {}
+

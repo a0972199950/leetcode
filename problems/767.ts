@@ -55,4 +55,4 @@ console.log(reorganizeString('bbbbbbb'))
 console.log(reorganizeString('aabb'))
 console.log(reorganizeString('aabbb'))
 
-export {}
+

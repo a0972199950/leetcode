@@ -56,4 +56,4 @@ function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
 
 removeNthFromEnd(new LinkedList([1, 2, 3, 4, 5]).head, 2)
 
-export {}
+

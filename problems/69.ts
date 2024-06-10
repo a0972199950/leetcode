@@ -46,4 +46,4 @@ function mySqrt(x: number): number {
 // console.log(mySqrt(8))
 console.log(mySqrt(0))
 
-export {}
+

@@ -32,4 +32,3 @@ function decodeString(s: string): string {
 console.log(decodeString('10[hi]'))
 
 
-export {}

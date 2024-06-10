@@ -40,4 +40,4 @@ console.log(fn([0, 0, 0, 0]​))
 
 
 
-export {}
+

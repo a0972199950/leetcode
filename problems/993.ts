@@ -37,4 +37,4 @@ console.log(isCousins(new BinaryTree([1, 2, 3, 4]).root, 4, 3))
 console.log(isCousins(new BinaryTree([1, 2, 3, null, 4, null, 5]).root, 5, 4))
 console.log(isCousins(new BinaryTree([1, 2, 3, null, 4]).root, 2, 3))
 
-export {}
+

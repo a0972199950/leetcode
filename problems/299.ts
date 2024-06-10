@@ -53,4 +53,3 @@ function insertIntoBST(root: TreeNode | null, val: number): TreeNode | null {
   }
 }
 
-export {}

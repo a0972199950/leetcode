@@ -109,4 +109,4 @@ function thirdMax(nums: number[]): number {
 console.log(thirdMax([1, 2, 2, 5, 3, 5]))
 console.log(thirdMax([3, 2, 1]))
 
-export {}
+

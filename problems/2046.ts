@@ -56,4 +56,4 @@ function sortLinkedList(head: ListNode | null): ListNode | null {
 // console.log(sortLinkedList(new LinkedList([1]).head))
 console.log(sortLinkedList(new LinkedList([0, 0, 0, 0, 0, 0, 0]).head))
 
-export {}
+

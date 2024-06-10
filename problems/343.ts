@@ -23,4 +23,4 @@ function integerBreak(n: number): number {
 
 integerBreak(10)
 
-export {}
+

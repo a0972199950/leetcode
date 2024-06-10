@@ -65,4 +65,4 @@ console.log(minSubArrayLen(4, [1, 3, 4]))
 console.log(minSubArrayLen(11, [1, 1, 1, 1, 1, 1, 1, 1]))
 console.log(minSubArrayLen(11, [1, 2, 3, 4, 5]))
 
-export {}
+

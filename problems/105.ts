@@ -49,4 +49,3 @@ function buildTree(preorder: number[], inorder: number[]): TreeNode | null {
 // console.log(buildTree([3, 9, 20, 15, 7], [9, 3, 15, 20, 7]))
 console.log(buildTree([-1], [-1]))
 
-export {}

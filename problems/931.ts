@@ -40,4 +40,4 @@ minFallingPathSum([[2, 1, 3], [6, 5, 4], [7, 8, 9]])
 minFallingPathSum([[-19, 57], [-40, -5]])
 minFallingPathSum([[48]])
 
-export {}
+

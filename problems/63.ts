@@ -35,4 +35,4 @@ function uniquePathsWithObstacles(obstacleGrid: number[][]): number {
 console.log(uniquePathsWithObstacles([[0, 0, 0], [0, 1, 0], [0, 0, 0]]))
 // console.log(uniquePathsWithObstacles([[0, 1], [0, 0]]))
 
-export {}
+

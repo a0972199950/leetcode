@@ -17,4 +17,4 @@ function maxScoreSightseeingPair(values: number[]): number {
 console.log(maxScoreSightseeingPair([8, 1, 5, 2, 6]))
 console.log(maxScoreSightseeingPair([1, 2]))
 
-export {}
+

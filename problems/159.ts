@@ -33,4 +33,4 @@ console.log(lengthOfLongestSubstringTwoDistinct('eceba'))
 console.log(lengthOfLongestSubstringTwoDistinct('ccaabbb'))
 console.log(lengthOfLongestSubstringTwoDistinct('a'))
 
-export {}
+

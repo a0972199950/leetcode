@@ -80,4 +80,4 @@ function targetIndices(nums: number[], target: number): number[] {
 // console.log(targetIndices([1, 2, 5, 2, 3], 5))
 console.log(targetIndices([1, 2, 5, 2, 3], 4))
 
-export {}
+

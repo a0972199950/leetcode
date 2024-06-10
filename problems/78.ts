@@ -23,4 +23,4 @@ function subsets(nums: number[]): number[][] {
 
 console.log(subsets([0]))
 
-export {}
+

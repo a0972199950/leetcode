@@ -6,4 +6,4 @@ function search(nums: number[], target: number): number {
   return nums.findIndex(item => item === target)
 }
 
-export {}
+

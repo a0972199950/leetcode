@@ -70,4 +70,4 @@ console.log(longestRepeatingSubstring('abbaba'))
 console.log(longestRepeatingSubstring('aabcaabdaab'))
 console.log(longestRepeatingSubstring('aaaaa'))
 
-export {}
+

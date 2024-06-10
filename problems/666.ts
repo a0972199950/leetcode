@@ -75,4 +75,4 @@ function pathSum(nums: number[]): number {
 console.log(pathSum([113, 215, 221]))
 console.log(pathSum([113, 221]))
 
-export {}
+

@@ -45,4 +45,4 @@ function getMinimumDifference(a: string[], b: string[]): number[] {
 
 console.log(getMinimumDifference( ['tea', 'tea', 'act'],  ['ate', 'toe', 'acts']))
 
-export {}
+

@@ -32,4 +32,4 @@ function connect(root: Node | null): Node | null {
 
 connect(new NodeTree([1, 2, 3, 4, 5, 6, 7]).root)
 
-export {}
+

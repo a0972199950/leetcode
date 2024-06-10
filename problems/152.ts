@@ -76,4 +76,3 @@ function maxProduct(nums: number[]): number {
 console.log(maxProduct([-4, -3, -2]))
 console.log(maxProduct([0]))
 
-export {}

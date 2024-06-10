@@ -37,4 +37,4 @@ console.log(compareVersion('1.2', '1.10'))
 console.log(compareVersion('1.01', '1.001'))
 console.log(compareVersion('3.0.4.10', '3.0.4.2'))
 
-export {}
+

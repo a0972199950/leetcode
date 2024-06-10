@@ -44,4 +44,4 @@ function numDecodings(s: string): number {
 // numDecodings('11111')
 numDecodings('10011')
 
-export {}
+

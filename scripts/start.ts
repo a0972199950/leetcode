@@ -8,4 +8,3 @@ if (/\d/.test(arg1)) {
   (() => import(`../interviews/${arg1}/${arg2}.ts`))()
 }
 
-export {}

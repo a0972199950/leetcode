@@ -162,4 +162,4 @@ simplifyPath('/a/./b/../../c/')
 simplifyPath('/a/../../b/../c//.//')
 simplifyPath('/..hidden')
 
-export {}
+

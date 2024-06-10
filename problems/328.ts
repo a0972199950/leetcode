@@ -53,4 +53,3 @@ input.reduce((prev, curr) => prev.next = curr)
 
 oddEvenList(input[0])
 
-export {}

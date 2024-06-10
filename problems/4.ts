@@ -72,4 +72,4 @@ console.log(findMedianSortedArrays([1, 2], [3, 4]))
 // console.log(findMedianSortedArrays([2], []))
 // console.log(findMedianSortedArrays([], []))
 
-export {}
+

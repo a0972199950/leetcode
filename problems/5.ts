@@ -130,6 +130,6 @@ console.log(longestPalindrome('cbbd'))
 console.log(longestPalindrome('abccb'))
 console.log(longestPalindrome('a'))
 
-export {}
+
 
 

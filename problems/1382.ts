@@ -76,4 +76,4 @@ function balanceBST(root: TreeNode | null): TreeNode | null {
 // console.log(balanceBST(new BinaryTree([2, 1, 3]).root))
 console.log(balanceBST(new BinaryTree([1, null, 15, 14, 17, 7, null, null, null, 2, 12, null, 3, 9, null, null, null, null, 11]).root))
 
-export {}
+

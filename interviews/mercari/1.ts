@@ -130,4 +130,4 @@ function minimizeCost(arr: number[]): number {
 console.log(minimizeCost([25, 10, 20]))
 console.log(minimizeCost([1, 7, 8]))
 
-export {}
+

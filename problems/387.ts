@@ -37,4 +37,3 @@ function firstUniqChar(s: string): number {
 
 console.log(firstUniqChar('aabb'))
 
-export {}

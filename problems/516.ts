@@ -47,4 +47,4 @@ function longestPalindromeSubseq(s: string): number {
 // console.log(longestPalindromeSubseq('a'))
 console.log(longestPalindromeSubseq('aabaa'))
 
-export {}
+

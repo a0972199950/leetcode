@@ -61,4 +61,3 @@ console.log(canJump([3, 2, 1, 0, 4]))
 console.log(canJump([4, 0, 1, 0, 4]))
 console.log(canJump([0, 2, 3]))
 
-export {}

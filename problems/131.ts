@@ -58,4 +58,4 @@ function partition(s: string): string[][] {
 // console.log(partition('a'))
 console.log(partition('abbacc'))
 
-export {}
+

@@ -49,4 +49,4 @@ console.log(partitionLabels('aaaa'))
 console.log(partitionLabels(''))
 
 
-export {}
+

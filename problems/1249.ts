@@ -39,4 +39,3 @@ console.log(minRemoveToMakeValid('))abc(('))
 console.log(minRemoveToMakeValid('()'))
 console.log(minRemoveToMakeValid('((()(('))
 
-export {}

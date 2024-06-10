@@ -55,4 +55,4 @@ cbt.insert(5)
 cbt.insert(6)
 console.log(cbt.get_root())
 
-export {}
+

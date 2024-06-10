@@ -236,4 +236,4 @@ function pacificAtlantic(heights: number[][]): number[][] {
 // console.log(pacificAtlantic([[1]]))
 console.log(pacificAtlantic([[2, 1], [1, 2]]))
 
-export {}
+

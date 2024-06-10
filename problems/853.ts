@@ -90,4 +90,4 @@ console.log(carFleet(20, [6, 2, 17], [3, 9, 2])) // 2
 console.log(carFleet(16, [11, 14, 13, 6], [2, 2, 6, 7])) // 2
 console.log(carFleet(13, [10, 2, 5, 7, 4, 6, 11], [7, 5, 10, 5, 9, 4, 1])) // 2
 
-export {}
+

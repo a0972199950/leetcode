@@ -71,4 +71,4 @@ function lexicalOrder(n: number): number[] {
 // console.log(lexicalOrder(10))
 console.log(lexicalOrder(34))
 
-export {}
+

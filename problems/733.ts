@@ -37,4 +37,3 @@ console.log(floodFill(
   0
 ))
 
-export {}

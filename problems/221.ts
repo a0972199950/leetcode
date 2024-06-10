@@ -42,4 +42,4 @@ maximalSquare([['0', '1'], ['1', '0']])
 maximalSquare([['0']])
 maximalSquare([['1', '1', '1'], ['1', '1', '1'], ['1', '1', '1']])
 
-export {}
+

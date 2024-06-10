@@ -33,4 +33,4 @@ function sortList(head: ListNode | null): ListNode | null {
 console.log(sortList(new LinkedList([4, 2, 1, 3]).head))
 console.log(sortList(new LinkedList([]).head))
 
-export {}
+

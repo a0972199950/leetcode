@@ -41,4 +41,4 @@ function kthSmallest(root: TreeNode | null, k: number): number {
 console.log(kthSmallest(new BinaryTree([3, 1, 4, null, 2]).data, 1))
 console.log(kthSmallest(new BinaryTree([5, 3, 6, 2, 4, null, null, 1]).data, 3))
 
-export {}
+

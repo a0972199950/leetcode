@@ -62,4 +62,4 @@ const PromiseAll = async (promises: Promise<any>[]): Promise<any> => {
   return result
 }
 
-export {}
+

@@ -33,4 +33,4 @@ console.log(change(5, [1, 2, 5]))
 console.log(change(3, [2]))
 console.log(change(10, [10]))
 
-export {}
+

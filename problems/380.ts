@@ -47,4 +47,4 @@ console.log(randomizedSet.remove(1))
 console.log(randomizedSet.insert(2))
 console.log(randomizedSet.getRandom())
 
-export {}
+

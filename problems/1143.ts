@@ -84,4 +84,4 @@ console.log(longestCommonSubsequence('abc', 'abc'))
 console.log(longestCommonSubsequence('abc', 'def'))
 console.log(longestCommonSubsequence('pmjghexybyrgzczy', 'hafcdqbgncrcbihkd'))
 
-export {}
+

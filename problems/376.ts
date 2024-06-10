@@ -66,4 +66,4 @@ function wiggleMaxLength(nums: number[]): number {
 // console.log(wiggleMaxLength([7, 4, 5, 5, 9, 3, 6, 7]))
 console.log(wiggleMaxLength([5, 5, 5, 5, 5]))
 
-export {}
+

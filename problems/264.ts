@@ -84,4 +84,4 @@ function nthUglyNumber(n: number): number {
 nthUglyNumber(20)
 // nthUglyNumber(351)
 
-export {}
+

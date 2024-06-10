@@ -62,11 +62,6 @@ function removeKdigits(s: string, k: number): string {
     console.log(i, stack)
     const num = Number(s[i])
 
-    if (remove === k) {
-      stack.push(num)
-      continue
-    }
-
     while (num < (stack.at(-1) || -Infinity) && remove < k) {
       stack.pop()
       remove++
@@ -79,10 +74,11 @@ function removeKdigits(s: string, k: number): string {
   return stack.slice(notZero, (stack.length - (k - remove))).join('') || '0'
 }
 
-console.log(removeKdigits('1432219', 3))
-console.log(removeKdigits('10200', 1))
-console.log(removeKdigits('10', 2))
-console.log(removeKdigits('111222', 3))
-console.log(removeKdigits('9991', 1))
+// console.log(removeKdigits('1432219', 3))
+// console.log(removeKdigits('10200', 1))
+// console.log(removeKdigits('10', 2))
+// console.log(removeKdigits('111222', 3))
+// console.log(removeKdigits('9991', 1))
+console.log(removeKdigits('123456', 3))
 
-export {}
+

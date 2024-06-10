@@ -22,4 +22,4 @@ function canVisitAllRooms(rooms: number[][]): boolean {
 console.log(canVisitAllRooms([[1], [2], [3], []]))
 console.log(canVisitAllRooms([[1, 3], [3, 0, 1], [2], [0]]))
 
-export {}
+

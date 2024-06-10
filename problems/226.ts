@@ -31,4 +31,4 @@ function invertTree(root: TreeNode | null): TreeNode | null {
 console.log(invertTree(new BinaryTree([4, 2, 7, null, 3, 6, 9]).root))
 console.log(invertTree(new BinaryTree([2, 1, 3]).root))
 
-export {}
+

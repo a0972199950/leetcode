@@ -19,4 +19,4 @@ function rob(nums: number[]): number {
 rob([1, 2, 3, 1])
 rob([2, 7, 9, 3, 1])
 
-export {}
+

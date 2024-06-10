@@ -24,4 +24,4 @@ function isSymmetric(root: TreeNode | null): boolean {
 console.log(isSymmetric(new BinaryTree([1, 2, 2, 3, 4, 4, 3]).data))
 console.log(isSymmetric(new BinaryTree([1, 2, 2, null, 3, null, 3]).data))
 
-export {}
+

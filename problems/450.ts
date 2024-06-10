@@ -60,4 +60,4 @@ const input = new BinaryTree([])
 const ans = deleteNode(input.data, 0)
 console.log(ans)
 
-export {}
+

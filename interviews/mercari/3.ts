@@ -56,4 +56,4 @@ console.log(getMaximumMex([3, 2, 1, 4], 2)) // Output: 4
 console.log(getMaximumMex([6, 1, 3, 2, 4], 3)) // Output: 5
 
 
-export {}
+

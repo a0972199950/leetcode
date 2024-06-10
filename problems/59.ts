@@ -72,4 +72,4 @@ function generateMatrix(n: number): Matrix {
 
 console.log(generateMatrix(5))
 
-export {}
+

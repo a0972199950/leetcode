@@ -46,4 +46,4 @@ function findCircleNum(isConnected: number[][]): number {
 // findCircleNum([[1, 1, 0], [1, 1, 0], [0, 0, 1]])
 findCircleNum([[1, 0, 0], [0, 1, 0], [0, 0, 1]])
 
-export {}
+

@@ -49,4 +49,4 @@ function numberOfArithmeticSlices(nums: number[]): number {
 // numberOfArithmeticSlices([1, 2])
 // numberOfArithmeticSlices([1])
 
-export {}
+

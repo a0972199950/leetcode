@@ -70,4 +70,3 @@ function findTheWinner(n: number, k: number): number {
 // findTheWinner(5, 2)
 findTheWinner(6, 5)
 
-export {}

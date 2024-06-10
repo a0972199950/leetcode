@@ -134,4 +134,4 @@ console.log(merge([[1, 4]]))
 console.log(merge([[1, 4], [0, 2], [3, 5]]))
 console.log(merge([[2, 3], [5, 5], [2, 2], [3, 4], [3, 4]]))
 
-export {}
+

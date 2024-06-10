@@ -43,4 +43,4 @@ console.log(verticalOrder(new BinaryTree([3, 9, 8, 4, 0, 1, 7]).root))
 console.log(verticalOrder(new BinaryTree([3, 9, 8, 4, 0, 1, 7, null, null, null, 2, 5]).root))
 console.log(verticalOrder(new BinaryTree([]).root))
 
-export {}
+

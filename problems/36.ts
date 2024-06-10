@@ -65,4 +65,3 @@ console.log(isValidSudoku(
     , ['.', '.', '.', '.', '8', '.', '.', '7', '9']]
 ))
 
-export {}

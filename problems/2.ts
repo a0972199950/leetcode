@@ -42,5 +42,3 @@ function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | nul
 console.log(addTwoNumbers(new LinkedList([2, 4, 3]).head, new LinkedList([5, 6, 4]).head))
 console.log(addTwoNumbers(new LinkedList([0]).head, new LinkedList([0]).head))
 console.log(addTwoNumbers(new LinkedList([9, 9, 9, 9, 9, 9, 9]).head, new LinkedList([9, 9, 9, 9]).head))
-
-export {}

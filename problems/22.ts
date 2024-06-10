@@ -27,4 +27,4 @@ function generateParenthesis(n: number): string[] {
 
 console.log(generateParenthesis(2))
 
-export {}
+

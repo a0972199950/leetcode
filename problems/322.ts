@@ -86,4 +86,3 @@ console.log(coinChange([493, 416, 144, 164, 314, 25], 5607))
 console.log(coinChange([411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422], 9864))
 console.log(coinChange([186, 419, 83, 408], 6249))
 
-export {}

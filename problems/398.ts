@@ -38,4 +38,4 @@ console.log(solution.pick(3))
 console.log(solution.pick(1))
 console.log(solution.pick(3))
 
-export {}
+

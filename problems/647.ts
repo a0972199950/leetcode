@@ -70,4 +70,4 @@ function countSubstrings(s: string): number {
 console.log(countSubstrings('abc'))
 console.log(countSubstrings('aaa'))
 
-export {}
+

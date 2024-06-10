@@ -16,4 +16,4 @@ function topKFrequent(nums: number[], k: number): number[] {
     .map(item => Number(item[0]))
 }
 
-export {}
+

@@ -46,4 +46,4 @@ function searchRange(nums: number[], target: number): number[] {
 // console.log(searchRange([], 0))
 console.log(searchRange([1, 2, 3], 2))
 
-export {}
+

@@ -67,4 +67,3 @@ function multiply(num1: string, num2: string): string {
 // multiply('406', '12')
 multiply('401716832807512840963', '167141802233061013023557397451289113296441069')
 
-export {}

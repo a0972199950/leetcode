@@ -31,4 +31,4 @@ console.log(minFlipsMonoIncr('1111000'))
 console.log(minFlipsMonoIncr(''))
 console.log(minFlipsMonoIncr('10011111110010111011'))
 
-export {}
+

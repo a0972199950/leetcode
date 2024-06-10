@@ -42,4 +42,3 @@ console.log(findJudge(1, []))
 console.log(findJudge(3, [[1, 3], [2, 3], [3, 1]]))
 console.log(findJudge(3, [[1, 3], [2, 3]]))
 
-export {}

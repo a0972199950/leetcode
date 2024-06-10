@@ -101,4 +101,4 @@ console.log(countSubstrings('bdh')) // 4
 
 // console.log(countSubstrings('aaaaaaaaaa')) // 4
 
-export {}
+

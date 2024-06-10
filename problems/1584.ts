@@ -141,4 +141,4 @@ function minCostConnectPoints(points: number[][]): number {
 // console.log(minCostConnectPoints([[0, 0], [1, 1], [1, 0], [-1, 1]]))
 console.log(minCostConnectPoints([[0, 0]]))
 
-export {}
+

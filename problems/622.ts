@@ -109,4 +109,4 @@ console.log(myCircularQueue.deQueue())  // return True
 console.log(myCircularQueue.enQueue(4)) // return True
 console.log(myCircularQueue.Rear())     // return 4
 
-export {}
+

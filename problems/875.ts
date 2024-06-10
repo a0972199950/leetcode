@@ -44,4 +44,4 @@ console.log(minEatingSpeed([30, 11, 23, 4, 20], 5))
 console.log(minEatingSpeed([30, 11, 23, 4, 20], 6))
 console.log(minEatingSpeed([312884470], 968709470)) // 1
 
-export {}
+

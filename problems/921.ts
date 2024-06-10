@@ -25,4 +25,4 @@ console.log(minAddToMakeValid(')))((('))
 console.log(minAddToMakeValid('((()))'))
 console.log(minAddToMakeValid('()()()()()'))
 
-export {}
+

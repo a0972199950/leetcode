@@ -32,4 +32,4 @@ console.log(levelOrder(new BinaryTree([3, 9, 20, null, null, 15, 7]).root))
 console.log(levelOrder(new BinaryTree([1]).root))
 console.log(levelOrder(new BinaryTree([]).root))
 
-export {}
+

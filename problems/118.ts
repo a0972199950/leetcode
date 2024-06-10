@@ -22,4 +22,3 @@ function generate(numRows: number): number[][] {
 
 console.log(generate(0))
 
-export {}

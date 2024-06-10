@@ -51,4 +51,4 @@ asteroidCollision([10, 2, -5])
 asteroidCollision([-8, 8])
 asteroidCollision([1, 2, -10])
 
-export {}
+

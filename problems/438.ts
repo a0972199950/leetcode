@@ -42,4 +42,3 @@ console.log(findAnagrams('aaaaaaaaaa', 'aaa'))
 console.log(findAnagrams('cbaebabacd', 'abc'))
 // console.log(findAnagrams('bac', 'abc'))
 
-export {}

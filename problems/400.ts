@@ -18,4 +18,4 @@ function findNthDigit(n: number): number {
 // console.log(findNthDigit(11))
 console.log(findNthDigit(100000000))
 
-export {}
+

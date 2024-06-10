@@ -87,4 +87,4 @@ function kthSmallest(matrix: number[][], k: number): number {
 // console.log(kthSmallest([[-5]], 1))
 console.log(kthSmallest([[1, 2], [1, 3]], 1))
 
-export {}
+

@@ -33,4 +33,3 @@ class MyQueue {
 * var param_4 = obj.empty()
 */
 
-export {}

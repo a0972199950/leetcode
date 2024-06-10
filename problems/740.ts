@@ -122,4 +122,3 @@ function deleteAndEarn(nums: number[]): number {
 deleteAndEarn([1, 1, 1, 2, 4, 5, 5, 5, 6])
 
 
-export {}

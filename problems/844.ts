@@ -62,4 +62,4 @@ function backspaceCompare(s: string, t: string): boolean {
 
 console.log(backspaceCompare('y#fo##f', 'y#f#o##f'))
 
-export {}
+

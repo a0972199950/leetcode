@@ -44,4 +44,4 @@ minStack.pop()
 console.log(minStack.top())    // return 0
 console.log(minStack.getMin()) // return -2
 
-export {}
+

@@ -42,4 +42,4 @@ console.log(searchMatrix([[1, 4, 7, 11, 15], [2, 5, 8, 12, 19], [3, 6, 9, 16, 22
 console.log(searchMatrix([], 1))
 console.log(searchMatrix([[1, 2, 3]], 1))
 
-export {}
+

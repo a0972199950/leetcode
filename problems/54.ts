@@ -72,5 +72,5 @@ function spiralOrder(matrix: (number | null)[][]): number[] {
 
 console.log(spiralOrder([[2, 5], [8, 4], [0, -1]]))
 
-export {}
+
 

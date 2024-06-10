@@ -78,4 +78,4 @@ console.log(wonderfulSubstrings('aba'))
 console.log(wonderfulSubstrings('aabb'))
 console.log(wonderfulSubstrings('he'))
 
-export {}
+

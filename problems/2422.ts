@@ -39,4 +39,4 @@ console.log(minimumOperations([10]))
 console.log(minimumOperations([1, 2, 3, 4, 5, 4, 3, 2, 1]))
 console.log(minimumOperations([1, 2, 3, 4, 5, 5, 4, 3, 2, 1]))
 
-export {}
+

@@ -22,4 +22,4 @@ function moveZeroes(nums: number[]): void {
 moveZeroes([0, 1, 0, 3, 12])
 moveZeroes([0])
 
-export {}
+

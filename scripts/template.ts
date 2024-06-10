@@ -11,7 +11,7 @@ console.clear()
 
 // paste function here
 
-export {}
+console.log()
 `.replace(/\n/g, '\r')
 
 if (!fs.existsSync(`problems/${String(problemNumber)}.ts`)) {

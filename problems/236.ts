@@ -43,4 +43,3 @@ function lowestCommonAncestor(root: TreeNode | null, p: TreeNode | null, q: Tree
   return lca
 }
 
-export {}

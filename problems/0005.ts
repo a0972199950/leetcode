@@ -25,4 +25,4 @@ const getTax = (price) => {
 
 getTax(35676)
 
-export {}
+

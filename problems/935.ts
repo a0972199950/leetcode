@@ -73,4 +73,4 @@ function knightDialer(n: number): number {
 // console.log(knightDialer(10))
 console.log(knightDialer(3131))
 
-export {}
+

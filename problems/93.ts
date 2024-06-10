@@ -44,4 +44,4 @@ function restoreIpAddresses(s: string): string[] {
 // console.log(restoreIpAddresses('0000'))
 console.log(restoreIpAddresses('101023'))
 
-export {}
+

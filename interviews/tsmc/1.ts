@@ -25,4 +25,4 @@ function getTime(s: string): number {
 console.log(getTime('BZA'))
 console.log(getTime('AZGB'))
 
-export {}
+

@@ -148,4 +148,4 @@ wordDictionary.addWord('ab')
 wordDictionary.search('a')
 wordDictionary.search('a.')
 
-export {}
+

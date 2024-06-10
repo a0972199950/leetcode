@@ -42,4 +42,4 @@ console.log(isSubtree(new BinaryTree([]).root, new BinaryTree([]).root)) // true
 console.log(isSubtree(new BinaryTree([3, 4, 5, 1, 2]).root, new BinaryTree([]).root)) // true
 console.log(isSubtree(new BinaryTree([]).root, new BinaryTree([4, 1, 2]).root)) // false
 
-export {}
+

@@ -27,4 +27,4 @@ console.log(nextGreaterElements([1, 2]))
 console.log(nextGreaterElements([1]))
 console.log(nextGreaterElements([1, 1]))
 
-export {}
+

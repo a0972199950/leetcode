@@ -34,4 +34,4 @@ function minimumTotal(triangle: number[][]): number {
 minimumTotal([[2], [3, 4], [6, 5, 7], [4, 1, 8, 3]])
 minimumTotal([[-10]])
 
-export {}
+

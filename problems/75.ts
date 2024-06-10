@@ -26,4 +26,3 @@ function sortColors(nums: number[]): void {
 
 sortColors([2, 0, 2, 1, 1, 0])
 
-export {}

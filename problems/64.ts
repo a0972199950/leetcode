@@ -35,4 +35,4 @@ function minPathSum(grid: number[][]): number {
 minPathSum([[0, 0], [0, 0]])
 // minPathSum([[1]])
 
-export {}
+

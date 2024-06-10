@@ -54,4 +54,4 @@ nextPermutation([1, 1, 5])
 nextPermutation([1, 3, 2])
 nextPermutation([1, 1])
 
-export {}
+

@@ -66,4 +66,4 @@ console.log(testWeightBagProblem([1, 2, 3], [6, 10, 12], 5)) // 22
 console.log(testWeightBagProblem([4, 5, 1], [3, 4, 2], 3)) // 2
 console.log(testWeightBagProblem([2, 2, 3, 5], [3, 4, 1, 6], 8)) // 10
 
-export {}
+

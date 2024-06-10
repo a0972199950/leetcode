@@ -30,4 +30,4 @@ function uniquePaths(m: number, n: number): number {
 console.log(uniquePaths(1, 1))
 // console.log(uniquePaths(19, 13))
 
-export {}
+

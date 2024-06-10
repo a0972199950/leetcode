@@ -31,4 +31,3 @@ function diameterOfBinaryTree(root: TreeNode | null): number {
   return maxDeepSum
 }
 
-export {}

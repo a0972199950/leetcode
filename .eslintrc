@@ -50,6 +50,7 @@
         "varsIgnorePattern": "^_",
         "caughtErrorsIgnorePattern": "^_"
       }
-    ]
+    ],
+    "no-constant-condition": "off"
   }
 }

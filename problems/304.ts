@@ -45,4 +45,4 @@ console.log(matrix.sumRegion(1, 2, 2, 4))
 * var param_1 = obj.sumRegion(row1,col1,row2,col2)
 */
 
-export {}
+

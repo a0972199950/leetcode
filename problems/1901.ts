@@ -62,4 +62,4 @@ function findPeakGrid(mat: number[][]): number[] {
 // console.log(findPeakGrid([[10, 50, 40, 30, 20], [1, 500, 2, 3, 4]]))
 console.log(findPeakGrid([[25, 37, 23, 37, 19], [45, 19, 2, 43, 26], [18, 1, 37, 44, 50]]))
 
-export {}
+

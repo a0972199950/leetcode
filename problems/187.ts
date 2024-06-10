@@ -23,4 +23,3 @@ console.log(findRepeatedDnaSequences('AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT'))
 console.log(findRepeatedDnaSequences('AAAAAAAAAAAAA'))
 console.log(findRepeatedDnaSequences('AAAAAAAAAAA'))
 
-export {}

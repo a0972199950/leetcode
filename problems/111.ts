@@ -33,4 +33,4 @@ function minDepth(root: TreeNode | null): number {
 
 console.log(minDepth(new BinaryTree([2, null, 3, null, 4, null, 5, null, 6]).root))
 
-export {}
+

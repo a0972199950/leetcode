@@ -28,4 +28,4 @@ function isValid(s: string): boolean {
 
 console.log('result: ', isValid('([)]'))
 
-export {}
+

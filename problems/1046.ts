@@ -100,4 +100,3 @@ function lastStoneWeight(stones: number[]): number {
 
 console.log(lastStoneWeight([3, 7, 2]))
 
-export {}

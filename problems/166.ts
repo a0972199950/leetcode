@@ -34,4 +34,4 @@ function fractionToDecimal(numerator: number, denominator: number): string {
 console.log(fractionToDecimal(4, 333))
 console.log(4 / 333)
 
-export {}
+

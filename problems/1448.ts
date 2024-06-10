@@ -28,4 +28,4 @@ console.log(goodNodes(new BinaryTree([3, 1, 4, 3, null, 1, 5]).root)) // 4
 console.log(goodNodes(new BinaryTree([3, 3, null, 4, 2]).root)) // 3
 console.log(goodNodes(new BinaryTree([1]).root)) // 1
 
-export {}
+

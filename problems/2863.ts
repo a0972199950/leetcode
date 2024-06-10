@@ -56,4 +56,4 @@ console.log(maxSubarrayLength([4, 4, 4, 4]))
 console.log(maxSubarrayLength([1, 2, 3, 4, 5, 4, 3, 2, 1]))
 console.log(maxSubarrayLength([26, 26, 35, 72, 82]))
 
-export {}
+

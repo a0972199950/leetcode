@@ -36,4 +36,3 @@ console.log(intersect(
   [2, 2]
 ))
 
-export {}

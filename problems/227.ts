@@ -118,4 +118,4 @@ console.log(calculate(' 3+5 / 2 '))
 console.log(calculate('3+5/2+7*4'))
 console.log(calculate('14-3/2'))
 
-export {}
+

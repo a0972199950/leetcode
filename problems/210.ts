@@ -294,4 +294,4 @@ console.log(findOrder(2, [[0, 1], [1, 0]]))
 // console.log(findOrder(3, [[1, 0], [1, 2], [0, 1]]))
 // console.log(findOrder(7, [[1, 0], [0, 3], [0, 2], [3, 2], [2, 5], [4, 5], [5, 6], [2, 4]]))
 
-export {}
+

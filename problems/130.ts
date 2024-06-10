@@ -107,4 +107,4 @@ function solve(board: string[][]): void {
 
 solve([['X', 'X', 'X', 'X'], ['X', 'O', 'O', 'X'], ['X', 'X', 'O', 'X'], ['X', 'O', 'X', 'X']])
 
-export {}
+

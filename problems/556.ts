@@ -33,4 +33,4 @@ function nextGreaterElement(n: number): number {
 // console.log(nextGreaterElement(2147483486))
 console.log(nextGreaterElement(2147483476))
 
-export {}
+

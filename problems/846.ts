@@ -143,6 +143,6 @@ console.log(isNStraightHand([1, 2, 3, 4, 5], 4))
 console.log(isNStraightHand([1, 2, 3, 4, 5, 6], 2))
 console.log(isNStraightHand([1, 1, 2, 2, 3, 3], 3))
 
-export {}
+
 
 // n / 3 * n => n^2/3

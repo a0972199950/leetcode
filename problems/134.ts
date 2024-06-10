@@ -90,4 +90,4 @@ console.log(canCompleteCircuit([2, 3, 4], [3, 4, 3]))
 console.log(canCompleteCircuit([5, 1, 2, 3, 4], [4, 4, 1, 5, 1]))
 console.log(canCompleteCircuit([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]))
 
-export {}
+

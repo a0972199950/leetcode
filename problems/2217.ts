@@ -25,4 +25,4 @@ function kthPalindrome(queries: number[], intLength: number): number[] {
 
 console.log(kthPalindrome([89], 1))
 
-export {}
+

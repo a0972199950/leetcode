@@ -68,4 +68,3 @@ console.log(fn('ab', 'ac', 'aabc'))
 console.log(fn('ab', 'ac', 'aab'))
 console.log(fn('ab', 'ac', 'abca'))
 
-export {}

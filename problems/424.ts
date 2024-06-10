@@ -35,4 +35,3 @@ console.log(characterReplacement('AABABBA', 1))
 console.log(characterReplacement('AABCABBB', 2))
 console.log(characterReplacement('AAAA', 2))
 
-export {}

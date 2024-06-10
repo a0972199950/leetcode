@@ -32,4 +32,3 @@ const input = 'Use JavaScript to implement a "text processor" program that can b
 
 console.log(breakLine(input))
 
-export {}

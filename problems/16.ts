@@ -44,4 +44,3 @@ console.log(threeSumClosest([-1, 2, 1, -4], 1))
 console.log(threeSumClosest([0, 0, 0], 1))
 console.log(threeSumClosest([-1, 2, 1, -4], -1))
 
-export {}

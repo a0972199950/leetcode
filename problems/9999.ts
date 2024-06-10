@@ -82,4 +82,4 @@ async function searchGraph (node: number) {
 searchGraph(1)
 
 
-export {}
+

@@ -33,4 +33,4 @@ function flatten(root: TreeNode | null): void {
 
 flatten(new BinaryTree([]).root)
 
-export {}
+

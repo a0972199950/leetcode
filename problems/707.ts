@@ -120,4 +120,4 @@ console.log(obj.get(1))
 * obj.deleteAtIndex(index)
 */
 
-export {}
+
