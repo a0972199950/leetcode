@@ -1,5 +1,6 @@
 // 1143. Longest Common Subsequence
 
+export {}
 console.clear()
 
 function longestCommonSubsequence(text1: string, text2: string): number {

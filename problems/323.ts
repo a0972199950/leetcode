@@ -1,5 +1,6 @@
 // 323. Number of Connected Components in an Undirected Graph
 
+export {}
 console.clear()
 
 // function countComponents(n: number, edges: number[][]): number {

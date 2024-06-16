@@ -1,6 +1,7 @@
 // quiz
 // https://hackmd.io/@alan25sprout/S1Yjq9RUO
 
+export {}
 console.clear()
 
 function teamSize (talent: number[], talentsCount: number): number[] {

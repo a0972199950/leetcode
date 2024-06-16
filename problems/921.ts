@@ -1,5 +1,6 @@
 // 921. Minimum Add to Make Parentheses Valid
 
+export {}
 console.clear()
 
 function minAddToMakeValid(s: string): number {

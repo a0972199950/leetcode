@@ -1,5 +1,6 @@
 // 219. Contains Duplicate II
 
+export {}
 console.clear()
 
 function containsNearbyDuplicate(nums: number[], k: number): boolean {

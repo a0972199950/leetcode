@@ -1,5 +1,6 @@
 // 622. Design Circular Queue
 
+export {}
 console.clear()
 
 class Node {

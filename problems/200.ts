@@ -1,4 +1,5 @@
 // 200. Number of Islands
+export {}
 console.clear()
 
 function numIslands(grid: ('0' | '1')[][]): number {

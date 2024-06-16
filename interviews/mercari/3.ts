@@ -1,5 +1,6 @@
 // 3333. mex
 
+export {}
 console.clear()
 
 let _log

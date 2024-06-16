@@ -1,5 +1,6 @@
 // 238. Product of Array Except Self
 
+export {}
 console.clear()
 
 // function productExceptSelf(nums: number[]): number[] {

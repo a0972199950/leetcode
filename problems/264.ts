@@ -1,5 +1,6 @@
 // 264. Ugly Number II
 
+export {}
 console.clear()
 
 // function nthUglyNumber(n: number): number {

@@ -1,5 +1,6 @@
 // 271. Encode and Decode Strings
 
+export {}
 console.clear()
 
 /**

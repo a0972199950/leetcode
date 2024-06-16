@@ -1,5 +1,6 @@
 // 1011. Capacity To Ship Packages Within D Days
 
+export {}
 console.clear()
 
 function shipWithinDays(weights: number[], days: number): number {

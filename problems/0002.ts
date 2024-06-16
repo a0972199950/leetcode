@@ -1,5 +1,6 @@
 // 0002. 
 
+export {}
 console.clear()
 
 // function fn1() {

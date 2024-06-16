@@ -1,5 +1,6 @@
 // 743. Network Delay Time
 
+export {}
 console.clear()
 
 // function networkDelayTime(times: number[][], n: number, k: number): number {

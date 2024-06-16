@@ -1,5 +1,6 @@
 // 93. Restore IP Addresses
 
+export {}
 console.clear()
 
 function restoreIpAddresses(s: string): string[] {

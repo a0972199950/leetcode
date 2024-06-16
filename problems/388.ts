@@ -1,5 +1,6 @@
 // 388. Longest Absolute File Path
 
+export {}
 console.clear()
 
 interface Next {

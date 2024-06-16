@@ -1,5 +1,6 @@
 // 189. Rotate Array
 
+export {}
 console.clear()
 
 // function rotate(nums: number[], k: number): void {

@@ -1,5 +1,6 @@
 // 560. Subarray Sum Equals K
 
+export {}
 console.clear()
 
 // function subarraySum(nums: number[], k: number): number {

@@ -1,5 +1,6 @@
 // 139. Word Break
 
+export {}
 console.clear()
 
 // function wordBreak(s: string, wordDict: string[]): boolean {

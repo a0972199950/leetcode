@@ -1,5 +1,6 @@
 // 316. Remove Duplicate Letters
 
+export {}
 console.clear()
 
 function removeDuplicateLetters(s: string): string {

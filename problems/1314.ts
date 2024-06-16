@@ -1,5 +1,6 @@
 // 1314. Matrix Block Sum
 
+export {}
 console.clear()
 
 function matrixBlockSum(mat: number[][], k: number): number[][] {

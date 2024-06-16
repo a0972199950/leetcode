@@ -1,5 +1,6 @@
 // 416. Partition Equal Subset Sum
 
+export {}
 console.clear()
 
 // 一維 dp

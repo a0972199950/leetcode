@@ -1,5 +1,6 @@
 // 733. Flood Fill
 
+export {}
 console.clear()
 
 function floodFill(image: number[][], sr: number, sc: number, color: number): number[][] {

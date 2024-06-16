@@ -1,5 +1,6 @@
 // 1899. Merge Triplets to Form Target Triplet
 
+export {}
 console.clear()
 
 function mergeTriplets(triplets: number[][], target: number[]): boolean {

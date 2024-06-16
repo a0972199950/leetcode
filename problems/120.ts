@@ -1,5 +1,6 @@
 // 120. Triangle
 
+export {}
 console.clear()
 
 function minimumTotal(triangle: number[][]): number {

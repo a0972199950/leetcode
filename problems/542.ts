@@ -1,5 +1,6 @@
 // 542. 01 Matrix
 
+export {}
 console.clear()
 
 function updateMatrix(mat: number[][]): number[][] {

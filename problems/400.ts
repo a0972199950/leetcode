@@ -1,5 +1,6 @@
 // 400. Nth Digit
 
+export {}
 console.clear()
 
 function findNthDigit(n: number): number {

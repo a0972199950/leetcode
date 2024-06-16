@@ -1,6 +1,7 @@
 // 314. Binary Tree Vertical Order Traversal
 import { TreeNode, BinaryTree } from '../data-structure/BinaryTree'
 
+export {}
 console.clear()
 
 function verticalOrder(root: TreeNode | null): number[][] {

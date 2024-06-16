@@ -1,5 +1,6 @@
 // 287. Find the Duplicate Number
 
+export {}
 console.clear()
 
 // function findDuplicate(nums: number[]): number {

@@ -1,5 +1,6 @@
 // 131. Palindrome Partitioning
 
+export {}
 console.clear()
 
 function partition(s: string): string[][] {

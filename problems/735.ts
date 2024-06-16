@@ -1,5 +1,6 @@
 // 735. Asteroid Collision
 
+export {}
 console.clear()
 
 function asteroidCollision(asteroids: number[]): number[] {

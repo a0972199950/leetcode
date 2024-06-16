@@ -1,6 +1,7 @@
 // 124. Binary Tree Maximum Path Sum
 import { TreeNode, BinaryTree } from '../data-structure/BinaryTree'
 
+export {}
 console.clear()
 
 const isLeaf = (node: TreeNode) => {
@@ -44,11 +45,12 @@ function maxPathSum(root: TreeNode | null): number {
   return max
 }
 
-console.log(maxPathSum(new BinaryTree([1, 2, 3]).root)) // 6
-console.log(maxPathSum(new BinaryTree([-10, 9, 20, null, null, 15, 7]).root)) // 42
-console.log(maxPathSum(new BinaryTree([-3]).root)) // -3
-console.log(maxPathSum(new BinaryTree([1, 2]).root)) // 3
-console.log(maxPathSum(new BinaryTree([2, -1]).root)) // 2
-console.log(maxPathSum(new BinaryTree([9, 6, -3, null, null, -6, 2, null, null, 2, null, -6, -6, -6]).root)) // 16
+// console.log(maxPathSum(new BinaryTree([1, 2, 3]).root)) // 6
+// console.log(maxPathSum(new BinaryTree([-1, -2, -3]).root)) // -1
+// console.log(maxPathSum(new BinaryTree([-10, 9, 20, null, null, 15, 7]).root)) // 42
+// console.log(maxPathSum(new BinaryTree([-3]).root)) // -3
+// console.log(maxPathSum(new BinaryTree([1, 2]).root)) // 3
+// console.log(maxPathSum(new BinaryTree([2, -1]).root)) // 2
+// console.log(maxPathSum(new BinaryTree([9, 6, -3, null, null, -6, 2, null, null, 2, null, -6, -6, -6]).root)) // 16
 
 

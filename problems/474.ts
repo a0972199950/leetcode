@@ -1,5 +1,6 @@
 // 474. Ones and Zeroes
 
+export {}
 console.clear()
 
 // 2維 dp，時間複雜度 O三次方，超時

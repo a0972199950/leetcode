@@ -1,5 +1,6 @@
 // 334. Increasing Triplet Subsequence
 
+export {}
 console.clear()
 
 function increasingTriplet(nums: number[]): boolean {

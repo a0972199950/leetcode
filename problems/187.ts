@@ -1,5 +1,6 @@
 // 187. Repeated DNA Sequences
 
+export {}
 console.clear()
 
 function findRepeatedDnaSequences(s: string): string[] {

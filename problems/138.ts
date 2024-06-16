@@ -1,5 +1,6 @@
 // 138. Copy List with Random Pointer
 
+export {}
 console.clear()
 
 // class Node {

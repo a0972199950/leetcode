@@ -1,5 +1,6 @@
 // 414. Third Maximum Number
 
+export {}
 console.clear()
 
 function thirdMax(nums: number[]): number {

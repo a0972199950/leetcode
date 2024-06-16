@@ -1,5 +1,6 @@
 // 34. Find First and Last Position of Element in Sorted Array
 
+export {}
 console.clear()
 
 function searchRange(nums: number[], target: number): number[] {

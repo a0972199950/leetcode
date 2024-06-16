@@ -1,5 +1,6 @@
 // 163. Missing Ranges
 
+export {}
 console.clear()
 
 function findMissingRanges(nums: number[], lower: number, upper: number): number[][] {

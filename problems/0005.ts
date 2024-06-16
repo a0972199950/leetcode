@@ -1,5 +1,6 @@
 // 0005. 
 
+export {}
 console.clear()
 
 const getTax = (price) => {

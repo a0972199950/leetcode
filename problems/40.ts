@@ -1,5 +1,6 @@
 // 40. Combination Sum II
 
+export {}
 console.clear()
 
 // function combinationSum2(candidates: number[], target: number): number[][] {

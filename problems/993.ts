@@ -1,6 +1,7 @@
 // 993. Cousins in Binary Tree
 import { TreeNode, BinaryTree } from '../data-structure/BinaryTree'
 
+export {}
 console.clear()
 
 function isCousins(root: TreeNode | null, x: number, y: number): boolean {

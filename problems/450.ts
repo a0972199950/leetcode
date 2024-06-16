@@ -1,6 +1,7 @@
 // 450. Delete Node in a BST
 import { TreeNode, BinaryTree } from '~/data-structure/BinaryTree'
 
+export {}
 console.clear()
 
 const buildBST = (root: TreeNode | null, node: TreeNode) => {

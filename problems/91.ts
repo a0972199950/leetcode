@@ -1,5 +1,6 @@
 // 91. Decode Ways
 
+export {}
 console.clear()
 
 function numDecodings(s: string): number {

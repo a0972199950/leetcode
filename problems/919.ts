@@ -1,6 +1,7 @@
 // 919. Complete Binary Tree Inserter
 import { TreeNode, BinaryTree } from '../data-structure/BinaryTree'
 
+export {}
 console.clear()
 
 class CBTInserter {

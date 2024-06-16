@@ -1,6 +1,7 @@
 // 767. Reorganize String
 import MinHeap from '../data-structure/Heap'
 
+export {}
 console.clear()
 
 function reorganizeString(s: string): string {

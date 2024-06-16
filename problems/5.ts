@@ -1,4 +1,5 @@
 // 5. Longest Palindromic Substring
+export {}
 console.clear()
 
 // function longestPalindrome(s: string): string {

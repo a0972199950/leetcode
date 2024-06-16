@@ -1,5 +1,6 @@
 // 739. Daily Temperatures
 
+export {}
 console.clear()
 
 interface Node {

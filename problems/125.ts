@@ -1,5 +1,6 @@
 // 125. Valid Palindrome
 
+export {}
 console.clear()
 
 function isPalindrome(s: string): boolean {

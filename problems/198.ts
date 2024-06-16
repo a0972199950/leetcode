@@ -1,5 +1,6 @@
 // 198. House Robber
 
+export {}
 console.clear()
 
 function rob(nums: number[]): number {

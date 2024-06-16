@@ -1,5 +1,6 @@
 // 528. Random Pick with Weight
 
+export {}
 console.clear()
 
 class Solution {

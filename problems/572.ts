@@ -1,6 +1,7 @@
 // 572. Subtree of Another Tree
 import { TreeNode, BinaryTree } from '../data-structure/BinaryTree'
 
+export {}
 console.clear()
 
 const isSameTree = (node1: TreeNode | null, node2: TreeNode | null) => {

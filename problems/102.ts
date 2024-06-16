@@ -1,6 +1,7 @@
 // 102. Binary Tree Level Order Traversal
 import { TreeNode, BinaryTree } from '../data-structure/BinaryTree'
 
+export {}
 console.clear()
 
 function levelOrder(root: TreeNode | null): number[][] {

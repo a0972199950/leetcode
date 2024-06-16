@@ -1,5 +1,6 @@
 // 787. Cheapest Flights Within K Stops
 
+export {}
 console.clear()
 
 // function findCheapestPrice(n: number, flights: number[][], from: number, to: number, k: number): number {

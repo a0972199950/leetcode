@@ -1,5 +1,6 @@
 // 167. Two Sum II - Input Array Is Sorted
 
+export {}
 console.clear()
 
 // 暴力解 O(n2)

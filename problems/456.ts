@@ -1,5 +1,6 @@
 // 456. 132 Pattern
 
+export {}
 console.clear()
 
 // function find132pattern(nums: number[]): boolean {

@@ -1,5 +1,6 @@
 // 398. Random Pick Index
 
+export {}
 console.clear()
 
 class Solution {

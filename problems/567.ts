@@ -1,5 +1,6 @@
 // 567. Permutation in String
 
+export {}
 console.clear()
 
 class SlideWindow {

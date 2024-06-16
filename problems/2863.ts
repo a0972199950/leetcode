@@ -1,5 +1,6 @@
 // 2863. Maximum Length of Semi-Decreasing Subarrays
 
+export {}
 console.clear()
 
 function maxSubarrayLength(nums: number[]): number {

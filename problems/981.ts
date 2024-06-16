@@ -1,5 +1,6 @@
 // 981. Time Based Key-Value Store
 
+export {}
 console.clear()
 
 class TimeMap {

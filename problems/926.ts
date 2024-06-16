@@ -1,5 +1,6 @@
 // 926. Flip String to Monotone Increasing
 
+export {}
 console.clear()
 
 function minFlipsMonoIncr(s: string): number {

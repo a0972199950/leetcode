@@ -1,5 +1,6 @@
 // 22. Generate Parentheses
 
+export {}
 console.clear()
 
 function generateParenthesis(n: number): string[] {

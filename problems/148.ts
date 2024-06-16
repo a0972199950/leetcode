@@ -2,6 +2,7 @@
 
 import { LinkedList, ListNode } from '../data-structure/LinkedList'
 
+export {}
 console.clear()
 
 function sortList(head: ListNode | null): ListNode | null {

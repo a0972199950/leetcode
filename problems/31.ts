@@ -1,5 +1,6 @@
 // 31. Next Permutation
 
+export {}
 console.clear()
 
 function nextPermutation(nums: number[]): void {

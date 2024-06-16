@@ -1,5 +1,6 @@
 // 490. The Maze
 
+export {}
 console.clear()
 
 function hasPath(maze: number[][], start: number[], destination: number[]): boolean {

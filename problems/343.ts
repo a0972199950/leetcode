@@ -1,5 +1,6 @@
 // 343. Integer Break
 
+export {}
 console.clear()
 
 function integerBreak(n: number): number {

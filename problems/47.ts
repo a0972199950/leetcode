@@ -1,5 +1,6 @@
 // 47. Permutations II
 
+export {}
 console.clear()
 
 // function permuteUnique(nums: number[]): number[][] {

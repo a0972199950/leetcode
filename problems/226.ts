@@ -1,6 +1,7 @@
 // 226. Invert Binary Tree
 import { TreeNode, BinaryTree } from '../data-structure/BinaryTree'
 
+export {}
 console.clear()
 
 // paste function here

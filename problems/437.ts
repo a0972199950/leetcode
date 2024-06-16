@@ -1,5 +1,6 @@
 import { TreeNode, BinaryTree } from '../data-structure/BinaryTree'
 
+export {}
 console.clear()
 
 function pathSum(root: TreeNode | null, targetSum: number): number {

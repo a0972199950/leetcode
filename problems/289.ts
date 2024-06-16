@@ -1,5 +1,6 @@
 // 289. Game of Life
 
+export {}
 console.clear()
 
 function gameOfLife(board: number[][]): void {

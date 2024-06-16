@@ -1,5 +1,6 @@
 // 279. Perfect Squares
 
+export {}
 console.clear()
 
 function numSquares(n: number): number {

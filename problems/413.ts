@@ -1,5 +1,6 @@
 // 413. Arithmetic Slices
 
+export {}
 console.clear()
 
 function numberOfArithmeticSlices(nums: number[]): number {

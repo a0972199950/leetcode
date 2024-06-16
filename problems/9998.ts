@@ -1,5 +1,6 @@
 // 9998. 
 
+export {}
 console.clear()
 
 // paste function here

@@ -1,5 +1,6 @@
 // 3. Longest Substring Without Repeating Characters
 
+export {}
 console.clear()
 
 function lengthOfLongestSubstring(s: string): number {

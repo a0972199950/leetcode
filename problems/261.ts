@@ -1,5 +1,6 @@
 // 261. Graph Valid Tree
 
+export {}
 console.clear()
 
 function validTree(n: number, edges: number[][]): boolean {

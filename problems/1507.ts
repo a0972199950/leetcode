@@ -1,5 +1,6 @@
 // 1507. Reformat Date
 
+export {}
 console.clear()
 
 function reformatDate(date: string): string {

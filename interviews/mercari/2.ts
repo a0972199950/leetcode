@@ -1,5 +1,6 @@
 // 2222. Anagram
 
+export {}
 console.clear()
 
 function getMinimumDifference(a: string[], b: string[]): number[] {

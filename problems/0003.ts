@@ -1,5 +1,6 @@
 // 0003. 
 
+export {}
 console.clear()
 
 const breakLine = (s: string) => {

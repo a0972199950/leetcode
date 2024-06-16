@@ -1,5 +1,6 @@
 // 856. Score of Parentheses
 
+export {}
 console.clear()
 
 function scoreOfParentheses(s: string): number {

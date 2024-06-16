@@ -1,5 +1,6 @@
 // 417. Pacific Atlantic Water Flow
 
+export {}
 console.clear()
 
 // enum Direction {

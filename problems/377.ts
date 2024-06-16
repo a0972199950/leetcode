@@ -1,5 +1,6 @@
 // 377. Combination Sum IV
 
+export {}
 console.clear()
 
 function combinationSum4(nums: number[], target: number): number {

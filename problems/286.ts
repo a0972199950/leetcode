@@ -1,5 +1,6 @@
 // 286. Walls and Gates
 
+export {}
 console.clear()
 
 function wallsAndGates(rooms: number[][]): void {

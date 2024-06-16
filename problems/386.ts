@@ -1,5 +1,6 @@
 // 386. Lexicographical Numbers
 
+export {}
 console.clear()
 
 // function lexicalOrder(n: number): number[] {

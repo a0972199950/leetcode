@@ -1,5 +1,6 @@
 // 166. Fraction to Recurring Decimal
 
+export {}
 console.clear()
 
 function fractionToDecimal(numerator: number, denominator: number): string {

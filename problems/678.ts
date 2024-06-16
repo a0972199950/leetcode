@@ -1,5 +1,6 @@
 // 678. Valid Parenthesis String
 
+export {}
 console.clear()
 
 function checkValidString(s: string): boolean {

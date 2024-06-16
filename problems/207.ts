@@ -1,5 +1,6 @@
 // 207. Course Schedule
 
+export {}
 console.clear()
 
 // function canFinish(numCourses: number, prerequisites: number[][]): boolean {

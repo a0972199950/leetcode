@@ -2,6 +2,7 @@
 
 import { BinaryTree } from '../data-structure/BinaryTree'
 
+export {}
 console.clear()
 
 class TreeNode {

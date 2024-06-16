@@ -1,5 +1,6 @@
 // 159. Longest Substring with At Most Two Distinct Characters
 
+export {}
 console.clear()
 
 function lengthOfLongestSubstringTwoDistinct(s: string): number {

@@ -1,5 +1,6 @@
 // 15. 3Sum
 
+export {}
 console.clear()
 
 // function threeSum(nums: number[]): number[][] {

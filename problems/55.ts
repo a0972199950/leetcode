@@ -1,5 +1,6 @@
 // 55. Jump Game
 
+export {}
 console.clear()
 
 // function canJump(nums: number[]): boolean {

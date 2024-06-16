@@ -1,5 +1,6 @@
 // tsmc. 3
 
+export {}
 console.clear()
 
 // 掃描線法

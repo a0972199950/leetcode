@@ -9,6 +9,7 @@
 // Input: [1, 7, 3, 6, 2, 9]​
 // Output: 3
 
+export {}
 console.clear()
 
 const fn = (arr: number[]) => {

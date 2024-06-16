@@ -1,5 +1,6 @@
 // 1111. FizzBuzz
 
+export {}
 console.clear()
 
 // class PriorityQueue {

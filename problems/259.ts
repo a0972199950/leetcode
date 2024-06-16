@@ -1,5 +1,6 @@
 // 259. 3Sum Smaller
 
+export {}
 console.clear()
 
 // function threeSumSmaller(nums: number[], target: number): number {

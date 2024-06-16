@@ -1,5 +1,6 @@
 // 1010. Pairs of Songs With Total Durations Divisible by 60
 
+export {}
 console.clear()
 
 // function numPairsDivisibleBy60(time: number[]): number {

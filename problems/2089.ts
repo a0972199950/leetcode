@@ -1,5 +1,6 @@
 // 2089. Find Target Indices After Sorting Array
 
+export {}
 console.clear()
 
 // function targetIndices(nums: number[], target: number): number[] {

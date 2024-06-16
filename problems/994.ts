@@ -1,5 +1,6 @@
 // 994. Rotting Oranges
 
+export {}
 console.clear()
 
 function orangesRotting(grid: number[][]): number {

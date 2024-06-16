@@ -1,6 +1,7 @@
 // 110. Balanced Binary Tree
 import { BinaryTree, TreeNode } from '../data-structure/BinaryTree'
 
+export {}
 console.clear()
 
 function isBalanced(root: TreeNode | null): boolean {

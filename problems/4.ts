@@ -1,5 +1,6 @@
 // 4. Median of Two Sorted Arrays
 
+export {}
 console.clear()
 
 // function findMedianSortedArrays(nums1: number[], nums2: number[]): number {

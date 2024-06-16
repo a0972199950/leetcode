@@ -1,5 +1,6 @@
 // 46. Permutations
 
+export {}
 console.clear()
 
 // function permute(nums: number[]): number[][] {

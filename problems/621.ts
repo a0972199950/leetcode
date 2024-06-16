@@ -1,5 +1,6 @@
 // 621. Task Scheduler
 
+export {}
 console.clear()
 
 function leastInterval(tasks: string[], n: number): number {

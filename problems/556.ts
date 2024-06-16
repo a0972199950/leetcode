@@ -1,5 +1,6 @@
 // 556. Next Greater Element III
 
+export {}
 console.clear()
 
 function nextGreaterElement(n: number): number {

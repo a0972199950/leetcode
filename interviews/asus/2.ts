@@ -1,3 +1,4 @@
+export {}
 console.clear()
 
 // s1: 'ab', s2: 'ac'

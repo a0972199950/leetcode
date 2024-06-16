@@ -1,5 +1,6 @@
 // 18. 4Sum
 
+export {}
 console.clear()
 
 // function fourSum(nums: number[], target: number): number[][] {

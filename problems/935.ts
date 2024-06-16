@@ -1,5 +1,6 @@
 // 935. Knight Dialer
 
+export {}
 console.clear()
 
 // function knightDialer(n: number): number {

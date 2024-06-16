@@ -1,5 +1,6 @@
 // 694. Number of Distinct Islands
 
+export {}
 console.clear()
 
 interface Land {

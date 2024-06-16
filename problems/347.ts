@@ -1,5 +1,6 @@
 // 347. Top K Frequent Elements
 
+export {}
 console.clear()
 
 function topKFrequent(nums: number[], k: number): number[] {

@@ -1,5 +1,6 @@
 // 165. Compare Version Numbers
 
+export {}
 console.clear()
 
 function compareVersion(version1: string, version2: string): number {

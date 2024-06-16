@@ -1,5 +1,6 @@
 // 378. Kth Smallest Element in a Sorted Matrix
 
+export {}
 console.clear()
 
 class MinHeap {

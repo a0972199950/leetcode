@@ -1,5 +1,6 @@
 // 946. Validate Stack Sequences
 
+export {}
 console.clear()
 
 function validateStackSequences(pushed: number[], popped: number[]): boolean {

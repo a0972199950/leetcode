@@ -1,6 +1,7 @@
 // 1382. Balance a Binary Search Tree
 import { TreeNode, BinaryTree } from '../data-structure/BinaryTree'
 
+export {}
 console.clear()
 
 function balanceBST(root: TreeNode | null): TreeNode | null {

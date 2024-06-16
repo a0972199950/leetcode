@@ -1,5 +1,6 @@
 // 1915. Number of Wonderful Substrings
 
+export {}
 console.clear()
 
 // function wonderfulSubstrings(word: string): number {

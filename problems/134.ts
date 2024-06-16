@@ -1,5 +1,6 @@
 // 134. Gas Station
 
+export {}
 console.clear()
 
 // function canCompleteCircuit(gas: number[], cost: number[]): number {

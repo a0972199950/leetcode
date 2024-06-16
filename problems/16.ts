@@ -1,5 +1,6 @@
 // 16. 3Sum Closest
 
+export {}
 console.clear()
 
 function threeSumClosest(nums: number[], target: number): number {

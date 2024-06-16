@@ -1,5 +1,6 @@
 // 1268. Search Suggestions System
 
+export {}
 console.clear()
 
 // class Item {

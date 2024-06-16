@@ -2,6 +2,7 @@
 
 import { LinkedList } from '../data-structure/LinkedList'
 
+export {}
 console.clear()
 
 class ListNode {

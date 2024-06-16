@@ -1,5 +1,6 @@
 // 1014. Best Sightseeing Pair
 
+export {}
 console.clear()
 
 function maxScoreSightseeingPair(values: number[]): number {

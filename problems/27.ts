@@ -1,5 +1,6 @@
 // 27. Remove Element
 
+export {}
 console.clear()
 
 function removeElement(nums: number[], val: number): number {

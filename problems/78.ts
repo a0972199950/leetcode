@@ -1,5 +1,6 @@
 // 78. Subsets
 
+export {}
 console.clear()
 
 function subsets(nums: number[]): number[][] {

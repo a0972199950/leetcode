@@ -1,5 +1,6 @@
 // 2506. Count Pairs Of Similar Strings
 
+export {}
 console.clear()
 
 function similarPairs(words: string[]): number {

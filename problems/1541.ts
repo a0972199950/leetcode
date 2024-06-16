@@ -1,5 +1,6 @@
 // 1541. Minimum Insertions to Balance a Parentheses String
 
+export {}
 console.clear()
 
 function minInsertions(s: string): number {

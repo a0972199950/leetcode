@@ -1,5 +1,6 @@
 // 2422. Merge Operations to Turn Array Into a Palindrome
 
+export {}
 console.clear()
 
 function minimumOperations(nums: number[]): number {

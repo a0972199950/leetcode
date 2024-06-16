@@ -1,5 +1,6 @@
 // 1249. Minimum Remove to Make Valid Parentheses
 
+export {}
 console.clear()
 
 function minRemoveToMakeValid(s: string): string {

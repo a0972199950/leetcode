@@ -1,5 +1,6 @@
 // 846. Hand of Straights
 
+export {}
 console.clear()
 
 // function isNStraightHand(hand: number[], groupSize: number): boolean {

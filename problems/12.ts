@@ -1,5 +1,6 @@
 // 12. Integer to Roman
 
+export {}
 console.clear()
 
 function intToRoman(num: number): string {

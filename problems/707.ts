@@ -1,6 +1,7 @@
 // 707. Design Linked List
 import { ListNode } from '../data-structure/LinkedList'
 
+export {}
 console.clear()
 
 class MyLinkedList {

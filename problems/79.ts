@@ -1,5 +1,6 @@
 // 79. Word Search
 
+export {}
 console.clear()
 
 // function exist(board: string[][], word: string): boolean {

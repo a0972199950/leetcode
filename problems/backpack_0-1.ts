@@ -1,5 +1,6 @@
 // backpack_0-1. 
 
+export {}
 console.clear()
 
 function testWeightBagProblem(

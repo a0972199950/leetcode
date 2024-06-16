@@ -1,5 +1,6 @@
 // 28. Find the Index of the First Occurrence in a String
 
+export {}
 console.clear()
 
 function strStr(haystack: string, needle: string): number {

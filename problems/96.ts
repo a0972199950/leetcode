@@ -1,5 +1,6 @@
 // 96. Unique Binary Search Trees
 
+export {}
 console.clear()
 
 // function numTrees(n: number): number {

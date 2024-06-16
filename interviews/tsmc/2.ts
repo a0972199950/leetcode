@@ -1,5 +1,6 @@
 // tsmc. 2
 
+export {}
 console.clear()
 
 function countSubstrings(input_str: string): number {

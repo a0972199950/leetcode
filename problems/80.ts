@@ -1,5 +1,6 @@
 // 80. Remove Duplicates from Sorted Array II
 
+export {}
 console.clear()
 
 function removeDuplicates(nums: number[]): number {

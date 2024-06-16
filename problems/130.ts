@@ -1,5 +1,6 @@
 // 130. Surrounded Regions
 
+export {}
 console.clear()
 
 // function solve(board: string[][]): void {

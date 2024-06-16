@@ -1,5 +1,6 @@
 // 1062. Longest Repeating Substring
 
+export {}
 console.clear()
 
 // function longestRepeatingSubstring(s: string): number {

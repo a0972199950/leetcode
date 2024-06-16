@@ -1,5 +1,6 @@
 // 63. Unique Paths II
 
+export {}
 console.clear()
 
 function uniquePathsWithObstacles(obstacleGrid: number[][]): number {

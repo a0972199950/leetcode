@@ -1,5 +1,6 @@
 // 283. Move Zeroes
 
+export {}
 console.clear()
 
 function moveZeroes(nums: number[]): void {

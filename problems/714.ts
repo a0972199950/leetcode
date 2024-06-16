@@ -1,5 +1,6 @@
 // 714. Best Time to Buy and Sell Stock with Transaction Fee
 
+export {}
 console.clear()
 
 function maxProfit(prices: number[], fee: number): number {

@@ -1,5 +1,6 @@
 // 841. Keys and Rooms
 
+export {}
 console.clear()
 
 function canVisitAllRooms(rooms: number[][]): boolean {

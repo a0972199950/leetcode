@@ -7,6 +7,7 @@ const problemTitle = args.slice(1).join(' ')
 
 const template = `// ${problemNumber}. ${problemTitle}
 
+export {}
 console.clear()
 
 // paste function here

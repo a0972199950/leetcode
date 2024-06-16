@@ -1,5 +1,6 @@
 // 48. Rotate Image
 
+export {}
 console.clear()
 
 /**

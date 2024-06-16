@@ -1,5 +1,6 @@
 // 1584. Min Cost to Connect All Points
 
+export {}
 console.clear()
 
 interface Edge {

@@ -1,5 +1,6 @@
 // 799. Champagne Tower
 
+export {}
 console.clear()
 
 // function champagneTower(poured: number, query_row: number, query_glass: number): number {

@@ -1,5 +1,6 @@
 // 209. Minimum Size Subarray Sum
 
+export {}
 console.clear()
 
 function minSubArrayLen(target: number, nums: number[]): number {

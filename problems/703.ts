@@ -1,5 +1,6 @@
 // 703. Kth Largest Element in a Stream
 
+export {}
 console.clear()
 
 // 限制只有 k size 的 min heap

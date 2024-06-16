@@ -1,5 +1,6 @@
 // 153. Find Minimum in Rotated Sorted Array
 
+export {}
 console.clear()
 
 // function findMin(nums: number[]): number {

@@ -1,5 +1,6 @@
 // 395. Longest Substring with At Least K Repeating Characters
 
+export {}
 console.clear()
 
 function longestSubstring(s: string, k: number): number {

@@ -1,5 +1,6 @@
 // 253. Meeting Rooms II
 
+export {}
 console.clear()
 
 function minMeetingRooms(intervals: number[][]): number {

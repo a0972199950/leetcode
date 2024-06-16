@@ -1,6 +1,7 @@
 // 101. Symmetric Tree
 import { TreeNode, BinaryTree } from '~/data-structure/BinaryTree'
 
+export {}
 console.clear()
 
 function isSymmetric(root: TreeNode | null): boolean {

@@ -1,5 +1,6 @@
 // 853. Car Fleet
 
+export {}
 console.clear()
 
 // function carFleet(target: number, position: number[], speed: number[]): number {

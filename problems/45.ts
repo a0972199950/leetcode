@@ -1,5 +1,6 @@
 // 45. Jump Game II
 
+export {}
 console.clear()
 
 // 一開始想的不知道是什麼的看不懂的暴力算法

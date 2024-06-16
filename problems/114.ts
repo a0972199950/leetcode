@@ -1,6 +1,7 @@
 // 114. Flatten Binary Tree to Linked List
 import { TreeNode, BinaryTree } from '../data-structure/BinaryTree'
 
+export {}
 console.clear()
 
 function flatten(root: TreeNode | null): void {

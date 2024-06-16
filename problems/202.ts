@@ -1,5 +1,6 @@
 // 202. Happy Number
 
+export {}
 console.clear()
 
 function isHappy(n: number): boolean {

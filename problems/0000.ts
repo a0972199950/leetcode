@@ -1,3 +1,4 @@
+export {}
 console.clear()
 
 function findType(input: any): string {

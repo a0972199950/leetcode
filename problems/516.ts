@@ -1,5 +1,6 @@
 // 516. Longest Palindromic Subsequence
 
+export {}
 console.clear()
 
 function longestPalindromeSubseq(s: string): number {

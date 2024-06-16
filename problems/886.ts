@@ -1,5 +1,6 @@
 // 886. Possible Bipartition
 
+export {}
 console.clear()
 
 // function possibleBipartition(n: number, dislikes: number[][]): boolean {

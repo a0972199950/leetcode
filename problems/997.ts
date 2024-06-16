@@ -1,5 +1,6 @@
 // 997. Find the Town Judge
 
+export {}
 console.clear()
 
 function findJudge(n: number, trust: number[][]): number {

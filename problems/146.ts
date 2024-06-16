@@ -1,5 +1,6 @@
 // 146. LRU Cache
 
+export {}
 console.clear()
 
 class Node {

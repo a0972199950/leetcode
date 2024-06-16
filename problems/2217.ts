@@ -1,5 +1,6 @@
 // 2217. Find Palindrome With Fixed Length
 
+export {}
 console.clear()
 
 function kthPalindrome(queries: number[], intLength: number): number[] {

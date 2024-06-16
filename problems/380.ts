@@ -1,5 +1,6 @@
 // 380. Insert Delete GetRandom O 1
 
+export {}
 console.clear()
 
 class RandomizedSet {

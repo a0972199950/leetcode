@@ -1,5 +1,6 @@
 // 740. Delete and Earn
 
+export {}
 console.clear()
 
 // interface Item {

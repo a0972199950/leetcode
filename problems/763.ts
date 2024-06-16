@@ -1,5 +1,6 @@
 // 763. Partition Labels
 
+export {}
 console.clear()
 
 interface Part {

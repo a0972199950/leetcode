@@ -1,5 +1,6 @@
 // 162. Find Peak Element
 
+export {}
 console.clear()
 
 function findPeakElement(nums: number[]): number {

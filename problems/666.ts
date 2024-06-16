@@ -1,5 +1,6 @@
 // 666. Path Sum IV
 
+export {}
 console.clear()
 
 interface Node {

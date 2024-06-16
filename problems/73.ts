@@ -1,5 +1,6 @@
 // 73. Set Matrix Zeroes
 
+export {}
 console.clear()
 
 function setZeroes(matrix: number[][]): void {

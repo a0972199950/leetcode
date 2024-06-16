@@ -1,5 +1,6 @@
 // 875. Koko Eating Bananas
 
+export {}
 console.clear()
 
 function minEatingSpeed(piles: number[], h: number): number {

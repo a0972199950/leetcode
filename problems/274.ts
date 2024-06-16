@@ -1,5 +1,6 @@
 // 274. H-Index
 
+export {}
 console.clear()
 
 function hIndex(citations: number[]): number {

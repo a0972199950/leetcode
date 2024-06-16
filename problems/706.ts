@@ -1,5 +1,6 @@
 // 706. Design HashMap
 
+export {}
 console.clear()
 
 class MyHashMap {

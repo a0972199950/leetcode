@@ -1,5 +1,6 @@
 // 221. Maximal Square
 
+export {}
 console.clear()
 
 function maximalSquare(matrix: string[][]): number {

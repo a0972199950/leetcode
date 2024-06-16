@@ -1,5 +1,6 @@
 // 931. Minimum Falling Path Sum
 
+export {}
 console.clear()
 
 function minFallingPathSum(matrix: number[][]): number {

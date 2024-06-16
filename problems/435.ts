@@ -1,5 +1,6 @@
 // 435. Non-overlapping Intervals
 
+export {}
 console.clear()
 
 // function eraseOverlapIntervals(intervals: number[][]): number {

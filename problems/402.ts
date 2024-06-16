@@ -1,5 +1,6 @@
 // 402. Remove K Digits
 
+export {}
 console.clear()
 
 // function removeKdigits(s: string, k: number): string {

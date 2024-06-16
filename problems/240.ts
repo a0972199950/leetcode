@@ -1,5 +1,6 @@
 // 240. Search a 2D Matrix II
 
+export {}
 console.clear()
 
 // const searchMatrix = (matrix: number[][], target: number): boolean => {

@@ -1,5 +1,6 @@
 // 1573. Number of Ways to Split a String
 
+export {}
 console.clear()
 
 function numWays(s: string): number {

@@ -1,6 +1,7 @@
 // 2096. Step-By-Step Directions From a Binary Tree Node to Another
 import { TreeNode, BinaryTree } from '../data-structure/BinaryTree'
 
+export {}
 console.clear()
 
 // type Path = 'L' | 'R' | 'U'

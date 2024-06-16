@@ -1,5 +1,6 @@
 // 57. Insert Interval
 
+export {}
 console.clear()
 
 function insert(intervals: number[][], newInterval: number[]): number[][] {

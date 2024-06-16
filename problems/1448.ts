@@ -1,6 +1,7 @@
 // 1448. Count Good Nodes in Binary Tree
 import { TreeNode, BinaryTree } from '../data-structure/BinaryTree'
 
+export {}
 console.clear()
 
 function goodNodes(root: TreeNode | null): number {

@@ -1,5 +1,6 @@
 // 680. Valid Palindrome II
 
+export {}
 console.clear()
 
 function validPalindrome(s: string): boolean {

@@ -1,6 +1,7 @@
 // 129. Sum Root to Leaf Numbers
 import { TreeNode, BinaryTree } from '../data-structure/BinaryTree'
 
+export {}
 console.clear()
 
 function sumNumbers(root: TreeNode | null): number {

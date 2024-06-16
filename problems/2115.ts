@@ -1,5 +1,6 @@
 // 2115. Find All Possible Recipes from Given Supplies
 
+export {}
 console.clear()
 
 // function findAllRecipes(recipes: string[], ingredients: string[][], supplies: string[]): string[] {

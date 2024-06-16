@@ -1,5 +1,6 @@
 // 647. Palindromic Substrings
 
+export {}
 console.clear()
 
 // 解法1: 遍歷的字符當作回文子字符的正中間

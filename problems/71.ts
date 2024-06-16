@@ -1,5 +1,6 @@
 // 71. Simplify Path
 
+export {}
 console.clear()
 
 enum Unit {

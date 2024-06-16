@@ -1,5 +1,6 @@
 // 376. Wiggle Subsequence
 
+export {}
 console.clear()
 
 // function wiggleMaxLength(nums: number[]): number {

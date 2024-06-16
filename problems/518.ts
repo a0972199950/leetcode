@@ -1,5 +1,6 @@
 // 518. Coin Change II
 
+export {}
 console.clear()
 
 function change(amount: number, coins: number[]): number {

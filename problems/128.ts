@@ -1,5 +1,6 @@
 // 128. Longest Consecutive Sequence
 
+export {}
 console.clear()
 
 function longestConsecutive(nums: number[]): number {

@@ -1,5 +1,6 @@
 // 300. Longest Increasing Subsequence
 
+export {}
 console.clear()
 
 // function lengthOfLIS(nums: number[]): number {

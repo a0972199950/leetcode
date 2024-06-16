@@ -1,5 +1,6 @@
 // 50. Pow(x, n)
 
+export {}
 console.clear()
 
 function myPow(x: number, n: number): number {

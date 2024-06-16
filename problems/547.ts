@@ -1,5 +1,6 @@
 // 547. Number of Provinces
 
+export {}
 console.clear()
 
 function findCircleNum(isConnected: number[][]): number {

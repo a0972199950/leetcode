@@ -1,5 +1,6 @@
 // 64. Minimum Path Sum
 
+export {}
 console.clear()
 
 function minPathSum(grid: number[][]): number {

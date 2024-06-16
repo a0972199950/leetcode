@@ -1,5 +1,6 @@
 // 1901. Find a Peak Element II
 
+export {}
 console.clear()
 
 function findPeakGrid(mat: number[][]): number[] {

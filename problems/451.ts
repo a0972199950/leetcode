@@ -1,5 +1,6 @@
 // 451. Sort Characters By Frequency
 
+export {}
 console.clear()
 
 function frequencySort(s: string): string {

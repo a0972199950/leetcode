@@ -1,5 +1,6 @@
 // 1802. Maximum Value at a Given Index in a Bounded Array
 
+export {}
 console.clear()
 
 function maxValue(n: number, index: number, maxSum: number): number {

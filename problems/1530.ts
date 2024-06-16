@@ -1,6 +1,7 @@
 // 1530. Number of Good Leaf Nodes Pairs
 import { TreeNode, BinaryTree } from '../data-structure/BinaryTree'
 
+export {}
 console.clear()
 
 function countPairs(root: TreeNode | null, distance: number): number {

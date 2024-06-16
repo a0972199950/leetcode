@@ -1,6 +1,7 @@
 // 297. Serialize and Deserialize Binary Tree
 import { TreeNode, BinaryTree } from '~/data-structure/BinaryTree'
 
+export {}
 console.clear()
 
 /*

@@ -1,5 +1,6 @@
 // 69. Sqrt(x)
 
+export {}
 console.clear()
 
 // function mySqrt(x: number): number {

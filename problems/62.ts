@@ -1,5 +1,6 @@
 // 62. Unique Paths
 
+export {}
 console.clear()
 
 function uniquePaths(m: number, n: number): number {

@@ -1,6 +1,7 @@
 // 116. Populating Next Right Pointers in Each Node
 import { Node, NodeTree } from '../data-structure/BinaryTree'
 
+export {}
 console.clear()
 
 function connect(root: Node | null): Node | null {

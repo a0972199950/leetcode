@@ -1,5 +1,6 @@
 // 39. Combination Sum
 
+export {}
 console.clear()
 
 // interface RecordInterface {

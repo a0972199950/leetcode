@@ -1,5 +1,6 @@
 // 122. Best Time to Buy and Sell Stock II
 
+export {}
 console.clear()
 
 function maxProfit(prices: number[]): number {

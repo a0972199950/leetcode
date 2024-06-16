@@ -1,5 +1,6 @@
 // 684. Redundant Connection
 
+export {}
 console.clear()
 
 function findRedundantConnection(edges: number[][]): number[] {

@@ -1,6 +1,7 @@
 // 652. Find Duplicate Subtrees
 import { TreeNode, BinaryTree } from '../data-structure/BinaryTree'
 
+export {}
 console.clear()
 
 function findDuplicateSubtrees(root: TreeNode | null): Array<TreeNode | null> {

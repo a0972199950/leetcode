@@ -1,5 +1,6 @@
 // 785. Is Graph Bipartite?
 
+export {}
 console.clear()
 
 type Color = 'RED' | 'BLUE'

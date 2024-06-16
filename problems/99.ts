@@ -1,6 +1,7 @@
 // 99. Recover Binary Search Tree
 import { BinaryTree, TreeNode } from '../data-structure/BinaryTree'
 
+export {}
 console.clear()
 /**
  * Definition for a binary tree node.

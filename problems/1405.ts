@@ -1,5 +1,6 @@
 // 1405. Longest Happy String
 
+export {}
 console.clear()
 
 function longestDiverseString(a: number, b: number, c: number): string {

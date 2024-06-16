@@ -5,6 +5,7 @@
 // (23 or 23)
 // 23 and (23 or 23)
 
+export {}
 console.clear()
 
 // function isValid (expr: string): boolean {

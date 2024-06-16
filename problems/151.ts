@@ -1,5 +1,6 @@
 // 151. Reverse Words in a String
 
+export {}
 console.clear()
 
 // function reverseWords(s: string): string {

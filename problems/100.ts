@@ -1,6 +1,7 @@
 // 100. Same Tree
 import { TreeNode, BinaryTree } from '../data-structure/BinaryTree'
 
+export {}
 console.clear()
 
 function isSameTree(p: TreeNode | null, q: TreeNode | null): boolean {

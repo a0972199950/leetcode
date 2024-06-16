@@ -1,5 +1,6 @@
 // 695. Max Area of Island
 
+export {}
 console.clear()
 
 function maxAreaOfIsland(grid: number[][]): number {

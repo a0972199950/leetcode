@@ -1,5 +1,6 @@
 // 239. Sliding Window Maximum
 
+export {}
 console.clear()
 
 // function maxSlidingWindow(nums: number[], k: number): number[] {

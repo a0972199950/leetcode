@@ -1,5 +1,6 @@
 // 155. Min Stack
 
+export {}
 console.clear()
 
 class MinStack {

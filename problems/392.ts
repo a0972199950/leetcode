@@ -1,5 +1,6 @@
 // 392. Is Subsequence
 
+export {}
 console.clear()
 
 function isSubsequence(s: string, t: string): boolean {

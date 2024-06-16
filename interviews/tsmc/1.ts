@@ -1,5 +1,6 @@
 // tsmc. 1
 
+export {}
 console.clear()
 
 function getTime(s: string): number {

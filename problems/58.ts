@@ -1,5 +1,6 @@
 // 58. Length of Last Word
 
+export {}
 console.clear()
 
 function lengthOfLastWord(s: string): number {

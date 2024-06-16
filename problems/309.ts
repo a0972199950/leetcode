@@ -1,5 +1,6 @@
 // 309. Best Time to Buy and Sell Stock with Cooldown
 
+export {}
 console.clear()
 
 // function maxProfit(prices: number[]): number {

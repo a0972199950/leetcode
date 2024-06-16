@@ -1,3 +1,4 @@
+export {}
 console.clear()
 
 // function merge(intervals: number[][]): number[][] {

@@ -1,5 +1,6 @@
 // 468. Validate IP Address
 
+export {}
 console.clear()
 
 function validIPAddress(queryIP: string): 'IPv4' | 'IPv6' | 'Neither' {

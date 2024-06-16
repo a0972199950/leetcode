@@ -1,5 +1,6 @@
 // 49. Group Anagrams
 
+export {}
 console.clear()
 
 function groupAnagrams(strs: string[]): string[][] {

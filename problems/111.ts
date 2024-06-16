@@ -1,6 +1,7 @@
 // 111. Minimum Depth of Binary Tree
 import { TreeNode, BinaryTree } from '../data-structure/BinaryTree'
 
+export {}
 console.clear()
 
 function minDepth(root: TreeNode | null): number {
