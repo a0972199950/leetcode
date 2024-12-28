@@ -196,24 +196,59 @@ class MaxHeap {
 //   return result
 // }
 
+// function maxSlidingWindow(nums: number[], k: number): number[] {
+//   const queue = [] // store indexes
+//   const result = []
+
+//   for (let i = 0; i < nums.length; i++) {
+//     while (nums[queue.at(-1)] < nums[i]) {
+//       queue.pop()
+//     }
+
+//     queue.push(i)
+
+//     if (queue[0] === i - k) {
+//       queue.shift()
+//     }
+
+//     if (i >= k - 1) {
+//       result.push(nums[queue[0]])
+//     }
+//   }
+
+//   return result
+// }
+
 function maxSlidingWindow(nums: number[], k: number): number[] {
   const queue = [] // store indexes
   const result = []
 
-  for (let i = 0; i < nums.length; i++) {
-    while (nums[queue.at(-1)] < nums[i]) {
+  for (let i = 0; i < k; i++) {
+    const num = nums[i]
+
+    while (nums[queue.at(-1)] <= num) {
+      queue.pop()
+    }
+
+    queue.push(i)
+  }
+
+  result.push(nums[queue[0]])
+
+  for (let i = k; i < nums.length; i++) {
+    const newNum = nums[i]
+
+    if (i - k + 1 > queue[0]) {
+      queue.shift()
+    }
+
+    while (nums[queue.at(-1)] <= newNum) {
       queue.pop()
     }
 
     queue.push(i)
 
-    if (queue[0] === i - k) {
-      queue.shift()
-    }
-
-    if (i >= k - 1) {
-      result.push(nums[queue[0]])
-    }
+    result.push(nums[queue[0]])
   }
 
   return result
