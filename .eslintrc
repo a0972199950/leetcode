@@ -70,6 +70,12 @@
     "eol-last": [
       "warn",
       "always"
+    ],
+    "no-multiple-empty-lines": [
+      "warn",
+      {
+        "max": 1
+      }
     ]
   }
 }

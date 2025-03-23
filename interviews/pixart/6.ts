@@ -95,7 +95,6 @@ const escape = (board) => {
       return true
     }
 
-
     setHistory(row, col)
 
     let next = [row, col]
@@ -136,7 +135,6 @@ const escape = (board) => {
   return dfs(0, 0)
 }
 
-
 // console.log(escape([
 //   '...', 
 //   '.W.', 
@@ -160,3 +158,5 @@ console.log(escape([
   '...', 
   '...'
 ]))
+
+export default ''

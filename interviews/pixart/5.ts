@@ -1,5 +1,7 @@
+console.clear()
+
 const friends = (know, m, n) => {
-  const groups = new Set()
+  const groups = new Set<Set<number>>()
 
   function join(group, members) {
     for (const member of members) {
@@ -8,7 +10,7 @@ const friends = (know, m, n) => {
   }
 
   function increase(members) {
-    const group = new Set()
+    const group = new Set<number>()
     for (const member of members) {
       group.add(member)
     }
@@ -54,3 +56,5 @@ const friends = (know, m, n) => {
 // console.log(friends([[0, 1], [1, 2], [3, 4]], 3, 6)) // 3
 console.log(friends([[]], 0, 0)) // 0
 console.log(friends([[]], 0, 1)) // 1
+
+export default ''

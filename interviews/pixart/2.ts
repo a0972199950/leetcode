@@ -1,16 +1,8 @@
-function Node(value, left=null, right=null) {
-  this.value = value
-  this.left = left
-  this.right = right
-}
+console.clear()
 
-interface Node {
-  value: number;
-  left: Node;
-  right: Node;
-}
+import { TreeNode } from '../../data-structure/BinaryTree'
 
-function solution(root) {
+function solution(root: TreeNode | null) {
   const isLeaf = (node) => {
     if (!node.left && !node.right) {
       return true

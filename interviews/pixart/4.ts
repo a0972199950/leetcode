@@ -1,3 +1,5 @@
+console.clear()
+
 const solution = (path) => {
   const stack = []
   const parts = path.split('/')
