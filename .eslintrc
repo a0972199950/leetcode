@@ -7,8 +7,7 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended"
   ],
-  "overrides": [
-  ],
+  "overrides": [],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -21,7 +20,9 @@
     "indent": [
       "warn",
       2,
-      { "SwitchCase": 1 }
+      {
+        "SwitchCase": 1
+      }
     ],
     "linebreak-style": [
       "warn",
@@ -35,13 +36,28 @@
       "warn",
       "never"
     ],
-    "eslintno-constant-condition": "off",
-    "object-curly-spacing": ["warn", "always"],
+    "no-constant-condition": "off",
+    "object-curly-spacing": [
+      "warn",
+      "always"
+    ],
     "@typescript-eslint/no-empty-interface": "off",
     "@typescript-eslint/no-explicit-any": "off",
-    "comma-dangle": ["warn", "never"],
-    "array-bracket-spacing": ["warn", "never"],
-    "comma-spacing": ["error", { "before": false, "after": true }],
+    "comma-dangle": [
+      "warn",
+      "never"
+    ],
+    "array-bracket-spacing": [
+      "warn",
+      "never"
+    ],
+    "comma-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": [
       "warn",
@@ -51,6 +67,9 @@
         "caughtErrorsIgnorePattern": "^_"
       }
     ],
-    "no-constant-condition": "off"
+    "eol-last": [
+      "warn",
+      "always"
+    ]
   }
 }
