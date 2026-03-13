@@ -1,4 +1,4 @@
-class MaxBinaryHeap {
+export class MaxBinaryHeap {
   public data: number[] = []
 
   constructor (val?: number) {

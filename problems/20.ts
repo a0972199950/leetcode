@@ -1,31 +1,67 @@
+// function isValid(s: string): boolean {
+//   const closeBracketMap: any = {
+//     ')': '(',
+//     ']': '[',
+//     '}': '{'
+//   }
+
+//   const openBrackets = []
+
+//   for (let i = 0; i < s.length; i++) {
+//     const char = s[i]
+
+//     if (!closeBracketMap.hasOwnProperty(char)) {
+//       openBrackets.push(char)
+//       continue
+//     } else {
+//       if (openBrackets[openBrackets.length - 1] !== closeBracketMap[char]) {
+//         return false
+//       }
+
+//       openBrackets.pop()
+//     }
+//   }
+
+//   return openBrackets.length === 0
+// }
+
+// Time: O(n)
+// Space: O(n)
 function isValid(s: string): boolean {
-  const closeBracketMap: any = {
-    ')': '(',
-    ']': '[',
-    '}': '{'
+  if (s.length % 2 !== 0) {
+    return false
   }
 
-  const openBrackets = []
+  const stack = []
 
-  for (let i = 0; i < s.length; i++) {
-    const char = s[i]
-
-    if (!closeBracketMap.hasOwnProperty(char)) {
-      openBrackets.push(char)
+  for (const char of s) {
+    if (char === '(') {
+      stack.push(')')
       continue
-    } else {
-      if (openBrackets[openBrackets.length - 1] !== closeBracketMap[char]) {
-        return false
-      }
+    }
 
-      openBrackets.pop()
+    if (char === '[') {
+      stack.push(']')
+      continue
+    }
+
+    if (char === '{') {
+      stack.push('}')
+      continue
+    }
+
+    if (stack.pop() !== char) {
+      return false
     }
   }
 
-
-  return openBrackets.length === 0
+  return stack.length === 0
 }
 
-console.log('result: ', isValid('([)]'))
-
+console.log(isValid('()'))
+console.log(isValid('()[]{}'))
+console.log(isValid('(]'))
+console.log(isValid('([])'))
+console.log(isValid('([)]'))
+console.log(isValid(''))
 
