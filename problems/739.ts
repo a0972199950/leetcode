@@ -67,19 +67,39 @@ interface Node {
 //   return ans
 // }
 
+// function dailyTemperatures(temperatures: number[]): number[] {
+//   const result = Array(temperatures.length).fill(0)
+//   const stack: { i: number, temperature: number }[] = []
+
+//   for (let i = 0; i < temperatures.length; i++) {
+//     const temperature = temperatures[i]
+
+//     while (stack.at(-1)?.temperature < temperature) {
+//       const date = stack.pop()
+//       result[date.i] = i - date.i
+//     }
+
+//     stack.push({ i, temperature })
+//   }
+
+//   return result
+// }
+
+// Time: O(n)
+// Space: O(n)
 function dailyTemperatures(temperatures: number[]): number[] {
-  const result = Array(temperatures.length).fill(0)
-  const stack: { i: number, temperature: number }[] = []
+  const decreasingStack: number[] = [] // number is index
+  const result: number[] = Array(temperatures.length).fill(0)
 
   for (let i = 0; i < temperatures.length; i++) {
     const temperature = temperatures[i]
 
-    while (stack.at(-1)?.temperature < temperature) {
-      const date = stack.pop()
-      result[date.i] = i - date.i
+    while (decreasingStack.length && temperature > temperatures[decreasingStack.at(-1)]) {
+      const index = decreasingStack.pop()
+      result[index] = i - index
     }
 
-    stack.push({ i, temperature })
+    decreasingStack.push(i)
   }
 
   return result
@@ -90,5 +110,4 @@ console.log(dailyTemperatures([30, 40, 50, 60]))
 console.log(dailyTemperatures([30, 60, 90]))
 console.log(dailyTemperatures([100, 60, 30]))
 console.log(dailyTemperatures([89, 62, 70, 58, 47, 47, 46, 76, 100, 70]))
-
 

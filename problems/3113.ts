@@ -46,7 +46,6 @@ console.clear()
 //   return result
 // }
 
-// TODO: 3/13 練習過一次，待再練習一次通過後刪除 TODO
 // Time: O(n)
 // Space: O(n)
 function numberOfSubarrays(nums: number[]): number {
