@@ -155,14 +155,12 @@
 
 // Time: O(n)
 // Space: O(n)
-// 還是不懂雙 stack 的解法
 function decodeString(s: string): string {
   let result = ''
   let repeat = ''
 
   const repeatStack = []
   const resultStack = []
-
   for (const char of s) {
     // 數字
     if (/\d/.test(char)) {
@@ -170,8 +168,8 @@ function decodeString(s: string): string {
     }
     // [
     else if (char === '[') {
-      repeatStack.push(Number(repeat))
       resultStack.push(result)
+      repeatStack.push(Number(repeat))
 
       result = ''
       repeat = ''
@@ -185,11 +183,6 @@ function decodeString(s: string): string {
       result += char
     }
   }
-
-  // resultStack.push(result)
-
-  console.log('repeatStack: ', repeatStack)
-  console.log('resultStack: ', resultStack)
 
   return result
 }

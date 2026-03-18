@@ -24,10 +24,7 @@
         "SwitchCase": 1
       }
     ],
-    "linebreak-style": [
-      "warn",
-      "unix"
-    ],
+    "linebreak-style": "off",
     "quotes": [
       "warn",
       "single"

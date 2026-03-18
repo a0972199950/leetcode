@@ -87,6 +87,19 @@ console.log(solutionName(testInput))
 
 當我輸入以下簡寫時，請執行對應的複雜 Prompt：
 
+- `/problem [type?]`:
+  "
+  出一個 leetcode 題目，[type] 為 題目類型。例如：`/problem stack` 代表出一題 stack 相關的題目
+1. **題目難度**：根據前端工程師的普遍面試難度出題。
+2. **循序漸進**：我會重複練習同樣題型，因此你可以以循序漸進的方式，將該類型題目從基本到進階。例如 stack 題型可以從簡單的括號匹配題開始，逐步增加難度到雙 stack, stack 物件儲存，monotonic stack、Next Greater Element 等。
+3. **輸出**：你必須輸出題目編號，標題與連結。例如：`20. Valid Parentheses - https://leetcode.com/problems/valid-parentheses/`
+  "
+4. **創建 template**：執行 `yarn template <題號>. <題目名稱>`，以創建對應題目的解答檔案。例如 `yarn template 20. Valid Parentheses` 會在 `problems/20.ts` 創建一個新的解答檔案。若檔案已存在，不用再出新的一題，直接告訴我該題目已經存在了，並提供該題目的編號、標題與連結。
+5. **無 type 時**：這代表我要隨機練習題目，請你根據前端工程師的普遍面試題目類型與難度，隨機選擇一題出題。
+6. **出題範圍**：優先考慮大型科技公司考古題，並告訴我該題目常被哪家公司使用。
+7. **忽略已完成題目**：不用考慮我是否做過該題，也就是不用檢查 /problems/ 目錄下是否已經有該題的解答檔案。
+  "
+
 - `/judge`:
   "
   根據當前開啟的文件內容與文件名稱判斷是哪一題 LeetCode 題目。通常文件名稱就是題目編號，例如 `20.ts` 就是 LeetCode 第 20 題 "Valid Parentheses"。
