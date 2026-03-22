@@ -1,4 +1,5 @@
 // 424. Longest Repeating Character Replacement [不會的題]
+// https://leetcode.com/problems/longest-repeating-character-replacement/
 // 解析: https://www.youtube.com/watch?v=SLAKjysDODM
 
 function characterReplacement(s: string, k: number): number {

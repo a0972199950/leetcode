@@ -1,4 +1,5 @@
 // 111. Minimum Depth of Binary Tree
+// https://leetcode.com/problems/minimum-depth-of-binary-tree/
 import { TreeNode, BinaryTree } from '../data-structure/BinaryTree'
 
 export {}

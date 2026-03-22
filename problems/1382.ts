@@ -1,4 +1,5 @@
 // 1382. Balance a Binary Search Tree
+// https://leetcode.com/problems/balance-a-binary-search-tree/
 import { TreeNode, BinaryTree } from '../data-structure/BinaryTree'
 
 export {}

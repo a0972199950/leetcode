@@ -1,4 +1,5 @@
 // 433. Minimum Genetic Mutation
+// https://leetcode.com/problems/minimum-genetic-mutation/
 
 export {}
 console.clear()

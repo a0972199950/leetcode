@@ -1,4 +1,5 @@
 // 844. Backspace String Compare
+// https://leetcode.com/problems/backspace-string-compare/
 
 function backspaceCompare(s: string, t: string): boolean {
   let sIndex = s.length - 1

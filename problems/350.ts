@@ -1,4 +1,5 @@
 // 350. Intersection of Two Arrays II
+// https://leetcode.com/problems/intersection-of-two-arrays-ii/
 
 function intersect(nums1: number[], nums2: number[]): number[] {
   if (nums1.length === 0 || nums2.length === 0) {

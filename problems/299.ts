@@ -1,4 +1,5 @@
 // 299. Bulls and Cows
+// https://leetcode.com/problems/bulls-and-cows/
 
 function getHint(secret: string, guess: string): string {
   let bulls = 0

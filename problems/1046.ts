@@ -1,4 +1,5 @@
 // 1046. Last Stone Weight
+// https://leetcode.com/problems/last-stone-weight/
 
 function lastStoneWeight(stones: number[]): number {
   class PriorityQueue {

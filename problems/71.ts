@@ -1,4 +1,5 @@
 // 71. Simplify Path
+// https://leetcode.com/problems/simplify-path/
 
 export {}
 console.clear()

@@ -1,4 +1,5 @@
 // 43. Multiply Strings
+// https://leetcode.com/problems/multiply-strings/
 
 function multiply(num1: string, num2: string): string {
   let pendingResults = []

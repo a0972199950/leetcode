@@ -1,4 +1,5 @@
 // 707. Design Linked List
+// https://leetcode.com/problems/design-linked-list/
 import { ListNode } from '../data-structure/LinkedList'
 
 export {}

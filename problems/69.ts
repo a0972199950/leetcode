@@ -1,4 +1,5 @@
 // 69. Sqrt(x)
+// https://leetcode.com/problems/sqrtx/
 
 export {}
 console.clear()

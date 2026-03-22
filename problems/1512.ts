@@ -1,3 +1,6 @@
+// 1512. Number of Good Pairs
+// https://leetcode.com/problems/number-of-good-pairs/
+
 function numIdenticalPairs(nums: number[]): number {
   const hashTable: Record<number, number> = {}
 

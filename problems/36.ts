@@ -1,3 +1,6 @@
+// 36. Valid Sudoku
+// https://leetcode.com/problems/valid-sudoku/
+
 function isValidSudoku(board: string[][]): boolean {
   let rows, cols, subs
 
@@ -17,7 +20,6 @@ function isValidSudoku(board: string[][]): boolean {
     result[`${x}-${y}`] = {}
     return result
   }, {} as Record<string, any>)
-
 
   for (let i = 0; i < 9; i++) {
     for (let j = 0; j < 9; j++) {
