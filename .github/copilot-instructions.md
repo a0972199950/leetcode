@@ -90,7 +90,7 @@ console.log(solutionName(testInput))
 - `/q [type?]`:
   "
   出一個 leetcode 題目，[type] 為 題目類型。例如：`/q stack` 代表出一題 stack 相關的題目
-1. **題目難度**：根據前端工程師的普遍面試難度出題。
+1. **題目難度**：根據前端工程師的普遍面試難度出題。除非是公認簡單的 hard 題目，否則以 Easy 和 Medium 為主。
 2. **循序漸進**：我會重複練習同樣題型，因此你可以以循序漸進的方式，將該類型題目從基本到進階。例如 stack 題型可以從簡單的括號匹配題開始，逐步增加難度到雙 stack, stack 物件儲存，monotonic stack、Next Greater Element 等。
 3. **輸出**：你必須輸出題目編號，標題與連結。例如：`20. Valid Parentheses - https://leetcode.com/problems/valid-parentheses/`
   "
