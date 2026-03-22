@@ -107,38 +107,83 @@ console.clear()
 //   return false
 // }
 
-// TODO: [3/21] 沒自己解出來，待再次練習
 // Time O(n)
 // Space O(1)
+// function checkInclusion(s1: string, s2: string): boolean {
+//   if (s2.length < s1.length) {
+//     return false
+//   }
+
+//   const map: Record<string, number> = {}
+//   let matches = 0
+
+//   for (const s of s1) {
+//     map[s] = (map[s] ?? 0) + 1
+//   }
+
+//   // console.log(map)
+
+//   let left = 0
+//   let right = 0
+
+//   for (right = 0; right < s2.length; right++) {
+//     const rightChar = s2[right]
+
+//     map[rightChar] = (map[rightChar] ?? 0) - 1
+
+//     if (map[rightChar] >= 0) {
+//       matches++
+//     }
+
+//     if (right - left + 1 > s1.length) {
+//       const leftChar = s2[left]
+//       map[leftChar] = (map[leftChar] ?? 0) + 1
+
+//       if (map[leftChar] > 0) {
+//         matches--
+//       }
+
+//       left++
+//     }
+
+//     if (matches === s1.length) {
+//       return true
+//     }
+//   }
+
+//   return false
+// }
+
+// Time O(n), s1.length + s2.length
+// Space O(1), 最多 26 個字母
 function checkInclusion(s1: string, s2: string): boolean {
-  if (s2.length < s1.length) {
+  if (s1.length > s2.length) {
     return false
   }
 
+  // { {char}: {count} }
   const map: Record<string, number> = {}
-  let matches = 0
 
-  for (const s of s1) {
-    map[s] = (map[s] ?? 0) + 1
+  for (const char of s1) {
+    map[char] = (map[char] ?? 0) + 1
   }
 
-  // console.log(map)
-
+  let matches = 0
   let left = 0
-  let right = 0
 
-  for (right = 0; right < s2.length; right++) {
+  for (let right = 0; right < s2.length; right++) {
     const rightChar = s2[right]
 
-    map[rightChar] = (map[rightChar] ?? 0) - 1
+    map[rightChar]--
 
     if (map[rightChar] >= 0) {
       matches++
     }
 
+    // 視窗長度超過 s1 長度
     if (right - left + 1 > s1.length) {
       const leftChar = s2[left]
-      map[leftChar] = (map[leftChar] ?? 0) + 1
+      map[leftChar]++
 
       if (map[leftChar] > 0) {
         matches--

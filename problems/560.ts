@@ -91,25 +91,46 @@ console.clear()
 //   return result
 // }
 
-// TODO: [3/21] 自己想不出來
+// Time: O(n)
+// Space: O(n)
+// function subarraySum(nums: number[], k: number): number {
+//   const prefixSums = new Map()
+//   prefixSums.set(0, 1)
+
+//   let sum = 0
+//   let result = 0
+//   for (const num of nums) {
+//     sum += num
+
+//     const prefix = sum - k
+
+//     if (prefixSums.has(prefix)) {
+//       result += prefixSums.get(prefix)
+//     }
+
+//     prefixSums.set(sum, (prefixSums.get(sum) ?? 0) + 1)
+//   }
+
+//   return result
+// }
+
 // Time: O(n)
 // Space: O(n)
 function subarraySum(nums: number[], k: number): number {
-  const prefixSums = new Map()
-  prefixSums.set(0, 1)
+  const prefixMap: Record<number, number> = { 0: 1 }
 
   let sum = 0
   let result = 0
   for (const num of nums) {
     sum += num
 
-    const prefix = sum - k
+    const diff = sum - k
 
-    if (prefixSums.has(prefix)) {
-      result += prefixSums.get(prefix)
+    if (prefixMap[diff]) {
+      result += prefixMap[diff]
     }
 
-    prefixSums.set(sum, (prefixSums.get(sum) ?? 0) + 1)
+    prefixMap[sum] = (prefixMap[sum] ?? 0) + 1
   }
 
   return result
