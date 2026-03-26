@@ -4,43 +4,43 @@
 export {}
 console.clear()
 
-function lengthOfLongestSubstring(s: string): number {
-  if (!s) {
-    return 0
-  }
+// function lengthOfLongestSubstring(s: string): number {
+//   if (!s) {
+//     return 0
+//   }
   
-  let left = 0
-  let right = 0
+//   let left = 0
+//   let right = 0
 
-  const uniques = new Set<string>(s[0])
-  let max = 1
+//   const uniques = new Set<string>(s[0])
+//   let max = 1
 
-  while (left < s.length && right < s.length) {
-    // 選出 max
-    max = Math.max(max, right - left + 1)
+//   while (left < s.length && right < s.length) {
+//     // 選出 max
+//     max = Math.max(max, right - left + 1)
 
-    const nextChar = s[right + 1]
+//     const nextChar = s[right + 1]
 
-    // 縮小 sliding window 左邊界
-    if (uniques.has(nextChar)) {
-      while (left <= right) {
-        uniques.delete(s[left])
-        left++
+//     // 縮小 sliding window 左邊界
+//     if (uniques.has(nextChar)) {
+//       while (left <= right) {
+//         uniques.delete(s[left])
+//         left++
 
-        if(s[left - 1] === nextChar) {
-          break
-        }
-      }
-    }
+//         if(s[left - 1] === nextChar) {
+//           break
+//         }
+//       }
+//     }
 
-    // 擴張 sliding window 右邊界
-    right++
-    uniques.add(nextChar)
+//     // 擴張 sliding window 右邊界
+//     right++
+//     uniques.add(nextChar)
 
-  }
+//   }
 
-  return max
-}
+//   return max
+// }
 
 // function lengthOfLongestSubstring(s: string): number {
 //   let left = 0
@@ -64,8 +64,32 @@ function lengthOfLongestSubstring(s: string): number {
 //   return max
 // }
 
-console.log(lengthOfLongestSubstring('abcabcbb'))
-console.log(lengthOfLongestSubstring('bbbbb'))
-console.log(lengthOfLongestSubstring('pwwkew'))
-console.log(lengthOfLongestSubstring(''))
+function lengthOfLongestSubstring(s: string): number {
+  // { [char]: [index] }
+  const record = new Map<string, number>()
+
+  let left = 0
+  let max = 0
+
+  for (let right = 0; right < s.length; right++) {
+    // console.log(record)
+    const char = s[right]
+
+    if (record.has(char)) {
+      left = Math.max(left, record.get(char) + 1)
+    }
+
+    record.set(char, right)
+    // console.log(s.slice(left, right + 1))
+    max = Math.max(max, right - left + 1)
+  }
+
+  return max
+}
+
+// console.log(lengthOfLongestSubstring('abcabcbb'))
+// console.log(lengthOfLongestSubstring('bbbbb'))
+// console.log(lengthOfLongestSubstring('pwwkew'))
+// console.log(lengthOfLongestSubstring(''))
+console.log(lengthOfLongestSubstring('abba'))
 
