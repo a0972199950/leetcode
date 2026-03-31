@@ -4,58 +4,81 @@
 export {}
 console.clear()
 
-function minSubArrayLen(target: number, nums: number[]): number {
-  let min = Infinity
+// function minSubArrayLen(target: number, nums: number[]): number {
+//   let min = Infinity
 
-  let left = 0
-  let right = 1
-  let total = nums[0]
+//   let left = 0
+//   let right = 1
+//   let total = nums[0]
 
-  const increase = () => {
-    if (right < nums.length) {
-      total += nums[right]
-      right++
-      return true
-    }
+//   const increase = () => {
+//     if (right < nums.length) {
+//       total += nums[right]
+//       right++
+//       return true
+//     }
 
-    return false
-  }
+//     return false
+//   }
 
-  const decrease = () => {
-    if (left < nums.length) {
-      total -= nums[left]
-      left++
-      return true
-    }
+//   const decrease = () => {
+//     if (left < nums.length) {
+//       total -= nums[left]
+//       left++
+//       return true
+//     }
 
-    return false
-  }
+//     return false
+//   }
 
-  // console.log(left, right, nums.slice(left, right), total)
-  while (left < nums.length || right < nums.length) {
+//   // console.log(left, right, nums.slice(left, right), total)
+//   while (left < nums.length || right < nums.length) {
     
-    if (min === 1) {
-      console.log('a')
-      break
+//     if (min === 1) {
+//       console.log('a')
+//       break
+//     }
+
+//     if (total >= target) {
+//       min = Math.min(min, right - left)
+
+//       if (!decrease()) {
+//         console.log('b')
+//         break
+//       }
+//     }
+
+//     if (total < target) {
+//       if (!increase()) {
+//         console.log('d')
+//         break
+//       }
+//     }
+
+//     // console.log(left, right, nums.slice(left, right), total)
+//   }
+
+//   return min === Infinity ? 0 : min
+// }
+
+// Time: O(2n)
+// Space: O(1)
+function minSubArrayLen(target: number, nums: number[]): number {
+  let left = 0
+  let min = Infinity
+  let sum = 0
+
+  for (let right = 0; right < nums.length; right++) {
+    const rightNum = nums[right]
+    sum += rightNum
+
+    while (sum >= target) {
+      min = Math.min(min, right - left + 1)
+
+      const leftNum = nums[left]
+      sum -= leftNum
+      left++
     }
-
-    if (total >= target) {
-      min = Math.min(min, right - left)
-
-      if (!decrease()) {
-        console.log('b')
-        break
-      }
-    }
-
-    if (total < target) {
-      if (!increase()) {
-        console.log('d')
-        break
-      }
-    }
-
-    // console.log(left, right, nums.slice(left, right), total)
   }
 
   return min === Infinity ? 0 : min
@@ -63,8 +86,7 @@ function minSubArrayLen(target: number, nums: number[]): number {
 
 console.log(minSubArrayLen(7, [2, 3, 1, 2, 4, 3]))
 console.log(minSubArrayLen(4, [1, 4, 4]))
-console.log(minSubArrayLen(4, [1, 3, 4]))
 console.log(minSubArrayLen(11, [1, 1, 1, 1, 1, 1, 1, 1]))
+console.log(minSubArrayLen(4, [1, 3, 4]))
 console.log(minSubArrayLen(11, [1, 2, 3, 4, 5]))
-
 
