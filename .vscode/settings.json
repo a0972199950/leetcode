@@ -17,5 +17,8 @@
   "eslint.trace.server": "verbose",
   "eslint.options": {
     "overrideConfigFile": ".eslintrc"
+  },
+  "chat.tools.terminal.autoApprove": {
+    "atoi": true
   }
 }

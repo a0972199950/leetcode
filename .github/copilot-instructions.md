@@ -6,7 +6,7 @@
 
 ## 常用指令
 
-- 建立新題目：`yarn template <題號> <題目名稱>`（例：`yarn template 42 Trapping Rain Water`）
+- 建立新題目：`yarn template <題號>. <題目名稱>`（例：`yarn template 42. Trapping Rain Water`）⚠️ **題號與題目名稱之間必須有 `.`（句點）**
 - 執行解答：`yarn start <題號>`（例：`yarn start 20`）
 - 監視模式：`yarn dev`
 
