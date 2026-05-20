@@ -3,48 +3,29 @@
 export {}
 console.clear()
 
+// Time: O(N * log(sum(N)))
+// Space: O(1)
 function splitArray(nums: number[], k: number): number {
+  const canPartition = (maxAllowed: number) => {
+    let splits = 1
+    let current = 0
 
-  const isAnswer = (sum: number): boolean => {
-    let start = 0
-    let end = 0
-    let current = nums[0]
+    for (const num of nums) {
+      current += num
 
-    while (start < nums.length && end < nums.length) {
-      if (current === sum) {
-        console.log([start, end], current)
-        // console.log('if 1')
-        const leftCount = start
-        const rightCount = nums.length - 1 - end
+      if (current > maxAllowed) {
+        splits++
+        current = num
+      }
 
-        let min = 1
-        if (leftCount) min++
-        if (rightCount) min++
-
-        const max = 1 + leftCount + rightCount
-        
-        if (min <= k && k <= max) {
-          return true
-        }
-
-        end++
-        current += nums[end]
-      } else if (current < sum) {
-        // console.log('if 2')
-        end++
-        current += nums[end]
-      } else {
-        // console.log('if 3')
-        current -= nums[start]
-        start++
+      if (splits > k) {
+        return false
       }
     }
 
-    return false
+    // ≤ k 就合法，因為只要能分成 <= k 段，那就一定能隨意切得更細成 k 段 (只要 k 不超過 nums 的長度)
+    return true
   }
-
-  // console.log(isAnswer(7))
-  // return
 
   let left = -Infinity // max(nums)
   let right = 0 // sum(nums)
@@ -54,14 +35,23 @@ function splitArray(nums: number[], k: number): number {
     right += num
   }
 
-  for (let i = right; i >= left; i--) {
-    console.log('i: ', i)
+  while (left < right) {
+    const middle = Math.floor(left + ((right - left) / 2))
 
-    if (isAnswer(i)) {
-      return i
+    if (canPartition(middle)) {
+      // 嘗試找更小
+      right = middle
+    } else {
+      left = middle + 1
     }
   }
+
+  return left
 }
 
 // console.log(splitArray([1, 1, 1, 1, 1, 1, 1], 1))
-console.log(splitArray([7, 2, 5, 10, 8], 2))
+// console.log(splitArray([7, 2, 5, 10, 8], 2))
+// console.log(splitArray([1, 2, 3, 4, 5], 2))
+// console.log(splitArray([7, 2, 5, 10, 8], 5))
+console.log(splitArray([10, 6, 6, 10], 4))
+
