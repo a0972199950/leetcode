@@ -9,7 +9,7 @@ function search(nums: number[], target: number): number {
   let left = 0
   let right = nums.length
 
-  while (left < right) {
+  while (left <= right) {
     const middle = Math.floor(left + (right - left) / 2)
     const num = nums[middle]
 
@@ -18,7 +18,7 @@ function search(nums: number[], target: number): number {
     }
 
     if (num > target) {
-      right = middle
+      right = middle - 1
     } else {
       left = middle + 1
     }
