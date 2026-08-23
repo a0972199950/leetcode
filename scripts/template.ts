@@ -15,8 +15,8 @@ console.clear()
 console.log()
 `.replace(/\n/g, '\r')
 
-if (!fs.existsSync(`problems/${String(problemNumber)}.ts`)) {
-  fs.outputFileSync(`problems/${String(problemNumber)}.ts`, template)
+if (!fs.existsSync(`problems/${String(problemNumber)}/${String(problemNumber)}.ts`)) {
+  fs.outputFileSync(`problems/${String(problemNumber)}/${String(problemNumber)}.ts`, template)
 } else {
   console.warn('File exists')
 }

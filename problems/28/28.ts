@@ -1,0 +1,25 @@
+// 28. Find the Index of the First Occurrence in a String
+// https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
+
+export {}
+console.clear()
+
+function strStr(haystack: string, needle: string): number {
+  for (let i = 0; i < haystack.length; i++) {
+    if (haystack[i] !== needle[0]) {
+      continue
+    }
+
+    if (haystack.slice(i, i + needle.length) === needle) {
+      return i
+    }
+  }
+
+  return -1
+}
+
+console.log(strStr('sadbutsad', 'sad')) // Expected: 0
+console.log(strStr('leetcode', 'leeto')) // Expected: -1
+console.log(strStr('mississippi', 'issip')) // Expected: 4
+
+

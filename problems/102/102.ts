@@ -1,0 +1,37 @@
+// 102. Binary Tree Level Order Traversal
+// https://leetcode.com/problems/binary-tree-level-order-traversal/
+import { TreeNode, BinaryTree } from '../../data-structure/BinaryTree'
+
+export {}
+console.clear()
+
+function levelOrder(root: TreeNode | null): number[][] {
+  let queue: TreeNode[] = [root]
+  const ans: number[][] = []
+
+  if (!root) {
+    return ans
+  }
+
+  while (queue.length) {
+    const nextQueue: TreeNode[] = []
+    const nextAns = []
+
+    for (const node of queue) {
+      nextAns.push(node.val)
+      node.left && (nextQueue.push(node.left))
+      node.right && (nextQueue.push(node.right))
+    }
+
+    queue = nextQueue
+    ans.push(nextAns)
+  }
+
+  return ans
+}
+
+console.log(levelOrder(new BinaryTree([3, 9, 20, null, null, 15, 7]).root)) // Expected: [ [ 3 ], [ 9, 20 ], [ 15, 7 ] ]
+console.log(levelOrder(new BinaryTree([1]).root)) // Expected: [ [ 1 ] ]
+console.log(levelOrder(new BinaryTree([]).root)) // Expected: []
+
+
