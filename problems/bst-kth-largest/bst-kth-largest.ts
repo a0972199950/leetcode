@@ -38,43 +38,40 @@ export {}
 console.clear()
 
 // Part 1: 找第 2 大
-// Time: O(n)
-// Space: O(n)
-function secondLargest (root: TreeNode | null): number {
-  const output = []
+// Time: O(h)
+// Space: O(1)
+function secondLargest (root: TreeNode | null): number | null {
+  const findTheRightest = (node: TreeNode | null) => {
+    let current = node
+    let parent = null
 
-  const traverse = (node: TreeNode) => {
-    if (output.length === 2) {
-      return
+    while (current?.right) {
+      parent = current
+      current = current.right
     }
 
-    if (node.right) {
-      traverse(node.right)
-    }
-
-    if (output.length === 2) {
-      return
-    }
-
-    output.push(node.val)
-
-    if (node.left) {
-      traverse(node.left)
-    }
+    return { parent, current }
   }
 
-  root && (traverse(root))
-  return output.at(-1)
+  const { parent, current } = findTheRightest(root)
+
+  if (!current?.left) {
+    return parent ? parent.val : null
+  }
+
+  const { current: finalAnswer } = findTheRightest(current.left)
+
+  return finalAnswer.val
 }
 
 // Part 2: 泛化成第 k 大
 // Time: O(n)
 // Space: O(n)
 function kthLargest (root: TreeNode | null, k: number): number {
-  const output = []
+  let answer = null
 
   const traverse = (node: TreeNode) => {
-    if (output.length === k) {
+    if (!k) {
       return
     }
 
@@ -82,11 +79,12 @@ function kthLargest (root: TreeNode | null, k: number): number {
       traverse(node.right)
     }
 
-    if (output.length === k) {
+    if (!k) {
       return
     }
 
-    output.push(node.val)
+    answer = node.val
+    k--
 
     if (node.left) {
       traverse(node.left)
@@ -94,11 +92,71 @@ function kthLargest (root: TreeNode | null, k: number): number {
   }
 
   root && (traverse(root))
-  return output[k - 1]
+  return answer
 }
+
+// 最後一種解法：直接 in-order 遍歷輸出成嚴格遞增陣列後，用 k - 1 當 index 取值
+// function kthLargest (root: TreeNode | null, k: number): number {
+
+// }
 
 const tree = new BinaryTree([5, 3, 6, 2, 4, null, null, 1])
 
 console.log(secondLargest(tree.root)) // 預期 5
 console.log(kthLargest(tree.root, 1)) // 預期 6
 console.log(kthLargest(tree.root, 3)) // 預期 4
+
+// --- secondLargest 額外測試 ---
+
+// 只有 1 個節點 → 沒有第 2 大，回傳 null
+const t1 = new BinaryTree([42])
+console.log(secondLargest(t1.root)) // 預期 null
+
+const t1_1 = new BinaryTree([])
+console.log(secondLargest(t1_1.root)) // 預期 null
+
+// 只有 2 個節點，max 是右子節點，無 left child → parent 即第 2 大
+// 樹: 3 → 5
+const t2 = new BinaryTree([3, null, 5])
+console.log(secondLargest(t2.root)) // 預期 3
+
+// 右斜樹（3 層），max 無 left child → parent 是第 2 大
+// 樹: 1 → 3 → 5
+const t3 = new BinaryTree([1, null, 3, null, 5])
+console.log(secondLargest(t3.root)) // 預期 3
+
+// max 有 left child，且 left child 無右子節點 → left child 本身是第 2 大
+// 樹:      5
+//         / \
+//        2   9
+//       / \ /
+//      1  4 7
+const t4 = new BinaryTree([5, 2, 9, 1, 4, 7, null])
+console.log(secondLargest(t4.root)) // 預期 7
+
+// max 有 left child，且 left child 有右子樹 → 右子樹最右端是第 2 大
+// 樹:      5
+//         / \
+//        2   9
+//       / \ /
+//      1  4 7
+//              \
+//               8
+const t5 = new BinaryTree([5, 2, 9, 1, 4, 7, null, null, null, null, null, null, 8])
+console.log(secondLargest(t5.root)) // 預期 8
+
+// max 是 root（無右子節點），第 2 大是左子樹的最右端
+// 樹:    6
+//       /
+//      3
+//     / \
+//    1   4
+const t6 = new BinaryTree([6, 3, null, 1, 4])
+console.log(secondLargest(t6.root)) // 預期 4
+
+// max 是 root，左子節點無右子節點 → 左子節點本身是第 2 大
+// 樹:  6
+//     /
+//    4
+const t7 = new BinaryTree([6, 4])
+console.log(secondLargest(t7.root)) // 預期 4
