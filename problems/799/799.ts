@@ -1,4 +1,5 @@
 // 799. Champagne Tower
+// 最後練習時間：2024-04-05
 // https://leetcode.com/problems/champagne-tower/
 
 export {}

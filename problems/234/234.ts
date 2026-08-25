@@ -1,4 +1,5 @@
 // 234. Palindrome Linked List
+// 最後練習時間：2022-10-21
 // https://leetcode.com/problems/palindrome-linked-list/
 
 class ListNode {

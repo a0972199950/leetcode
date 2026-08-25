@@ -1,4 +1,5 @@
 // 946. Validate Stack Sequences
+// 最後練習時間：2024-03-16
 // https://leetcode.com/problems/validate-stack-sequences/
 
 export {}

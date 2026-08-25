@@ -1,4 +1,5 @@
 // 392. Is Subsequence
+// 最後練習時間：2022-10-27
 // https://leetcode.com/problems/is-subsequence/
 
 export {}

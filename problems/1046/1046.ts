@@ -1,4 +1,5 @@
 // 1046. Last Stone Weight
+// 最後練習時間：2022-08-13
 // https://leetcode.com/problems/last-stone-weight/
 
 function lastStoneWeight(stones: number[]): number {

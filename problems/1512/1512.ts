@@ -1,4 +1,5 @@
 // 1512. Number of Good Pairs
+// 最後練習時間：2022-07-30
 // https://leetcode.com/problems/number-of-good-pairs/
 
 function numIdenticalPairs(nums: number[]): number {

@@ -1,4 +1,5 @@
 // 386. Lexicographical Numbers
+// 最後練習時間：2024-04-08
 // https://leetcode.com/problems/lexicographical-numbers/
 
 export {}

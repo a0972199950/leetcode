@@ -1,4 +1,5 @@
 // 678. Valid Parenthesis String
+// 最後練習時間：2024-05-01
 // https://leetcode.com/problems/valid-parenthesis-string/
 
 export {}

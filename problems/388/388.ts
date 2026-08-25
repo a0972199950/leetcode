@@ -1,4 +1,5 @@
 // 388. Longest Absolute File Path
+// 最後練習時間：2023-05-27
 // https://leetcode.com/problems/longest-absolute-file-path/
 
 export {}

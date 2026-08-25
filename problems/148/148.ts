@@ -1,4 +1,5 @@
 // 148. Sort List
+// 最後練習時間：2022-10-22
 // https://leetcode.com/problems/sort-list/
 
 import { LinkedList, ListNode } from '../../data-structure/LinkedList'

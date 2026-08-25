@@ -1,4 +1,5 @@
 // 4. Median of Two Sorted Arrays
+// 最後練習時間：2024-04-02
 // https://leetcode.com/problems/median-of-two-sorted-arrays/
 
 export {}

@@ -1,4 +1,5 @@
 // 1062. Longest Repeating Substring
+// 最後練習時間：2024-03-30
 // https://leetcode.com/problems/longest-repeating-substring/
 
 export {}

@@ -1,4 +1,5 @@
 // 395. Longest Substring with At Least K Repeating Characters
+// 最後練習時間：2024-04-02
 // https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/
 
 export {}

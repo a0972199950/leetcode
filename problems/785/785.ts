@@ -1,4 +1,5 @@
 // 785. Is Graph Bipartite?
+// 最後練習時間：2024-03-25
 // https://leetcode.com/problems/is-graph-bipartite/
 
 export {}

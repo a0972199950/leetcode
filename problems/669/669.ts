@@ -1,4 +1,5 @@
 // 669. Trim a Binary Search Tree
+// 最後練習時間：2026-08-24
 // https://leetcode.com/problems/trim-a-binary-search-tree/description/
 
 import { BinaryTree, TreeNode } from '../../data-structure/BinaryTree'

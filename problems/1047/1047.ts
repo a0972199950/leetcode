@@ -1,4 +1,5 @@
 // 1047. Remove All Adjacent Duplicates In String
+// 最後練習時間：2026-03-18
 // https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
 
 export {}

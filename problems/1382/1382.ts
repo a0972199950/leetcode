@@ -1,4 +1,5 @@
 // 1382. Balance a Binary Search Tree
+// 最後練習時間：2024-04-06
 // https://leetcode.com/problems/balance-a-binary-search-tree/
 import { TreeNode, BinaryTree } from '../../data-structure/BinaryTree'
 

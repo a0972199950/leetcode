@@ -1,4 +1,5 @@
 // 1573. Number of Ways to Split a String
+// 最後練習時間：2024-04-03
 // https://leetcode.com/problems/number-of-ways-to-split-a-string/
 
 export {}

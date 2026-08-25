@@ -1,4 +1,5 @@
 // 1823. Find the Winner of the Circular Game
+// 最後練習時間：2022-11-06
 // https://leetcode.com/problems/find-the-winner-of-the-circular-game/
 
 // function findTheWinner(n: number, k: number): number {

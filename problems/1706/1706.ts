@@ -1,4 +1,5 @@
 // 1706. Where Will the Ball Fall
+// 最後練習時間：2022-10-19
 // https://leetcode.com/problems/where-will-the-ball-fall/
 
 type Item = 1 | -1

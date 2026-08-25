@@ -1,4 +1,5 @@
 // 297. Serialize and Deserialize Binary Tree
+// 最後練習時間：2023-07-17
 // https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
 import { TreeNode, BinaryTree } from '~/data-structure/BinaryTree'
 

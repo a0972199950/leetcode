@@ -1,4 +1,5 @@
 // 125. Valid Palindrome
+// 最後練習時間：2024-03-24
 // https://leetcode.com/problems/valid-palindrome/
 
 export {}

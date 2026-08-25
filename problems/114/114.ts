@@ -1,4 +1,5 @@
 // 114. Flatten Binary Tree to Linked List
+// 最後練習時間：2023-05-23
 // https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
 import { TreeNode, BinaryTree } from '../../data-structure/BinaryTree'
 

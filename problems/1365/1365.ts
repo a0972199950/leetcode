@@ -1,4 +1,5 @@
 // 1365. How Many Numbers Are Smaller Than the Current Number
+// 最後練習時間：2026-02-06
 // https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
 
 export {}

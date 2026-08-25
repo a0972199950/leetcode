@@ -1,4 +1,5 @@
 // 5. Longest Palindromic Substring
+// 最後練習時間：2024-04-08
 // https://leetcode.com/problems/longest-palindromic-substring/
 export {}
 console.clear()

@@ -1,4 +1,5 @@
 // 2506. Count Pairs Of Similar Strings
+// 最後練習時間：2024-04-13
 // https://leetcode.com/problems/count-pairs-of-similar-strings/
 
 export {}

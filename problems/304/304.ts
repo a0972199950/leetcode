@@ -1,4 +1,5 @@
 // 304. Range Sum Query 2D - Immutable
+// 最後練習時間：2022-10-22
 // https://leetcode.com/problems/range-sum-query-2d-immutable/
 
 export {}

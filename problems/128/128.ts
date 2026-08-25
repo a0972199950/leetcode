@@ -1,4 +1,5 @@
 // 128. Longest Consecutive Sequence
+// 最後練習時間：2023-05-28
 // https://leetcode.com/problems/longest-consecutive-sequence/
 
 export {}

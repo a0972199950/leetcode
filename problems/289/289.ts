@@ -1,4 +1,5 @@
 // 289. Game of Life
+// 最後練習時間：2024-05-27
 // https://leetcode.com/problems/game-of-life/
 
 export {}

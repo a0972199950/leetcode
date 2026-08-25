@@ -1,4 +1,5 @@
 // 919. Complete Binary Tree Inserter
+// 最後練習時間：2024-04-03
 // https://leetcode.com/problems/complete-binary-tree-inserter/
 import { TreeNode, BinaryTree } from '../../data-structure/BinaryTree'
 

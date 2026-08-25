@@ -1,4 +1,5 @@
 // 398. Random Pick Index
+// 最後練習時間：2024-04-26
 // https://leetcode.com/problems/random-pick-index/
 
 export {}

@@ -1,4 +1,5 @@
 // 743. Network Delay Time
+// 最後練習時間：2024-05-13
 // https://leetcode.com/problems/network-delay-time/
 
 export {}

@@ -1,4 +1,5 @@
 // 844. Backspace String Compare
+// 最後練習時間：2022-08-13
 // https://leetcode.com/problems/backspace-string-compare/
 
 function backspaceCompare(s: string, t: string): boolean {

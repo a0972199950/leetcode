@@ -1,4 +1,5 @@
 // 98. Validate Binary Search Tree
+// 最後練習時間：2026-08-23
 import { BinaryTree, TreeNode } from '../../data-structure/BinaryTree'
 
 export {}

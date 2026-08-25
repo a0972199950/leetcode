@@ -1,4 +1,5 @@
 // 547. Number of Provinces
+// 最後練習時間：2022-11-09
 // https://leetcode.com/problems/number-of-provinces/
 
 export {}

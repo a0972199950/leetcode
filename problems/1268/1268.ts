@@ -1,4 +1,5 @@
 // 1268. Search Suggestions System
+// 最後練習時間：2024-04-16
 // https://leetcode.com/problems/search-suggestions-system/
 
 export {}

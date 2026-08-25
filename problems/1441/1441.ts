@@ -1,4 +1,5 @@
 // 1441. Build an Array With Stack Operations
+// 最後練習時間：2026-02-06
 // https://leetcode.com/problems/build-an-array-with-stack-operations/
 
 export {}

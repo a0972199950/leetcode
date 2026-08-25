@@ -1,4 +1,5 @@
 // 187. Repeated DNA Sequences
+// 最後練習時間：2022-10-27
 // https://leetcode.com/problems/repeated-dna-sequences/
 
 export {}

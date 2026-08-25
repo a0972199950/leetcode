@@ -1,4 +1,5 @@
 // 846. Hand of Straights
+// 最後練習時間：2024-05-01
 // https://leetcode.com/problems/hand-of-straights/
 
 export {}

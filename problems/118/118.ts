@@ -1,4 +1,5 @@
 // 118. Pascal's Triangle
+// 最後練習時間：2022-10-21
 // https://leetcode.com/problems/pascals-triangle/
 
 function generate(numRows: number): number[][] {

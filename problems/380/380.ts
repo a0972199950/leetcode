@@ -1,4 +1,5 @@
 // 380. Insert Delete GetRandom O 1
+// 最後練習時間：2024-04-26
 // https://leetcode.com/problems/insert-delete-getrandom-o-1/
 
 export {}

@@ -1,4 +1,5 @@
 // 856. Score of Parentheses
+// 最後練習時間：2024-03-27
 // https://leetcode.com/problems/score-of-parentheses/
 
 export {}

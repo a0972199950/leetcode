@@ -1,4 +1,5 @@
 // 2422. Merge Operations to Turn Array Into a Palindrome
+// 最後練習時間：2024-03-27
 // https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/
 
 export {}

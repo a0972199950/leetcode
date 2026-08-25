@@ -1,4 +1,5 @@
 // 116. Populating Next Right Pointers in Each Node
+// 最後練習時間：2023-05-23
 // https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
 import { Node, NodeTree } from '../../data-structure/BinaryTree'
 

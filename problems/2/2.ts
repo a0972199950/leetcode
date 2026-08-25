@@ -1,4 +1,5 @@
 // 2. Add Two Numbers
+// 最後練習時間：2022-10-29
 // https://leetcode.com/problems/add-two-numbers/
 import { ListNode, LinkedList } from '../../data-structure/LinkedList'
 

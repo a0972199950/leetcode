@@ -1,4 +1,5 @@
 // 36. Valid Sudoku
+// 最後練習時間：2022-08-05
 // https://leetcode.com/problems/valid-sudoku/
 
 function isValidSudoku(board: string[][]): boolean {

@@ -1,4 +1,5 @@
 // 20. Valid Parentheses
+// 最後練習時間：2026-03-13
 // https://leetcode.com/problems/valid-parentheses/
 
 // function isValid(s: string): boolean {

@@ -1,4 +1,5 @@
 // 528. Random Pick with Weight
+// 最後練習時間：2024-04-01
 // https://leetcode.com/problems/random-pick-with-weight/
 
 export {}

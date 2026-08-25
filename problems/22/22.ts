@@ -1,4 +1,5 @@
 // 22. Generate Parentheses
+// 最後練習時間：2023-05-25
 // https://leetcode.com/problems/generate-parentheses/
 
 export {}

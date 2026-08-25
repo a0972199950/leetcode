@@ -1,4 +1,5 @@
 // 350. Intersection of Two Arrays II
+// 最後練習時間：2022-08-03
 // https://leetcode.com/problems/intersection-of-two-arrays-ii/
 
 function intersect(nums1: number[], nums2: number[]): number[] {

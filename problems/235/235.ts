@@ -1,4 +1,5 @@
 // 235. Lowest Common Ancestor of a Binary Search Tree
+// 最後練習時間：2026-08-25
 // https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
 
 import { BinaryTree, TreeNode } from '~/data-structure/BinaryTree'

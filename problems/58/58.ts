@@ -1,4 +1,5 @@
 // 58. Length of Last Word
+// 最後練習時間：2024-05-26
 // https://leetcode.com/problems/length-of-last-word/
 
 export {}

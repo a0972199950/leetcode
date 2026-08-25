@@ -1,4 +1,5 @@
 // 886. Possible Bipartition
+// 最後練習時間：2024-03-25
 // https://leetcode.com/problems/possible-bipartition/
 
 export {}

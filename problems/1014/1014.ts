@@ -1,4 +1,5 @@
 // 1014. Best Sightseeing Pair
+// 最後練習時間：2022-10-16
 // https://leetcode.com/problems/best-sightseeing-pair/
 
 export {}

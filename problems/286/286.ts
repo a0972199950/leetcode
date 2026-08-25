@@ -1,4 +1,5 @@
 // 286. Walls and Gates
+// 最後練習時間：2024-05-09
 // https://leetcode.com/problems/walls-and-gates/
 
 export {}

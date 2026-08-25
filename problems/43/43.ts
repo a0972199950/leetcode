@@ -1,4 +1,5 @@
 // 43. Multiply Strings
+// 最後練習時間：2022-10-27
 // https://leetcode.com/problems/multiply-strings/
 
 function multiply(num1: string, num2: string): string {

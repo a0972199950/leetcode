@@ -1,4 +1,5 @@
 // 530. Minimum Absolute Difference in BST
+// 最後練習時間：2024-06-16
 // https://leetcode.com/problems/minimum-absolute-difference-in-bst/
 import { TreeNode, BinaryTree } from '../../data-structure/BinaryTree'
 

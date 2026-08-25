@@ -1,4 +1,5 @@
 // 1584. Min Cost to Connect All Points
+// 最後練習時間：2024-05-17
 // https://leetcode.com/problems/min-cost-to-connect-all-points/
 
 export {}

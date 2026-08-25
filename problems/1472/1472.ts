@@ -1,4 +1,5 @@
 // 1472. Design Browser History
+// 最後練習時間：2026-03-18
 // https://leetcode.com/problems/design-browser-history/
 
 export {}

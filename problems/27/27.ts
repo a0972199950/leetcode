@@ -1,4 +1,5 @@
 // 27. Remove Element
+// 最後練習時間：2024-05-19
 // https://leetcode.com/problems/remove-element/
 
 export {}

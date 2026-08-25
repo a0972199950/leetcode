@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "template": "tsx ./scripts/template.ts",
+    "sync-progress": "tsx ./scripts/sync-progress.ts",
     "dev": "tsx watch ./scripts/start.ts",
     "start": "tsx ./scripts/start.ts",
     "lint": "eslint **/*.ts",

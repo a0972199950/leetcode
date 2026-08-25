@@ -1,4 +1,5 @@
 // 387. First Unique Character in a String
+// 最後練習時間：2022-08-07
 // https://leetcode.com/problems/first-unique-character-in-a-string/
 
 function firstUniqChar(s: string): number {

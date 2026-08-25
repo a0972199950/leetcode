@@ -1,1 +1,1 @@
-// 71. Simplify Pathexport {}console.clear()// paste function hereconsole.log()
+// 71. Simplify Path// 最後練習時間：2026-03-15export {}console.clear()// paste function hereconsole.log()

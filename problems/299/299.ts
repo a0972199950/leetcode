@@ -1,4 +1,5 @@
 // 299. Bulls and Cows
+// 最後練習時間：2022-08-11
 // https://leetcode.com/problems/bulls-and-cows/
 
 function getHint(secret: string, guess: string): string {
