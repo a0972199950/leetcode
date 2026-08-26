@@ -1,13 +1,14 @@
 # 題目練習總覽
 
-> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-08-25
+> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-08-26
 
-共 315 題，其中 310 題超過 2 個月未練習（可作為 /q 複習候選）。
+共 315 題，其中 309 題超過 2 個月未練習（可作為 /q 複習候選）。
 
 依「最後練習時間」新到舊排序，沒有紀錄的排在最後。
 
 | 題號 | 標題 | 難度 | 標籤 | 最後練習時間 | 連結 |
 | --- | --- | --- | --- | --- | --- |
+| 173 | 173. Binary Search Tree Iterator | Medium | Stack, Tree, Design, Binary Search Tree, Binary Tree, Iterator | 2026-08-26 | https://leetcode.com/problems/binary-search-tree-iterator/ |
 | 235 | 235. Lowest Common Ancestor of a Binary Search Tree | Medium | Tree, Depth-First Search, Binary Search Tree, Binary Tree, Binary Lifting, Lowest Common Ancestor | 2026-08-25 | https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/ |
 | 1038 | 1038. Binary Search Tree to Greater Sum Tree | Medium | Tree, Depth-First Search, Binary Search Tree, Binary Tree | 2026-08-25 | https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/ |
 | 669 | 669. Trim a Binary Search Tree | Medium | Tree, Depth-First Search, Binary Search Tree, Binary Tree | 2026-08-24 | https://leetcode.com/problems/trim-a-binary-search-tree/ |
@@ -233,7 +234,6 @@
 | 103 | 103. Binary Tree Zigzag Level Order Traversal | Medium | Tree, Breadth-First Search, Binary Tree | 2022-11-06 | https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/ |
 | 105 | 105. Construct Binary Tree from Preorder and Inorder Traversal | Medium | Array, Hash Table, Divide and Conquer, Tree, Binary Tree | 2022-11-06 | https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/ |
 | 108 | 108. Convert Sorted Array to Binary Search Tree | Easy | Array, Divide and Conquer, Tree, Binary Search Tree, Binary Tree | 2022-11-06 | https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/ |
-| 173 | 173. Binary Search Tree Iterator | Medium | Stack, Tree, Design, Binary Search Tree, Binary Tree, Iterator | 2022-11-06 | https://leetcode.com/problems/binary-search-tree-iterator/ |
 | 232 | 232. Implement Queue using Stacks | Easy | Stack, Design, Queue | 2022-11-06 | https://leetcode.com/problems/implement-queue-using-stacks/ |
 | 236 | 236. Lowest Common Ancestor of a Binary Tree | Medium | Tree, Depth-First Search, Binary Tree, Binary Lifting, Lowest Common Ancestor | 2022-11-06 | https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/ |
 | 621 | 621. Task Scheduler | Medium | Array, Hash Table, Greedy, Sorting, Heap (Priority Queue), Counting | 2022-11-06 | https://leetcode.com/problems/task-scheduler/ |
