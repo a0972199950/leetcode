@@ -1,7 +1,6 @@
 // 540. Single Element in a Sorted Array
 // 最後練習時間：2026-05-15
 
-export {}
 console.clear()
 
 // Time: O(logN)

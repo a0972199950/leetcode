@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-07
 // https://leetcode.com/problems/validate-ip-address/
 
-export {}
 console.clear()
 
 function validIPAddress(queryIP: string): 'IPv4' | 'IPv6' | 'Neither' {
@@ -54,5 +53,4 @@ console.log(validIPAddress('256.256.256.256')) // Expected: Neither
 console.log(validIPAddress('2001:0db8:85a3:0000:0000:8a2e:0370:7334')) // Expected: IPv6
 console.log(validIPAddress('2001:0db8:85a3::8A2E:037j:7334')) // Expected: Neither
 console.log(validIPAddress('02001:0db8:85a3:0000:0000:8a2e:0370:7334')) // Expected: Neither
-
 

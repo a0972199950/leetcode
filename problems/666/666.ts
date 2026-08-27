@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-05
 // https://leetcode.com/problems/path-sum-iv/
 
-export {}
 console.clear()
 
 interface Node {
@@ -77,5 +76,4 @@ function pathSum(nums: number[]): number {
 
 console.log(pathSum([113, 215, 221])) // Expected: 12
 console.log(pathSum([113, 221])) // Expected: 4
-
 

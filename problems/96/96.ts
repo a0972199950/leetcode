@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-09
 // https://leetcode.com/problems/unique-binary-search-trees/
 
-export {}
 console.clear()
 
 // function numTrees(n: number): number {
@@ -55,5 +54,4 @@ function numTrees(n: number): number {
 // console.log(numTrees(3))
 // console.log(numTrees(1))
 console.log(numTrees(19)) // Expected: 1767263190
-
 

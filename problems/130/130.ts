@@ -2,7 +2,6 @@
 // 最後練習時間：2024-05-09
 // https://leetcode.com/problems/surrounded-regions/
 
-export {}
 console.clear()
 
 // function solve(board: string[][]): void {
@@ -109,5 +108,4 @@ function solve(board: string[][]): void {
 }
 
 solve([['X', 'X', 'X', 'X'], ['X', 'O', 'O', 'X'], ['X', 'X', 'O', 'X'], ['X', 'O', 'X', 'X']])
-
 

@@ -2,7 +2,6 @@
 // 最後練習時間：2024-05-19
 // https://leetcode.com/problems/remove-element/
 
-export {}
 console.clear()
 
 function removeElement(nums: number[], val: number): number {
@@ -36,5 +35,4 @@ function removeElement(nums: number[], val: number): number {
 
 // removeElement([3, 2, 2, 3], 3)
 removeElement([0, 1, 2, 2, 3, 0, 4, 2], 2)
-
 

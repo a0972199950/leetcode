@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-13
 // https://leetcode.com/problems/count-pairs-of-similar-strings/
 
-export {}
 console.clear()
 
 function similarPairs(words: string[]): number {
@@ -38,5 +37,4 @@ function similarPairs(words: string[]): number {
 console.log(similarPairs(['aba', 'aabb', 'abcd', 'bac', 'aabc'])) // Expected: 2
 console.log(similarPairs(['aabb', 'ab', 'ba'])) // Expected: 3
 console.log(similarPairs(['nba', 'cba', 'dba'])) // Expected: 0
-
 

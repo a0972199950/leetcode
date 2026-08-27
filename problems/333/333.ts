@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/largest-bst-subtree/
 import { TreeNode, BinaryTree } from '../../data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 function largestBSTSubtree(root: TreeNode | null): number {
@@ -53,5 +52,4 @@ console.log(largestBSTSubtree(new BinaryTree([4, 2, 7, 2, 3, 5, null, 2, null, n
 console.log(largestBSTSubtree(new BinaryTree([1]).root)) // Expected: 1
 console.log(largestBSTSubtree(new BinaryTree([]).root)) // Expected: 0
 console.log(largestBSTSubtree(new BinaryTree([3, 2, 4, null, null, 1]).root)) // Expected: 2
-
 

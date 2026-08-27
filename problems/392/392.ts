@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-27
 // https://leetcode.com/problems/is-subsequence/
 
-export {}
 console.clear()
 
 function isSubsequence(s: string, t: string): boolean {
@@ -23,5 +22,4 @@ function isSubsequence(s: string, t: string): boolean {
 
 console.log(isSubsequence('abc', 'ahbgdc')) // Expected: true
 console.log(isSubsequence('axc', 'ahbgdc')) // Expected: false
-
 

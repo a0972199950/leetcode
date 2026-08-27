@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-27
 // https://leetcode.com/problems/longest-common-subsequence/
 
-export {}
 console.clear()
 
 function longestCommonSubsequence(text1: string, text2: string): number {
@@ -61,7 +60,6 @@ function longestCommonSubsequence(text1: string, text2: string): number {
 //     table[row][col] = val
 //   }
 
-
 //   for (let text1Index = text1.length - 1; text1Index >= 0; text1Index--) {
 //     for (let text2Index = text2.length - 1; text2Index >= 0; text2Index--) {
 //       const target1 = text1[text1Index]
@@ -86,5 +84,4 @@ console.log(longestCommonSubsequence('ace', 'abcde')) // Expected: 3
 console.log(longestCommonSubsequence('abc', 'abc')) // Expected: 3
 console.log(longestCommonSubsequence('abc', 'def')) // Expected: 0
 console.log(longestCommonSubsequence('pmjghexybyrgzczy', 'hafcdqbgncrcbihkd')) // Expected: 4
-
 

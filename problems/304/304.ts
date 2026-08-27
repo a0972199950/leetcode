@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-22
 // https://leetcode.com/problems/range-sum-query-2d-immutable/
 
-export {}
 console.clear()
 
 class NumMatrix {
@@ -47,5 +46,4 @@ console.log(matrix.sumRegion(1, 2, 2, 4)) // Expected: 12
 * var obj = new NumMatrix(matrix)
 * var param_1 = obj.sumRegion(row1,col1,row2,col2)
 */
-
 

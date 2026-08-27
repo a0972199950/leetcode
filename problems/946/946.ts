@@ -2,7 +2,6 @@
 // 最後練習時間：2024-03-16
 // https://leetcode.com/problems/validate-stack-sequences/
 
-export {}
 console.clear()
 
 function validateStackSequences(pushed: number[], popped: number[]): boolean {
@@ -48,5 +47,4 @@ function validateStackSequences(pushed: number[], popped: number[]): boolean {
 
 console.log(validateStackSequences([1, 2, 3, 4, 5], [4, 5, 3, 2, 1])) // Expected: true
 console.log(validateStackSequences([1, 2, 3, 4, 5], [4, 3, 5, 1, 2])) // Expected: false
-
 

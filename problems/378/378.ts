@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-23
 // https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/
 
-export {}
 console.clear()
 
 class MinHeap {
@@ -89,5 +88,4 @@ function kthSmallest(matrix: number[][], k: number): number {
 // console.log(kthSmallest([[1, 5, 9], [10, 11, 13], [12, 13, 15]], 8))
 // console.log(kthSmallest([[-5]], 1))
 console.log(kthSmallest([[1, 2], [1, 3]], 1)) // Expected: 1
-
 

@@ -2,7 +2,6 @@
 // 最後練習時間：2024-03-25
 // https://leetcode.com/problems/is-graph-bipartite/
 
-export {}
 console.clear()
 
 type Color = 'RED' | 'BLUE'
@@ -47,5 +46,4 @@ function isBipartite(graph: number[][]): boolean {
 
 console.log(isBipartite([[1, 2, 3], [0, 2], [0, 1, 3], [0, 2]])) // Expected: false
 console.log(isBipartite([[1, 3], [0, 2], [1, 3], [0, 2]])) // Expected: true
-
 

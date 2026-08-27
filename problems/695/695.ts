@@ -2,7 +2,6 @@
 // 最後練習時間：2024-05-09
 // https://leetcode.com/problems/max-area-of-island/
 
-export {}
 console.clear()
 
 function maxAreaOfIsland(grid: number[][]): number {
@@ -38,5 +37,4 @@ function maxAreaOfIsland(grid: number[][]): number {
 
 // console.log(maxAreaOfIsland([[0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0], [0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0], [0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]]))
 console.log(maxAreaOfIsland([[0, 0, 0, 0, 0, 0, 0, 0]])) // Expected: 0
-
 

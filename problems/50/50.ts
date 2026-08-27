@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-20
 // https://leetcode.com/problems/powx-n/
 
-export {}
 console.clear()
 
 function myPow(x: number, n: number): number {
@@ -29,5 +28,4 @@ function myPow(x: number, n: number): number {
 
 // console.log(myPow(2.00000, 10))
 console.log(myPow(2.00000, -2)) // Expected: 0.25
-
 

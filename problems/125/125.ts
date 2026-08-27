@@ -2,7 +2,6 @@
 // 最後練習時間：2024-03-24
 // https://leetcode.com/problems/valid-palindrome/
 
-export {}
 console.clear()
 
 function isPalindrome(s: string): boolean {
@@ -46,5 +45,4 @@ function isPalindrome(s: string): boolean {
 console.log(isPalindrome(' ')) // Expected: true
 console.log(isPalindrome(':::""')) // Expected: true
 console.log(isPalindrome('')) // Expected: true
-
 

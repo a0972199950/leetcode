@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/count-good-nodes-in-binary-tree/
 import { TreeNode, BinaryTree } from '../../data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 function goodNodes(root: TreeNode | null): number {
@@ -30,5 +29,4 @@ function goodNodes(root: TreeNode | null): number {
 console.log(goodNodes(new BinaryTree([3, 1, 4, 3, null, 1, 5]).root)) // 4 // Expected: 4
 console.log(goodNodes(new BinaryTree([3, 3, null, 4, 2]).root)) // 3 // Expected: 3
 console.log(goodNodes(new BinaryTree([1]).root)) // 1 // Expected: 1
-
 

@@ -2,7 +2,6 @@
 // 最後練習時間：2024-05-27
 // https://leetcode.com/problems/contains-duplicate-ii/
 
-export {}
 console.clear()
 
 function containsNearbyDuplicate(nums: number[], k: number): boolean {
@@ -43,5 +42,4 @@ console.log(containsNearbyDuplicate([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 15)) // Exp
 console.log(containsNearbyDuplicate([1], 1)) // Expected: false
 console.log(containsNearbyDuplicate([1, 2], 2)) // Expected: false
 console.log(containsNearbyDuplicate([1, 2, 3, 4, 5, 6, 7, 8, 9, 9], 3)) // Expected: true
-
 

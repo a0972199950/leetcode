@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-08
 // https://leetcode.com/problems/container-with-most-water/
 
-export {}
 console.clear()
 
 // function maxArea(heights: number[]): number {
@@ -61,5 +60,4 @@ function maxArea(heights: number[]): number {
 
 console.log(maxArea([1, 8, 6, 2, 5, 4, 8, 3, 7])) // Expected: 49
 console.log(maxArea([1, 1])) // Expected: 1
-
 

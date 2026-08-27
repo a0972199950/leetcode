@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-27
 // https://leetcode.com/problems/encode-and-decode-strings/
 
-export {}
 console.clear()
 
 /**
@@ -26,5 +25,4 @@ function decode(s: string): string[] {
 
 console.log(encode(['Hello', 'World'])) // Expected: Hello😀World
 console.log(decode('Hello😀World')) // Expected: [ 'Hello', 'World' ]
-
 

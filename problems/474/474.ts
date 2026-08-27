@@ -2,7 +2,6 @@
 // 最後練習時間：2023-08-21
 // https://leetcode.com/problems/ones-and-zeroes/
 
-export {}
 console.clear()
 
 // 2維 dp，時間複雜度 O三次方，超時
@@ -141,5 +140,4 @@ function findMaxForm(strs: string[], m: number, n: number): number {
 // console.log(findMaxForm(['10', '0', '1'], 1, 1)) // 2
 // console.log(findMaxForm(['10', '0001', '111001', '1', '0'], 0, 0)) // 0
 console.log(findMaxForm(['10', '0001', '111001', '1', '0'], 4, 3)) // 3 // Expected: 3
-
 

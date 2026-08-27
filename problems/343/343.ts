@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-29
 // https://leetcode.com/problems/integer-break/
 
-export {}
 console.clear()
 
 function integerBreak(n: number): number {
@@ -25,5 +24,4 @@ function integerBreak(n: number): number {
 }
 
 integerBreak(10)
-
 

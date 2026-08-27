@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-30
 // https://leetcode.com/problems/house-robber/
 
-export {}
 console.clear()
 
 function rob(nums: number[]): number {
@@ -21,5 +20,4 @@ function rob(nums: number[]): number {
 
 rob([1, 2, 3, 1])
 rob([2, 7, 9, 3, 1])
-
 

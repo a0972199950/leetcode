@@ -2,7 +2,6 @@
 // 最後練習時間：2026-03-18
 // https://leetcode.com/problems/design-browser-history/
 
-export {}
 console.clear()
 
 class BrowserHistory {

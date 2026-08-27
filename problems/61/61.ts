@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/rotate-list/
 import { ListNode, LinkedList } from '../../data-structure/LinkedList'
 
-export {}
 console.clear()
 
 function rotateRight(head: ListNode | null, k: number): ListNode | null {

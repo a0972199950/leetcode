@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-15
 // https://leetcode.com/problems/maximum-length-of-semi-decreasing-subarrays/
 
-export {}
 console.clear()
 
 function maxSubarrayLength(nums: number[]): number {
@@ -58,5 +57,4 @@ console.log(maxSubarrayLength([4, 3, 2, 1])) // Expected: 4
 console.log(maxSubarrayLength([4, 4, 4, 4])) // Expected: 0
 console.log(maxSubarrayLength([1, 2, 3, 4, 5, 4, 3, 2, 1])) // Expected: 8
 console.log(maxSubarrayLength([26, 26, 35, 72, 82])) // Expected: 0
-
 

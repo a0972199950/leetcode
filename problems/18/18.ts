@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-21
 // https://leetcode.com/problems/4sum/
 
-export {}
 console.clear()
 
 // function fourSum(nums: number[], target: number): number[][] {
@@ -106,5 +105,4 @@ console.log(fourSum([1, 0, -1, 0, -2, 2], 0)) // Expected: [ [ -2, -1, 1, 2 ], [
 console.log(fourSum([2, 2, 2, 2, 2], 8)) // Expected: [ [ 2, 2, 2, 2 ] ]
 console.log(fourSum([0, 0, 0], 0)) // Expected: []
 console.log(fourSum([0, 0, 0, 0], 0)) // Expected: [ [ 0, 0, 0, 0 ] ]
-
 

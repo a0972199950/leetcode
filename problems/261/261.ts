@@ -2,7 +2,6 @@
 // 最後練習時間：2024-05-12
 // https://leetcode.com/problems/graph-valid-tree/
 
-export {}
 console.clear()
 
 function validTree(n: number, edges: number[][]): boolean {
@@ -64,5 +63,4 @@ console.log(validTree(5, [[0, 1], [0, 2], [0, 3], [1, 4]])) // Expected: true
 // console.log(validTree(5, [[0, 1], [1, 2], [2, 3], [1, 3], [1, 4]]))
 // console.log(validTree(4, [[0, 1], [2, 3]]))
 // console.log(validTree(1, []))
-
 

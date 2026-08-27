@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-29
 // https://leetcode.com/problems/combination-sum-iv/
 
-export {}
 console.clear()
 
 function combinationSum4(nums: number[], target: number): number {
@@ -52,5 +51,4 @@ function combinationSum4(nums: number[], target: number): number {
 // console.log(combinationSum4([1, 2, 3], 4))
 // console.log(combinationSum4([9], 3))
 console.log(combinationSum4([1, 2, 3], 32)) // Expected: 181997601
-
 

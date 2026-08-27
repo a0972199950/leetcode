@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-18
 // https://leetcode.com/problems/arithmetic-slices/
 
-export {}
 console.clear()
 
 function numberOfArithmeticSlices(nums: number[]): number {
@@ -51,5 +50,4 @@ function numberOfArithmeticSlices(nums: number[]): number {
 // numberOfArithmeticSlices([1, 2, 3])
 // numberOfArithmeticSlices([1, 2])
 // numberOfArithmeticSlices([1])
-
 

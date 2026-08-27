@@ -1,6 +1,5 @@
 // 3333. mex
 
-export {}
 console.clear()
 
 let _log
@@ -36,7 +35,6 @@ function getMaximumMex(arr: number[], x: number): number {
       rest
     } = findTargetByCal(i, arr.slice(i))
 
-
     if (canCalToTarget) {
       arr.splice(i, Infinity, ...rest)
     } else {
@@ -48,13 +46,10 @@ function getMaximumMex(arr: number[], x: number): number {
   return arr.length
 }
 
-
 console.log(getMaximumMex([1, 3, 4], 2)) // Output: 2
 console.log(getMaximumMex([0, 1, 2, 1, 3], 3)) // Output: 5
 console.log(getMaximumMex([0, 0, 0, 1, 2, 2, 10], 3)) // Output: 7
 console.log(getMaximumMex([1, 0, 3, 2, 5], 0)) // Output: 4
 console.log(getMaximumMex([3, 2, 1, 4], 2)) // Output: 4
 console.log(getMaximumMex([6, 1, 3, 2, 4], 3)) // Output: 5
-
-
 

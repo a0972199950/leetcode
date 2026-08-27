@@ -2,7 +2,6 @@
 // 最後練習時間：2023-05-27
 // https://leetcode.com/problems/longest-absolute-file-path/
 
-export {}
 console.clear()
 
 interface Next {
@@ -78,5 +77,4 @@ function lengthLongestPath(input: string): number {
 console.warn(lengthLongestPath('dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext'))
 console.warn(lengthLongestPath('dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext'))
 console.warn(lengthLongestPath('a'))
-
 

@@ -1,6 +1,5 @@
 // tsmc. 3
 
-export {}
 console.clear()
 
 // 掃描線法
@@ -96,10 +95,8 @@ function countIntersections(startsAt: number[], endsAt: number[]): number[] {
 //   return result
 // }
 
-
 console.log(countIntersections([1, 3], [4, 5])) // [1, 1]
 console.log(countIntersections([1, 3], [5, 4])) // [1, 1]
 console.log(countIntersections([3, 1, 5], [3, 5, 6])) // [1, 2, 1]
 console.log(countIntersections([1, 3, 1], [4, 5, 4])) // [2, 2, 2]
-
 

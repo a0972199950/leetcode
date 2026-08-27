@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/minimum-depth-of-binary-tree/
 import { TreeNode, BinaryTree } from '../../data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 function minDepth(root: TreeNode | null): number {
@@ -35,5 +34,4 @@ function minDepth(root: TreeNode | null): number {
 }
 
 console.log(minDepth(new BinaryTree([2, null, 3, null, 4, null, 5, null, 6]).root)) // Expected: 5
-
 

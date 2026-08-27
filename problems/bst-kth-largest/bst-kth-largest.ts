@@ -34,7 +34,6 @@
 
 import { BinaryTree, TreeNode } from '../../data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 // Part 1: 找第 2 大

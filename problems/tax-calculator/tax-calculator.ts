@@ -1,7 +1,6 @@
 // Tax Calculator
 // 自訂題目（非 LeetCode 原題）：計算進口稅、貨物稅、營業稅
 
-export {}
 console.clear()
 
 const getTax = (price) => {
@@ -26,5 +25,4 @@ const getTax = (price) => {
 }
 
 getTax(35676)
-
 

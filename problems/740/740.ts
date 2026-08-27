@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-12
 // https://leetcode.com/problems/delete-and-earn/
 
-export {}
 console.clear()
 
 // interface Item {
@@ -123,5 +122,4 @@ function deleteAndEarn(nums: number[]): number {
 // deleteAndEarn([10, 9, 9, 9, 9, 9])
 // deleteAndEarn([1, 8, 5, 9, 6, 9, 4, 1, 7, 3, 3, 6, 3, 3, 8, 2, 6, 3, 2, 2, 1, 2, 9, 8, 7, 1, 1, 10, 6, 7, 3, 9, 6, 10, 5, 4, 10, 1, 6, 7, 4, 7, 4, 1, 9, 5, 1, 5, 7, 5])
 deleteAndEarn([1, 1, 1, 2, 4, 5, 5, 5, 6])
-
 

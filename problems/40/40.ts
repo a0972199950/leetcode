@@ -2,7 +2,6 @@
 // 最後練習時間：2023-05-25
 // https://leetcode.com/problems/combination-sum-ii/
 
-export {}
 console.clear()
 
 // function combinationSum2(candidates: number[], target: number): number[][] {
@@ -95,5 +94,4 @@ function combinationSum2(candidates: number[], target: number): number[][] {
 
 // console.log(combinationSum2([10, 1, 2, 7, 6, 1, 5], 8))
 console.log(combinationSum2([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 27)) // Expected: [ [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ] ]
-
 

@@ -2,7 +2,6 @@
 // 最後練習時間：2024-06-16
 // https://leetcode.com/problems/knight-dialer/
 
-export {}
 console.clear()
 
 // function knightDialer(n: number): number {
@@ -75,5 +74,4 @@ function knightDialer(n: number): number {
 // console.log(knightDialer(3))
 // console.log(knightDialer(10))
 console.log(knightDialer(3131)) // Expected: 136006598
-
 

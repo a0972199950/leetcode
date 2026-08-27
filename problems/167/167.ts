@@ -2,7 +2,6 @@
 // 最後練習時間：2024-03-24
 // https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 
-export {}
 console.clear()
 
 // 暴力解 O(n2)
@@ -83,5 +82,4 @@ function twoSum(numbers: number[], target: number): number[] {
 console.log(twoSum([2, 7, 11, 15], 9)) // Expected: [ 1, 2 ]
 console.log(twoSum([2, 3, 4], 6)) // Expected: [ 1, 3 ]
 console.log(twoSum([-1, 0], -1)) // Expected: [ 1, 2 ]
-
 

@@ -2,7 +2,6 @@
 // 最後練習時間：2022-11-09
 // https://leetcode.com/problems/keys-and-rooms/
 
-export {}
 console.clear()
 
 function canVisitAllRooms(rooms: number[][]): boolean {
@@ -24,5 +23,4 @@ function canVisitAllRooms(rooms: number[][]): boolean {
 
 console.log(canVisitAllRooms([[1], [2], [3], []])) // Expected: true
 console.log(canVisitAllRooms([[1, 3], [3, 0, 1], [2], [0]])) // Expected: false
-
 

@@ -2,7 +2,6 @@
 // 最後練習時間：2022-11-07
 // https://leetcode.com/problems/permutations/
 
-export {}
 console.clear()
 
 // function permute(nums: number[]): number[][] {
@@ -52,5 +51,4 @@ function permute(nums: number[]): number[][] {
 permute([1, 2, 3])
 permute([0, 1])
 permute([1])
-
 

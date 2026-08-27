@@ -2,7 +2,6 @@
 // 最後練習時間：2023-05-25
 // https://leetcode.com/problems/subsets/
 
-export {}
 console.clear()
 
 function subsets(nums: number[]): number[][] {
@@ -25,5 +24,4 @@ function subsets(nums: number[]): number[][] {
 }
 
 console.log(subsets([0])) // Expected: [ [], [ 0 ] ]
-
 

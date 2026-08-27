@@ -2,7 +2,6 @@
 // 最後練習時間：2024-03-17
 // https://leetcode.com/problems/word-search/
 
-export {}
 console.clear()
 
 // function exist(board: string[][], word: string): boolean {
@@ -25,7 +24,6 @@ console.clear()
 //     if (index === word.length) {
 //       return true
 //     }
-
     
 //     if (
 //       !board[row]?.[col] // 當下已遇到斷點
@@ -116,5 +114,4 @@ console.log(exist([['A', 'B', 'C', 'E'], ['S', 'F', 'C', 'S'], ['A', 'D', 'E', '
 console.log(exist([['A', 'B', 'C', 'E'], ['S', 'F', 'C', 'S'], ['A', 'D', 'E', 'E']], 'ABCB')) // false // Expected: false
 console.log(exist([['a', 'a', 'a', 'a'], ['a', 'a', 'a', 'a'], ['a', 'a', 'a', 'a']], 'aaaaaaaaaaaa')) // true // Expected: true
 console.log(exist([['a', 'a', 'b', 'a', 'a', 'b'], ['a', 'a', 'b', 'b', 'b', 'a'], ['a', 'a', 'a', 'a', 'b', 'a'], ['b', 'a', 'b', 'b', 'a', 'b'], ['a', 'b', 'b', 'a', 'b', 'a'], ['b', 'a', 'a', 'a', 'a', 'b']], 'bbbaabbbbbab')) // false // Expected: false
-
 

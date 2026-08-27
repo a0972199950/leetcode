@@ -1,6 +1,5 @@
 // promise-all. custom
 
-export {}
 console.clear()
 
 type Arg = Promise<any> | any

@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/symmetric-tree/
 import { TreeNode, BinaryTree } from '~/data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 function isSymmetric(root: TreeNode | null): boolean {

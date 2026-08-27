@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-22
 // https://leetcode.com/problems/permutations-ii/
 
-export {}
 console.clear()
 
 // function permuteUnique(nums: number[]): number[][] {
@@ -79,5 +78,4 @@ function permuteUnique(nums: number[]): number[][] {
 
 console.log(permuteUnique([1, 1, 2])) // Expected: [ [ 1, 1, 2 ], [ 1, 2, 1 ], [ 2, 1, 1 ] ]
 console.log(permuteUnique([1, 2, 3])) // Expected: [ [ 1, 2, 3 ], [ 1, 3, 2 ], [ 2, 1, 3 ], [ 2, 3, 1 ], [ 3, 1, 2 ], [ 3, 2, 1 ] ]
-
 

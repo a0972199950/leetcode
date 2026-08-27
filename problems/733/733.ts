@@ -2,7 +2,6 @@
 // 最後練習時間：2022-08-07
 // https://leetcode.com/problems/flood-fill/
 
-export {}
 console.clear()
 
 function floodFill(image: number[][], sr: number, sc: number, color: number): number[][] {

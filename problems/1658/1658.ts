@@ -1,7 +1,6 @@
 // 1658. Minimum Operations to Reduce X to Zero
 // 最後練習時間：2026-05-02
 
-export {}
 console.clear()
 
 // Time: O(n)

@@ -2,7 +2,6 @@
 // 最後練習時間：2024-05-17
 // https://leetcode.com/problems/min-cost-to-connect-all-points/
 
-export {}
 console.clear()
 
 interface Edge {
@@ -143,5 +142,4 @@ function minCostConnectPoints(points: number[][]): number {
 // console.log(minCostConnectPoints([[3, 12], [-2, 5], [-4, 1]]))
 // console.log(minCostConnectPoints([[0, 0], [1, 1], [1, 0], [-1, 1]]))
 console.log(minCostConnectPoints([[0, 0]])) // Expected: 0
-
 

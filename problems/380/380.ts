@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-26
 // https://leetcode.com/problems/insert-delete-getrandom-o-1/
 
-export {}
 console.clear()
 
 class RandomizedSet {
@@ -49,5 +48,4 @@ console.log(randomizedSet.getRandom()) // Expected: 2
 console.log(randomizedSet.remove(1)) // Expected: true
 console.log(randomizedSet.insert(2)) // Expected: false
 console.log(randomizedSet.getRandom()) // Expected: 2
-
 

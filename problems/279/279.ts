@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-29
 // https://leetcode.com/problems/perfect-squares/
 
-export {}
 console.clear()
 
 function numSquares(n: number): number {
@@ -33,5 +32,4 @@ function numSquares(n: number): number {
 }
 
 numSquares(13)
-
 

@@ -2,7 +2,6 @@
 // 最後練習時間：2022-11-06
 // https://leetcode.com/problems/task-scheduler/
 
-export {}
 console.clear()
 
 function leastInterval(tasks: string[], n: number): number {
@@ -80,7 +79,4 @@ leastInterval(['A', 'A', 'A', 'B', 'B', 'B'], 2)
 // leastInterval(['A', 'A', 'A', 'B', 'B', 'B'], 0)
 // leastInterval(['A', 'A', 'A', 'A', 'A', 'A', 'B', 'C', 'D', 'E', 'F', 'G'], 2)
 // leastInterval(['A', 'A', 'A', 'B', 'B', 'B', 'C', 'C', 'C', 'D', 'D', 'E'], 2)
-
-
-
 

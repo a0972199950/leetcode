@@ -4,7 +4,6 @@
 import { BinaryTree, TreeNode } from '../../data-structure/BinaryTree'
 
 console.clear()
-export {}
 
 // 最後練習時間：2022-11-06
 // class BSTIterator {

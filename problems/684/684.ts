@@ -2,7 +2,6 @@
 // 最後練習時間：2024-05-12
 // https://leetcode.com/problems/redundant-connection/
 
-export {}
 console.clear()
 
 function findRedundantConnection(edges: number[][]): number[] {
@@ -78,5 +77,4 @@ function findRedundantConnection(edges: number[][]): number[] {
 // console.log(findRedundantConnection([[1, 2], [2, 3], [3, 4], [1, 4], [1, 5]]))
 // console.log(findRedundantConnection([]))
 console.log(findRedundantConnection([[1, 2]])) // Expected: []
-
 

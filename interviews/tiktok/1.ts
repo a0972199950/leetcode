@@ -5,7 +5,6 @@
 // (23 or 23)
 // 23 and (23 or 23)
 
-export {}
 console.clear()
 
 const isValid = (s: string) => {

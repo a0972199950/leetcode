@@ -1,7 +1,6 @@
 // 992 Subarrays with K Different Integers.
 // 最後練習時間：2026-03-25
 
-export {}
 console.clear()
 
 // TODO: [3/25] 沒解出來，待重寫

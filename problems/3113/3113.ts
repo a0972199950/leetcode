@@ -1,7 +1,7 @@
 // 3113. Find the Number of Subarrays Where Boundary Elements Are Maximum
 // 最後練習時間：2026-03-15
 // https://leetcode.com/problems/find-the-number-of-subarrays-where-boundary-elements-are-maximum/
-export {}
+
 console.clear()
 
 // Time: O(n^3)

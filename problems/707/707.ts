@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/design-linked-list/
 import { ListNode } from '../../data-structure/LinkedList'
 
-export {}
 console.clear()
 
 class MyLinkedList {
@@ -122,5 +121,4 @@ console.log(obj.get(1)) // Expected: -1
 * obj.addAtIndex(index,val)
 * obj.deleteAtIndex(index)
 */
-
 

@@ -17,7 +17,7 @@
 ```typescript
 // <題號>. <題目名稱>
 
-export {}
+
 console.clear()
 
 // 解題函式

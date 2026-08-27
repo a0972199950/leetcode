@@ -2,7 +2,6 @@
 // 最後練習時間：2022-11-06
 // https://leetcode.com/problems/insert-interval/
 
-export {}
 console.clear()
 
 function insert(intervals: number[][], newInterval: number[]): number[][] {
@@ -46,5 +45,4 @@ insert([[1, 2], [3, 5], [6, 7], [8, 10], [12, 16]], [4, 8])
 insert([], [5, 7])
 insert([[1, 2], [10, 11]], [5, 7])
 insert([[1, 5]], [2, 3])
-
 

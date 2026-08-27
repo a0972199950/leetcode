@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/partition-list/
 import { ListNode, LinkedList } from '../../data-structure/LinkedList'
 
-export {}
 console.clear()
 
 interface Group {

@@ -2,7 +2,6 @@
 // 最後練習時間：2024-03-30
 // https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/
 
-export {}
 console.clear()
 
 // function findAllRecipes(recipes: string[], ingredients: string[][], supplies: string[]): string[] {
@@ -117,6 +116,4 @@ console.log(findAllRecipes(
 //   [['milk'], ['cookie'], ['bread']],
 //   []
 // ))
-
-
 

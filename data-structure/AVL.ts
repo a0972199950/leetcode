@@ -1,4 +1,4 @@
-export {}
+
 console.clear()
 
 class TreeNode {
@@ -192,5 +192,4 @@ Array.from(Array(100)).forEach((_item, index) => avl.insert(index + 1))
 
 console.log(avl.root)
 avl.printInOrder()
-
 

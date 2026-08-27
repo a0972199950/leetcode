@@ -1,6 +1,5 @@
 // json-parse. 
 
-export {}
 console.clear()
 
 const myJsonParse = (str: string) => {

@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/
 import { BinaryTree, TreeNode } from '../../data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 // Time: O(n)

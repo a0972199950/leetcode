@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-27
 // https://leetcode.com/problems/find-a-peak-element-ii/
 
-export {}
 console.clear()
 
 function findPeakGrid(mat: number[][]): number[] {
@@ -64,5 +63,4 @@ function findPeakGrid(mat: number[][]): number[] {
 // console.log(findPeakGrid([[7, 2, 3, 1, 2], [6, 5, 4, 2, 1]]))
 // console.log(findPeakGrid([[10, 50, 40, 30, 20], [1, 500, 2, 3, 4]]))
 console.log(findPeakGrid([[25, 37, 23, 37, 19], [45, 19, 2, 43, 26], [18, 1, 37, 44, 50]])) // Expected: [ 0, 1 ]
-
 

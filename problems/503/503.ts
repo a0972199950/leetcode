@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-17
 // https://leetcode.com/problems/next-greater-element-ii/
 
-export {}
 console.clear()
 
 function nextGreaterElements(nums: number[]): number[] {
@@ -29,5 +28,4 @@ console.log(nextGreaterElements([1, 2, 3, 4, 3])) // Expected: [ 2, 3, 4, -1, 4 
 console.log(nextGreaterElements([1, 2])) // Expected: [ 2, -1 ]
 console.log(nextGreaterElements([1])) // Expected: [ -1 ]
 console.log(nextGreaterElements([1, 1])) // Expected: [ -1, -1 ]
-
 

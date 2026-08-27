@@ -2,7 +2,6 @@
 // 最後練習時間：2024-06-15
 // https://leetcode.com/problems/summary-ranges/
 
-export {}
 console.clear()
 
 function summaryRanges(nums: number[]): string[] {

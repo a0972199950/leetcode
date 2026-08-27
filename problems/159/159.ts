@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-13
 // https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
 
-export {}
 console.clear()
 
 function lengthOfLongestSubstringTwoDistinct(s: string): number {
@@ -35,5 +34,4 @@ function lengthOfLongestSubstringTwoDistinct(s: string): number {
 console.log(lengthOfLongestSubstringTwoDistinct('eceba')) // Expected: 3
 console.log(lengthOfLongestSubstringTwoDistinct('ccaabbb')) // Expected: 5
 console.log(lengthOfLongestSubstringTwoDistinct('a')) // Expected: 1
-
 

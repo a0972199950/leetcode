@@ -2,7 +2,6 @@
 // 最後練習時間：2022-11-06
 // https://leetcode.com/problems/asteroid-collision/
 
-export {}
 console.clear()
 
 function asteroidCollision(asteroids: number[]): number[] {
@@ -53,5 +52,4 @@ asteroidCollision([8, -8])
 asteroidCollision([10, 2, -5])
 asteroidCollision([-8, 8])
 asteroidCollision([1, 2, -10])
-
 

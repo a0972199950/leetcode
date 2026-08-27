@@ -2,7 +2,6 @@
 // 最後練習時間：2026-02-06
 // https://leetcode.com/problems/set-mismatch/
 
-export {}
 console.clear()
 
 function findErrorNums(nums: number[]): number[] {

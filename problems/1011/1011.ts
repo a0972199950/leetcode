@@ -2,7 +2,6 @@
 // 最後練習時間：2026-05-18
 // https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
 
-export {}
 console.clear()
 
 // function shipWithinDays(weights: number[], days: number): number {

@@ -2,7 +2,6 @@
 // 最後練習時間：2023-05-26
 // https://leetcode.com/problems/remove-duplicate-letters/
 
-export {}
 console.clear()
 
 function removeDuplicateLetters(s: string): string {
@@ -51,5 +50,4 @@ function removeDuplicateLetters(s: string): string {
 console.log(removeDuplicateLetters('bcabc')) // Expected: abc
 console.log(removeDuplicateLetters('cbacdcbc')) // Expected: acdb
 console.log(removeDuplicateLetters('abacb')) // Expected: abc
-
 

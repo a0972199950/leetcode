@@ -2,7 +2,6 @@
 // 最後練習時間：2026-03-22
 // https://leetcode.com/problems/subarray-sum-equals-k/
 
-export {}
 console.clear()
 
 // function subarraySum(nums: number[], k: number): number {

@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
 import { TreeNode, BinaryTree } from '../../data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 function flatten(root: TreeNode | null): void {
@@ -35,5 +34,4 @@ function flatten(root: TreeNode | null): void {
 }
 
 flatten(new BinaryTree([]).root)
-
 

@@ -2,7 +2,6 @@
 // 最後練習時間：2024-06-15
 // https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/
 
-export {}
 console.clear()
 
 function findMinArrowShots(points: number[][]): number {

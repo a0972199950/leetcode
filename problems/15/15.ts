@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-08
 // https://leetcode.com/problems/3sum/
 
-export {}
 console.clear()
 
 // function threeSum(nums: number[]): number[][] {
@@ -115,12 +114,10 @@ function threeSum(nums: number[]): number[][] {
   return result
 }
 
-
 console.log(threeSum([-1, 0, 1, 2, -1, -4])) // Expected: [ [ -1, -1, 2 ], [ 0, -1, 1 ] ]
 console.log(threeSum([0, 1, 1])) // Expected: []
 console.log(threeSum([0, 0, 0])) // Expected: [ [ 0, 0, 0 ] ]
 console.log(threeSum([-2, 0, 0, 2, 2])) // Expected: [ [ 0, -2, 2 ] ]
 console.log(threeSum([0, 0, 0, 0])) // Expected: [ [ 0, 0, 0 ] ]
 console.log(threeSum([-1, -1, 0, 1])) // Expected: [ [ 0, -1, 1 ] ]
-
 

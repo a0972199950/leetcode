@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-27
 // https://leetcode.com/problems/time-based-key-value-store/
 
-export {}
 console.clear()
 
 class TimeMap {
@@ -56,5 +55,4 @@ console.log(timeMap.get('foo', 3))         // return "bar", since there is no va
 console.log(timeMap.set('foo', 'bar2', 4)) // store the key "foo" and value "bar2" along with timestamp = 4. // Expected: undefined
 console.log(timeMap.get('foo', 4))         // return "bar2" // Expected: bar2
 console.log(timeMap.get('foo', 5))         // return "bar2" // Expected: bar2
-
 

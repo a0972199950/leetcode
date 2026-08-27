@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-22
 // https://leetcode.com/problems/matrix-block-sum/
 
-export {}
 console.clear()
 
 function matrixBlockSum(mat: number[][], k: number): number[][] {
@@ -57,5 +56,4 @@ function matrixBlockSum(mat: number[][], k: number): number[][] {
 
 matrixBlockSum([[1, 2, 3], [4, 5, 6], [7, 8, 9]], 1)
 matrixBlockSum([[1, 2, 3], [4, 5, 6], [7, 8, 9]], 2)
-
 

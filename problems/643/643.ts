@@ -1,7 +1,6 @@
 // 643. Maximum Average Subarray I
 // 最後練習時間：2026-03-25
 
-export {}
 console.clear()
 
 // Time: O(n)

@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-07
 // https://leetcode.com/problems/next-greater-element-iii/
 
-export {}
 console.clear()
 
 function nextGreaterElement(n: number): number {
@@ -35,5 +34,4 @@ function nextGreaterElement(n: number): number {
 // console.log(nextGreaterElement(713344321))
 // console.log(nextGreaterElement(2147483486))
 console.log(nextGreaterElement(2147483476)) // Expected: 2147483647
-
 

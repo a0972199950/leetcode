@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/add-two-numbers/
 import { ListNode, LinkedList } from '../../data-structure/LinkedList'
 
-export {}
 console.clear()
 
 function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | null {

@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-20
 // https://leetcode.com/problems/move-zeroes/
 
-export {}
 console.clear()
 
 function moveZeroes(nums: number[]): void {
@@ -24,5 +23,4 @@ function moveZeroes(nums: number[]): void {
 
 moveZeroes([0, 1, 0, 3, 12])
 moveZeroes([0])
-
 

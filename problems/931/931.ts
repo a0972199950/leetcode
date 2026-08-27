@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-21
 // https://leetcode.com/problems/minimum-falling-path-sum/
 
-export {}
 console.clear()
 
 function minFallingPathSum(matrix: number[][]): number {
@@ -42,5 +41,4 @@ function minFallingPathSum(matrix: number[][]): number {
 minFallingPathSum([[2, 1, 3], [6, 5, 4], [7, 8, 9]])
 minFallingPathSum([[-19, 57], [-40, -5]])
 minFallingPathSum([[48]])
-
 

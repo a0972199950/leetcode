@@ -2,7 +2,6 @@
 // 最後練習時間：2024-05-01
 // https://leetcode.com/problems/gas-station/
 
-export {}
 console.clear()
 
 // function canCompleteCircuit(gas: number[], cost: number[]): number {
@@ -92,5 +91,4 @@ console.log(canCompleteCircuit([1, 2, 3, 4, 5], [3, 4, 5, 1, 2])) // Expected: 3
 console.log(canCompleteCircuit([2, 3, 4], [3, 4, 3])) // Expected: -1
 console.log(canCompleteCircuit([5, 1, 2, 3, 4], [4, 4, 1, 5, 1])) // Expected: 4
 console.log(canCompleteCircuit([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])) // Expected: 0
-
 

@@ -1,7 +1,6 @@
 // 2217. Find Palindrome With Fixed Length
 // https://leetcode.com/problems/find-palindrome-with-fixed-length/
 
-export {}
 console.clear()
 
 function kthPalindrome(queries: number[], intLength: number): number[] {
@@ -26,5 +25,4 @@ function kthPalindrome(queries: number[], intLength: number): number[] {
 }
 
 console.log(kthPalindrome([89], 1)) // Expected: [ -1 ]
-
 

@@ -2,7 +2,6 @@
 // 最後練習時間：2026-05-13
 // https://leetcode.com/problems/koko-eating-bananas/
 
-export {}
 console.clear()
 
 // function minEatingSpeed(piles: number[], h: number): number {

@@ -2,7 +2,6 @@
 // 最後練習時間：2024-03-29
 // https://leetcode.com/problems/number-of-distinct-islands/
 
-export {}
 console.clear()
 
 interface Land {
@@ -83,5 +82,4 @@ function numDistinctIslands(grid: number[][]): number {
 
 console.log(numDistinctIslands([[1, 1, 0, 0, 0], [1, 1, 0, 0, 0], [0, 0, 0, 1, 1], [0, 0, 0, 1, 1]])) // Expected: 1
 console.log(numDistinctIslands([[1, 1, 0, 1, 1], [1, 0, 0, 0, 0], [0, 0, 0, 0, 1], [1, 1, 0, 1, 1]])) // Expected: 3
-
 

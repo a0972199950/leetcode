@@ -4,7 +4,6 @@
 
 import { BinaryTree, TreeNode } from '../../data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 // function kthSmallest(root: TreeNode | null, k: number): number {

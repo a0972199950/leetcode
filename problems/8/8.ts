@@ -1,6 +1,5 @@
 // 8. String to Integer (atoi)
 
-export {}
 console.clear()
 
 // Time: O(n)

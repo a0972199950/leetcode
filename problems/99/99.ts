@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/recover-binary-search-tree/
 import { BinaryTree, TreeNode } from '../../data-structure/BinaryTree'
 
-export {}
 console.clear()
 /**
  * Definition for a binary tree node.
@@ -70,5 +69,4 @@ function recoverTree(root: TreeNode | null): void {
 const tree = new BinaryTree([3, null, 2, null, 1])
 
 recoverTree(tree.root)
-
 

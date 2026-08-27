@@ -2,7 +2,6 @@
 // 請實作一個 function，能夠將 url 轉為非同步工作後，依照 max 的限制，在同一時段最多能同時執行 max 個非同步工作
 // 最後回傳一個 string[]，內容為每個非同步工作的結果。此結過需要按照 urls 的順序排列
 
-export {}
 console.clear()
 
 // type Job = () => Promise<string>
@@ -98,7 +97,6 @@ const runJobsInMax = async (urls: string[], max: number): Promise<string[]> => {
     }
   }
 
-
   const onFinish = () => {
     finishedJobs++
 
@@ -143,6 +141,4 @@ const fn = async () => {
 }
 
 fn()
-
-
 

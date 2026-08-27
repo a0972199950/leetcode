@@ -1,6 +1,5 @@
 // 2222. Anagram
 
-export {}
 console.clear()
 
 function getMinimumDifference(a: string[], b: string[]): number[] {
@@ -45,5 +44,4 @@ function getMinimumDifference(a: string[], b: string[]): number[] {
 }
 
 console.log(getMinimumDifference( ['tea', 'tea', 'act'],  ['ate', 'toe', 'acts']))
-
 

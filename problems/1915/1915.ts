@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-30
 // https://leetcode.com/problems/number-of-wonderful-substrings/
 
-export {}
 console.clear()
 
 // function wonderfulSubstrings(word: string): number {
@@ -80,5 +79,4 @@ function wonderfulSubstrings(word: string): number {
 console.log(wonderfulSubstrings('aba')) // Expected: 4
 console.log(wonderfulSubstrings('aabb')) // Expected: 9
 console.log(wonderfulSubstrings('he')) // Expected: 2
-
 

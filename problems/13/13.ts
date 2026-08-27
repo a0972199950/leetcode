@@ -2,7 +2,6 @@
 // 最後練習時間：2024-05-25
 // https://leetcode.com/problems/roman-to-integer/
 
-export {}
 console.clear()
 
 function romanToInt(s: string): number {
@@ -33,5 +32,4 @@ function romanToInt(s: string): number {
 console.log(romanToInt('III')) // Expected: 3
 console.log(romanToInt('LVIII')) // Expected: 58
 console.log(romanToInt('MCMXCIV')) // Expected: 1994
-
 

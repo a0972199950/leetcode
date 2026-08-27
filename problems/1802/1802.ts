@@ -2,7 +2,6 @@
 // 最後練習時間：2024-03-31
 // https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/
 
-export {}
 console.clear()
 
 function maxValue(n: number, index: number, maxSum: number): number {
@@ -38,5 +37,4 @@ console.log(maxValue(3, 2, 18)) // Expected: 7
 console.log(maxValue(1, 0, 24)) // Expected: 24
 console.log(maxValue(4, 0, 4)) // Expected: 1
 console.log(maxValue(1, 0, 444029221)) // Expected: 444029221
-
 

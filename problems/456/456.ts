@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-17
 // https://leetcode.com/problems/132-pattern/
 
-export {}
 console.clear()
 
 // function find132pattern(nums: number[]): boolean {
@@ -66,5 +65,4 @@ console.log(find132pattern([3, 1, 4, 2])) // Expected: true
 console.log(find132pattern([-1, 3, 2, 0])) // Expected: true
 console.log(find132pattern([-2, 1, 2, -2, 1, 2])) // Expected: true
 console.log(find132pattern([0, -1000, 2000, -3000, 4000, -5000, 6000, -7000, 8000, -9000, 10000])) // Expected: false
-
 

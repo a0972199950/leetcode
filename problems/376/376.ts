@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-12
 // https://leetcode.com/problems/wiggle-subsequence/
 
-export {}
 console.clear()
 
 // function wiggleMaxLength(nums: number[]): number {
@@ -68,5 +67,4 @@ function wiggleMaxLength(nums: number[]): number {
 // console.log(wiggleMaxLength([1, 2, 3, 4, 5, 6, 7, 8, 9]))
 // console.log(wiggleMaxLength([7, 4, 5, 5, 9, 3, 6, 7]))
 console.log(wiggleMaxLength([5, 5, 5, 5, 5])) // Expected: 1
-
 

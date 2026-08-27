@@ -7,7 +7,7 @@ const problemTitle = dotIndex !== -1 ? raw.slice(dotIndex + 1).trim() : raw.spli
 
 const template = `// ${problemNumber}. ${problemTitle}
 
-export {}
+
 console.clear()
 
 // paste function here

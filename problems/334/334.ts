@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-24
 // https://leetcode.com/problems/increasing-triplet-subsequence/
 
-export {}
 console.clear()
 
 function increasingTriplet(nums: number[]): boolean {

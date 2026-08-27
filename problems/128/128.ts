@@ -2,7 +2,6 @@
 // 最後練習時間：2023-05-28
 // https://leetcode.com/problems/longest-consecutive-sequence/
 
-export {}
 console.clear()
 
 function longestConsecutive(nums: number[]): number {
@@ -44,5 +43,4 @@ function longestConsecutive(nums: number[]): number {
 console.log(longestConsecutive([100, 4, 200, 1, 3, 2])) // Expected: 4
 console.log(longestConsecutive([0, 3, 7, 2, 5, 8, 4, 6, 0, 1])) // Expected: 9
 console.log(longestConsecutive([1, 2, 0, 1])) // Expected: 3
-
 

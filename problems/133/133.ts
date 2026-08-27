@@ -2,7 +2,6 @@
 // 最後練習時間：2024-05-09
 // https://leetcode.com/problems/clone-graph/
 
-export {}
 console.clear()
 
 class Node {
@@ -79,5 +78,4 @@ function cloneGraph(node: Node | null): Node | null {
 
   return head
 }
-
 

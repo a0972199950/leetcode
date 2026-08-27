@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-24
 // https://leetcode.com/problems/minimum-path-sum/
 
-export {}
 console.clear()
 
 function minPathSum(grid: number[][]): number {
@@ -37,5 +36,4 @@ function minPathSum(grid: number[][]): number {
 // minPathSum([[1, 2, 3], [4, 5, 6]])
 minPathSum([[0, 0], [0, 0]])
 // minPathSum([[1]])
-
 

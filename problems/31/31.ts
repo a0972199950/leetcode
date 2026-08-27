@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-20
 // https://leetcode.com/problems/next-permutation/
 
-export {}
 console.clear()
 
 function nextPermutation(nums: number[]): void {
@@ -56,5 +55,4 @@ nextPermutation([3, 2, 1])
 nextPermutation([1, 1, 5])
 nextPermutation([1, 3, 2])
 nextPermutation([1, 1])
-
 

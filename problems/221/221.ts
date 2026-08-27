@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-24
 // https://leetcode.com/problems/maximal-square/
 
-export {}
 console.clear()
 
 function maximalSquare(matrix: string[][]): number {
@@ -44,5 +43,4 @@ maximalSquare([['1', '0', '1', '0', '0'], ['1', '0', '1', '1', '1'], ['1', '1', 
 maximalSquare([['0', '1'], ['1', '0']])
 maximalSquare([['0']])
 maximalSquare([['1', '1', '1'], ['1', '1', '1'], ['1', '1', '1']])
-
 

@@ -1,7 +1,6 @@
 // Promise.all Draft
 // 自訂題目（非 LeetCode 原題）：實作 Promise.all 的早期草稿版本（另見 promise-all/ 資料夾的完整版）
 
-export {}
 console.clear()
 
 // function fn1() {
@@ -63,5 +62,4 @@ const PromiseAll = async (promises: Promise<any>[]): Promise<any> => {
   await allDone
   return result
 }
-
 

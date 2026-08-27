@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-09
 // https://leetcode.com/problems/combination-sum/
 
-export {}
 console.clear()
 
 // interface RecordInterface {
@@ -79,7 +78,6 @@ console.clear()
 //   return result
 // }
 
-
 // function combinationSum(candidates: number[], target: number): number[][] {
 //   const results = []
 
@@ -152,5 +150,4 @@ function combinationSum(candidates: number[], target: number): number[][] {
 console.log(combinationSum([2, 3, 6, 7], 7)) // Expected: [ [ 2, 2, 3 ], [ 7 ] ]
 console.log(combinationSum([2, 3, 5], 8)) // Expected: [ [ 2, 2, 2, 2 ], [ 2, 3, 3 ], [ 3, 5 ] ]
 console.log(combinationSum([2], 1)) // Expected: []
-
 

@@ -7,7 +7,6 @@
 // Input: [1, 7, 3, 6, 2, 9]​
 // Output: 3
 
-export {}
 console.clear()
 
 const fn = (arr: number[]) => {
@@ -36,7 +35,4 @@ const fn = (arr: number[]) => {
 // console.log(fn([14, 1, 3, 3, 3, 3, 2]​))
 // console.log(fn([]​))
 console.log(fn([0, 0, 0, 0]​))
-
-
-
 

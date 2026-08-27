@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/same-tree/
 import { TreeNode, BinaryTree } from '../../data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 function isSameTree(p: TreeNode | null, q: TreeNode | null): boolean {
@@ -33,5 +32,4 @@ function isSameTree(p: TreeNode | null, q: TreeNode | null): boolean {
 // console.log(isSameTree(new BinaryTree([1, 2, 3]).root, new BinaryTree([1, 2, 3]).root))
 // console.log(isSameTree(new BinaryTree([1, 2]).root, new BinaryTree([1, null, 2]).root))
 console.log(isSameTree(new BinaryTree([1, 2, 1]).root, new BinaryTree([1, 1, 2]).root)) // Expected: false
-
 

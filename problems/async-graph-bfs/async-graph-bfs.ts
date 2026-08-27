@@ -1,7 +1,6 @@
 // Async Graph BFS
 // 自訂題目（非 LeetCode 原題）：用非同步 fetchNeighbors 對圖做 BFS 層序走訪
 
-export {}
 console.clear()
 
 // paste function here
@@ -82,6 +81,4 @@ async function searchGraph (node: number) {
 // }
 
 searchGraph(1)
-
-
 

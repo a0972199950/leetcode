@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-24
 // https://leetcode.com/problems/unique-paths-ii/
 
-export {}
 console.clear()
 
 function uniquePathsWithObstacles(obstacleGrid: number[][]): number {
@@ -37,5 +36,4 @@ function uniquePathsWithObstacles(obstacleGrid: number[][]): number {
 
 console.log(uniquePathsWithObstacles([[0, 0, 0], [0, 1, 0], [0, 0, 0]])) // Expected: 2
 // console.log(uniquePathsWithObstacles([[0, 1], [0, 0]]))
-
 

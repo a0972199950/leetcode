@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
 import { Node, NodeTree } from '../../data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 function connect(root: Node | null): Node | null {
@@ -34,5 +33,4 @@ function connect(root: Node | null): Node | null {
 }
 
 connect(new NodeTree([1, 2, 3, 4, 5, 6, 7]).root)
-
 

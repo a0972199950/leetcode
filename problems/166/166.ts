@@ -1,7 +1,6 @@
 // 166. Fraction to Recurring Decimal
 // https://leetcode.com/problems/fraction-to-recurring-decimal/
 
-export {}
 console.clear()
 
 function fractionToDecimal(numerator: number, denominator: number): string {
@@ -35,5 +34,4 @@ function fractionToDecimal(numerator: number, denominator: number): string {
 
 console.log(fractionToDecimal(4, 333)) // Expected: 0.(012)
 console.log(4 / 333) // Expected: 0.012012012012012012
-
 

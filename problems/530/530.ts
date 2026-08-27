@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/minimum-absolute-difference-in-bst/
 import { TreeNode, BinaryTree } from '../../data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 function getMinimumDifference(root: TreeNode | null): number {

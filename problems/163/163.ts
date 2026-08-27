@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-05
 // https://leetcode.com/problems/missing-ranges/
 
-export {}
 console.clear()
 
 function findMissingRanges(nums: number[], lower: number, upper: number): number[][] {
@@ -81,5 +80,4 @@ console.log(findMissingRanges([-1], -1, -1)) // Expected: []
 console.log(findMissingRanges([], 1, 1)) // Expected: [ [ 1, 1 ] ]
 console.log(findMissingRanges([1, 3], 50, 99)) // Expected: [ [ 50, 99 ] ]
 console.log(findMissingRanges([104, 109], 50, 99)) // Expected: [ [ 50, 99 ] ]
-
 

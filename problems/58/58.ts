@@ -2,7 +2,6 @@
 // 最後練習時間：2024-05-26
 // https://leetcode.com/problems/length-of-last-word/
 
-export {}
 console.clear()
 
 function lengthOfLastWord(s: string): number {
@@ -29,5 +28,4 @@ console.log(lengthOfLastWord('Hello World')) // Expected: 5
 console.log(lengthOfLastWord('   fly me   to   the moon  ')) // Expected: 4
 console.log(lengthOfLastWord('luffy is still joyboy')) // Expected: 6
 console.log(lengthOfLastWord('a')) // Expected: 1
-
 

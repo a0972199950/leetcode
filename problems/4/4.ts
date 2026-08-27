@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-02
 // https://leetcode.com/problems/median-of-two-sorted-arrays/
 
-export {}
 console.clear()
 
 // function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
@@ -74,5 +73,4 @@ function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
 console.log(findMedianSortedArrays([1, 2], [3, 4])) // Expected: 2.5
 // console.log(findMedianSortedArrays([2], []))
 // console.log(findMedianSortedArrays([], []))
-
 

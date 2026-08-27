@@ -2,7 +2,6 @@
 // 最後練習時間：2024-03-27
 // https://leetcode.com/problems/score-of-parentheses/
 
-export {}
 console.clear()
 
 function scoreOfParentheses(s: string): number {
@@ -51,5 +50,4 @@ console.log(scoreOfParentheses('(()(()))')) // Expected: 6
 console.log(scoreOfParentheses('(()())h')) // Expected: -1
 console.log(scoreOfParentheses('()()(')) // Expected: -1
 console.log(scoreOfParentheses(')(')) // Expected: -1
-
 

@@ -2,7 +2,6 @@
 // 最後練習時間：2022-11-07
 // https://leetcode.com/problems/kth-largest-element-in-an-array/
 
-export {}
 console.clear()
 
 class MyMaxPriorityQueue {
@@ -95,5 +94,4 @@ findKthLargest([3, 2, 3, 1, 2, 4, 5, 5, 6], 4)
 findKthLargest([3, 3, 3, 2, 1, 2, 1, 5, 4, 4, 4, 5, 5, 6], 14)
 findKthLargest([7, 6, 5, 4, 3, 2, 1], 5)
 findKthLargest([3, 2, 3, 1, 2, 4, 5, 5, 6, 7, 7, 8, 2, 3, 1, 1, 1, 10, 11, 5, 6, 2, 4, 7, 8, 5, 6], 20)
-
 

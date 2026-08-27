@@ -2,7 +2,6 @@
 // 最後練習時間：2022-11-07
 // https://leetcode.com/problems/top-k-frequent-elements/
 
-export {}
 console.clear()
 
 function topKFrequent(nums: number[], k: number): number[] {
@@ -18,5 +17,4 @@ function topKFrequent(nums: number[], k: number): number[] {
     .slice(0, k)
     .map(item => Number(item[0]))
 }
-
 

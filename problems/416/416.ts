@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-13
 // https://leetcode.com/problems/partition-equal-subset-sum/
 
-export {}
 console.clear()
 
 // 一維 dp

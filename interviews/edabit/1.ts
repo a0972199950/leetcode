@@ -1,4 +1,4 @@
-export {}
+
 console.clear()
 
 const countTrue = (arr: boolean[]) => {

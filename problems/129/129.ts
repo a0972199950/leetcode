@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/sum-root-to-leaf-numbers/
 import { TreeNode, BinaryTree } from '../../data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 function sumNumbers(root: TreeNode | null): number {
@@ -35,5 +34,4 @@ function sumNumbers(root: TreeNode | null): number {
 }
 
 console.log(sumNumbers(new BinaryTree([4, 9, 0, 5, 1]).root)) // Expected: 1026
-
 

@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-16
 // https://leetcode.com/problems/compare-version-numbers/
 
-export {}
 console.clear()
 
 function compareVersion(version1: string, version2: string): number {
@@ -39,5 +38,4 @@ console.log(compareVersion('0.1', '1.1')) // Expected: -1
 console.log(compareVersion('1.2', '1.10')) // Expected: -1
 console.log(compareVersion('1.01', '1.001')) // Expected: 0
 console.log(compareVersion('3.0.4.10', '3.0.4.2')) // Expected: 1
-
 

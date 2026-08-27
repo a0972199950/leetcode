@@ -2,13 +2,11 @@
 // 最後練習時間：2022-10-22
 // https://leetcode.com/problems/rotate-image/
 
-export {}
 console.clear()
 
 /**
  Do not return anything, modify matrix in-place instead.
  */
-
 
 function rotate(matrix: number[][]): void {
   const length = matrix.length
@@ -57,5 +55,4 @@ rotate([[1, 2], [3, 4]])
 // rotate(3)
 // rotate(4)
 // rotate(5)
-
 

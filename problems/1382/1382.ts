@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/balance-a-binary-search-tree/
 import { TreeNode, BinaryTree } from '../../data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 function balanceBST(root: TreeNode | null): TreeNode | null {
@@ -78,5 +77,4 @@ function balanceBST(root: TreeNode | null): TreeNode | null {
 // console.log(balanceBST(new BinaryTree([1, null, 2, null, 3, null, 4, null, null]).root))
 // console.log(balanceBST(new BinaryTree([2, 1, 3]).root))
 console.log(balanceBST(new BinaryTree([1, null, 15, 14, 17, 7, null, null, null, 2, 12, null, 3, 9, null, null, null, null, 11]).root)) // Expected: TreeNode { val: 11, left: TreeNode { val: 9, left: TreeNode { val: 7, left: TreeNode { val: 3, left: TreeNode { val: 2, left: TreeNode { val: 1, left: null, right: null }, right: null }, right: null }, right: null }, right: null }, right: TreeNode { val: 12, left: null, right: TreeNode { val: 14, left: null, right: TreeNode { val: 15, left: null, right: TreeNode { val: 17, left: null, right: null } } } } }
-
 

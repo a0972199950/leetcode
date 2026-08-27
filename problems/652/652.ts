@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/find-duplicate-subtrees/
 import { TreeNode, BinaryTree } from '../../data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 function findDuplicateSubtrees(root: TreeNode | null): Array<TreeNode | null> {
@@ -46,5 +45,4 @@ console.log(findDuplicateSubtrees(new BinaryTree([1, 2, 3, 4, null, 2, 4, null, 
 console.log(findDuplicateSubtrees(new BinaryTree([2, 1, 1]).root)) // Expected: [ TreeNode { val: 1, left: null, right: null } ]
 console.log(findDuplicateSubtrees(new BinaryTree([2, 2, 2, 3, null, 3, null]).root)) // Expected: [ TreeNode { val: 3, left: null, right: null }, TreeNode { val: 2, left: TreeNode { val: 3, left: null, right: null }, right: null } ]
 console.log(findDuplicateSubtrees(new BinaryTree([0, 0, 0, 0, null, null, 0, null, null, null, 0]).root)) // Expected: [ TreeNode { val: 0, left: null, right: null } ]
-
 

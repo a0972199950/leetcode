@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-28
 // https://leetcode.com/problems/find-the-duplicate-number/
 
-export {}
 console.clear()
 
 // function findDuplicate(nums: number[]): number {
@@ -76,5 +75,4 @@ function findDuplicate(nums: number[]): number {
 // console.log(findDuplicate([3, 1, 3, 4, 2]))
 // console.log(findDuplicate([3, 3, 3, 3, 3]))
 console.log(findDuplicate([1, 3, 5, 2, 2, 4, 6])) // Expected: 2
-
 

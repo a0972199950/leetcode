@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-29
 // https://leetcode.com/problems/pacific-atlantic-water-flow/
 
-export {}
 console.clear()
 
 // enum Direction {
@@ -238,5 +237,4 @@ function pacificAtlantic(heights: number[][]): number[][] {
 // console.log(pacificAtlantic([[1, 2, 2, 3, 5], [3, 2, 3, 4, 4], [2, 4, 5, 3, 1], [6, 7, 1, 4, 5], [5, 1, 1, 2, 4]]))
 // console.log(pacificAtlantic([[1]]))
 console.log(pacificAtlantic([[2, 1], [1, 2]])) // Expected: [ [ 0, 1 ], [ 1, 1 ], [ 0, 0 ], [ 1, 0 ] ]
-
 

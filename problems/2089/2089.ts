@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-15
 // https://leetcode.com/problems/find-target-indices-after-sorting-array/
 
-export {}
 console.clear()
 
 // function targetIndices(nums: number[], target: number): number[] {
@@ -82,5 +81,4 @@ function targetIndices(nums: number[], target: number): number[] {
 // console.log(targetIndices([1, 2, 5, 2, 3], 3))
 // console.log(targetIndices([1, 2, 5, 2, 3], 5))
 console.log(targetIndices([1, 2, 5, 2, 3], 4)) // Expected: []
-
 

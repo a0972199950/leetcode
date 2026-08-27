@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-19
 // https://leetcode.com/problems/third-maximum-number/
 
-export {}
 console.clear()
 
 function thirdMax(nums: number[]): number {
@@ -111,5 +110,4 @@ function thirdMax(nums: number[]): number {
 // console.log(thirdMax([2, 2, 3, 1]))
 console.log(thirdMax([1, 2, 2, 5, 3, 5])) // Expected: 2
 console.log(thirdMax([3, 2, 1])) // Expected: 1
-
 

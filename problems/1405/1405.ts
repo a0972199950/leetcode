@@ -2,7 +2,6 @@
 // 最後練習時間：2024-03-31
 // https://leetcode.com/problems/longest-happy-string/
 
-export {}
 console.clear()
 
 function longestDiverseString(a: number, b: number, c: number): string {
@@ -48,5 +47,4 @@ console.log(longestDiverseString(0, 0, 0)) // Expected:
 console.log(longestDiverseString(1, 1, 1)) // Expected: abc
 console.log(longestDiverseString(6, 6, 6)) // Expected: abcabcabcabcabcabc
 console.log(longestDiverseString(0, 8, 11)) // Expected: ccbccbcbcbcbcbcbcbc
-
 

@@ -2,7 +2,6 @@
 // 最後練習時間：2024-07-07
 // https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
 
-export {}
 console.clear()
 
 // function maxProfit(prices: number[]): number {
@@ -56,5 +55,4 @@ function maxProfit(prices: number[]): number {
 
 console.log(maxProfit([1, 2, 3, 0, 2])) // Expected: 3
 console.log(maxProfit([1])) // Expected: 0
-
 

@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/invert-binary-tree/
 import { TreeNode, BinaryTree } from '../../data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 // paste function here
@@ -33,5 +32,4 @@ function invertTree(root: TreeNode | null): TreeNode | null {
 
 console.log(invertTree(new BinaryTree([4, 2, 7, null, 3, 6, 9]).root)) // Expected: TreeNode { val: 4, left: TreeNode { val: 7, left: TreeNode { val: 9, left: null, right: null }, right: TreeNode { val: 6, left: null, right: null } }, right: TreeNode { val: 2, left: TreeNode { val: 3, left: null, right: null }, right: null } }
 console.log(invertTree(new BinaryTree([2, 1, 3]).root)) // Expected: TreeNode { val: 2, left: TreeNode { val: 3, left: null, right: null }, right: TreeNode { val: 1, left: null, right: null } }
-
 

@@ -2,7 +2,6 @@
 // 最後練習時間：2024-05-26
 // https://leetcode.com/problems/set-matrix-zeroes/
 
-export {}
 console.clear()
 
 function setZeroes(matrix: number[][]): void {
@@ -33,5 +32,4 @@ function setZeroes(matrix: number[][]): void {
 
 setZeroes([[1, 1, 1], [1, 0, 1], [1, 1, 1]])
 setZeroes([[0, 1, 2, 0], [3, 4, 5, 2], [1, 3, 1, 5]])
-
 

@@ -2,7 +2,6 @@
 // 最後練習時間：2026-03-26
 // https://leetcode.com/problems/longest-substring-without-repeating-characters/
 
-export {}
 console.clear()
 
 // function lengthOfLongestSubstring(s: string): number {

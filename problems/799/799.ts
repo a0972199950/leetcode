@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-05
 // https://leetcode.com/problems/champagne-tower/
 
-export {}
 console.clear()
 
 // function champagneTower(poured: number, query_row: number, query_glass: number): number {
@@ -35,7 +34,6 @@ console.clear()
 //         return 0
 //       }
 //     }
-
 
 //     // 到了要問的層
 //     if (row === query_row) {
@@ -109,5 +107,4 @@ console.log(champagneTower(2, 1, 1)) // Expected: 0.5
 console.log(champagneTower(4, 2, 0)) // Expected: 0.25
 console.log(champagneTower(0, 0, 0)) // Expected: 0
 console.log(champagneTower(25, 6, 1)) // Expected: 0.1875
-
 

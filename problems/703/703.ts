@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-29
 // https://leetcode.com/problems/kth-largest-element-in-a-stream/
 
-export {}
 console.clear()
 
 // 限制只有 k size 的 min heap
@@ -209,5 +208,4 @@ console.log(kthLargest.add(5))   // return 5 // Expected: 5
 console.log(kthLargest.add(10))  // return 5 // Expected: 5
 console.log(kthLargest.add(9))   // return 8 // Expected: 8
 console.log(kthLargest.add(4))   // return 8 // Expected: 8
-
 

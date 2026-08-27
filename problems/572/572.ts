@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/subtree-of-another-tree/
 import { TreeNode, BinaryTree } from '../../data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 const isSameTree = (node1: TreeNode | null, node2: TreeNode | null) => {
@@ -44,5 +43,4 @@ console.log(isSubtree(new BinaryTree([3, 4, 5, 1, 2, null, null, null, null, 0])
 console.log(isSubtree(new BinaryTree([]).root, new BinaryTree([]).root)) // true // Expected: true
 console.log(isSubtree(new BinaryTree([3, 4, 5, 1, 2]).root, new BinaryTree([]).root)) // true // Expected: false
 console.log(isSubtree(new BinaryTree([]).root, new BinaryTree([4, 1, 2]).root)) // false // Expected: false
-
 

@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-22
 // https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 
-export {}
 console.clear()
 
 function searchRange(nums: number[], target: number): number[] {
@@ -48,5 +47,4 @@ function searchRange(nums: number[], target: number): number[] {
 // console.log(searchRange([5, 7, 7, 8, 8, 10], 6))
 // console.log(searchRange([], 0))
 console.log(searchRange([1, 2, 3], 2)) // Expected: [ 1, 1 ]
-
 

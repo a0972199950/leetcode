@@ -2,7 +2,6 @@
 // 最後練習時間：2024-03-18
 // https://leetcode.com/problems/jump-game/
 
-export {}
 console.clear()
 
 // function canJump(nums: number[]): boolean {

@@ -2,7 +2,6 @@
 // 最後練習時間：2026-08-23
 import { BinaryTree, TreeNode } from '../../data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 // Time: O(n)

@@ -2,7 +2,6 @@
 // 最後練習時間：2024-03-18
 // https://leetcode.com/problems/jump-game-ii/
 
-export {}
 console.clear()
 
 // 一開始想的不知道是什麼的看不懂的暴力算法

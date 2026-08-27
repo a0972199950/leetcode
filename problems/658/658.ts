@@ -1,7 +1,6 @@
 // 658. Find K Closest Elements
 // 最後練習時間：2026-05-17
 
-export {}
 console.clear()
 
 // Time: O(logN + k)

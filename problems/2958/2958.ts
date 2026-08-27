@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-14
 // https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/
 
-export {}
 console.clear()
 
 function maxSubarrayLength(nums: number[], k: number): number {
@@ -34,5 +33,4 @@ console.log(maxSubarrayLength([1, 2, 3, 1, 2, 3, 1, 2], 2)) // Expected: 6
 console.log(maxSubarrayLength([1, 2, 1, 2, 1, 2, 1, 2], 1)) // Expected: 2
 console.log(maxSubarrayLength([5, 5, 5, 5, 5, 5, 5], 4)) // Expected: 4
 console.log(maxSubarrayLength([1, 4, 4, 3], 1)) // Expected: 2
-
 

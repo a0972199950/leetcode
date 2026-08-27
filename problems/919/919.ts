@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/complete-binary-tree-inserter/
 import { TreeNode, BinaryTree } from '../../data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 class CBTInserter {
@@ -57,5 +56,4 @@ cbt.insert(4)
 cbt.insert(5)
 cbt.insert(6)
 console.log(cbt.get_root()) // Expected: TreeNode { val: 1, left: TreeNode { val: 2, left: TreeNode { val: 4, left: null, right: null }, right: TreeNode { val: 5, left: null, right: null } }, right: TreeNode { val: 3, left: TreeNode { val: 6, left: null, right: null }, right: null } }
-
 

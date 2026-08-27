@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-04
 // https://leetcode.com/problems/restore-ip-addresses/
 
-export {}
 console.clear()
 
 function restoreIpAddresses(s: string): string[] {
@@ -46,5 +45,4 @@ function restoreIpAddresses(s: string): string[] {
 // console.log(restoreIpAddresses('25525511135'))
 // console.log(restoreIpAddresses('0000'))
 console.log(restoreIpAddresses('101023')) // Expected: [ '1.0.10.23', '1.0.102.3', '10.1.0.23', '10.10.2.3', '101.0.2.3' ]
-
 

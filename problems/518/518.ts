@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-29
 // https://leetcode.com/problems/coin-change-ii/
 
-export {}
 console.clear()
 
 function change(amount: number, coins: number[]): number {
@@ -35,5 +34,4 @@ function change(amount: number, coins: number[]): number {
 console.log(change(5, [1, 2, 5])) // Expected: 4
 console.log(change(3, [2])) // Expected: 0
 console.log(change(10, [10])) // Expected: 1
-
 

@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-26
 // https://leetcode.com/problems/random-pick-index/
 
-export {}
 console.clear()
 
 class Solution {
@@ -40,5 +39,4 @@ const solution = new Solution([1, 2, 3, 3, 3])
 console.log(solution.pick(3)) // Expected: 4
 console.log(solution.pick(1)) // Expected: 0
 console.log(solution.pick(3)) // Expected: 3
-
 

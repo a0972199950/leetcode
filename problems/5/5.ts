@@ -1,7 +1,7 @@
 // 5. Longest Palindromic Substring
 // 最後練習時間：2024-04-08
 // https://leetcode.com/problems/longest-palindromic-substring/
-export {}
+
 console.clear()
 
 // function longestPalindrome(s: string): string {
@@ -44,7 +44,6 @@ console.clear()
 
 //   return s.slice(longestPalindromeLeft, longestPalindromeRight + 1)
 // }
-
 
 // function longestPalindrome(s: string): string {
 //   let finalLeft = 0
@@ -132,7 +131,4 @@ console.log(longestPalindrome('babad')) // Expected: bab
 console.log(longestPalindrome('cbbd')) // Expected: bb
 console.log(longestPalindrome('abccb')) // Expected: bccb
 console.log(longestPalindrome('a')) // Expected: a
-
-
-
 

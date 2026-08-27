@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/reverse-linked-list-ii/
 import { ListNode, LinkedList } from '../../data-structure/LinkedList'
 
-export {}
 console.clear()
 
 // function reverseBetween(head: ListNode | null, left: number, right: number): ListNode | null {
@@ -49,5 +48,4 @@ console.clear()
 console.log(reverseBetween(new LinkedList([1, 2, 3, 4, 5]).head, 2, 4))
 // console.log(reverseBetween(new LinkedList([5]).head, 1, 1))
 // console.log(reverseBetween(new LinkedList([3, 5]).head, 1, 2))
-
 

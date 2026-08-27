@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-21
 // https://leetcode.com/problems/triangle/
 
-export {}
 console.clear()
 
 function minimumTotal(triangle: number[][]): number {
@@ -36,5 +35,4 @@ function minimumTotal(triangle: number[][]): number {
 
 minimumTotal([[2], [3, 4], [6, 5, 7], [4, 1, 8, 3]])
 minimumTotal([[-10]])
-
 

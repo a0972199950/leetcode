@@ -2,7 +2,6 @@
 // 最後練習時間：2024-05-01
 // https://leetcode.com/problems/valid-parenthesis-string/
 
-export {}
 console.clear()
 
 function checkValidString(s: string): boolean {
@@ -74,10 +73,8 @@ function checkValidString(s: string): boolean {
   return open === 0
 }
 
-
 console.log(checkValidString('()')) // Expected: true
 console.log(checkValidString('(*)')) // Expected: true
 console.log(checkValidString('(*))')) // Expected: true
 console.log(checkValidString('(*)))')) // Expected: false
-
 

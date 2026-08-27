@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-21
 // https://leetcode.com/problems/sqrtx/
 
-export {}
 console.clear()
 
 // function mySqrt(x: number): number {
@@ -48,5 +47,4 @@ function mySqrt(x: number): number {
 // console.log(mySqrt(4))
 // console.log(mySqrt(8))
 console.log(mySqrt(0)) // Expected: 0
-
 

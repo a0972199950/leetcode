@@ -1,7 +1,6 @@
 // Deep Equal
 // 自訂題目（非 LeetCode 原題）：實作一個深度比較兩個值是否相等的函式
 
-export {}
 console.clear()
 
 function findType(input: any): string {

@@ -1,9 +1,8 @@
-export {}
+
 console.clear()
 
 // s1: 'ab', s2: 'ac'
 // s3: 'abac []', 'acab', 'aabc' => true
-
 
 // s3: 'aab', 沒用到 c
 // 'abca',  => false

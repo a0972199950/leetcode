@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-01
 // https://leetcode.com/problems/random-pick-with-weight/
 
-export {}
 console.clear()
 
 class Solution {
@@ -28,5 +27,4 @@ class Solution {
     return this.data.length - 1
   }
 }
-
 

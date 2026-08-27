@@ -2,7 +2,6 @@
 // 最後練習時間：2024-05-26
 // https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
 
-export {}
 console.clear()
 
 function strStr(haystack: string, needle: string): number {
@@ -22,5 +21,4 @@ function strStr(haystack: string, needle: string): number {
 console.log(strStr('sadbutsad', 'sad')) // Expected: 0
 console.log(strStr('leetcode', 'leeto')) // Expected: -1
 console.log(strStr('mississippi', 'issip')) // Expected: 4
-
 

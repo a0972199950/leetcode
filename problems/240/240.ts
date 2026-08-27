@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-22
 // https://leetcode.com/problems/search-a-2d-matrix-ii/
 
-export {}
 console.clear()
 
 // const searchMatrix = (matrix: number[][], target: number): boolean => {
@@ -44,5 +43,4 @@ console.log(searchMatrix([[1, 4, 7, 11, 15], [2, 5, 8, 12, 19], [3, 6, 9, 16, 22
 console.log(searchMatrix([[1, 4, 7, 11, 15], [2, 5, 8, 12, 19], [3, 6, 9, 16, 22], [10, 13, 14, 17, 24], [18, 21, 23, 26, 30]], 20)) // Expected: false
 console.log(searchMatrix([], 1)) // Expected: false
 console.log(searchMatrix([[1, 2, 3]], 1)) // Expected: true
-
 

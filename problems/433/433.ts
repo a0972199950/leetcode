@@ -2,7 +2,6 @@
 // 最後練習時間：2024-06-23
 // https://leetcode.com/problems/minimum-genetic-mutation/
 
-export {}
 console.clear()
 
 function minMutation(startGene: string, endGene: string, bank: string[]): number {

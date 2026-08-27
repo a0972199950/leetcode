@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-07
 // https://leetcode.com/problems/flip-string-to-monotone-increasing/
 
-export {}
 console.clear()
 
 function minFlipsMonoIncr(s: string): number {
@@ -33,5 +32,4 @@ console.log(minFlipsMonoIncr('111111')) // Expected: 0
 console.log(minFlipsMonoIncr('1111000')) // Expected: 3
 console.log(minFlipsMonoIncr('')) // Expected: 0
 console.log(minFlipsMonoIncr('10011111110010111011')) // Expected: 5
-
 

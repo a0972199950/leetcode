@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/binary-tree-maximum-path-sum/
 import { TreeNode, BinaryTree } from '../../data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 const isLeaf = (node: TreeNode) => {
@@ -54,5 +53,4 @@ function maxPathSum(root: TreeNode | null): number {
 // console.log(maxPathSum(new BinaryTree([1, 2]).root)) // 3
 // console.log(maxPathSum(new BinaryTree([2, -1]).root)) // 2
 // console.log(maxPathSum(new BinaryTree([9, 6, -3, null, null, -6, 2, null, null, 2, null, -6, -6, -6]).root)) // 16
-
 

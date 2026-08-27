@@ -2,7 +2,6 @@
 // 最後練習時間：2024-05-19
 // https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
 
-export {}
 console.clear()
 
 function removeDuplicates(nums: number[]): number {
@@ -40,5 +39,4 @@ function removeDuplicates(nums: number[]): number {
 
 removeDuplicates([1, 1, 1, 2, 2, 3])
 // removeDuplicates([0, 0, 1, 1, 1, 1, 2, 3, 3, 3])
-
 

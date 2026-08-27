@@ -2,7 +2,6 @@
 // 最後練習時間：2023-07-23
 // https://leetcode.com/problems/copy-list-with-random-pointer/
 
-export {}
 console.clear()
 
 // class Node {
@@ -65,7 +64,6 @@ console.clear()
 //   return result[0]
 // }
 
-
 class Node {
   val: number
   next: Node | null
@@ -91,5 +89,4 @@ function copyRandomList(head: Node | null): Node | null {
 }
 
 console.log(copyRandomList()) // Expected: undefined
-
 

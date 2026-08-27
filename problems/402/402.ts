@@ -2,7 +2,6 @@
 // 最後練習時間：2024-05-26
 // https://leetcode.com/problems/remove-k-digits/
 
-export {}
 console.clear()
 
 // function removeKdigits(s: string, k: number): string {
@@ -83,5 +82,4 @@ function removeKdigits(s: string, k: number): string {
 // console.log(removeKdigits('111222', 3))
 // console.log(removeKdigits('9991', 1))
 console.log(removeKdigits('123456', 3)) // Expected: 123
-
 

@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-08
 // https://leetcode.com/problems/design-circular-queue/
 
-export {}
 console.clear()
 
 class Node {
@@ -111,5 +110,4 @@ console.log(myCircularQueue.isFull())   // return True // Expected: true
 console.log(myCircularQueue.deQueue())  // return True // Expected: true
 console.log(myCircularQueue.enQueue(4)) // return True // Expected: true
 console.log(myCircularQueue.Rear())     // return 4 // Expected: 4
-
 

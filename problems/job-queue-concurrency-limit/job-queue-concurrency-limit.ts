@@ -1,7 +1,6 @@
 // Job Queue Concurrency Limit
 // 自訂題目（非 LeetCode 原題）：實作一個限制同時執行數量的 job queue（Promise pool）
 
-export {}
 console.clear()
 
 // paste function here
@@ -159,7 +158,5 @@ const jobs = Array
     })
   })
 
-
 runJobsInMax(jobs, 12)
-
 

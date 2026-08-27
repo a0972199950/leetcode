@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-02
 // https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/
 
-export {}
 console.clear()
 
 function longestSubstring(s: string, k: number): number {
@@ -97,5 +96,4 @@ console.log(longestSubstring('aaabb', 3)) // Expected: 3
 console.log(longestSubstring('ababbc', 2)) // Expected: 5
 console.log(longestSubstring('ababbc', 3)) // Expected: 0
 console.log(longestSubstring('ababbc', 4)) // Expected: 0
-
 

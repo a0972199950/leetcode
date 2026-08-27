@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-22
 // https://leetcode.com/problems/non-overlapping-intervals/
 
-export {}
 console.clear()
 
 // function eraseOverlapIntervals(intervals: number[][]): number {
@@ -59,5 +58,4 @@ console.log(eraseOverlapIntervals([[1, 2], [1, 2], [1, 2]])) // Expected: 2
 console.log(eraseOverlapIntervals([[1, 2], [2, 3]])) // Expected: 0
 console.log(eraseOverlapIntervals([[0, 2], [1, 3], [2, 4], [3, 5], [4, 6]])) // Expected: 2
 console.log(eraseOverlapIntervals([[0, 2], [1, 3], [1, 3], [2, 4], [3, 5], [3, 5], [4, 6]])) // Expected: 4
-
 

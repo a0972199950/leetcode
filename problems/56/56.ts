@@ -2,7 +2,6 @@
 // 最後練習時間：2024-03-19
 // https://leetcode.com/problems/merge-intervals/
 
-export {}
 console.clear()
 
 // function merge(intervals: number[][]): number[][] {

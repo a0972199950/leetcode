@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/binary-tree-level-order-traversal/
 import { TreeNode, BinaryTree } from '../../data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 function levelOrder(root: TreeNode | null): number[][] {
@@ -34,5 +33,4 @@ function levelOrder(root: TreeNode | null): number[][] {
 console.log(levelOrder(new BinaryTree([3, 9, 20, null, null, 15, 7]).root)) // Expected: [ [ 3 ], [ 9, 20 ], [ 15, 7 ] ]
 console.log(levelOrder(new BinaryTree([1]).root)) // Expected: [ [ 1 ] ]
 console.log(levelOrder(new BinaryTree([]).root)) // Expected: []
-
 

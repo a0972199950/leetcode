@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/average-of-levels-in-binary-tree/
 import { TreeNode, BinaryTree } from '../../data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 function averageOfLevels(root: TreeNode | null): number[] {

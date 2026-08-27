@@ -1,7 +1,6 @@
 // 74. Search a 2D Matrix
 // 最後練習時間：2026-05-14
 
-export {}
 console.clear()
 
 // Time: O(logN + logM), N === matrix.length; M === row.length

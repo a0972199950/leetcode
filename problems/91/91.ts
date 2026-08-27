@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-18
 // https://leetcode.com/problems/decode-ways/
 
-export {}
 console.clear()
 
 function numDecodings(s: string): number {
@@ -46,5 +45,4 @@ function numDecodings(s: string): number {
 // numDecodings('06')
 // numDecodings('11111')
 numDecodings('10011')
-
 

@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/count-complete-tree-nodes/
 import { TreeNode, BinaryTree } from '../../data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 // function countNodes(root: TreeNode | null): number {

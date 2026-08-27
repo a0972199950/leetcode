@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-16
 // https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
 
-export {}
 console.clear()
 
 function maxProfit(prices: number[], fee: number): number {
@@ -31,5 +30,4 @@ function maxProfit(prices: number[], fee: number): number {
 
 maxProfit([1, 3, 2, 8, 4, 9], 2)
 maxProfit([1, 3, 7, 5, 10, 3], 3)
-
 

@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-13
 // https://leetcode.com/problems/the-maze/
 
-export {}
 console.clear()
 
 function hasPath(maze: number[][], start: number[], destination: number[]): boolean {
@@ -74,5 +73,4 @@ function hasPath(maze: number[][], start: number[], destination: number[]): bool
 console.log(hasPath([[0, 0, 1, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 1, 0], [1, 1, 0, 1, 1], [0, 0, 0, 0, 0]], [0, 4], [4, 4])) // Expected: true
 console.log(hasPath([[0, 0, 1, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 1, 0], [1, 1, 0, 1, 1], [0, 0, 0, 0, 0]], [0, 4], [3, 2])) // Expected: false
 console.log(hasPath([[0, 0, 0, 0, 0], [1, 1, 0, 0, 1], [0, 0, 0, 0, 0], [0, 1, 0, 0, 1], [0, 1, 0, 0, 0]], [4, 3], [0, 1])) // Expected: false
-
 

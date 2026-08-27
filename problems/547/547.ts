@@ -2,7 +2,6 @@
 // 最後練習時間：2022-11-09
 // https://leetcode.com/problems/number-of-provinces/
 
-export {}
 console.clear()
 
 function findCircleNum(isConnected: number[][]): number {
@@ -48,5 +47,4 @@ function findCircleNum(isConnected: number[][]): number {
 
 // findCircleNum([[1, 1, 0], [1, 1, 0], [0, 0, 1]])
 findCircleNum([[1, 0, 0], [0, 1, 0], [0, 0, 1]])
-
 

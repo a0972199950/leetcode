@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-21
 // https://leetcode.com/problems/reverse-words-in-a-string/
 
-export {}
 console.clear()
 
 // function reverseWords(s: string): string {
@@ -60,5 +59,4 @@ function reverseWords(s: string): string {
 console.log(reverseWords('the sky is blue')) // Expected: blue is sky the
 console.log(reverseWords('  hello world  ')) // Expected: world hello
 console.log(reverseWords('a good   example')) // Expected: example good a
-
 

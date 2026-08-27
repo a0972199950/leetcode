@@ -2,7 +2,6 @@
 // 最後練習時間：2024-03-30
 // https://leetcode.com/problems/longest-repeating-substring/
 
-export {}
 console.clear()
 
 // function longestRepeatingSubstring(s: string): number {
@@ -72,5 +71,4 @@ console.log(longestRepeatingSubstring('abcd')) // Expected: 0
 console.log(longestRepeatingSubstring('abbaba')) // Expected: 2
 console.log(longestRepeatingSubstring('aabcaabdaab')) // Expected: 3
 console.log(longestRepeatingSubstring('aaaaa')) // Expected: 4
-
 

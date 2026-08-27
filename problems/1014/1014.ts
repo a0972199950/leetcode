@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-16
 // https://leetcode.com/problems/best-sightseeing-pair/
 
-export {}
 console.clear()
 
 function maxScoreSightseeingPair(values: number[]): number {
@@ -19,5 +18,4 @@ function maxScoreSightseeingPair(values: number[]): number {
 
 console.log(maxScoreSightseeingPair([8, 1, 5, 2, 6])) // Expected: 11
 console.log(maxScoreSightseeingPair([1, 2])) // Expected: 2
-
 

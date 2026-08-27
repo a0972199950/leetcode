@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-26
 // https://leetcode.com/problems/longest-palindromic-subsequence/
 
-export {}
 console.clear()
 
 function longestPalindromeSubseq(s: string): number {
@@ -49,5 +48,4 @@ function longestPalindromeSubseq(s: string): number {
 // console.log(longestPalindromeSubseq('cbbd'))
 // console.log(longestPalindromeSubseq('a'))
 console.log(longestPalindromeSubseq('aabaa')) // Expected: 5
-
 

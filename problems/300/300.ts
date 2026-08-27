@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-10
 // https://leetcode.com/problems/longest-increasing-subsequence/
 
-export {}
 console.clear()
 
 // function lengthOfLIS(nums: number[]): number {
@@ -103,5 +102,4 @@ console.log(lengthOfLIS([0, 1, 0, 3, 2, 3])) // Expected: 4
 // console.log(lengthOfLIS([1, 2, 3]))
 // console.log(lengthOfLIS([0, 1, 0]))
 // console.log(lengthOfLIS([4, 10, 4, 3, 8, 9]))
-
 

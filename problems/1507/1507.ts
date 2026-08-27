@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-02
 // https://leetcode.com/problems/reformat-date/
 
-export {}
 console.clear()
 
 function reformatDate(date: string): string {
@@ -50,5 +49,4 @@ function reformatDate(date: string): string {
 console.log(reformatDate('20th Oct 2052')) // Expected: 2052-10-20
 console.log(reformatDate('6th Jun 1933')) // Expected: 1933-06-06
 console.log(reformatDate('26th May 1960')) // Expected: 1960-05-26
-
 

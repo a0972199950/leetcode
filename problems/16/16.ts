@@ -2,7 +2,6 @@
 // 最後練習時間：2022-11-07
 // https://leetcode.com/problems/3sum-closest/
 
-export {}
 console.clear()
 
 function threeSumClosest(nums: number[], target: number): number {

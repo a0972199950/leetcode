@@ -1,6 +1,5 @@
 // 1111. FizzBuzz
 
-export {}
 console.clear()
 
 // class PriorityQueue {
@@ -76,7 +75,6 @@ console.clear()
 //   }
 // }
 
-
 // function minimizeCost(arr: number[]): number {
 //   if (arr.length <= 1) {
 //     return 0
@@ -130,5 +128,4 @@ function minimizeCost(arr: number[]): number {
 
 console.log(minimizeCost([25, 10, 20]))
 console.log(minimizeCost([1, 7, 8]))
-
 

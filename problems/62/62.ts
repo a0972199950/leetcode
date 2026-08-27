@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-24
 // https://leetcode.com/problems/unique-paths/
 
-export {}
 console.clear()
 
 function uniquePaths(m: number, n: number): number {
@@ -32,5 +31,4 @@ function uniquePaths(m: number, n: number): number {
 // console.log(uniquePaths(3, 2))
 console.log(uniquePaths(1, 1)) // Expected: 1
 // console.log(uniquePaths(19, 13))
-
 

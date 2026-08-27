@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/
 import { ListNode, LinkedList } from '../../data-structure/LinkedList'
 
-export {}
 console.clear()
 
 function sortLinkedList(head: ListNode | null): ListNode | null {
@@ -58,5 +57,4 @@ function sortLinkedList(head: ListNode | null): ListNode | null {
 // console.log(sortLinkedList(new LinkedList([0,1,2]).head))
 // console.log(sortLinkedList(new LinkedList([1]).head))
 console.log(sortLinkedList(new LinkedList([0, 0, 0, 0, 0, 0, 0]).head)) // Expected: ListNode { val: 0, next: ListNode { val: 0, next: ListNode { val: 0, next: ListNode { val: 0, next: ListNode { val: 0, next: ListNode { val: 0, next: ListNode { val: 0, next: null } } } } } } }
-
 

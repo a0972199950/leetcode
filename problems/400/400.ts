@@ -2,7 +2,6 @@
 // 最後練習時間：2024-03-18
 // https://leetcode.com/problems/nth-digit/
 
-export {}
 console.clear()
 
 function findNthDigit(n: number): number {
@@ -20,5 +19,4 @@ function findNthDigit(n: number): number {
 // console.log(findNthDigit(3))
 // console.log(findNthDigit(11))
 console.log(findNthDigit(100000000)) // Expected: 8
-
 

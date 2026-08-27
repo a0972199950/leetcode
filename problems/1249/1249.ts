@@ -2,7 +2,6 @@
 // 最後練習時間：2022-11-09
 // https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/
 
-export {}
 console.clear()
 
 function minRemoveToMakeValid(s: string): string {

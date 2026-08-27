@@ -1,7 +1,6 @@
 // 410. Split Array Largest Sum
 // 最後練習時間：2026-05-20
 
-export {}
 console.clear()
 
 // Time: O(N * log(sum(N)))

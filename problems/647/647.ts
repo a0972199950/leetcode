@@ -2,7 +2,6 @@
 // 最後練習時間：2023-08-19
 // https://leetcode.com/problems/palindromic-substrings/
 
-export {}
 console.clear()
 
 // 解法1: 遍歷的字符當作回文子字符的正中間
@@ -72,5 +71,4 @@ function countSubstrings(s: string): number {
 
 console.log(countSubstrings('abc')) // Expected: 3
 console.log(countSubstrings('aaa')) // Expected: 6
-
 

@@ -1,6 +1,5 @@
 // tsmc. 1
 
-export {}
 console.clear()
 
 function getTime(s: string): number {
@@ -25,5 +24,4 @@ function getTime(s: string): number {
 
 console.log(getTime('BZA'))
 console.log(getTime('AZGB'))
-
 

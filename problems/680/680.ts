@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-19
 // https://leetcode.com/problems/valid-palindrome-ii/
 
-export {}
 console.clear()
 
 function validPalindrome(s: string): boolean {
@@ -30,5 +29,4 @@ function validPalindrome(s: string): boolean {
 console.log(validPalindrome('aba')) // Expected: true
 console.log(validPalindrome('abca')) // Expected: true
 console.log(validPalindrome('abc')) // Expected: false
-
 

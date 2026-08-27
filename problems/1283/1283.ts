@@ -1,7 +1,6 @@
 // 1283. Find the Smallest Divisor Given a Threshold
 // 最後練習時間：2026-05-27
 
-export {}
 console.clear()
 
 // Time: O(N * log(max(nums)))

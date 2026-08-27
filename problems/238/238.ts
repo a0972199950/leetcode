@@ -2,7 +2,6 @@
 // 最後練習時間：2024-03-16
 // https://leetcode.com/problems/product-of-array-except-self/
 
-export {}
 console.clear()
 
 // function productExceptSelf(nums: number[]): number[] {

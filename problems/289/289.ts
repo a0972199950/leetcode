@@ -2,7 +2,6 @@
 // 最後練習時間：2024-05-27
 // https://leetcode.com/problems/game-of-life/
 
-export {}
 console.clear()
 
 function gameOfLife(board: number[][]): void {
@@ -68,5 +67,4 @@ function gameOfLife(board: number[][]): void {
 
 gameOfLife([[0, 1, 0], [0, 0, 1], [1, 1, 1], [0, 0, 0]])
 gameOfLife([[1, 1], [1, 0]])
-
 

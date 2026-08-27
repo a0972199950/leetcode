@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/reorganize-string/
 import MinHeap from '../../data-structure/Heap'
 
-export {}
 console.clear()
 
 function reorganizeString(s: string): string {
@@ -57,5 +56,4 @@ console.log(reorganizeString('aaab'))
 console.log(reorganizeString('bbbbbbb'))
 console.log(reorganizeString('aabb'))
 console.log(reorganizeString('aabbb'))
-
 

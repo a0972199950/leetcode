@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-20
 // https://leetcode.com/problems/rotate-array/
 
-export {}
 console.clear()
 
 // function rotate(nums: number[], k: number): void {
@@ -52,5 +51,4 @@ function rotate(nums: number[], k: number): void {
 
 rotate([1, 2, 3, 4, 5, 6, 7], 3)
 rotate([1, 2], 5)
-
 

@@ -2,7 +2,6 @@
 // 最後練習時間：2022-11-07
 // https://leetcode.com/problems/basic-calculator-ii/
 
-export {}
 console.clear()
 
 // function calculate(s: string): number {
@@ -120,5 +119,4 @@ console.log(calculate(' 3/2 ')) // Expected: 1
 console.log(calculate(' 3+5 / 2 ')) // Expected: 5
 console.log(calculate('3+5/2+7*4')) // Expected: 33
 console.log(calculate('14-3/2')) // Expected: 13
-
 

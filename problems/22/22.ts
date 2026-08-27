@@ -2,7 +2,6 @@
 // 最後練習時間：2023-05-25
 // https://leetcode.com/problems/generate-parentheses/
 
-export {}
 console.clear()
 
 function generateParenthesis(n: number): string[] {
@@ -29,5 +28,4 @@ function generateParenthesis(n: number): string[] {
 }
 
 console.log(generateParenthesis(2)) // Expected: [ '(())', '()()' ]
-
 

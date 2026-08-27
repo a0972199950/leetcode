@@ -2,7 +2,6 @@
 // 最後練習時間：2026-04-07
 // https://leetcode.com/problems/group-anagrams/
 
-export {}
 console.clear()
 
 // function groupAnagrams(strs: string[]): string[][] {

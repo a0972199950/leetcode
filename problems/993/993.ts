@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/cousins-in-binary-tree/
 import { TreeNode, BinaryTree } from '../../data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 function isCousins(root: TreeNode | null, x: number, y: number): boolean {
@@ -39,5 +38,4 @@ function isCousins(root: TreeNode | null, x: number, y: number): boolean {
 console.log(isCousins(new BinaryTree([1, 2, 3, 4]).root, 4, 3)) // Expected: false
 console.log(isCousins(new BinaryTree([1, 2, 3, null, 4, null, 5]).root, 5, 4)) // Expected: true
 console.log(isCousins(new BinaryTree([1, 2, 3, null, 4]).root, 2, 3)) // Expected: false
-
 

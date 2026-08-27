@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-09
 // https://leetcode.com/problems/maximum-product-subarray/
 
-export {}
 console.clear()
 
 // function maxProduct(nums: number[]): number {

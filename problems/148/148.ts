@@ -4,7 +4,6 @@
 
 import { LinkedList, ListNode } from '../../data-structure/LinkedList'
 
-export {}
 console.clear()
 
 function sortList(head: ListNode | null): ListNode | null {
@@ -35,5 +34,4 @@ function sortList(head: ListNode | null): ListNode | null {
 
 console.log(sortList(new LinkedList([4, 2, 1, 3]).head)) // Expected: ListNode { val: 1, next: ListNode { val: 2, next: ListNode { val: 3, next: ListNode { val: 4, next: null } } } }
 console.log(sortList(new LinkedList([]).head)) // Expected: null
-
 

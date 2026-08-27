@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-30
 // https://leetcode.com/problems/coin-change/
 
-export {}
 console.clear()
 
 // DFS + cache

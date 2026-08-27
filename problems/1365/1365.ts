@@ -2,7 +2,6 @@
 // 最後練習時間：2026-02-06
 // https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
 
-export {}
 console.clear()
 
 // time: O(3n), space: O(n)

@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-18
 // https://leetcode.com/problems/word-break/
 
-export {}
 console.clear()
 
 // function wordBreak(s: string, wordDict: string[]): boolean {
@@ -114,6 +113,4 @@ function wordBreak(s: string, wordDict: string[]): boolean {
 // wordBreak('catsandog', ['cats', 'dog', 'sand', 'and', 'cat'])
 wordBreak('cars', ['car', 'ca', 'rs'])
 // wordBreak('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab', ['a', 'aa', 'aaa', 'aaaa', 'aaaaa', 'aaaaaa', 'aaaaaaa', 'aaaaaaaa', 'aaaaaaaaa', 'aaaaaaaaaa'])
-
-
 

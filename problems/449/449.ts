@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/serialize-and-deserialize-bst/
 import { TreeNode, BinaryTree } from '~/data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 // 最後練習時間：2026-08-24

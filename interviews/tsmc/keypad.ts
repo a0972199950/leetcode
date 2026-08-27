@@ -1,7 +1,6 @@
 // keypad.
 // https://hackmd.io/@alan25sprout/S1Yjq9RUO
 
-export {}
 console.clear()
 
 function findTime(str: string, keypad: string[][]): number {
@@ -52,5 +51,4 @@ function findTime(str: string, keypad: string[][]): number {
 console.log(findTime('423692', [['9', '2', '3'], ['8', '5', '7'], ['6', '1', '4']]))
 console.log(findTime('5111', [['7', '5', '2'], ['9', '6', '1'], ['3', '4', '8']]))
 console.log(findTime('91566165', [['6', '3', '9'], ['4', '8', '5'], ['7', '1', '2']]))
-
 

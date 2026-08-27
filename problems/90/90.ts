@@ -2,7 +2,6 @@
 // 最後練習時間：2023-05-25
 // https://leetcode.com/problems/subsets-ii/
 
-export {}
 console.clear()
 
 function subsetsWithDup(nums: number[]): number[][] {
@@ -39,5 +38,4 @@ function subsetsWithDup(nums: number[]): number[][] {
 }
 
 console.log(subsetsWithDup([1, 2, 2, 3, 3])) // Expected: [ [], [ 1 ], [ 1, 2 ], [ 1, 2, 2 ], [ 1, 2, 2, 3 ], [ 1, 2, 2, 3, 3 ], [ 1, 2, 3 ], [ 1, 2, 3, 3 ], [ 1, 3 ], [ 1, 3, 3 ], [ 2 ], [ 2, 2 ], [ 2, 2, 3 ], [ 2, 2, 3, 3 ], [ 2, 3 ], [ 2, 3, 3 ], [ 3 ], [ 3, 3 ] ]
-
 

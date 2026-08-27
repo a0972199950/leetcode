@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
 import { TreeNode, BinaryTree } from '~/data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 /*

@@ -2,7 +2,6 @@
 // 最後練習時間：2022-11-08
 // https://leetcode.com/problems/sort-characters-by-frequency/
 
-export {}
 console.clear()
 
 function frequencySort(s: string): string {
@@ -20,5 +19,4 @@ function frequencySort(s: string): string {
 console.log(frequencySort('tree')) // Expected: eetr
 console.log(frequencySort('cccaaa')) // Expected: cccaaa
 console.log(frequencySort('Aabb')) // Expected: bbAa
-
 

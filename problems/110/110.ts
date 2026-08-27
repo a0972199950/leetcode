@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/balanced-binary-tree/
 import { BinaryTree, TreeNode } from '../../data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 function isBalanced(root: TreeNode | null): boolean {

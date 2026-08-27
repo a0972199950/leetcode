@@ -2,7 +2,6 @@
 // 最後練習時間：2026-03-22
 // https://leetcode.com/problems/max-consecutive-ones-iii/submissions/1955526995/
 
-export {}
 console.clear()
 
 function longestOnes(nums: number[], k: number): number {

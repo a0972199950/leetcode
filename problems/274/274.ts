@@ -2,7 +2,6 @@
 // 最後練習時間：2024-05-19
 // https://leetcode.com/problems/h-index/
 
-export {}
 console.clear()
 
 function hIndex(citations: number[]): number {
@@ -25,5 +24,4 @@ function hIndex(citations: number[]): number {
 
 // console.log(hIndex([3, 0, 6, 1, 5]))
 console.log(hIndex([1, 3, 1])) // Expected: 1
-
 

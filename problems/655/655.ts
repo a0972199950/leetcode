@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/print-binary-tree/
 import { TreeNode, BinaryTree } from '../../data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 function printTree(root: TreeNode | null): string[][] {

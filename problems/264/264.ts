@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-30
 // https://leetcode.com/problems/ugly-number-ii/
 
-export {}
 console.clear()
 
 // function nthUglyNumber(n: number): number {
@@ -86,5 +85,4 @@ function nthUglyNumber(n: number): number {
 // nthUglyNumber(1)
 nthUglyNumber(20)
 // nthUglyNumber(351)
-
 

@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-29
 // https://leetcode.com/problems/palindrome-partitioning/
 
-export {}
 console.clear()
 
 function partition(s: string): string[][] {
@@ -60,5 +59,4 @@ function partition(s: string): string[][] {
 // console.log(partition('aab'))
 // console.log(partition('a'))
 console.log(partition('abbacc')) // Expected: [ [ 'a', 'b', 'b', 'a', 'c', 'c' ], [ 'a', 'b', 'b', 'a', 'cc' ], [ 'a', 'bb', 'a', 'c', 'c' ], [ 'a', 'bb', 'a', 'cc' ], [ 'abba', 'c', 'c' ], [ 'abba', 'cc' ] ]
-
 

@@ -2,7 +2,6 @@
 // 最後練習時間：2026-02-06
 // https://leetcode.com/problems/evaluate-reverse-polish-notation/
 
-export {}
 console.clear()
 
 function evalRPN(tokens: string[]): number {

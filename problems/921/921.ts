@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-14
 // https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/
 
-export {}
 console.clear()
 
 function minAddToMakeValid(s: string): number {
@@ -27,5 +26,4 @@ console.log(minAddToMakeValid('(((')) // Expected: 3
 console.log(minAddToMakeValid(')))(((')) // Expected: 6
 console.log(minAddToMakeValid('((()))')) // Expected: 0
 console.log(minAddToMakeValid('()()()()()')) // Expected: 0
-
 

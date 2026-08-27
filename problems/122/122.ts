@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-16
 // https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 
-export {}
 console.clear()
 
 function maxProfit(prices: number[]): number {

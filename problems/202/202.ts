@@ -2,7 +2,6 @@
 // 最後練習時間：2022-10-19
 // https://leetcode.com/problems/happy-number/
 
-export {}
 console.clear()
 
 function isHappy(n: number): boolean {

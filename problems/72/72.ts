@@ -2,7 +2,6 @@
 // 最後練習時間：2024-06-15
 // https://leetcode.com/problems/edit-distance/
 
-export {}
 console.clear()
 
 function minDistance(word1: string, word2: string): number {
@@ -53,5 +52,4 @@ function minDistance(word1: string, word2: string): number {
 // console.log(minDistance('', 'a'))
 // console.log(minDistance('dinitrophenylhydrazine', 'dimethylhydrazine'))
 console.log(minDistance('ab', 'bc')) // Expected: 2
-
 

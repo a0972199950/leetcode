@@ -2,7 +2,6 @@
 // 最後練習時間：2024-04-28
 // https://leetcode.com/problems/lru-cache/
 
-export {}
 console.clear()
 
 class Node {
@@ -110,6 +109,4 @@ console.log(lRUCache.get(2)) // Expected: 2
 console.log(lRUCache.put(1, 1)) // Expected: undefined
 console.log(lRUCache.put(4, 1)) // Expected: undefined
 console.log(lRUCache.get(2)) // Expected: -1
-
-
 

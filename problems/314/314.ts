@@ -3,7 +3,6 @@
 // https://leetcode.com/problems/binary-tree-vertical-order-traversal/
 import { TreeNode, BinaryTree } from '../../data-structure/BinaryTree'
 
-export {}
 console.clear()
 
 function verticalOrder(root: TreeNode | null): number[][] {
@@ -45,5 +44,4 @@ console.log(verticalOrder(new BinaryTree([3, 9, 20, null, null, 15, 7]).root)) /
 console.log(verticalOrder(new BinaryTree([3, 9, 8, 4, 0, 1, 7]).root)) // Expected: [ [ 4 ], [ 9 ], [ 3, 0, 1 ], [ 8 ], [ 7 ] ]
 console.log(verticalOrder(new BinaryTree([3, 9, 8, 4, 0, 1, 7, null, null, null, 2, 5]).root)) // Expected: [ [ 4 ], [ 9, 5 ], [ 3, 0, 1 ], [ 8, 2 ], [ 7 ] ]
 console.log(verticalOrder(new BinaryTree([]).root)) // Expected: []
-
 
