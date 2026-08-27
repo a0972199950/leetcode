@@ -1,13 +1,15 @@
 # 題目練習總覽
 
-> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-08-26
+> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-08-27
 
-共 315 題，其中 309 題超過 2 個月未練習（可作為 /q 複習候選）。
+共 315 題，其中 307 題超過 2 個月未練習（可作為 /q 複習候選）。
 
 依「最後練習時間」新到舊排序，沒有紀錄的排在最後。
 
 | 題號 | 標題 | 難度 | 標籤 | 最後練習時間 | 連結 |
 | --- | --- | --- | --- | --- | --- |
+| 449 | 449. Serialize and Deserialize BST | Medium | String, Tree, Depth-First Search, Breadth-First Search, Design, Binary Search Tree, Binary Tree | 2026-08-27 | https://leetcode.com/problems/serialize-and-deserialize-bst/ |
+| 450 | 450. Delete Node in a BST | Medium | Tree, Binary Search Tree, Binary Tree | 2026-08-27 | https://leetcode.com/problems/delete-node-in-a-bst/ |
 | 173 | 173. Binary Search Tree Iterator | Medium | Stack, Tree, Design, Binary Search Tree, Binary Tree, Iterator | 2026-08-26 | https://leetcode.com/problems/binary-search-tree-iterator/ |
 | 235 | 235. Lowest Common Ancestor of a Binary Search Tree | Medium | Tree, Depth-First Search, Binary Search Tree, Binary Tree, Binary Lifting, Lowest Common Ancestor | 2026-08-25 | https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/ |
 | 1038 | 1038. Binary Search Tree to Greater Sum Tree | Medium | Tree, Depth-First Search, Binary Search Tree, Binary Tree | 2026-08-25 | https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/ |
@@ -219,7 +221,6 @@
 | 129 | 129. Sum Root to Leaf Numbers | Medium | Tree, Depth-First Search, Binary Tree | 2023-05-23 | https://leetcode.com/problems/sum-root-to-leaf-numbers/ |
 | 211 | 211. Design Add and Search Words Data Structure | Medium | String, Depth-First Search, Design, Trie | 2023-05-23 | https://leetcode.com/problems/design-add-and-search-words-data-structure/ |
 | 99 | 99. Recover Binary Search Tree | Medium | Tree, Depth-First Search, Binary Search Tree, Binary Tree | 2023-05-21 | https://leetcode.com/problems/recover-binary-search-tree/ |
-| 450 | 450. Delete Node in a BST | Medium | Tree, Binary Search Tree, Binary Tree | 2022-11-09 | https://leetcode.com/problems/delete-node-in-a-bst/ |
 | 547 | 547. Number of Provinces | Medium | Depth-First Search, Breadth-First Search, Union-Find, Graph Theory | 2022-11-09 | https://leetcode.com/problems/number-of-provinces/ |
 | 841 | 841. Keys and Rooms | Medium | Depth-First Search, Breadth-First Search, Graph Theory | 2022-11-09 | https://leetcode.com/problems/keys-and-rooms/ |
 | 1249 | 1249. Minimum Remove to Make Valid Parentheses | Medium | String, Stack | 2022-11-09 | https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/ |
@@ -307,7 +308,6 @@
 | 1512 | 1512. Number of Good Pairs | Easy | Array, Hash Table, Math, Counting | 2022-07-30 | https://leetcode.com/problems/number-of-good-pairs/ |
 | 8 | 8. String to Integer (atoi) | Medium | String | 未提交 | https://leetcode.com/problems/string-to-integer-atoi/ |
 | 166 | 166. Fraction to Recurring Decimal | Medium | Hash Table, Math, String | 未提交 | https://leetcode.com/problems/fraction-to-recurring-decimal/ |
-| 449 | 449. Serialize and Deserialize BST | Medium | String, Tree, Depth-First Search, Breadth-First Search, Design, Binary Search Tree, Binary Tree | 未提交 | https://leetcode.com/problems/serialize-and-deserialize-bst/ |
 | 470 | 470. Implement Rand10() Using Rand7() | Medium | Math, Rejection Sampling, Randomized, Probability and Statistics | 未提交 | https://leetcode.com/problems/implement-rand10-using-rand7/ |
 | 2217 | 2217. Find Palindrome With Fixed Length | Medium | Array, Math | 未提交 | https://leetcode.com/problems/find-palindrome-with-fixed-length/ |
 | array-subclass-symbol-species | Array Subclass Symbol.species | - | 自訂 | 未提交 | - |
