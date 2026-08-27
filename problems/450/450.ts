@@ -71,7 +71,7 @@ function deleteNode(root: TreeNode | null, key: number): TreeNode | null {
 
   const traverse = (node: TreeNode | null): TreeNode => {
     if (!node) {
-      return
+      return null
     }
 
     const { val } = node
@@ -115,8 +115,9 @@ function deleteNode(root: TreeNode | null, key: number): TreeNode | null {
   return traverse(root)
 }
 
-deleteNode(new BinaryTree([5, 3, 6, 2, 4, null, 7]).root, 3).print()
-deleteNode(new BinaryTree([5, 3, 6, 2, 4, null, 7]).root, 0).print()
-console.log(deleteNode(new BinaryTree([]).root, 0))
-deleteNode(new BinaryTree([5, 3, null, 2]).root, 3).print()
+// deleteNode(new BinaryTree([5, 3, 6, 2, 4, null, 7]).root, 3).print()
+// deleteNode(new BinaryTree([5, 3, 6, 2, 4, null, 7]).root, 0).print()
+// console.log(deleteNode(new BinaryTree([]).root, 0))
+// deleteNode(new BinaryTree([5, 3, null, 2]).root, 3).print()
+deleteNode(new BinaryTree([5, 3, 6, 2, 4, null, 7]).root, 5).print()
 
