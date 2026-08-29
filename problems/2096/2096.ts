@@ -111,6 +111,6 @@ function getDirections(root: TreeNode | null, startValue: number, destValue: num
   return Array(rootToStart.slice(diffStartAt).length).fill('U').join('') + rootToDest.slice(diffStartAt)
 }
 
-console.log(getDirections(new BinaryTree([5, 1, 2, 3, null, 6, 4]). root, 3, 6)) // Expected: UURL
-console.log(getDirections(new BinaryTree([2, 1]).root, 2, 1)) // Expected: L
+console.log(getDirections(new BinaryTree([5, 1, 2, 3, null, 6, 4]). root, 3, 6)) // UURL
+console.log(getDirections(new BinaryTree([2, 1]).root, 2, 1)) // L
 

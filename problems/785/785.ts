@@ -44,6 +44,6 @@ function isBipartite(graph: number[][]): boolean {
   return true
 }
 
-console.log(isBipartite([[1, 2, 3], [0, 2], [0, 1, 3], [0, 2]])) // Expected: false
-console.log(isBipartite([[1, 3], [0, 2], [1, 3], [0, 2]])) // Expected: true
+console.log(isBipartite([[1, 2, 3], [0, 2], [0, 1, 3], [0, 2]])) // false
+console.log(isBipartite([[1, 3], [0, 2], [1, 3], [0, 2]])) // true
 

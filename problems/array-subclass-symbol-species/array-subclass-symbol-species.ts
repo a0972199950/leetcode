@@ -19,6 +19,6 @@ class MyArray extends Array {
   }
 }
 
-console.log(Symbol.iterator) // Expected: Symbol(Symbol.iterator)
+console.log(Symbol.iterator) // Symbol(Symbol.iterator)
 
 export default ''

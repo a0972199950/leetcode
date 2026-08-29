@@ -127,8 +127,8 @@ function longestPalindrome(s: string): string {
   return s.slice(min, max + 1)
 }
 
-console.log(longestPalindrome('babad')) // Expected: bab
-console.log(longestPalindrome('cbbd')) // Expected: bb
-console.log(longestPalindrome('abccb')) // Expected: bccb
-console.log(longestPalindrome('a')) // Expected: a
+console.log(longestPalindrome('babad')) // bab
+console.log(longestPalindrome('cbbd')) // bb
+console.log(longestPalindrome('abccb')) // bccb
+console.log(longestPalindrome('a')) // a
 

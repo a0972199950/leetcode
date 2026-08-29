@@ -18,5 +18,5 @@ function findNthDigit(n: number): number {
 
 // console.log(findNthDigit(3))
 // console.log(findNthDigit(11))
-console.log(findNthDigit(100000000)) // Expected: 8
+console.log(findNthDigit(100000000)) // 8
 

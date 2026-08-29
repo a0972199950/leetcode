@@ -80,8 +80,8 @@ function longestCommonSubsequence(text1: string, text2: string): number {
 //   return table[0][0]
 // }
 
-console.log(longestCommonSubsequence('ace', 'abcde')) // Expected: 3
-console.log(longestCommonSubsequence('abc', 'abc')) // Expected: 3
-console.log(longestCommonSubsequence('abc', 'def')) // Expected: 0
-console.log(longestCommonSubsequence('pmjghexybyrgzczy', 'hafcdqbgncrcbihkd')) // Expected: 4
+console.log(longestCommonSubsequence('ace', 'abcde')) // 3
+console.log(longestCommonSubsequence('abc', 'abc')) // 3
+console.log(longestCommonSubsequence('abc', 'def')) // 0
+console.log(longestCommonSubsequence('pmjghexybyrgzczy', 'hafcdqbgncrcbihkd')) // 4
 

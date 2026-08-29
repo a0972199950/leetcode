@@ -59,7 +59,7 @@ function findMaxLength(nums: (0 | 1)[]): number {
   return maxLength
 }
 
-console.log(findMaxLength([0, 1])) // Expected: 2
-console.log(findMaxLength([0, 1, 0])) // Expected: 2
-console.log(findMaxLength([0, 1, 1, 1, 1, 1, 0, 0, 0])) // Expected: 6
-console.log(findMaxLength([0, 0, 1, 0, 0, 0, 1, 1])) // Expected: 6
+console.log(findMaxLength([0, 1])) // 2
+console.log(findMaxLength([0, 1, 0])) // 2
+console.log(findMaxLength([0, 1, 1, 1, 1, 1, 0, 0, 0])) // 6
+console.log(findMaxLength([0, 0, 1, 0, 0, 0, 1, 1])) // 6

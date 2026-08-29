@@ -100,14 +100,14 @@ class MyCircularQueue {
 }
 
 const myCircularQueue = new MyCircularQueue(3)
-console.log(myCircularQueue.enQueue(1)) // return True // Expected: true
-console.log(myCircularQueue.enQueue(2)) // return True // Expected: true
-console.log(myCircularQueue.enQueue(3)) // return True // Expected: true
-console.log(myCircularQueue.enQueue(4)) // return False // Expected: false
-console.log(myCircularQueue.front) // Expected: <ref *1> Node { val: 1, next: Node { val: 2, next: Node { val: 3, next: [Circular *1] } } }
-console.log(myCircularQueue.Rear())     // return 3 // Expected: 3
-console.log(myCircularQueue.isFull())   // return True // Expected: true
-console.log(myCircularQueue.deQueue())  // return True // Expected: true
-console.log(myCircularQueue.enQueue(4)) // return True // Expected: true
-console.log(myCircularQueue.Rear())     // return 4 // Expected: 4
+console.log(myCircularQueue.enQueue(1)) // return True // true
+console.log(myCircularQueue.enQueue(2)) // return True // true
+console.log(myCircularQueue.enQueue(3)) // return True // true
+console.log(myCircularQueue.enQueue(4)) // return False // false
+console.log(myCircularQueue.front) // <ref *1> Node { val: 1, next: Node { val: 2, next: Node { val: 3, next: [Circular *1] } } }
+console.log(myCircularQueue.Rear())     // return 3 // 3
+console.log(myCircularQueue.isFull())   // return True // true
+console.log(myCircularQueue.deQueue())  // return True // true
+console.log(myCircularQueue.enQueue(4)) // return True // true
+console.log(myCircularQueue.Rear())     // return 4 // 4
 

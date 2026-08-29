@@ -40,7 +40,7 @@ function findJudge(n: number, trust: number[][]): number {
   }
 }
 
-console.log(findJudge(1, [])) // Expected: 1
-console.log(findJudge(3, [[1, 3], [2, 3], [3, 1]])) // Expected: -1
-console.log(findJudge(3, [[1, 3], [2, 3]])) // Expected: 3
+console.log(findJudge(1, [])) // 1
+console.log(findJudge(3, [[1, 3], [2, 3], [3, 1]])) // -1
+console.log(findJudge(3, [[1, 3], [2, 3]])) // 3
 

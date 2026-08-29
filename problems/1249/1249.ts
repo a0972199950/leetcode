@@ -32,12 +32,12 @@ function minRemoveToMakeValid(s: string): string {
   return s
 }
 
-console.log(minRemoveToMakeValid('lee(t(c)o)de)')) // Expected: lee(t(c)o)de
-console.log(minRemoveToMakeValid('lee(t(c)o(de)')) // Expected: leet(c)o(de)
-console.log(minRemoveToMakeValid('leet(c)ode)')) // Expected: leet(c)ode
-console.log(minRemoveToMakeValid('a)b(c)d')) // Expected: ab(c)d
-console.log(minRemoveToMakeValid('))((')) // Expected: 
-console.log(minRemoveToMakeValid('))abc((')) // Expected: abc
-console.log(minRemoveToMakeValid('()')) // Expected: ()
-console.log(minRemoveToMakeValid('((()((')) // Expected: ()
+console.log(minRemoveToMakeValid('lee(t(c)o)de)')) // lee(t(c)o)de
+console.log(minRemoveToMakeValid('lee(t(c)o(de)')) // leet(c)o(de)
+console.log(minRemoveToMakeValid('leet(c)ode)')) // leet(c)ode
+console.log(minRemoveToMakeValid('a)b(c)d')) // ab(c)d
+console.log(minRemoveToMakeValid('))((')) // 
+console.log(minRemoveToMakeValid('))abc((')) // abc
+console.log(minRemoveToMakeValid('()')) // ()
+console.log(minRemoveToMakeValid('((()((')) // ()
 

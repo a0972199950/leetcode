@@ -32,10 +32,10 @@ function compareVersion(version1: string, version2: string): number {
   return 0
 }
 
-console.log(compareVersion('1.01', '1.001')) // Expected: 0
-console.log(compareVersion('1.0', '1.0.0')) // Expected: 0
-console.log(compareVersion('0.1', '1.1')) // Expected: -1
-console.log(compareVersion('1.2', '1.10')) // Expected: -1
-console.log(compareVersion('1.01', '1.001')) // Expected: 0
-console.log(compareVersion('3.0.4.10', '3.0.4.2')) // Expected: 1
+console.log(compareVersion('1.01', '1.001')) // 0
+console.log(compareVersion('1.0', '1.0.0')) // 0
+console.log(compareVersion('0.1', '1.1')) // -1
+console.log(compareVersion('1.2', '1.10')) // -1
+console.log(compareVersion('1.01', '1.001')) // 0
+console.log(compareVersion('3.0.4.10', '3.0.4.2')) // 1
 

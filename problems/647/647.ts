@@ -69,6 +69,6 @@ function countSubstrings(s: string): number {
 //   return count
 // }
 
-console.log(countSubstrings('abc')) // Expected: 3
-console.log(countSubstrings('aaa')) // Expected: 6
+console.log(countSubstrings('abc')) // 3
+console.log(countSubstrings('aaa')) // 6
 

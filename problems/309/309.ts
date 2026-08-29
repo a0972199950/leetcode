@@ -53,6 +53,6 @@ function maxProfit(prices: number[]): number {
   return Math.max(notHoldMaxProfits.at(-1), holdMaxProfits.at(-1))
 }
 
-console.log(maxProfit([1, 2, 3, 0, 2])) // Expected: 3
-console.log(maxProfit([1])) // Expected: 0
+console.log(maxProfit([1, 2, 3, 0, 2])) // 3
+console.log(maxProfit([1])) // 0
 

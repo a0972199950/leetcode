@@ -51,5 +51,5 @@ function minDistance(word1: string, word2: string): number {
 // console.log(minDistance('tion', 'tion'))
 // console.log(minDistance('', 'a'))
 // console.log(minDistance('dinitrophenylhydrazine', 'dimethylhydrazine'))
-console.log(minDistance('ab', 'bc')) // Expected: 2
+console.log(minDistance('ab', 'bc')) // 2
 

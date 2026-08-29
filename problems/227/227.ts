@@ -113,10 +113,10 @@ function calculate(s: string): number {
   return stack.reduce((sum, num) => sum + num, 0)
 }
 
-console.log(calculate('3+2*2')) // Expected: 7
-console.log(calculate('3+26*2')) // Expected: 55
-console.log(calculate(' 3/2 ')) // Expected: 1
-console.log(calculate(' 3+5 / 2 ')) // Expected: 5
-console.log(calculate('3+5/2+7*4')) // Expected: 33
-console.log(calculate('14-3/2')) // Expected: 13
+console.log(calculate('3+2*2')) // 7
+console.log(calculate('3+26*2')) // 55
+console.log(calculate(' 3/2 ')) // 1
+console.log(calculate(' 3+5 / 2 ')) // 5
+console.log(calculate('3+5/2+7*4')) // 33
+console.log(calculate('14-3/2')) // 13
 

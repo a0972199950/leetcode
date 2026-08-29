@@ -103,10 +103,10 @@ class LRUCache {
 // console.log(lRUCache.get(4))    // return 4
 
 const lRUCache = new LRUCache(2)
-console.log(lRUCache.put(2, 1)) // Expected: undefined
-console.log(lRUCache.put(2, 2)) // Expected: undefined
-console.log(lRUCache.get(2)) // Expected: 2
-console.log(lRUCache.put(1, 1)) // Expected: undefined
-console.log(lRUCache.put(4, 1)) // Expected: undefined
-console.log(lRUCache.get(2)) // Expected: -1
+console.log(lRUCache.put(2, 1)) // undefined
+console.log(lRUCache.put(2, 2)) // undefined
+console.log(lRUCache.get(2)) // 2
+console.log(lRUCache.put(1, 1)) // undefined
+console.log(lRUCache.put(4, 1)) // undefined
+console.log(lRUCache.get(2)) // -1
 

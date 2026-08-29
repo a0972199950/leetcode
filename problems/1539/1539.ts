@@ -51,10 +51,10 @@ function findKthPositive(arr: number[], k: number): number {
   
 }
 
-console.log(findKthPositive([2, 3, 4, 7, 11], 5)) // Expected: 9
+console.log(findKthPositive([2, 3, 4, 7, 11], 5)) // 9
 // console.log(findKthPositive([1, 2, 3, 4], 2))
-console.log(findKthPositive([4, 5], 7)) // Expected: 9
-console.log(findKthPositive([4, 5], 2)) // Expected: 2
+console.log(findKthPositive([4, 5], 7)) // 9
+console.log(findKthPositive([4, 5], 2)) // 2
 // console.log(findKthPositive([2], 1))
 
 // i n

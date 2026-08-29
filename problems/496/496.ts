@@ -29,5 +29,5 @@ function nextGreaterElement(nums1: number[], nums2: number[]): number[] {
   })
 }
 
-console.log(nextGreaterElement([4, 1, 2], [1, 3, 4, 2])) // Expected: [ -1, 3, -1 ]
-console.log(nextGreaterElement([2, 4], [1, 2, 3, 4])) // Expected: [ 3, -1 ]
+console.log(nextGreaterElement([4, 1, 2], [1, 3, 4, 2])) // [ -1, 3, -1 ]
+console.log(nextGreaterElement([2, 4], [1, 2, 3, 4])) // [ 3, -1 ]

@@ -127,14 +127,14 @@ function merge(intervals: number[][]): number[][] {
   return ans
 }
 
-console.log(merge([[1, 3], [2, 6], [8, 10], [15, 18]])) // Expected: [ [ 1, 6 ], [ 8, 10 ], [ 15, 18 ] ]
-console.log(merge([[1, 4], [4, 5]])) // Expected: [ [ 1, 5 ] ]
-console.log(merge([[1, 4], [0, 0]])) // Expected: [ [ 0, 0 ], [ 1, 4 ] ]
-console.log(merge([[1, 4], [2, 2]])) // Expected: [ [ 1, 4 ] ]
-console.log(merge([[2, 3], [4, 5], [6, 7], [8, 9], [1, 10]])) // Expected: [ [ 1, 10 ] ]
-console.log(merge([[2, 3], [2, 2], [3, 3], [1, 3], [5, 7], [2, 2], [4, 6]])) // Expected: [ [ 1, 3 ], [ 4, 7 ] ]
-console.log(merge([[1, 4], [5, 6]])) // Expected: [ [ 1, 4 ], [ 5, 6 ] ]
-console.log(merge([[1, 4]])) // Expected: [ [ 1, 4 ] ]
-console.log(merge([[1, 4], [0, 2], [3, 5]])) // Expected: [ [ 0, 5 ] ]
-console.log(merge([[2, 3], [5, 5], [2, 2], [3, 4], [3, 4]])) // Expected: [ [ 2, 4 ], [ 5, 5 ] ]
+console.log(merge([[1, 3], [2, 6], [8, 10], [15, 18]])) // [ [ 1, 6 ], [ 8, 10 ], [ 15, 18 ] ]
+console.log(merge([[1, 4], [4, 5]])) // [ [ 1, 5 ] ]
+console.log(merge([[1, 4], [0, 0]])) // [ [ 0, 0 ], [ 1, 4 ] ]
+console.log(merge([[1, 4], [2, 2]])) // [ [ 1, 4 ] ]
+console.log(merge([[2, 3], [4, 5], [6, 7], [8, 9], [1, 10]])) // [ [ 1, 10 ] ]
+console.log(merge([[2, 3], [2, 2], [3, 3], [1, 3], [5, 7], [2, 2], [4, 6]])) // [ [ 1, 3 ], [ 4, 7 ] ]
+console.log(merge([[1, 4], [5, 6]])) // [ [ 1, 4 ], [ 5, 6 ] ]
+console.log(merge([[1, 4]])) // [ [ 1, 4 ] ]
+console.log(merge([[1, 4], [0, 2], [3, 5]])) // [ [ 0, 5 ] ]
+console.log(merge([[2, 3], [5, 5], [2, 2], [3, 4], [3, 4]])) // [ [ 2, 4 ], [ 5, 5 ] ]
 

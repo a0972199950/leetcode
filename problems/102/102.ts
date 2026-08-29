@@ -30,7 +30,7 @@ function levelOrder(root: TreeNode | null): number[][] {
   return ans
 }
 
-console.log(levelOrder(new BinaryTree([3, 9, 20, null, null, 15, 7]).root)) // Expected: [ [ 3 ], [ 9, 20 ], [ 15, 7 ] ]
-console.log(levelOrder(new BinaryTree([1]).root)) // Expected: [ [ 1 ] ]
-console.log(levelOrder(new BinaryTree([]).root)) // Expected: []
+console.log(levelOrder(new BinaryTree([3, 9, 20, null, null, 15, 7]).root)) // [ [ 3 ], [ 9, 20 ], [ 15, 7 ] ]
+console.log(levelOrder(new BinaryTree([1]).root)) // [ [ 1 ] ]
+console.log(levelOrder(new BinaryTree([]).root)) // []
 

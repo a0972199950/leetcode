@@ -24,8 +24,8 @@ function lengthOfLastWord(s: string): number {
   return length
 }
 
-console.log(lengthOfLastWord('Hello World')) // Expected: 5
-console.log(lengthOfLastWord('   fly me   to   the moon  ')) // Expected: 4
-console.log(lengthOfLastWord('luffy is still joyboy')) // Expected: 6
-console.log(lengthOfLastWord('a')) // Expected: 1
+console.log(lengthOfLastWord('Hello World')) // 5
+console.log(lengthOfLastWord('   fly me   to   the moon  ')) // 4
+console.log(lengthOfLastWord('luffy is still joyboy')) // 6
+console.log(lengthOfLastWord('a')) // 1
 

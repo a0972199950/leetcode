@@ -21,6 +21,6 @@ function canVisitAllRooms(rooms: number[][]): boolean {
   return hasVisited.size === rooms.length
 }
 
-console.log(canVisitAllRooms([[1], [2], [3], []])) // Expected: true
-console.log(canVisitAllRooms([[1, 3], [3, 0, 1], [2], [0]])) // Expected: false
+console.log(canVisitAllRooms([[1], [2], [3], []])) // true
+console.log(canVisitAllRooms([[1, 3], [3, 0, 1], [2], [0]])) // false
 

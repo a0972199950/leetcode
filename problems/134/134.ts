@@ -87,8 +87,8 @@ function canCompleteCircuit(gas: number[], cost: number[]): number {
   return start
 }
 
-console.log(canCompleteCircuit([1, 2, 3, 4, 5], [3, 4, 5, 1, 2])) // Expected: 3
-console.log(canCompleteCircuit([2, 3, 4], [3, 4, 3])) // Expected: -1
-console.log(canCompleteCircuit([5, 1, 2, 3, 4], [4, 4, 1, 5, 1])) // Expected: 4
-console.log(canCompleteCircuit([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])) // Expected: 0
+console.log(canCompleteCircuit([1, 2, 3, 4, 5], [3, 4, 5, 1, 2])) // 3
+console.log(canCompleteCircuit([2, 3, 4], [3, 4, 3])) // -1
+console.log(canCompleteCircuit([5, 1, 2, 3, 4], [4, 4, 1, 5, 1])) // 4
+console.log(canCompleteCircuit([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])) // 0
 

@@ -50,9 +50,9 @@ function minMutation(startGene: string, endGene: string, bank: string[]): number
   return -1
 }
 
-console.log(minMutation('AACCGGTT', 'AACCGGTA', ['AACCGGTA'])) // Expected: 1
-console.log(minMutation('AACCGGTT', 'AAACGGTA', ['AACCGGTA', 'AACCGCTA', 'AAACGGTA'])) // Expected: 2
-console.log(minMutation('AAAAACCC', 'AACCCCCC', ['AAAACCCC', 'AAACCCCC', 'AACCCCCC'])) // Expected: 3
-console.log(minMutation('AACCGGTT', 'AACCGGTA', [])) // Expected: -1
-console.log(minMutation('AAAACCCC', 'CCCCCCCC', ['AAAACCCA', 'AAACCCCA', 'AACCCCCA', 'AACCCCCC', 'ACCCCCCC', 'CCCCCCCC', 'AAACCCCC', 'AACCCCCC'])) // Expected: 4
-console.log(minMutation('AAAAAAAA', 'CCCCCCCC', ['AAAAAAAA', 'AAAAAAAC', 'AAAAAACC', 'AAAAACCC', 'AAAACCCC', 'AACACCCC', 'ACCACCCC', 'ACCCCCCC', 'CCCCCCCA'])) // Expected: -1
+console.log(minMutation('AACCGGTT', 'AACCGGTA', ['AACCGGTA'])) // 1
+console.log(minMutation('AACCGGTT', 'AAACGGTA', ['AACCGGTA', 'AACCGCTA', 'AAACGGTA'])) // 2
+console.log(minMutation('AAAAACCC', 'AACCCCCC', ['AAAACCCC', 'AAACCCCC', 'AACCCCCC'])) // 3
+console.log(minMutation('AACCGGTT', 'AACCGGTA', [])) // -1
+console.log(minMutation('AAAACCCC', 'CCCCCCCC', ['AAAACCCA', 'AAACCCCA', 'AACCCCCA', 'AACCCCCC', 'ACCCCCCC', 'CCCCCCCC', 'AAACCCCC', 'AACCCCCC'])) // 4
+console.log(minMutation('AAAAAAAA', 'CCCCCCCC', ['AAAAAAAA', 'AAAAAAAC', 'AAAAAACC', 'AAAAACCC', 'AAAACCCC', 'AACACCCC', 'ACCACCCC', 'ACCCCCCC', 'CCCCCCCA'])) // -1

@@ -27,5 +27,5 @@ function search(nums: number[], target: number): number {
   return -1
 }
 
-console.log(search([-1, 0, 3, 5, 9, 12], 9)) // Expected: 4
-console.log(search([-1, 0, 3, 5, 9, 12], 2)) // Expected: -1
+console.log(search([-1, 0, 3, 5, 9, 12], 9)) // 4
+console.log(search([-1, 0, 3, 5, 9, 12], 2)) // -1

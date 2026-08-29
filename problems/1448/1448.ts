@@ -26,7 +26,7 @@ function goodNodes(root: TreeNode | null): number {
   return countOfGoods
 }
 
-console.log(goodNodes(new BinaryTree([3, 1, 4, 3, null, 1, 5]).root)) // 4 // Expected: 4
-console.log(goodNodes(new BinaryTree([3, 3, null, 4, 2]).root)) // 3 // Expected: 3
-console.log(goodNodes(new BinaryTree([1]).root)) // 1 // Expected: 1
+console.log(goodNodes(new BinaryTree([3, 1, 4, 3, null, 1, 5]).root)) // 4 // 4
+console.log(goodNodes(new BinaryTree([3, 3, null, 4, 2]).root)) // 3 // 3
+console.log(goodNodes(new BinaryTree([1]).root)) // 1 // 1
 

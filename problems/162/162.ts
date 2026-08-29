@@ -34,7 +34,7 @@ function findPeakElement(nums: number[]): number {
   }
 }
 
-console.log(findPeakElement([1, 2, 3, 1])) // Expected: 2
-console.log(findPeakElement([1, 2, 1, 3, 5, 6, 4])) // Expected: 5
-console.log(findPeakElement([5, 4, 3, 4, 5])) // Expected: 4
+console.log(findPeakElement([1, 2, 3, 1])) // 2
+console.log(findPeakElement([1, 2, 1, 3, 5, 6, 4])) // 5
+console.log(findPeakElement([5, 4, 3, 4, 5])) // 4
 

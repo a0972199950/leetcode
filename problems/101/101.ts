@@ -23,6 +23,6 @@ function isSymmetric(root: TreeNode | null): boolean {
   return check(root.left, root.right)
 }
 
-console.log(isSymmetric(new BinaryTree([1, 2, 2, 3, 4, 4, 3]).root)) // Expected: true
-console.log(isSymmetric(new BinaryTree([1, 2, 2, null, 3, null, 3]).root)) // Expected: false
+console.log(isSymmetric(new BinaryTree([1, 2, 2, 3, 4, 4, 3]).root)) // true
+console.log(isSymmetric(new BinaryTree([1, 2, 2, null, 3, null, 3]).root)) // false
 

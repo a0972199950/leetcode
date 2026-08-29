@@ -42,7 +42,7 @@ function isPalindrome(s: string): boolean {
 
 // console.log(isPalindrome('A man, a plan, a canal: Panama'))
 // console.log(isPalindrome('race a car'))
-console.log(isPalindrome(' ')) // Expected: true
-console.log(isPalindrome(':::""')) // Expected: true
-console.log(isPalindrome('')) // Expected: true
+console.log(isPalindrome(' ')) // true
+console.log(isPalindrome(':::""')) // true
+console.log(isPalindrome('')) // true
 

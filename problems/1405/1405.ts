@@ -39,12 +39,12 @@ function longestDiverseString(a: number, b: number, c: number): string {
   return ans.join('')
 }
 
-console.log(longestDiverseString(1, 1, 7)) // Expected: ccaccbcc
-console.log(longestDiverseString(7, 1, 0)) // Expected: aabaa
-console.log(longestDiverseString(1, 0, 5)) // Expected: ccacc
-console.log(longestDiverseString(7, 0, 0)) // Expected: aa
-console.log(longestDiverseString(0, 0, 0)) // Expected: 
-console.log(longestDiverseString(1, 1, 1)) // Expected: abc
-console.log(longestDiverseString(6, 6, 6)) // Expected: abcabcabcabcabcabc
-console.log(longestDiverseString(0, 8, 11)) // Expected: ccbccbcbcbcbcbcbcbc
+console.log(longestDiverseString(1, 1, 7)) // ccaccbcc
+console.log(longestDiverseString(7, 1, 0)) // aabaa
+console.log(longestDiverseString(1, 0, 5)) // ccacc
+console.log(longestDiverseString(7, 0, 0)) // aa
+console.log(longestDiverseString(0, 0, 0)) // 
+console.log(longestDiverseString(1, 1, 1)) // abc
+console.log(longestDiverseString(6, 6, 6)) // abcabcabcabcabcabc
+console.log(longestDiverseString(0, 8, 11)) // ccbccbcbcbcbcbcbcbc
 

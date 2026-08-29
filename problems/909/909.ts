@@ -65,5 +65,5 @@ function snakesAndLadders(board: number[][]): number {
   return -1
 }
 
-console.log(snakesAndLadders([[-1, -1, -1, -1, -1, -1], [-1, -1, -1, -1, -1, -1], [-1, -1, -1, -1, -1, -1], [-1, 35, -1, -1, 13, -1], [-1, -1, -1, -1, -1, -1], [-1, 15, -1, -1, -1, -1]])) // Expected: 4
-console.log(snakesAndLadders([[-1, -1], [-1, 3]])) // Expected: 1
+console.log(snakesAndLadders([[-1, -1, -1, -1, -1, -1], [-1, -1, -1, -1, -1, -1], [-1, -1, -1, -1, -1, -1], [-1, 35, -1, -1, 13, -1], [-1, -1, -1, -1, -1, -1], [-1, 15, -1, -1, -1, -1]])) // 4
+console.log(snakesAndLadders([[-1, -1], [-1, 3]])) // 1

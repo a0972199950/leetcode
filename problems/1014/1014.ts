@@ -16,6 +16,6 @@ function maxScoreSightseeingPair(values: number[]): number {
   return maxScore
 }
 
-console.log(maxScoreSightseeingPair([8, 1, 5, 2, 6])) // Expected: 11
-console.log(maxScoreSightseeingPair([1, 2])) // Expected: 2
+console.log(maxScoreSightseeingPair([8, 1, 5, 2, 6])) // 11
+console.log(maxScoreSightseeingPair([1, 2])) // 2
 

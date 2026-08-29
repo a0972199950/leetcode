@@ -39,6 +39,6 @@ function summaryRanges(nums: number[]): string[] {
   return result
 }
 
-console.log(summaryRanges([0, 1, 2, 4, 5, 7])) // Expected: [ '0->2', '4->5', '7' ]
-console.log(summaryRanges([0, 2, 3, 4, 6, 8, 9])) // Expected: [ '0', '2->4', '6', '8->9' ]
-console.log(summaryRanges([])) // Expected: []
+console.log(summaryRanges([0, 1, 2, 4, 5, 7])) // [ '0->2', '4->5', '7' ]
+console.log(summaryRanges([0, 2, 3, 4, 6, 8, 9])) // [ '0', '2->4', '6', '8->9' ]
+console.log(summaryRanges([])) // []

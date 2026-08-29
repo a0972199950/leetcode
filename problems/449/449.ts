@@ -188,7 +188,7 @@ function deserialize(_data: string): TreeNode | null {
   return result
 }
 
-deserialize(serialize(new BinaryTree([2, 1, 3]).root)).print() // Expected: [2,1,3]
-console.log(deserialize(serialize(new BinaryTree([]).root))) // Expected: []
-deserialize(serialize(new BinaryTree([2, 1, 9, -1, null, 8, 10, -2]).root)).print() // Expected: [2,1,3]
+deserialize(serialize(new BinaryTree([2, 1, 3]).root)).print() // [2,1,3]
+console.log(deserialize(serialize(new BinaryTree([]).root))) // []
+deserialize(serialize(new BinaryTree([2, 1, 9, -1, null, 8, 10, -2]).root)).print() // [2,1,3]
 

@@ -47,9 +47,9 @@ function largestBSTSubtree(root: TreeNode | null): number {
   return max
 }
 
-console.log(largestBSTSubtree(new BinaryTree([10, 5, 15, 1, 8, null, 7]).root)) // Expected: 3
-console.log(largestBSTSubtree(new BinaryTree([4, 2, 7, 2, 3, 5, null, 2, null, null, null, null, null, 1]).root)) // Expected: 2
-console.log(largestBSTSubtree(new BinaryTree([1]).root)) // Expected: 1
-console.log(largestBSTSubtree(new BinaryTree([]).root)) // Expected: 0
-console.log(largestBSTSubtree(new BinaryTree([3, 2, 4, null, null, 1]).root)) // Expected: 2
+console.log(largestBSTSubtree(new BinaryTree([10, 5, 15, 1, 8, null, 7]).root)) // 3
+console.log(largestBSTSubtree(new BinaryTree([4, 2, 7, 2, 3, 5, null, 2, null, null, null, null, null, 1]).root)) // 2
+console.log(largestBSTSubtree(new BinaryTree([1]).root)) // 1
+console.log(largestBSTSubtree(new BinaryTree([]).root)) // 0
+console.log(largestBSTSubtree(new BinaryTree([3, 2, 4, null, null, 1]).root)) // 2
 

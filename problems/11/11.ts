@@ -58,6 +58,6 @@ function maxArea(heights: number[]): number {
   return max
 }
 
-console.log(maxArea([1, 8, 6, 2, 5, 4, 8, 3, 7])) // Expected: 49
-console.log(maxArea([1, 1])) // Expected: 1
+console.log(maxArea([1, 8, 6, 2, 5, 4, 8, 3, 7])) // 49
+console.log(maxArea([1, 1])) // 1
 

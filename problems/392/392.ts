@@ -20,6 +20,6 @@ function isSubsequence(s: string, t: string): boolean {
   return anchor === s.length
 }
 
-console.log(isSubsequence('abc', 'ahbgdc')) // Expected: true
-console.log(isSubsequence('axc', 'ahbgdc')) // Expected: false
+console.log(isSubsequence('abc', 'ahbgdc')) // true
+console.log(isSubsequence('axc', 'ahbgdc')) // false
 

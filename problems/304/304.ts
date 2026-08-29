@@ -35,11 +35,11 @@ class NumMatrix {
 }
 
 const matrix = new NumMatrix([[3, 0, 1, 4, 2], [5, 6, 3, 2, 1], [1, 2, 0, 1, 5], [4, 1, 0, 1, 7], [1, 0, 3, 0, 5]])
-console.log(matrix.prefixSum) // Expected: [ [ 3, 3, 4, 8, 10 ], [ 8, 14, 18, 24, 27 ], [ 9, 17, 21, 28, 36 ], [ 13, 22, 26, 34, 49 ], [ 14, 23, 30, 38, 58 ] ]
+console.log(matrix.prefixSum) // [ [ 3, 3, 4, 8, 10 ], [ 8, 14, 18, 24, 27 ], [ 9, 17, 21, 28, 36 ], [ 13, 22, 26, 34, 49 ], [ 14, 23, 30, 38, 58 ] ]
 
-console.log(matrix.sumRegion(2, 1, 4, 3)) // Expected: 8
-console.log(matrix.sumRegion(1, 1, 2, 2)) // Expected: 11
-console.log(matrix.sumRegion(1, 2, 2, 4)) // Expected: 12
+console.log(matrix.sumRegion(2, 1, 4, 3)) // 8
+console.log(matrix.sumRegion(1, 1, 2, 2)) // 11
+console.log(matrix.sumRegion(1, 2, 2, 4)) // 12
 
 /**
 * Your NumMatrix object will be instantiated and called as such:

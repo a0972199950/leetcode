@@ -74,6 +74,6 @@ function pathSum(nums: number[]): number {
   return total
 }
 
-console.log(pathSum([113, 215, 221])) // Expected: 12
-console.log(pathSum([113, 221])) // Expected: 4
+console.log(pathSum([113, 215, 221])) // 12
+console.log(pathSum([113, 221])) // 4
 

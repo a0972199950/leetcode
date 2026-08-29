@@ -49,7 +49,7 @@ function partition(head: ListNode | null, x: number): ListNode | null {
   return front.head || back.head
 }
 
-console.log(partition(new LinkedList([1, 4, 3, 2, 5, 2]).head, 3)) // Expected: ListNode { val: 1, next: ListNode { val: 2, next: ListNode { val: 2, next: ListNode { val: 4, next: ListNode { val: 3, next: ListNode { val: 5, next: null } } } } } }
-console.log(partition(new LinkedList([2, 1]).head, 2)) // Expected: ListNode { val: 1, next: ListNode { val: 2, next: null } }
-console.log(partition(new LinkedList([]).head, 0)) // Expected: null
-console.log(partition(new LinkedList([1]).head, 0)) // Expected: ListNode { val: 1, next: null }
+console.log(partition(new LinkedList([1, 4, 3, 2, 5, 2]).head, 3)) // ListNode { val: 1, next: ListNode { val: 2, next: ListNode { val: 2, next: ListNode { val: 4, next: ListNode { val: 3, next: ListNode { val: 5, next: null } } } } } }
+console.log(partition(new LinkedList([2, 1]).head, 2)) // ListNode { val: 1, next: ListNode { val: 2, next: null } }
+console.log(partition(new LinkedList([]).head, 0)) // null
+console.log(partition(new LinkedList([1]).head, 0)) // ListNode { val: 1, next: null }

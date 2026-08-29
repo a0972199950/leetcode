@@ -66,19 +66,19 @@ const minStack = new MinStack()
 minStack.push(2147483646)
 minStack.push(2147483646)
 minStack.push(2147483647)
-console.log(minStack.stack) // Expected: [ { value: 2147483646, min: 2147483646 }, { value: 2147483646, min: 2147483646 }, { value: 2147483647, min: 2147483646 } ]
-console.log(minStack.top()) // Expected: 2147483647
+console.log(minStack.stack) // [ { value: 2147483646, min: 2147483646 }, { value: 2147483646, min: 2147483646 }, { value: 2147483647, min: 2147483646 } ]
+console.log(minStack.top()) // 2147483647
 minStack.pop()
-console.log(minStack.getMin()) // Expected: 2147483646
+console.log(minStack.getMin()) // 2147483646
 minStack.pop()
-console.log(minStack.getMin()) // Expected: 2147483646
+console.log(minStack.getMin()) // 2147483646
 minStack.pop()
 minStack.push(2147483647)
-console.log(minStack.stack) // Expected: [ { value: 2147483647, min: 2147483647 } ]
-console.log(minStack.top()) // Expected: 2147483647
-console.log(minStack.getMin()) // Expected: 2147483647
+console.log(minStack.stack) // [ { value: 2147483647, min: 2147483647 } ]
+console.log(minStack.top()) // 2147483647
+console.log(minStack.getMin()) // 2147483647
 minStack.push(-2147483648)
-console.log(minStack.top()) // Expected: -2147483648
-console.log(minStack.getMin()) // Expected: -2147483648
+console.log(minStack.top()) // -2147483648
+console.log(minStack.getMin()) // -2147483648
 minStack.pop()
-console.log(minStack.getMin()) // Expected: 2147483647
+console.log(minStack.getMin()) // 2147483647

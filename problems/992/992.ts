@@ -43,4 +43,4 @@ function subarraysWithKDistinct(nums: number[], k: number): number {
 }
 
 // console.log(subarraysWithKDistinct([1, 2, 1, 2, 3], 2))
-console.log(subarraysWithKDistinct([1, 2, 1, 3, 4], 4)) // 3 // Expected: 2
+console.log(subarraysWithKDistinct([1, 2, 1, 3, 4], 4)) // 3 // 2

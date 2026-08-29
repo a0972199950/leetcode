@@ -50,11 +50,11 @@ function maxSubarrayLength(nums: number[]): number {
   return maxLength
 }
 
-console.log(maxSubarrayLength([7, 6, 5, 4, 3, 2, 1, 6, 10, 11])) // Expected: 8
-console.log(maxSubarrayLength([57, 55, 50, 60, 61, 58, 63, 59, 64, 60, 63])) // Expected: 6
-console.log(maxSubarrayLength([1, 2, 3, 4])) // Expected: 0
-console.log(maxSubarrayLength([4, 3, 2, 1])) // Expected: 4
-console.log(maxSubarrayLength([4, 4, 4, 4])) // Expected: 0
-console.log(maxSubarrayLength([1, 2, 3, 4, 5, 4, 3, 2, 1])) // Expected: 8
-console.log(maxSubarrayLength([26, 26, 35, 72, 82])) // Expected: 0
+console.log(maxSubarrayLength([7, 6, 5, 4, 3, 2, 1, 6, 10, 11])) // 8
+console.log(maxSubarrayLength([57, 55, 50, 60, 61, 58, 63, 59, 64, 60, 63])) // 6
+console.log(maxSubarrayLength([1, 2, 3, 4])) // 0
+console.log(maxSubarrayLength([4, 3, 2, 1])) // 4
+console.log(maxSubarrayLength([4, 4, 4, 4])) // 0
+console.log(maxSubarrayLength([1, 2, 3, 4, 5, 4, 3, 2, 1])) // 8
+console.log(maxSubarrayLength([26, 26, 35, 72, 82])) // 0
 

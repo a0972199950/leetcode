@@ -29,8 +29,8 @@ function maxSubarrayLength(nums: number[], k: number): number {
   return max
 }
 
-console.log(maxSubarrayLength([1, 2, 3, 1, 2, 3, 1, 2], 2)) // Expected: 6
-console.log(maxSubarrayLength([1, 2, 1, 2, 1, 2, 1, 2], 1)) // Expected: 2
-console.log(maxSubarrayLength([5, 5, 5, 5, 5, 5, 5], 4)) // Expected: 4
-console.log(maxSubarrayLength([1, 4, 4, 3], 1)) // Expected: 2
+console.log(maxSubarrayLength([1, 2, 3, 1, 2, 3, 1, 2], 2)) // 6
+console.log(maxSubarrayLength([1, 2, 1, 2, 1, 2, 1, 2], 1)) // 2
+console.log(maxSubarrayLength([5, 5, 5, 5, 5, 5, 5], 4)) // 4
+console.log(maxSubarrayLength([1, 4, 4, 3], 1)) // 2
 

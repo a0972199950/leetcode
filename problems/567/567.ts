@@ -200,8 +200,8 @@ function checkInclusion(s1: string, s2: string): boolean {
   return false
 }
 
-console.log(checkInclusion('ab', 'eidbaooo')) // true // Expected: true
-console.log(checkInclusion('ab', 'eidboaoo')) // false // Expected: false
-console.log(checkInclusion('adc', 'dcda')) // true // Expected: true
-console.log(checkInclusion('hello', 'ooolleoooleh')) // false // Expected: false
+console.log(checkInclusion('ab', 'eidbaooo')) // true // true
+console.log(checkInclusion('ab', 'eidboaoo')) // false // false
+console.log(checkInclusion('adc', 'dcda')) // true // true
+console.log(checkInclusion('hello', 'ooolleoooleh')) // false // false
 

@@ -53,9 +53,9 @@ function eraseOverlapIntervals(intervals: number[][]): number {
   return removes
 }
 
-console.log(eraseOverlapIntervals([[1, 2], [2, 3], [3, 4], [1, 3]])) // Expected: 1
-console.log(eraseOverlapIntervals([[1, 2], [1, 2], [1, 2]])) // Expected: 2
-console.log(eraseOverlapIntervals([[1, 2], [2, 3]])) // Expected: 0
-console.log(eraseOverlapIntervals([[0, 2], [1, 3], [2, 4], [3, 5], [4, 6]])) // Expected: 2
-console.log(eraseOverlapIntervals([[0, 2], [1, 3], [1, 3], [2, 4], [3, 5], [3, 5], [4, 6]])) // Expected: 4
+console.log(eraseOverlapIntervals([[1, 2], [2, 3], [3, 4], [1, 3]])) // 1
+console.log(eraseOverlapIntervals([[1, 2], [1, 2], [1, 2]])) // 2
+console.log(eraseOverlapIntervals([[1, 2], [2, 3]])) // 0
+console.log(eraseOverlapIntervals([[0, 2], [1, 3], [2, 4], [3, 5], [4, 6]])) // 2
+console.log(eraseOverlapIntervals([[0, 2], [1, 3], [1, 3], [2, 4], [3, 5], [3, 5], [4, 6]])) // 4
 

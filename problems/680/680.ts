@@ -26,7 +26,7 @@ function validPalindrome(s: string): boolean {
   return checkStr(0, s.length - 1, false)
 }
 
-console.log(validPalindrome('aba')) // Expected: true
-console.log(validPalindrome('abca')) // Expected: true
-console.log(validPalindrome('abc')) // Expected: false
+console.log(validPalindrome('aba')) // true
+console.log(validPalindrome('abca')) // true
+console.log(validPalindrome('abc')) // false
 

@@ -31,7 +31,7 @@ function isHappy(n: number): boolean {
   return true
 }
 
-console.log(isHappy(19)) // Expected: true
-console.log(isHappy(2)) // Expected: false
+console.log(isHappy(19)) // true
+console.log(isHappy(2)) // false
 
 // 

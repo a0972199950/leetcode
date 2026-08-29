@@ -22,5 +22,5 @@ function generate(numRows: number): number[][] {
   return result
 }
 
-console.log(generate(0)) // Expected: []
+console.log(generate(0)) // []
 

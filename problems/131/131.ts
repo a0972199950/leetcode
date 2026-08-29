@@ -58,5 +58,5 @@ function partition(s: string): string[][] {
 
 // console.log(partition('aab'))
 // console.log(partition('a'))
-console.log(partition('abbacc')) // Expected: [ [ 'a', 'b', 'b', 'a', 'c', 'c' ], [ 'a', 'b', 'b', 'a', 'cc' ], [ 'a', 'bb', 'a', 'c', 'c' ], [ 'a', 'bb', 'a', 'cc' ], [ 'abba', 'c', 'c' ], [ 'abba', 'cc' ] ]
+console.log(partition('abbacc')) // [ [ 'a', 'b', 'b', 'a', 'c', 'c' ], [ 'a', 'b', 'b', 'a', 'cc' ], [ 'a', 'bb', 'a', 'c', 'c' ], [ 'a', 'bb', 'a', 'cc' ], [ 'abba', 'c', 'c' ], [ 'abba', 'cc' ] ]
 

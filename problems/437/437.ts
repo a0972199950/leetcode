@@ -53,6 +53,6 @@ function pathSum(root: TreeNode | null, targetSum: number): number {
   return result || 0
 }
 
-console.log(pathSum(new BinaryTree([10, 5, -3, 3, 2, null, 11, 3, -2, null, 1]).root, 8)) // Expected: 3
-console.log(pathSum(new BinaryTree([5, 4, 8, 11, null, 13, 4, 7, 2, null, null, 5, 1]).root, 22)) // Expected: 3
+console.log(pathSum(new BinaryTree([10, 5, -3, 3, 2, null, 11, 3, -2, null, 1]).root, 8)) // 3
+console.log(pathSum(new BinaryTree([5, 4, 8, 11, null, 13, 4, 7, 2, null, null, 5, 1]).root, 22)) // 3
 

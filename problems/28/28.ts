@@ -18,7 +18,7 @@ function strStr(haystack: string, needle: string): number {
   return -1
 }
 
-console.log(strStr('sadbutsad', 'sad')) // Expected: 0
-console.log(strStr('leetcode', 'leeto')) // Expected: -1
-console.log(strStr('mississippi', 'issip')) // Expected: 4
+console.log(strStr('sadbutsad', 'sad')) // 0
+console.log(strStr('leetcode', 'leeto')) // -1
+console.log(strStr('mississippi', 'issip')) // 4
 

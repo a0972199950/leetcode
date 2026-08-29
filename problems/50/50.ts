@@ -27,5 +27,5 @@ function myPow(x: number, n: number): number {
 }
 
 // console.log(myPow(2.00000, 10))
-console.log(myPow(2.00000, -2)) // Expected: 0.25
+console.log(myPow(2.00000, -2)) // 0.25
 

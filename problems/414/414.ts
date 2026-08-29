@@ -108,6 +108,6 @@ function thirdMax(nums: number[]): number {
 // console.log(thirdMax([3, 2, 1]))
 // console.log(thirdMax([1, 2]))
 // console.log(thirdMax([2, 2, 3, 1]))
-console.log(thirdMax([1, 2, 2, 5, 3, 5])) // Expected: 2
-console.log(thirdMax([3, 2, 1])) // Expected: 1
+console.log(thirdMax([1, 2, 2, 5, 3, 5])) // 2
+console.log(thirdMax([3, 2, 1])) // 1
 

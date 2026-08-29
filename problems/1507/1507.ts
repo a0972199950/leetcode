@@ -46,7 +46,7 @@ function reformatDate(date: string): string {
   ].join('-')
 }
 
-console.log(reformatDate('20th Oct 2052')) // Expected: 2052-10-20
-console.log(reformatDate('6th Jun 1933')) // Expected: 1933-06-06
-console.log(reformatDate('26th May 1960')) // Expected: 1960-05-26
+console.log(reformatDate('20th Oct 2052')) // 2052-10-20
+console.log(reformatDate('6th Jun 1933')) // 1933-06-06
+console.log(reformatDate('26th May 1960')) // 1960-05-26
 

@@ -30,5 +30,5 @@ function subarraysDivByK(nums: number[], k: number): number {
   return result
 }
 
-console.log(subarraysDivByK([4, 5, 0, -2, -3, 1], 5)) // Expected: 7
-console.log(subarraysDivByK([5], 9)) // Expected: 0
+console.log(subarraysDivByK([4, 5, 0, -2, -3, 1], 5)) // 7
+console.log(subarraysDivByK([5], 9)) // 0

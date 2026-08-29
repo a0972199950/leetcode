@@ -46,6 +46,6 @@ function printTree(root: TreeNode | null): string[][] {
   return result
 }
 
-console.log(printTree(new BinaryTree([1, 2]).root)) // Expected: [ [ '', '1', '' ], [ '2', '', '' ] ]
-console.log(printTree(new BinaryTree([1, 2, 3, null, 4]).root)) // Expected: [ [ '', '', '', '1', '', '', '' ], [ '', '2', '', '', '', '3', '' ], [ '', '', '4', '', '', '', '' ] ]
-console.log(printTree(new BinaryTree([1, 2, 5, 3, null, null, null, 4]).root)) // Expected: [ [ '', '', '', '', '', '', '', '1', '', '', '', '', '', '', '' ], [ '', '', '', '2', '', '', '', '', '', '', '', '5', '', '', '' ], [ '', '3', '', '', '', '', '', '', '', '', '', '', '', '', '' ], [ '4', '', '', '', '', '', '', '', '', '', '', '', '', '', '' ] ]
+console.log(printTree(new BinaryTree([1, 2]).root)) // [ [ '', '1', '' ], [ '2', '', '' ] ]
+console.log(printTree(new BinaryTree([1, 2, 3, null, 4]).root)) // [ [ '', '', '', '1', '', '', '' ], [ '', '2', '', '', '', '3', '' ], [ '', '', '4', '', '', '', '' ] ]
+console.log(printTree(new BinaryTree([1, 2, 5, 3, null, null, null, 4]).root)) // [ [ '', '', '', '', '', '', '', '1', '', '', '', '', '', '', '' ], [ '', '', '', '2', '', '', '', '', '', '', '', '5', '', '', '' ], [ '', '3', '', '', '', '', '', '', '', '', '', '', '', '', '' ], [ '4', '', '', '', '', '', '', '', '', '', '', '', '', '', '' ] ]

@@ -53,5 +53,5 @@ function splitArray(nums: number[], k: number): number {
 // console.log(splitArray([7, 2, 5, 10, 8], 2))
 // console.log(splitArray([1, 2, 3, 4, 5], 2))
 // console.log(splitArray([7, 2, 5, 10, 8], 5))
-console.log(splitArray([10, 6, 6, 10], 4)) // Expected: 10
+console.log(splitArray([10, 6, 6, 10], 4)) // 10
 

@@ -60,9 +60,9 @@ function find132pattern(nums: number[]): boolean {
   return false
 }
 
-console.log(find132pattern([1, 2, 3, 4])) // Expected: false
-console.log(find132pattern([3, 1, 4, 2])) // Expected: true
-console.log(find132pattern([-1, 3, 2, 0])) // Expected: true
-console.log(find132pattern([-2, 1, 2, -2, 1, 2])) // Expected: true
-console.log(find132pattern([0, -1000, 2000, -3000, 4000, -5000, 6000, -7000, 8000, -9000, 10000])) // Expected: false
+console.log(find132pattern([1, 2, 3, 4])) // false
+console.log(find132pattern([3, 1, 4, 2])) // true
+console.log(find132pattern([-1, 3, 2, 0])) // true
+console.log(find132pattern([-2, 1, 2, -2, 1, 2])) // true
+console.log(find132pattern([0, -1000, 2000, -3000, 4000, -5000, 6000, -7000, 8000, -9000, 10000])) // false
 

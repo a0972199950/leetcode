@@ -31,7 +31,7 @@ function lengthOfLongestSubstringTwoDistinct(s: string): number {
   return max
 }
 
-console.log(lengthOfLongestSubstringTwoDistinct('eceba')) // Expected: 3
-console.log(lengthOfLongestSubstringTwoDistinct('ccaabbb')) // Expected: 5
-console.log(lengthOfLongestSubstringTwoDistinct('a')) // Expected: 1
+console.log(lengthOfLongestSubstringTwoDistinct('eceba')) // 3
+console.log(lengthOfLongestSubstringTwoDistinct('ccaabbb')) // 5
+console.log(lengthOfLongestSubstringTwoDistinct('a')) // 1
 

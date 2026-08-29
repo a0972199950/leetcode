@@ -24,5 +24,5 @@ function getMinimumDifference(root: TreeNode | null): number {
   return minDiff
 }
 
-console.log(getMinimumDifference(new BinaryTree([4, 2, 6, 1, 3]).root)) // Expected: 1
-console.log(getMinimumDifference(new BinaryTree([1, 0, 48, null, null, 12, 49]).root)) // Expected: 1
+console.log(getMinimumDifference(new BinaryTree([4, 2, 6, 1, 3]).root)) // 1
+console.log(getMinimumDifference(new BinaryTree([1, 0, 48, null, null, 12, 49]).root)) // 1

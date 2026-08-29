@@ -34,6 +34,6 @@ function uniquePathsWithObstacles(obstacleGrid: number[][]): number {
   return sums.at(-1).at(-1)
 }
 
-console.log(uniquePathsWithObstacles([[0, 0, 0], [0, 1, 0], [0, 0, 0]])) // Expected: 2
+console.log(uniquePathsWithObstacles([[0, 0, 0], [0, 1, 0], [0, 0, 0]])) // 2
 // console.log(uniquePathsWithObstacles([[0, 1], [0, 0]]))
 

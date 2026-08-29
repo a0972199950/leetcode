@@ -38,7 +38,7 @@ function getHint(secret: string, guess: string): string {
   return `${bulls}A${cows}B`
 }
 
-console.log(getHint('1123', '0111')) // Expected: 1A1B
+console.log(getHint('1123', '0111')) // 1A1B
 
 function insertIntoBST(root: TreeNode | null, val: number): TreeNode | null {
   if (!root) {

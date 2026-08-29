@@ -76,6 +76,6 @@ function permuteUnique(nums: number[]): number[][] {
   return result
 }
 
-console.log(permuteUnique([1, 1, 2])) // Expected: [ [ 1, 1, 2 ], [ 1, 2, 1 ], [ 2, 1, 1 ] ]
-console.log(permuteUnique([1, 2, 3])) // Expected: [ [ 1, 2, 3 ], [ 1, 3, 2 ], [ 2, 1, 3 ], [ 2, 3, 1 ], [ 3, 1, 2 ], [ 3, 2, 1 ] ]
+console.log(permuteUnique([1, 1, 2])) // [ [ 1, 1, 2 ], [ 1, 2, 1 ], [ 2, 1, 1 ] ]
+console.log(permuteUnique([1, 2, 3])) // [ [ 1, 2, 3 ], [ 1, 3, 2 ], [ 2, 1, 3 ], [ 2, 3, 1 ], [ 3, 1, 2 ], [ 3, 2, 1 ] ]
 

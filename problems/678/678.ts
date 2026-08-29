@@ -73,8 +73,8 @@ function checkValidString(s: string): boolean {
   return open === 0
 }
 
-console.log(checkValidString('()')) // Expected: true
-console.log(checkValidString('(*)')) // Expected: true
-console.log(checkValidString('(*))')) // Expected: true
-console.log(checkValidString('(*)))')) // Expected: false
+console.log(checkValidString('()')) // true
+console.log(checkValidString('(*)')) // true
+console.log(checkValidString('(*))')) // true
+console.log(checkValidString('(*)))')) // false
 

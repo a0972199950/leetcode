@@ -99,15 +99,15 @@ function isValidBST(root: TreeNode | null): boolean {
   return isValid
 }
 
-console.log(isValidBST(new BinaryTree([2, 1, 3]).root)) // Expected: true
-console.log(isValidBST(new BinaryTree([5, 1, 4, null, null, 3, 6]).root)) // Expected: false
-console.log(isValidBST(new BinaryTree([0]).root)) // Expected: true
+console.log(isValidBST(new BinaryTree([2, 1, 3]).root)) // true
+console.log(isValidBST(new BinaryTree([5, 1, 4, null, null, 3, 6]).root)) // false
+console.log(isValidBST(new BinaryTree([0]).root)) // true
 
 new BinaryTree([2, 1, null, 1, null, null, null]).print()
-console.log(isValidBST(new BinaryTree([2, 1, null, 1, null, null, null]).root)) // Expected: false
+console.log(isValidBST(new BinaryTree([2, 1, null, 1, null, null, null]).root)) // false
 
-console.log(isValidBST(new BinaryTree([5, 14, null, 1]).root)) // Expected: false
+console.log(isValidBST(new BinaryTree([5, 14, null, 1]).root)) // false
 
 // new BinaryTree([5, 4, 6, null, null, 3, 7]).print()
-console.log(isValidBST(new BinaryTree([5, 4, 6, null, null, 3, 7]).root)) // Expected: false
+console.log(isValidBST(new BinaryTree([5, 4, 6, null, null, 3, 7]).root)) // false
 

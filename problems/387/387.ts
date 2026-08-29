@@ -37,5 +37,5 @@ function firstUniqChar(s: string): number {
   return -1
 }
 
-console.log(firstUniqChar('aabb')) // Expected: -1
+console.log(firstUniqChar('aabb')) // -1
 

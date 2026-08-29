@@ -90,8 +90,8 @@ function minEatingSpeed(piles: number[], h: number): number {
   return left
 }
 
-console.log(minEatingSpeed([3, 6, 7, 11], 8)) // 4 // Expected: 4
-console.log(minEatingSpeed([30, 11, 23, 4, 20], 5)) // 30 // Expected: 30
-console.log(minEatingSpeed([30, 11, 23, 4, 20], 6)) // 23 // Expected: 23
-console.log(minEatingSpeed([312884470], 968709470)) // 1 // Expected: 1
+console.log(minEatingSpeed([3, 6, 7, 11], 8)) // 4 // 4
+console.log(minEatingSpeed([30, 11, 23, 4, 20], 5)) // 30 // 30
+console.log(minEatingSpeed([30, 11, 23, 4, 20], 6)) // 23 // 23
+console.log(minEatingSpeed([312884470], 968709470)) // 1 // 1
 

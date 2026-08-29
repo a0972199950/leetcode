@@ -49,6 +49,6 @@ function kthSmallest(root: TreeNode | null, k: number): number {
   return output[k - 1]
 }
 
-console.log(kthSmallest(new BinaryTree([3, 1, 4, null, 2]).root, 1)) // Expected: 1
-console.log(kthSmallest(new BinaryTree([5, 3, 6, 2, 4, null, null, 1]).root, 3)) // Expected: 3
+console.log(kthSmallest(new BinaryTree([3, 1, 4, null, 2]).root, 1)) // 1
+console.log(kthSmallest(new BinaryTree([5, 3, 6, 2, 4, null, null, 1]).root, 3)) // 3
 

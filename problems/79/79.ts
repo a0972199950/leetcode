@@ -109,9 +109,9 @@ function exist(board: string[][], word: string): boolean {
   return false
 }
 
-console.log(exist([['A', 'B', 'C', 'E'], ['S', 'F', 'C', 'S'], ['A', 'D', 'E', 'E']], 'ABCCED')) // true // Expected: true
-console.log(exist([['A', 'B', 'C', 'E'], ['S', 'F', 'C', 'S'], ['A', 'D', 'E', 'E']], 'SEE')) // true // Expected: true
-console.log(exist([['A', 'B', 'C', 'E'], ['S', 'F', 'C', 'S'], ['A', 'D', 'E', 'E']], 'ABCB')) // false // Expected: false
-console.log(exist([['a', 'a', 'a', 'a'], ['a', 'a', 'a', 'a'], ['a', 'a', 'a', 'a']], 'aaaaaaaaaaaa')) // true // Expected: true
-console.log(exist([['a', 'a', 'b', 'a', 'a', 'b'], ['a', 'a', 'b', 'b', 'b', 'a'], ['a', 'a', 'a', 'a', 'b', 'a'], ['b', 'a', 'b', 'b', 'a', 'b'], ['a', 'b', 'b', 'a', 'b', 'a'], ['b', 'a', 'a', 'a', 'a', 'b']], 'bbbaabbbbbab')) // false // Expected: false
+console.log(exist([['A', 'B', 'C', 'E'], ['S', 'F', 'C', 'S'], ['A', 'D', 'E', 'E']], 'ABCCED')) // true // true
+console.log(exist([['A', 'B', 'C', 'E'], ['S', 'F', 'C', 'S'], ['A', 'D', 'E', 'E']], 'SEE')) // true // true
+console.log(exist([['A', 'B', 'C', 'E'], ['S', 'F', 'C', 'S'], ['A', 'D', 'E', 'E']], 'ABCB')) // false // false
+console.log(exist([['a', 'a', 'a', 'a'], ['a', 'a', 'a', 'a'], ['a', 'a', 'a', 'a']], 'aaaaaaaaaaaa')) // true // true
+console.log(exist([['a', 'a', 'b', 'a', 'a', 'b'], ['a', 'a', 'b', 'b', 'b', 'a'], ['a', 'a', 'a', 'a', 'b', 'a'], ['b', 'a', 'b', 'b', 'a', 'b'], ['a', 'b', 'b', 'a', 'b', 'a'], ['b', 'a', 'a', 'a', 'a', 'b']], 'bbbaabbbbbab')) // false // false
 

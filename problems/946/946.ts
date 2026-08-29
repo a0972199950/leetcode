@@ -45,6 +45,6 @@ function validateStackSequences(pushed: number[], popped: number[]): boolean {
   }
 }
 
-console.log(validateStackSequences([1, 2, 3, 4, 5], [4, 5, 3, 2, 1])) // Expected: true
-console.log(validateStackSequences([1, 2, 3, 4, 5], [4, 3, 5, 1, 2])) // Expected: false
+console.log(validateStackSequences([1, 2, 3, 4, 5], [4, 5, 3, 2, 1])) // true
+console.log(validateStackSequences([1, 2, 3, 4, 5], [4, 3, 5, 1, 2])) // false
 

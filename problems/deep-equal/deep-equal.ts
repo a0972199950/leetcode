@@ -53,13 +53,13 @@ function fastEqual(a: any, b: any): boolean {
   }
 }
 
-console.log(fastEqual(1, 1)) // => true // Expected: true
-console.log(fastEqual(1, 2)) // => false // Expected: false
-console.log(fastEqual(1, '1')) // => false // Expected: false
+console.log(fastEqual(1, 1)) // => true // true
+console.log(fastEqual(1, 2)) // => false // false
+console.log(fastEqual(1, '1')) // => false // false
 
-console.log(fastEqual([], [])) // => true // Expected: true
-console.log(fastEqual({ a: 1, b: 2 }, { b: 2, a: 1 })) // => true // Expected: true
-console.log(fastEqual({ foo: { bar: [], zig: 1 } }, { foo: { bar: [], zig: 1 } })) // => true // Expected: true
-console.log(fastEqual({ foo: { bar: [], zig: 1 } }, { foo: { bar: [], zig: 1, zag: 1 } })) // => false // Expected: false
+console.log(fastEqual([], [])) // => true // true
+console.log(fastEqual({ a: 1, b: 2 }, { b: 2, a: 1 })) // => true // true
+console.log(fastEqual({ foo: { bar: [], zig: 1 } }, { foo: { bar: [], zig: 1 } })) // => true // true
+console.log(fastEqual({ foo: { bar: [], zig: 1 } }, { foo: { bar: [], zig: 1, zag: 1 } })) // => false // false
 
 export default ''

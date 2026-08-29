@@ -32,8 +32,8 @@ function bstToGst(root: TreeNode | null): TreeNode | null {
   return root
 }
 
-bstToGst(new BinaryTree([4, 1, 6, 0, 2, 5, 7, null, null, null, 3, null, null, null, 8]).root).print() // Expected: TreeNode { val: 30, left: TreeNode { val: 36, left: TreeNode { val: 36, left: null, right: null }, right: TreeNode { val: 35, left: TreeNode { val: 33, left: null, right: null }, right: null } }, right: TreeNode { val: 21, left: TreeNode { val: 26, left: null, right: null }, right: TreeNode { val: 15, left: null, right: TreeNode { val: 8, left: null, right: null } } } }
-bstToGst(new BinaryTree([0, null, 1]).root).print() // Expected: TreeNode { val: 1, left: null, right: TreeNode { val: 1, left: null, right: null } }
-bstToGst(new BinaryTree([]).root) // Expected: null
-bstToGst(new BinaryTree([5, 3, null, 1]).root).print() // Expected: 
+bstToGst(new BinaryTree([4, 1, 6, 0, 2, 5, 7, null, null, null, 3, null, null, null, 8]).root).print() // TreeNode { val: 30, left: TreeNode { val: 36, left: TreeNode { val: 36, left: null, right: null }, right: TreeNode { val: 35, left: TreeNode { val: 33, left: null, right: null }, right: null } }, right: TreeNode { val: 21, left: TreeNode { val: 26, left: null, right: null }, right: TreeNode { val: 15, left: null, right: TreeNode { val: 8, left: null, right: null } } } }
+bstToGst(new BinaryTree([0, null, 1]).root).print() // TreeNode { val: 1, left: null, right: TreeNode { val: 1, left: null, right: null } }
+bstToGst(new BinaryTree([]).root) // null
+bstToGst(new BinaryTree([5, 3, null, 1]).root).print() // 
 

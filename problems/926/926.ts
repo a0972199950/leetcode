@@ -24,12 +24,12 @@ function minFlipsMonoIncr(s: string): number {
   return Math.min(dp['0'], dp['1'])
 }
 
-console.log(minFlipsMonoIncr('00110')) // Expected: 1
-console.log(minFlipsMonoIncr('010110')) // Expected: 2
-console.log(minFlipsMonoIncr('00011000')) // Expected: 2
-console.log(minFlipsMonoIncr('000000')) // Expected: 0
-console.log(minFlipsMonoIncr('111111')) // Expected: 0
-console.log(minFlipsMonoIncr('1111000')) // Expected: 3
-console.log(minFlipsMonoIncr('')) // Expected: 0
-console.log(minFlipsMonoIncr('10011111110010111011')) // Expected: 5
+console.log(minFlipsMonoIncr('00110')) // 1
+console.log(minFlipsMonoIncr('010110')) // 2
+console.log(minFlipsMonoIncr('00011000')) // 2
+console.log(minFlipsMonoIncr('000000')) // 0
+console.log(minFlipsMonoIncr('111111')) // 0
+console.log(minFlipsMonoIncr('1111000')) // 3
+console.log(minFlipsMonoIncr('')) // 0
+console.log(minFlipsMonoIncr('10011111110010111011')) // 5
 

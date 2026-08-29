@@ -27,6 +27,6 @@ function findMinArrowShots(points: number[][]): number {
   return arrows
 }
 
-console.log(findMinArrowShots([[10, 16], [2, 8], [1, 6], [7, 12]])) // Expected: 2
-console.log(findMinArrowShots([[1, 2], [3, 4], [5, 6], [7, 8]])) // Expected: 4
-console.log(findMinArrowShots([[1, 2], [2, 3], [3, 4], [4, 5]])) // Expected: 2
+console.log(findMinArrowShots([[10, 16], [2, 8], [1, 6], [7, 12]])) // 2
+console.log(findMinArrowShots([[1, 2], [3, 4], [5, 6], [7, 8]])) // 4
+console.log(findMinArrowShots([[1, 2], [2, 3], [3, 4], [4, 5]])) // 2

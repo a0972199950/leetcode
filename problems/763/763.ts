@@ -108,9 +108,9 @@ function partitionLabels(s: string): number[] {
   return result
 }
 
-console.log(partitionLabels('ababcc')) // Expected: [ 4, 2 ]
-console.log(partitionLabels('ababcbacadefegdehijhklij')) // Expected: [ 9, 7, 8 ]
-console.log(partitionLabels('eccbbbbdec')) // Expected: [ 10 ]
-console.log(partitionLabels('abcd')) // Expected: [ 1, 1, 1, 1 ]
-console.log(partitionLabels('aaaa')) // Expected: [ 4 ]
+console.log(partitionLabels('ababcc')) // [ 4, 2 ]
+console.log(partitionLabels('ababcbacadefegdehijhklij')) // [ 9, 7, 8 ]
+console.log(partitionLabels('eccbbbbdec')) // [ 10 ]
+console.log(partitionLabels('abcd')) // [ 1, 1, 1, 1 ]
+console.log(partitionLabels('aaaa')) // [ 4 ]
 

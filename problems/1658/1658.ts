@@ -40,11 +40,11 @@ function minOperations(nums: number[], x: number): number {
   return min === Infinity ? -1 : min
 }
 
-console.log(minOperations([2, 1, 1, 4, 3], 5)) // Expected: 2
-console.log(minOperations([2, 1, 1, 4, 3], 6)) // Expected: 3
-console.log(minOperations([3, 2, 40, 40, 1, 1, 1, 1, 1], 5)) // Expected: 2
-console.log(minOperations( [1, 1, 4, 2, 3], 5)) // Expected: 2
-console.log(minOperations([5, 6, 7, 8, 9], 4)) // Expected: -1
-console.log(minOperations([3, 2, 20, 1, 1, 3], 10)) // Expected: 5
-console.log(minOperations([1, 1], 3)) // Expected: -1
-console.log(minOperations([40, 1, 1, 1, 1, 40], 3)) // Expected: -1
+console.log(minOperations([2, 1, 1, 4, 3], 5)) // 2
+console.log(minOperations([2, 1, 1, 4, 3], 6)) // 3
+console.log(minOperations([3, 2, 40, 40, 1, 1, 1, 1, 1], 5)) // 2
+console.log(minOperations( [1, 1, 4, 2, 3], 5)) // 2
+console.log(minOperations([5, 6, 7, 8, 9], 4)) // -1
+console.log(minOperations([3, 2, 20, 1, 1, 3], 10)) // 5
+console.log(minOperations([1, 1], 3)) // -1
+console.log(minOperations([40, 1, 1, 1, 1, 40], 3)) // -1

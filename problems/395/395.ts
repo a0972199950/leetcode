@@ -92,8 +92,8 @@ function longestSubstring(s: string, k: number): number {
 //   return chackSubStr(0, s.length - 1)
 // }
 
-console.log(longestSubstring('aaabb', 3)) // Expected: 3
-console.log(longestSubstring('ababbc', 2)) // Expected: 5
-console.log(longestSubstring('ababbc', 3)) // Expected: 0
-console.log(longestSubstring('ababbc', 4)) // Expected: 0
+console.log(longestSubstring('aaabb', 3)) // 3
+console.log(longestSubstring('ababbc', 2)) // 5
+console.log(longestSubstring('ababbc', 3)) // 0
+console.log(longestSubstring('ababbc', 4)) // 0
 

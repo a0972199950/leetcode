@@ -140,9 +140,9 @@ function isNStraightHand(hand: number[], groupSize: number): boolean {
   return true
 }
 
-console.log(isNStraightHand([1, 2, 3, 6, 2, 3, 4, 7, 8], 3)) // Expected: true
-console.log(isNStraightHand([1, 2, 3, 4, 5], 4)) // Expected: false
-console.log(isNStraightHand([1, 2, 3, 4, 5, 6], 2)) // Expected: true
-console.log(isNStraightHand([1, 1, 2, 2, 3, 3], 3)) // Expected: true
+console.log(isNStraightHand([1, 2, 3, 6, 2, 3, 4, 7, 8], 3)) // true
+console.log(isNStraightHand([1, 2, 3, 4, 5], 4)) // false
+console.log(isNStraightHand([1, 2, 3, 4, 5, 6], 2)) // true
+console.log(isNStraightHand([1, 1, 2, 2, 3, 3], 3)) // true
 
 // n / 3 * n => n^2/3

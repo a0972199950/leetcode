@@ -23,5 +23,5 @@ function hIndex(citations: number[]): number {
 }
 
 // console.log(hIndex([3, 0, 6, 1, 5]))
-console.log(hIndex([1, 3, 1])) // Expected: 1
+console.log(hIndex([1, 3, 1])) // 1
 

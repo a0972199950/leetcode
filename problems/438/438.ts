@@ -78,7 +78,7 @@ function findAnagrams(s: string, p: string): number[] {
   return result
 }
 
-console.log(findAnagrams('cbaebabacd', 'abc')) // Expected: [ 0, 6 ]
-console.log(findAnagrams('abab', 'ab')) // Expected: [ 0, 1, 2 ]
-console.log(findAnagrams('aaaaaaaaaa', 'aaa')) // Expected: [ 0, 1, 2, 3, 4, 5, 6, 7 ]
+console.log(findAnagrams('cbaebabacd', 'abc')) // [ 0, 6 ]
+console.log(findAnagrams('abab', 'ab')) // [ 0, 1, 2 ]
+console.log(findAnagrams('aaaaaaaaaa', 'aaa')) // [ 0, 1, 2, 3, 4, 5, 6, 7 ]
 

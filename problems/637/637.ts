@@ -30,5 +30,5 @@ function averageOfLevels(root: TreeNode | null): number[] {
   return res
 }
 
-console.log(averageOfLevels(new BinaryTree([3, 9, 20, null, null, 15, 7]).root)) // Expected: [ 3, 14.5, 11 ]
-console.log(averageOfLevels(new BinaryTree([3, 9, 20, 15, 7]).root)) // Expected: [ 3, 14.5, 11 ]
+console.log(averageOfLevels(new BinaryTree([3, 9, 20, null, null, 15, 7]).root)) // [ 3, 14.5, 11 ]
+console.log(averageOfLevels(new BinaryTree([3, 9, 20, 15, 7]).root)) // [ 3, 14.5, 11 ]

@@ -34,7 +34,7 @@ function similarPairs(words: string[]): number {
   return result
 }
 
-console.log(similarPairs(['aba', 'aabb', 'abcd', 'bac', 'aabc'])) // Expected: 2
-console.log(similarPairs(['aabb', 'ab', 'ba'])) // Expected: 3
-console.log(similarPairs(['nba', 'cba', 'dba'])) // Expected: 0
+console.log(similarPairs(['aba', 'aabb', 'abcd', 'bac', 'aabc'])) // 2
+console.log(similarPairs(['aabb', 'ab', 'ba'])) // 3
+console.log(similarPairs(['nba', 'cba', 'dba'])) // 0
 

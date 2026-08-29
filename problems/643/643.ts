@@ -32,4 +32,4 @@ function findMaxAverage(nums: number[], k: number): number {
   return max
 }
 
-console.log(findMaxAverage([1, 12, -5, -6, 50, 3], 4)) // Expected: 12.75
+console.log(findMaxAverage([1, 12, -5, -6, 50, 3], 4)) // 12.75

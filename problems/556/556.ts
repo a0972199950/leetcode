@@ -33,5 +33,5 @@ function nextGreaterElement(n: number): number {
 // console.log(nextGreaterElement(21))
 // console.log(nextGreaterElement(713344321))
 // console.log(nextGreaterElement(2147483486))
-console.log(nextGreaterElement(2147483476)) // Expected: 2147483647
+console.log(nextGreaterElement(2147483476)) // 2147483647
 

@@ -134,14 +134,14 @@ function generate() {
     return a.id.localeCompare(b.id)
   })
 
-  const staleCount = rows.filter(r => !isTouchedWithinMonths(r.lastPracticed, 2)).length
+  const staleCount = rows.filter(r => !isTouchedWithinMonths(r.lastPracticed, 8)).length
 
   const lines: string[] = []
   lines.push('# 題目練習總覽')
   lines.push('')
   lines.push(`> 由 \`yarn sync-progress\` 自動產生，請勿手動編輯。最後更新：${todayStr()}`)
   lines.push('')
-  lines.push(`共 ${rows.length} 題，其中 ${staleCount} 題超過 2 個月未練習（可作為 /q 複習候選）。`)
+  lines.push(`共 ${rows.length} 題，其中 ${staleCount} 題超過 8 個月未練習（可作為 /q 複習候選）。`)
   lines.push('')
   lines.push('依「最後練習時間」新到舊排序，沒有紀錄的排在最後。')
   lines.push('')

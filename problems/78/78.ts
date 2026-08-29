@@ -23,5 +23,5 @@ function subsets(nums: number[]): number[][] {
   return result
 }
 
-console.log(subsets([0])) // Expected: [ [], [ 0 ] ]
+console.log(subsets([0])) // [ [], [ 0 ] ]
 

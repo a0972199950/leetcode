@@ -21,7 +21,7 @@ function findRepeatedDnaSequences(s: string): string[] {
   return [...results]
 }
 
-console.log(findRepeatedDnaSequences('AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT')) // Expected: [ 'AAAAACCCCC', 'CCCCCAAAAA' ]
-console.log(findRepeatedDnaSequences('AAAAAAAAAAAAA')) // Expected: [ 'AAAAAAAAAA' ]
-console.log(findRepeatedDnaSequences('AAAAAAAAAAA')) // Expected: [ 'AAAAAAAAAA' ]
+console.log(findRepeatedDnaSequences('AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT')) // [ 'AAAAACCCCC', 'CCCCCAAAAA' ]
+console.log(findRepeatedDnaSequences('AAAAAAAAAAAAA')) // [ 'AAAAAAAAAA' ]
+console.log(findRepeatedDnaSequences('AAAAAAAAAAA')) // [ 'AAAAAAAAAA' ]
 

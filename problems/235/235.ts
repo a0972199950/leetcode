@@ -109,44 +109,44 @@ console.log(lowestCommonAncestor(
   new BinaryTree([6, 2, 8, 0, 4, 7, 9, null, null, 3, 5]).root,
   new TreeNode(2),
   new TreeNode(8)).val
-) // Expected: 6
+) // 6
 
 // p 是 q 的祖先 → p 本身是 LCA
 console.log(lowestCommonAncestor(
   new BinaryTree([6, 2, 8, 0, 4, 7, 9, null, null, 3, 5]).root,
   new TreeNode(2),
   new TreeNode(4)).val
-) // Expected: 2
+) // 2
 
 // p, q 都在同一子樹的深處
 console.log(lowestCommonAncestor(
   new BinaryTree([10, 5, 15, 3, 7, null, 18]).root,
   new TreeNode(3),
   new TreeNode(7)).val
-) // Expected: 5
+) // 5
 
 // p, q 跨越根節點
 console.log(lowestCommonAncestor(
   new BinaryTree([8, 4, 12, 2, 6, 10, 14]).root,
   new TreeNode(2),
   new TreeNode(10)).val
-) // Expected: 8
+) // 8
 
 // 小樹：p 是根，q 是葉
 console.log(lowestCommonAncestor(
   new BinaryTree([2, 1]).root,
   new TreeNode(2),
   new TreeNode(1)).val
-) // Expected: 2
+) // 2
 
 console.log(lowestCommonAncestor(
   new BinaryTree([]).root,
   new TreeNode(2),
   new TreeNode(1))
-) // Expected: null
+) // null
 
 console.log(lowestCommonAncestor(
   new BinaryTree([8, 4, 12, 2, 6, 10, 14]).root,
   new TreeNode(40),
   new TreeNode(50))
-) // Expected: null
+) // null

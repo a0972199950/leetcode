@@ -57,9 +57,9 @@ function canJump(nums: number[]): boolean {
   return dp[dp.length - 1]
 }
 
-console.log(canJump([2, 3, 1, 1, 4])) // Expected: true
-console.log(canJump([6])) // Expected: true
-console.log(canJump([3, 2, 1, 0, 4])) // Expected: false
-console.log(canJump([4, 0, 1, 0, 4])) // Expected: true
-console.log(canJump([0, 2, 3])) // Expected: false
+console.log(canJump([2, 3, 1, 1, 4])) // true
+console.log(canJump([6])) // true
+console.log(canJump([3, 2, 1, 0, 4])) // false
+console.log(canJump([4, 0, 1, 0, 4])) // true
+console.log(canJump([0, 2, 3])) // false
 

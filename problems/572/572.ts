@@ -38,9 +38,9 @@ function isSubtree(root: TreeNode | null, subRoot: TreeNode | null): boolean {
   return false
 }
 
-console.log(isSubtree(new BinaryTree([3, 4, 5, 1, 2]).root, new BinaryTree([4, 1, 2]).root)) //true // Expected: true
-console.log(isSubtree(new BinaryTree([3, 4, 5, 1, 2, null, null, null, null, 0]).root, new BinaryTree([4, 1, 2]).root)) // false // Expected: false
-console.log(isSubtree(new BinaryTree([]).root, new BinaryTree([]).root)) // true // Expected: true
-console.log(isSubtree(new BinaryTree([3, 4, 5, 1, 2]).root, new BinaryTree([]).root)) // true // Expected: false
-console.log(isSubtree(new BinaryTree([]).root, new BinaryTree([4, 1, 2]).root)) // false // Expected: false
+console.log(isSubtree(new BinaryTree([3, 4, 5, 1, 2]).root, new BinaryTree([4, 1, 2]).root)) //true // true
+console.log(isSubtree(new BinaryTree([3, 4, 5, 1, 2, null, null, null, null, 0]).root, new BinaryTree([4, 1, 2]).root)) // false // false
+console.log(isSubtree(new BinaryTree([]).root, new BinaryTree([]).root)) // true // true
+console.log(isSubtree(new BinaryTree([3, 4, 5, 1, 2]).root, new BinaryTree([]).root)) // true // false
+console.log(isSubtree(new BinaryTree([]).root, new BinaryTree([4, 1, 2]).root)) // false // false
 

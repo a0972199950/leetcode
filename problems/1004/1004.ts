@@ -28,8 +28,8 @@ function longestOnes(nums: number[], k: number): number {
   return max
 }
 
-console.log(longestOnes([1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0], 2)) // 6 // Expected: 6
-console.log(longestOnes([0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1], 3)) // 10 // Expected: 10
-console.log(longestOnes([0, 0, 0, 1], 4)) // 4 // Expected: 4
-console.log(longestOnes([1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0], 2)) // 6 // Expected: 6
+console.log(longestOnes([1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0], 2)) // 6 // 6
+console.log(longestOnes([0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1], 3)) // 10 // 10
+console.log(longestOnes([0, 0, 0, 1], 4)) // 4 // 4
+console.log(longestOnes([1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0], 2)) // 6 // 6
 

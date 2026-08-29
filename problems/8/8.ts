@@ -79,12 +79,12 @@ function myAtoi(s: string): number {
 
   return result
 }
-console.log(myAtoi('42')) // Expected: 42
-console.log(myAtoi('   -042')) // Expected: -42
-console.log(myAtoi('1337c0d3')) // Expected: 1337
-console.log(myAtoi('0-1')) // Expected: 0
-console.log(myAtoi('words and 987')) // Expected: 0
-console.log(myAtoi('-91283472332')) // Expected: -2147483648
-console.log(myAtoi('+-12')) // Expected: 0
-console.log(myAtoi('  +  413')) // Expected: 0
+console.log(myAtoi('42')) // 42
+console.log(myAtoi('   -042')) // -42
+console.log(myAtoi('1337c0d3')) // 1337
+console.log(myAtoi('0-1')) // 0
+console.log(myAtoi('words and 987')) // 0
+console.log(myAtoi('-91283472332')) // -2147483648
+console.log(myAtoi('+-12')) // 0
+console.log(myAtoi('  +  413')) // 0
 

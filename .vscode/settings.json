@@ -14,11 +14,16 @@
   "[typescript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
-  "eslint.trace.server": "verbose",
+  "eslint.trace.server": "off",
   "eslint.options": {
     "overrideConfigFile": ".eslintrc"
   },
   "chat.tools.terminal.autoApprove": {
     "atoi": true
+  },
+  "markdown.validate.enabled": false,
+  "markdown.updateLinksOnFileMove.enabled": "never",
+  "search.exclude": {
+    "**/node_modules": true
   }
 }

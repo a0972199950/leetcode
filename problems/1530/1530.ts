@@ -62,5 +62,5 @@ function countPairs(root: TreeNode | null, distance: number): number {
 // console.log(countPairs(new BinaryTree([1, 2, 3, null, 4]).root, 3))
 // console.log(countPairs(new BinaryTree([1, 2, 3, 4, 5, 6, 7]).root, 3))
 // console.log(countPairs(new BinaryTree([7, 1, 4, 6, null, 5, 3, null, null, null, null, null, 2]).root, 3))
-console.log(countPairs(new BinaryTree([15, 66, 55, 97, 60, 12, 56, null, 54, null, 49, null, 9, null, null, null, null, null, 90]).root, 5)) // Expected: 3
+console.log(countPairs(new BinaryTree([15, 66, 55, 97, 60, 12, 56, null, 54, null, 49, null, 9, null, null, null, null, null, 90]).root, 5)) // 3
 

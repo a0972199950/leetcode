@@ -60,7 +60,7 @@ function groupAnagrams(strs: string[]): string[][] {
   return Object.values(hashTable)
 }
 
-console.log(groupAnagrams(['eat', 'tea', 'tan', 'ate', 'nat', 'bat'])) // Expected: [ [ 'eat', 'tea', 'ate' ], [ 'tan', 'nat' ], [ 'bat' ] ]
-console.log(groupAnagrams([''])) // Expected: [ [ '' ] ]
-console.log(groupAnagrams(['a'])) // Expected: [ [ 'a' ] ]
+console.log(groupAnagrams(['eat', 'tea', 'tan', 'ate', 'nat', 'bat'])) // [ [ 'eat', 'tea', 'ate' ], [ 'tan', 'nat' ], [ 'bat' ] ]
+console.log(groupAnagrams([''])) // [ [ '' ] ]
+console.log(groupAnagrams(['a'])) // [ [ 'a' ] ]
 

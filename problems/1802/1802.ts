@@ -31,10 +31,10 @@ function maxValue(n: number, index: number, maxSum: number): number {
   return left
 }
 
-console.log(maxValue(4, 2, 6)) // Expected: 2
-console.log(maxValue(6, 1, 10)) // Expected: 3
-console.log(maxValue(3, 2, 18)) // Expected: 7
-console.log(maxValue(1, 0, 24)) // Expected: 24
-console.log(maxValue(4, 0, 4)) // Expected: 1
-console.log(maxValue(1, 0, 444029221)) // Expected: 444029221
+console.log(maxValue(4, 2, 6)) // 2
+console.log(maxValue(6, 1, 10)) // 3
+console.log(maxValue(3, 2, 18)) // 7
+console.log(maxValue(1, 0, 24)) // 24
+console.log(maxValue(4, 0, 4)) // 1
+console.log(maxValue(1, 0, 444029221)) // 444029221
 

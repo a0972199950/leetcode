@@ -74,10 +74,10 @@ function findMissingRanges(nums: number[], lower: number, upper: number): number
 //   return ans
 // }
 
-console.log(findMissingRanges([0, 1, 3, 50, 75], 0, 99)) // Expected: [ [ 2, 2 ], [ 4, 49 ], [ 51, 74 ], [ 76, 99 ] ]
-console.log(findMissingRanges([-3, -1, 0, 1, 3, 50, 75, 98, 102], 0, 99)) // Expected: [ [ 2, 2 ], [ 4, 49 ], [ 51, 74 ], [ 76, 97 ], [ 99, 99 ] ]
-console.log(findMissingRanges([-1], -1, -1)) // Expected: []
-console.log(findMissingRanges([], 1, 1)) // Expected: [ [ 1, 1 ] ]
-console.log(findMissingRanges([1, 3], 50, 99)) // Expected: [ [ 50, 99 ] ]
-console.log(findMissingRanges([104, 109], 50, 99)) // Expected: [ [ 50, 99 ] ]
+console.log(findMissingRanges([0, 1, 3, 50, 75], 0, 99)) // [ [ 2, 2 ], [ 4, 49 ], [ 51, 74 ], [ 76, 99 ] ]
+console.log(findMissingRanges([-3, -1, 0, 1, 3, 50, 75, 98, 102], 0, 99)) // [ [ 2, 2 ], [ 4, 49 ], [ 51, 74 ], [ 76, 97 ], [ 99, 99 ] ]
+console.log(findMissingRanges([-1], -1, -1)) // []
+console.log(findMissingRanges([], 1, 1)) // [ [ 1, 1 ] ]
+console.log(findMissingRanges([1, 3], 50, 99)) // [ [ 50, 99 ] ]
+console.log(findMissingRanges([104, 109], 50, 99)) // [ [ 50, 99 ] ]
 

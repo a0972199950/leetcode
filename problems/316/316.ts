@@ -47,7 +47,7 @@ function removeDuplicateLetters(s: string): string {
   return stack.join('')
 }
 
-console.log(removeDuplicateLetters('bcabc')) // Expected: abc
-console.log(removeDuplicateLetters('cbacdcbc')) // Expected: acdb
-console.log(removeDuplicateLetters('abacb')) // Expected: abc
+console.log(removeDuplicateLetters('bcabc')) // abc
+console.log(removeDuplicateLetters('cbacdcbc')) // acdb
+console.log(removeDuplicateLetters('abacb')) // abc
 

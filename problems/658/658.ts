@@ -133,8 +133,8 @@ function findClosestElements(arr: number[], k: number, x: number): number[] {
   return arr.slice(left, left + k)
 }
 
-console.log(findClosestElements([3, 3, 3, 3, 3, 8, 8, 10, 12], 10, 6)) // Expected: [ 3, 3, 3, 3, 3, 8, 8, 10, 12 ]
-console.log(findClosestElements([1, 2, 3, 4, 5], 4, 3)) // Expected: [ 1, 2, 3, 4 ]
-console.log(findClosestElements([1, 1, 2, 3, 4, 5], 4, -1)) // Expected: [ 1, 1, 2, 3 ]
-console.log(findClosestElements([0, 1, 2, 2, 2, 3, 6, 8, 8, 9], 5, 9)) // Expected: [ 3, 6, 8, 8, 9 ]
-console.log(findClosestElements([1, 1, 2, 2, 2, 2, 2, 3, 3], 3, 3)) // Expected: [ 2, 3, 3 ]
+console.log(findClosestElements([3, 3, 3, 3, 3, 8, 8, 10, 12], 10, 6)) // [ 3, 3, 3, 3, 3, 8, 8, 10, 12 ]
+console.log(findClosestElements([1, 2, 3, 4, 5], 4, 3)) // [ 1, 2, 3, 4 ]
+console.log(findClosestElements([1, 1, 2, 3, 4, 5], 4, -1)) // [ 1, 1, 2, 3 ]
+console.log(findClosestElements([0, 1, 2, 2, 2, 3, 6, 8, 8, 9], 5, 9)) // [ 3, 6, 8, 8, 9 ]
+console.log(findClosestElements([1, 1, 2, 2, 2, 2, 2, 3, 3], 3, 3)) // [ 2, 3, 3 ]

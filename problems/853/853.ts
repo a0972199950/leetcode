@@ -84,11 +84,11 @@ function carFleet(target: number, position: number[], speed: number[]): number {
   return stack.length
 }
 
-console.log(carFleet(12, [10, 8, 0, 5, 3], [2, 4, 1, 1, 3])) // 3 // Expected: 3
-console.log(carFleet(10, [3], [3])) // 1 // Expected: 1
-console.log(carFleet(100, [0, 2, 4], [4, 2, 1])) // 1 // Expected: 1
-console.log(carFleet(100, [0], [1])) // 1 // Expected: 1
-console.log(carFleet(20, [6, 2, 17], [3, 9, 2])) // 2 // Expected: 2
-console.log(carFleet(16, [11, 14, 13, 6], [2, 2, 6, 7])) // 2 // Expected: 2
-console.log(carFleet(13, [10, 2, 5, 7, 4, 6, 11], [7, 5, 10, 5, 9, 4, 1])) // 2 // Expected: 2
+console.log(carFleet(12, [10, 8, 0, 5, 3], [2, 4, 1, 1, 3])) // 3 // 3
+console.log(carFleet(10, [3], [3])) // 1 // 1
+console.log(carFleet(100, [0, 2, 4], [4, 2, 1])) // 1 // 1
+console.log(carFleet(100, [0], [1])) // 1 // 1
+console.log(carFleet(20, [6, 2, 17], [3, 9, 2])) // 2 // 2
+console.log(carFleet(16, [11, 14, 13, 6], [2, 2, 6, 7])) // 2 // 2
+console.log(carFleet(13, [10, 2, 5, 7, 4, 6, 11], [7, 5, 10, 5, 9, 4, 1])) // 2 // 2
 

@@ -157,11 +157,11 @@ function characterReplacement(s: string, k: number): number {
   return max
 }
 
-console.log(characterReplacement('ABAB', 2)) // Expected: 4
-console.log(characterReplacement('AABABBA', 1)) // Expected: 4
-console.log(characterReplacement('AABCABBB', 2)) // Expected: 6
-console.log(characterReplacement('AAAA', 2)) // Expected: 4
-console.log(characterReplacement('ABCDE', 1)) // Expected: 2
-console.log(characterReplacement('AAABCCCCBAAA', 1)) // Expected: 5
-console.log(characterReplacement('AAAAAAA', 1)) // Expected: 7
-console.log(characterReplacement('AAAFIHEINFIAAAAAAFIJEIJRTGBBBBBBB', 2)) // Expected: 9
+console.log(characterReplacement('ABAB', 2)) // 4
+console.log(characterReplacement('AABABBA', 1)) // 4
+console.log(characterReplacement('AABCABBB', 2)) // 6
+console.log(characterReplacement('AAAA', 2)) // 4
+console.log(characterReplacement('ABCDE', 1)) // 2
+console.log(characterReplacement('AAABCCCCBAAA', 1)) // 5
+console.log(characterReplacement('AAAAAAA', 1)) // 7
+console.log(characterReplacement('AAAFIHEINFIAAAAAAFIJEIJRTGBBBBBBB', 2)) // 9

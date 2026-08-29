@@ -33,5 +33,5 @@ function sumNumbers(root: TreeNode | null): number {
   return sum
 }
 
-console.log(sumNumbers(new BinaryTree([4, 9, 0, 5, 1]).root)) // Expected: 1026
+console.log(sumNumbers(new BinaryTree([4, 9, 0, 5, 1]).root)) // 1026
 

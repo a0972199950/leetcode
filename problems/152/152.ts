@@ -75,6 +75,6 @@ function maxProduct(nums: number[]): number {
 // console.log(maxProduct([-2, 0, -1]))
 // console.log(maxProduct([2, 3, 3, -2, 4, 9]))
 // console.log(maxProduct([0, 5]))
-console.log(maxProduct([-4, -3, -2])) // Expected: 12
-console.log(maxProduct([0])) // Expected: 0
+console.log(maxProduct([-4, -3, -2])) // 12
+console.log(maxProduct([0])) // 0
 

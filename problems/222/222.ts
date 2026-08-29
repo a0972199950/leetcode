@@ -66,6 +66,6 @@ function countNodes(root: TreeNode | null): number {
   return sum
 }
 
-console.log(countNodes(new BinaryTree([1, 2, 3, 4, 5, 6]).root)) // Expected: 6
-console.log(countNodes(new BinaryTree([]).root)) // Expected: 0
-console.log(countNodes(new BinaryTree([1]).root)) // Expected: 1
+console.log(countNodes(new BinaryTree([1, 2, 3, 4, 5, 6]).root)) // 6
+console.log(countNodes(new BinaryTree([]).root)) // 0
+console.log(countNodes(new BinaryTree([1]).root)) // 1

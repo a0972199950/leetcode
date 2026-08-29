@@ -29,6 +29,6 @@ function uniquePaths(m: number, n: number): number {
 
 // console.log(uniquePaths(3, 7))
 // console.log(uniquePaths(3, 2))
-console.log(uniquePaths(1, 1)) // Expected: 1
+console.log(uniquePaths(1, 1)) // 1
 // console.log(uniquePaths(19, 13))
 

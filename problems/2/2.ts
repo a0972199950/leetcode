@@ -41,6 +41,6 @@ function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | nul
   return head
 }
 
-console.log(addTwoNumbers(new LinkedList([2, 4, 3]).head, new LinkedList([5, 6, 4]).head)) // Expected: ListNode { val: 7, next: ListNode { val: 0, next: ListNode { val: 8, next: null } } }
-console.log(addTwoNumbers(new LinkedList([0]).head, new LinkedList([0]).head)) // Expected: ListNode { val: 0, next: null }
-console.log(addTwoNumbers(new LinkedList([9, 9, 9, 9, 9, 9, 9]).head, new LinkedList([9, 9, 9, 9]).head)) // Expected: ListNode { val: 8, next: ListNode { val: 9, next: ListNode { val: 9, next: ListNode { val: 9, next: ListNode { val: 0, next: ListNode { val: 0, next: ListNode { val: 0, next: ListNode { val: 1, next: null } } } } } } } }
+console.log(addTwoNumbers(new LinkedList([2, 4, 3]).head, new LinkedList([5, 6, 4]).head)) // ListNode { val: 7, next: ListNode { val: 0, next: ListNode { val: 8, next: null } } }
+console.log(addTwoNumbers(new LinkedList([0]).head, new LinkedList([0]).head)) // ListNode { val: 0, next: null }
+console.log(addTwoNumbers(new LinkedList([9, 9, 9, 9, 9, 9, 9]).head, new LinkedList([9, 9, 9, 9]).head)) // ListNode { val: 8, next: ListNode { val: 9, next: ListNode { val: 9, next: ListNode { val: 9, next: ListNode { val: 0, next: ListNode { val: 0, next: ListNode { val: 0, next: ListNode { val: 1, next: null } } } } } } } }

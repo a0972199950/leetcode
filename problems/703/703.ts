@@ -203,9 +203,9 @@ class KthLargest {
 // }
 
 const kthLargest = new KthLargest(3, [4, 5, 8, 2])
-console.log(kthLargest.add(3))   // return 4 // Expected: 4
-console.log(kthLargest.add(5))   // return 5 // Expected: 5
-console.log(kthLargest.add(10))  // return 5 // Expected: 5
-console.log(kthLargest.add(9))   // return 8 // Expected: 8
-console.log(kthLargest.add(4))   // return 8 // Expected: 8
+console.log(kthLargest.add(3))   // return 4 // 4
+console.log(kthLargest.add(5))   // return 5 // 5
+console.log(kthLargest.add(10))  // return 5 // 5
+console.log(kthLargest.add(9))   // return 8 // 8
+console.log(kthLargest.add(4))   // return 8 // 8
 

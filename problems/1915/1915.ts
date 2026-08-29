@@ -76,7 +76,7 @@ function wonderfulSubstrings(word: string): number {
   return result
 }
 
-console.log(wonderfulSubstrings('aba')) // Expected: 4
-console.log(wonderfulSubstrings('aabb')) // Expected: 9
-console.log(wonderfulSubstrings('he')) // Expected: 2
+console.log(wonderfulSubstrings('aba')) // 4
+console.log(wonderfulSubstrings('aabb')) // 9
+console.log(wonderfulSubstrings('he')) // 2
 

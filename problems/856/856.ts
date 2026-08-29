@@ -42,12 +42,12 @@ function scoreOfParentheses(s: string): number {
   }
 }
 
-console.log(scoreOfParentheses('()')) // Expected: 1
-console.log(scoreOfParentheses('(())')) // Expected: 2
-console.log(scoreOfParentheses('()()')) // Expected: 2
-console.log(scoreOfParentheses('(()())')) // Expected: 4
-console.log(scoreOfParentheses('(()(()))')) // Expected: 6
-console.log(scoreOfParentheses('(()())h')) // Expected: -1
-console.log(scoreOfParentheses('()()(')) // Expected: -1
-console.log(scoreOfParentheses(')(')) // Expected: -1
+console.log(scoreOfParentheses('()')) // 1
+console.log(scoreOfParentheses('(())')) // 2
+console.log(scoreOfParentheses('()()')) // 2
+console.log(scoreOfParentheses('(()())')) // 4
+console.log(scoreOfParentheses('(()(()))')) // 6
+console.log(scoreOfParentheses('(()())h')) // -1
+console.log(scoreOfParentheses('()()(')) // -1
+console.log(scoreOfParentheses(')(')) // -1
 

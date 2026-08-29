@@ -59,7 +59,7 @@ function validTree(n: number, edges: number[][]): boolean {
   return isTree
 }
 
-console.log(validTree(5, [[0, 1], [0, 2], [0, 3], [1, 4]])) // Expected: true
+console.log(validTree(5, [[0, 1], [0, 2], [0, 3], [1, 4]])) // true
 // console.log(validTree(5, [[0, 1], [1, 2], [2, 3], [1, 3], [1, 4]]))
 // console.log(validTree(4, [[0, 1], [2, 3]]))
 // console.log(validTree(1, []))

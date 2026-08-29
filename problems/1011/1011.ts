@@ -98,7 +98,7 @@ function shipWithinDays(weights: number[], days: number): number {
   return left
 }
 
-console.log(shipWithinDays([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5)) // Expected: 15
-console.log(shipWithinDays([3, 2, 2, 4, 1, 4], 3)) // Expected: 6
-console.log(shipWithinDays([1, 2, 3, 1, 1], 4)) // Expected: 3
+console.log(shipWithinDays([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5)) // 15
+console.log(shipWithinDays([3, 2, 2, 4, 1, 4], 3)) // 6
+console.log(shipWithinDays([1, 2, 3, 1, 1], 4)) // 3
 

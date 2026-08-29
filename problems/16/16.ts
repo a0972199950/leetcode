@@ -42,7 +42,7 @@ function threeSumClosest(nums: number[], target: number): number {
   return closest
 }
 
-console.log(threeSumClosest([-1, 2, 1, -4], 1)) // Expected: 2
-console.log(threeSumClosest([0, 0, 0], 1)) // Expected: 0
-console.log(threeSumClosest([-1, 2, 1, -4], -1)) // Expected: -1
+console.log(threeSumClosest([-1, 2, 1, -4], 1)) // 2
+console.log(threeSumClosest([0, 0, 0], 1)) // 0
+console.log(threeSumClosest([-1, 2, 1, -4], -1)) // -1
 

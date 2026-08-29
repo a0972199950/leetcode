@@ -36,7 +36,7 @@ class Solution {
 
 const solution = new Solution([1, 2, 3, 3, 3])
 
-console.log(solution.pick(3)) // Expected: 4
-console.log(solution.pick(1)) // Expected: 0
-console.log(solution.pick(3)) // Expected: 3
+console.log(solution.pick(3)) // 4
+console.log(solution.pick(1)) // 0
+console.log(solution.pick(3)) // 3
 

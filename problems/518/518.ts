@@ -31,7 +31,7 @@ function change(amount: number, coins: number[]): number {
   return lastCoinResult.at(-1)
 }
 
-console.log(change(5, [1, 2, 5])) // Expected: 4
-console.log(change(3, [2])) // Expected: 0
-console.log(change(10, [10])) // Expected: 1
+console.log(change(5, [1, 2, 5])) // 4
+console.log(change(3, [2])) // 0
+console.log(change(10, [10])) // 1
 

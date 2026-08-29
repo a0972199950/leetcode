@@ -68,7 +68,7 @@ function minWindow(s: string, t: string): string {
   return s.slice(result[0], result[1] + 1)
 }
 
-console.log(minWindow('ADOBECODEBANC', 'ABC')) // Expected: BANC
+console.log(minWindow('ADOBECODEBANC', 'ABC')) // BANC
 // console.log(minWindow('a', 'a'))
 // console.log(minWindow('a', 'aa'))
 // console.log(minWindow('ab', 'b'))

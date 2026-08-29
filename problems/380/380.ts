@@ -41,11 +41,11 @@ class RandomizedSet {
 
 const randomizedSet = new RandomizedSet()
 
-console.log(randomizedSet.insert(1)) // Expected: true
-console.log(randomizedSet.remove(2)) // Expected: false
-console.log(randomizedSet.insert(2)) // Expected: true
-console.log(randomizedSet.getRandom()) // Expected: 2
-console.log(randomizedSet.remove(1)) // Expected: true
-console.log(randomizedSet.insert(2)) // Expected: false
-console.log(randomizedSet.getRandom()) // Expected: 2
+console.log(randomizedSet.insert(1)) // true
+console.log(randomizedSet.remove(2)) // false
+console.log(randomizedSet.insert(2)) // true
+console.log(randomizedSet.getRandom()) // 2
+console.log(randomizedSet.remove(1)) // true
+console.log(randomizedSet.insert(2)) // false
+console.log(randomizedSet.getRandom()) // 2
 

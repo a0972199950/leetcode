@@ -24,5 +24,5 @@ function kthPalindrome(queries: number[], intLength: number): number[] {
   return []
 }
 
-console.log(kthPalindrome([89], 1)) // Expected: [ -1 ]
+console.log(kthPalindrome([89], 1)) // [ -1 ]
 

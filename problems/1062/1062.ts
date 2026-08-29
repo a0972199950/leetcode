@@ -67,8 +67,8 @@ function longestRepeatingSubstring(s: string): number {
   }
 }
 
-console.log(longestRepeatingSubstring('abcd')) // Expected: 0
-console.log(longestRepeatingSubstring('abbaba')) // Expected: 2
-console.log(longestRepeatingSubstring('aabcaabdaab')) // Expected: 3
-console.log(longestRepeatingSubstring('aaaaa')) // Expected: 4
+console.log(longestRepeatingSubstring('abcd')) // 0
+console.log(longestRepeatingSubstring('abbaba')) // 2
+console.log(longestRepeatingSubstring('aabcaabdaab')) // 3
+console.log(longestRepeatingSubstring('aaaaa')) // 4
 

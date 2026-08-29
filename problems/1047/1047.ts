@@ -20,5 +20,5 @@ function removeDuplicates(s: string): string {
   return stack.join('')
 }
 
-console.log(removeDuplicates('abbaca')) // Expected: ca
-console.log(removeDuplicates('azxxzy')) // Expected: ay
+console.log(removeDuplicates('abbaca')) // ca
+console.log(removeDuplicates('azxxzy')) // ay

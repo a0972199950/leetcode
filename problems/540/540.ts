@@ -43,4 +43,4 @@ function singleNonDuplicate(nums: number[]): number {
 // console.log(singleNonDuplicate([3, 3, 7, 7, 10, 11, 11]))
 // console.log(singleNonDuplicate([1, 1, 2, 2, 3, 3, 4]))
 // console.log(singleNonDuplicate([1, 2, 2, 3, 3, 4, 4]))
-console.log(singleNonDuplicate([2])) // Expected: 2
+console.log(singleNonDuplicate([2])) // 2

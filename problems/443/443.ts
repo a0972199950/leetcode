@@ -76,6 +76,6 @@ function compress(chars: string[]): number {
   return chars.length
 }
 
-console.log(compress(['a', 'a', 'b', 'b', 'c', 'c', 'c'])) // Expected: 6
-console.log(compress(['a'])) // Expected: 1
-console.log(compress(['a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b'])) // Expected: 4
+console.log(compress(['a', 'a', 'b', 'b', 'c', 'c', 'c'])) // 6
+console.log(compress(['a'])) // 1
+console.log(compress(['a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b'])) // 4

@@ -72,7 +72,5 @@ function spiralOrder(matrix: (number | null)[][]): number[] {
   }
 }
 
-console.log(spiralOrder([[2, 5], [8, 4], [0, -1]])) // Expected: [ 2, 5, 4, -1, 0, 8 ]
-
-
+console.log(spiralOrder([[2, 5], [8, 4], [0, -1]])) // [ 2, 5, 4, -1, 0, 8 ]
 

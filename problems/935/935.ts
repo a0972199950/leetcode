@@ -73,5 +73,5 @@ function knightDialer(n: number): number {
 // console.log(knightDialer(2))
 // console.log(knightDialer(3))
 // console.log(knightDialer(10))
-console.log(knightDialer(3131)) // Expected: 136006598
+console.log(knightDialer(3131)) // 136006598
 

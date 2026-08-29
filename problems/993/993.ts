@@ -35,7 +35,7 @@ function isCousins(root: TreeNode | null, x: number, y: number): boolean {
   return result[x].depth === result[y].depth && result[x].parent !== result[y].parent
 }
 
-console.log(isCousins(new BinaryTree([1, 2, 3, 4]).root, 4, 3)) // Expected: false
-console.log(isCousins(new BinaryTree([1, 2, 3, null, 4, null, 5]).root, 5, 4)) // Expected: true
-console.log(isCousins(new BinaryTree([1, 2, 3, null, 4]).root, 2, 3)) // Expected: false
+console.log(isCousins(new BinaryTree([1, 2, 3, 4]).root, 4, 3)) // false
+console.log(isCousins(new BinaryTree([1, 2, 3, null, 4, null, 5]).root, 5, 4)) // true
+console.log(isCousins(new BinaryTree([1, 2, 3, null, 4]).root, 2, 3)) // false
 

@@ -102,9 +102,9 @@ function champagneTower(poured: number, query_row: number, query_glass: number):
   return Math.min(1, lastcups[query_glass])
 }
 
-console.log(champagneTower(1, 1, 1)) // Expected: 0
-console.log(champagneTower(2, 1, 1)) // Expected: 0.5
-console.log(champagneTower(4, 2, 0)) // Expected: 0.25
-console.log(champagneTower(0, 0, 0)) // Expected: 0
-console.log(champagneTower(25, 6, 1)) // Expected: 0.1875
+console.log(champagneTower(1, 1, 1)) // 0
+console.log(champagneTower(2, 1, 1)) // 0.5
+console.log(champagneTower(4, 2, 0)) // 0.25
+console.log(champagneTower(0, 0, 0)) // 0
+console.log(champagneTower(25, 6, 1)) // 0.1875
 

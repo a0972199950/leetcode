@@ -139,5 +139,5 @@ function findMaxForm(strs: string[], m: number, n: number): number {
 // console.log(findMaxForm(['10', '0001', '111001', '1', '0'], 5, 3)) // 4
 // console.log(findMaxForm(['10', '0', '1'], 1, 1)) // 2
 // console.log(findMaxForm(['10', '0001', '111001', '1', '0'], 0, 0)) // 0
-console.log(findMaxForm(['10', '0001', '111001', '1', '0'], 4, 3)) // 3 // Expected: 3
+console.log(findMaxForm(['10', '0001', '111001', '1', '0'], 4, 3)) // 3 // 3
 

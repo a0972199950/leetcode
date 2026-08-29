@@ -103,7 +103,7 @@ class MyLinkedList {
 
 const obj = new MyLinkedList()
 obj.addAtHead(4)
-console.log(obj.get(1)) // Expected: -1
+console.log(obj.get(1)) // -1
 // console.log(obj.data)
 // obj.addAtIndex(1, 2)
 // console.log(obj.data)

@@ -54,7 +54,7 @@ function orangesRotting(grid: number[][]): number {
   return !fresh ? timer : -1
 }
 
-console.log(orangesRotting([[2, 1, 1], [1, 1, 0], [0, 1, 1]])) // Expected: 4
-console.log(orangesRotting([[2, 1, 1], [0, 1, 1], [1, 0, 1]])) // Expected: -1
-console.log(orangesRotting([[0, 2]])) // Expected: 0
+console.log(orangesRotting([[2, 1, 1], [1, 1, 0], [0, 1, 1]])) // 4
+console.log(orangesRotting([[2, 1, 1], [0, 1, 1], [1, 0, 1]])) // -1
+console.log(orangesRotting([[0, 2]])) // 0
 

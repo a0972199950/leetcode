@@ -192,8 +192,8 @@ function decodeString(s: string): string {
 // console.log(decodeString('10[hi]'))
 // console.log(decodeString('[hi]'))
 // console.log(decodeString('3[a]2[bc]'))
-console.log(decodeString('3[a2[c]]')) // Expected: accaccacc
-console.log(decodeString('2[abc]3[cd]ef')) // Expected: abcabccdcdcdef
-console.log(decodeString('abcde')) // Expected: abcde
-console.log(decodeString('abc3[cd]xyz')) // Expected: abccdcdcdxyz
-console.log(decodeString('3[z]2[2[y]pq4[2[jk]e1[f]]]ef')) // Expected: zzzyypqjkjkefjkjkefjkjkefjkjkefyypqjkjkefjkjkefjkjkefjkjkefef
+console.log(decodeString('3[a2[c]]')) // accaccacc
+console.log(decodeString('2[abc]3[cd]ef')) // abcabccdcdcdef
+console.log(decodeString('abcde')) // abcde
+console.log(decodeString('abc3[cd]xyz')) // abccdcdcdxyz
+console.log(decodeString('3[z]2[2[y]pq4[2[jk]e1[f]]]ef')) // zzzyypqjkjkefjkjkefjkjkefjkjkefyypqjkjkefjkjkefjkjkefjkjkefef

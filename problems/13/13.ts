@@ -29,7 +29,7 @@ function romanToInt(s: string): number {
   return sum
 }
 
-console.log(romanToInt('III')) // Expected: 3
-console.log(romanToInt('LVIII')) // Expected: 58
-console.log(romanToInt('MCMXCIV')) // Expected: 1994
+console.log(romanToInt('III')) // 3
+console.log(romanToInt('LVIII')) // 58
+console.log(romanToInt('MCMXCIV')) // 1994
 

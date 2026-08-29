@@ -73,8 +73,8 @@ function numberOfSubarrays(nums: number[]): number {
   return result
 }
 
-console.log(numberOfSubarrays([1, 4, 3, 3, 2])) // Expected: 6
-console.log(numberOfSubarrays([3, 3, 3])) // Expected: 6
-console.log(numberOfSubarrays([1])) // Expected: 1
-console.log(numberOfSubarrays([5, 4, 3, 2, 1])) // Expected: 5
-console.log(numberOfSubarrays([6, 26, 6])) // Expected: 3
+console.log(numberOfSubarrays([1, 4, 3, 3, 2])) // 6
+console.log(numberOfSubarrays([3, 3, 3])) // 6
+console.log(numberOfSubarrays([1])) // 1
+console.log(numberOfSubarrays([5, 4, 3, 2, 1])) // 5
+console.log(numberOfSubarrays([6, 26, 6])) // 3

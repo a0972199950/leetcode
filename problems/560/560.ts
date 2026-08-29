@@ -136,8 +136,8 @@ function subarraySum(nums: number[], k: number): number {
   return result
 }
 
-console.log(subarraySum([1, 1, 1], 2)) // Expected: 2
-console.log(subarraySum([1, 2, 3], 3)) // Expected: 2
-console.log(subarraySum([1, 2, 3], 5)) // Expected: 1
-console.log(subarraySum([-1, -1, 1], 0)) // Expected: 1
+console.log(subarraySum([1, 1, 1], 2)) // 2
+console.log(subarraySum([1, 2, 3], 3)) // 2
+console.log(subarraySum([1, 2, 3], 5)) // 1
+console.log(subarraySum([-1, -1, 1], 0)) // 1
 

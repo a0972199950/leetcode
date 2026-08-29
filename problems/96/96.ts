@@ -53,5 +53,5 @@ function numTrees(n: number): number {
 
 // console.log(numTrees(3))
 // console.log(numTrees(1))
-console.log(numTrees(19)) // Expected: 1767263190
+console.log(numTrees(19)) // 1767263190
 

@@ -103,13 +103,13 @@ console.log(findAllRecipes(
   ['xevvq', 'izcad', 'p', 'we', 'bxgnm', 'vpio', 'i', 'hjvu', 'igi', 'anp', 'tokfq', 'z', 'kwdmb', 'g', 'qb', 'q', 'b', 'hthy'],
   [['wbjr'], ['otr', 'fzr', 'g'], ['fzr', 'wi', 'otr', 'xgp', 'wbjr', 'igi', 'b'], ['fzr', 'xgp', 'wi', 'otr', 'tokfq', 'izcad', 'igi', 'xevvq', 'i', 'anp'], ['wi', 'xgp', 'wbjr'], ['wbjr', 'bxgnm', 'i', 'b', 'hjvu', 'izcad', 'igi', 'z', 'g'], ['xgp', 'otr', 'wbjr'], ['wbjr', 'otr'], ['wbjr', 'otr', 'fzr', 'wi', 'xgp', 'hjvu', 'tokfq', 'z', 'kwdmb'], ['xgp', 'wi', 'wbjr', 'bxgnm', 'izcad', 'p', 'xevvq'], ['bxgnm'], ['wi', 'fzr', 'otr', 'wbjr'], ['wbjr', 'wi', 'fzr', 'xgp', 'otr', 'g', 'b', 'p'], ['otr', 'fzr', 'xgp', 'wbjr'], ['xgp', 'wbjr', 'q', 'vpio', 'tokfq', 'we'], ['wbjr', 'wi', 'xgp', 'we'], ['wbjr'], ['wi']],
   ['wi', 'otr', 'wbjr', 'fzr', 'xgp']
-)) // Expected: [ 'xevvq', 'g', 'izcad', 'hjvu', 'bxgnm', 'tokfq', 'z', 'b', 'i', 'hthy' ]
+)) // [ 'xevvq', 'g', 'izcad', 'hjvu', 'bxgnm', 'tokfq', 'z', 'b', 'i', 'hthy' ]
 
 console.log(findAllRecipes(
   ['ju', 'fzjnm', 'x', 'e', 'zpmcz', 'h', 'q'],
   [['d'], ['hveml', 'f', 'cpivl'], ['cpivl', 'zpmcz', 'h', 'e', 'fzjnm', 'ju'], ['cpivl', 'hveml', 'zpmcz', 'ju', 'h'], ['h', 'fzjnm', 'e', 'q', 'x'], ['d', 'hveml', 'cpivl', 'q', 'zpmcz', 'ju', 'e', 'x'], ['f', 'hveml', 'cpivl']],
   ['f', 'hveml', 'cpivl', 'd']
-)) // Expected: [ 'ju', 'fzjnm', 'q' ]
+)) // [ 'ju', 'fzjnm', 'q' ]
 
 // console.log(findAllRecipes(
 //   ['bread', 'milk', 'cookie'],

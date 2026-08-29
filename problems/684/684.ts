@@ -76,5 +76,5 @@ function findRedundantConnection(edges: number[][]): number[] {
 // console.log(findRedundantConnection([[1, 2], [1, 3], [2, 3]]))
 // console.log(findRedundantConnection([[1, 2], [2, 3], [3, 4], [1, 4], [1, 5]]))
 // console.log(findRedundantConnection([]))
-console.log(findRedundantConnection([[1, 2]])) // Expected: []
+console.log(findRedundantConnection([[1, 2]])) // []
 

@@ -35,11 +35,11 @@ function containsNearbyDuplicate(nums: number[], k: number): boolean {
   return false
 }
 
-console.log(containsNearbyDuplicate([1, 2, 3, 1], 3)) // Expected: true
-console.log(containsNearbyDuplicate([1, 0, 1, 1], 1)) // Expected: true
-console.log(containsNearbyDuplicate([1, 2, 3, 1, 2, 3], 2)) // Expected: false
-console.log(containsNearbyDuplicate([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 15)) // Expected: false
-console.log(containsNearbyDuplicate([1], 1)) // Expected: false
-console.log(containsNearbyDuplicate([1, 2], 2)) // Expected: false
-console.log(containsNearbyDuplicate([1, 2, 3, 4, 5, 6, 7, 8, 9, 9], 3)) // Expected: true
+console.log(containsNearbyDuplicate([1, 2, 3, 1], 3)) // true
+console.log(containsNearbyDuplicate([1, 0, 1, 1], 1)) // true
+console.log(containsNearbyDuplicate([1, 2, 3, 1, 2, 3], 2)) // false
+console.log(containsNearbyDuplicate([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 15)) // false
+console.log(containsNearbyDuplicate([1], 1)) // false
+console.log(containsNearbyDuplicate([1, 2], 2)) // false
+console.log(containsNearbyDuplicate([1, 2, 3, 4, 5, 6, 7, 8, 9, 9], 3)) // true
 

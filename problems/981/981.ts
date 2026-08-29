@@ -49,10 +49,10 @@ class TimeMap {
 }
 
 const timeMap = new TimeMap()
-console.log(timeMap.set('foo', 'bar', 1))  // store the key "foo" and value "bar" along with timestamp = 1. // Expected: undefined
-console.log(timeMap.get('foo', 1))         // return "bar" // Expected: bar
-console.log(timeMap.get('foo', 3))         // return "bar", since there is no value corresponding to foo at timestamp 3 and timestamp 2, then the only value is at timestamp 1 is "bar". // Expected: bar
-console.log(timeMap.set('foo', 'bar2', 4)) // store the key "foo" and value "bar2" along with timestamp = 4. // Expected: undefined
-console.log(timeMap.get('foo', 4))         // return "bar2" // Expected: bar2
-console.log(timeMap.get('foo', 5))         // return "bar2" // Expected: bar2
+console.log(timeMap.set('foo', 'bar', 1))  // store the key "foo" and value "bar" along with timestamp = 1. // undefined
+console.log(timeMap.get('foo', 1))         // return "bar" // bar
+console.log(timeMap.get('foo', 3))         // return "bar", since there is no value corresponding to foo at timestamp 3 and timestamp 2, then the only value is at timestamp 1 is "bar". // bar
+console.log(timeMap.set('foo', 'bar2', 4)) // store the key "foo" and value "bar2" along with timestamp = 4. // undefined
+console.log(timeMap.get('foo', 4))         // return "bar2" // bar2
+console.log(timeMap.get('foo', 5))         // return "bar2" // bar2
 

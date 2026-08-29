@@ -33,6 +33,6 @@ function isBalanced(root: TreeNode | null): boolean {
   return result
 }
 
-console.log(isBalanced(new BinaryTree([3, 9, 20, null, null, 15, 7]).root)) // Expected: true
-console.log(isBalanced(new BinaryTree([1, 2, 2, 3, 3, null, null, 4, 4]).root)) // Expected: false
+console.log(isBalanced(new BinaryTree([3, 9, 20, null, null, 15, 7]).root)) // true
+console.log(isBalanced(new BinaryTree([1, 2, 2, 3, 3, null, null, 4, 4]).root)) // false
 

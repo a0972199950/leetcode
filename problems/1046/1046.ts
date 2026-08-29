@@ -100,5 +100,5 @@ function lastStoneWeight(stones: number[]): number {
   return priotiryStones.dequeue()! || 0
 }
 
-console.log(lastStoneWeight([3, 7, 2])) // Expected: 2
+console.log(lastStoneWeight([3, 7, 2])) // 2
 

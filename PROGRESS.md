@@ -1,13 +1,15 @@
 # 題目練習總覽
 
-> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-08-27
+> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-08-29
 
-共 315 題，其中 307 題超過 2 個月未練習（可作為 /q 複習候選）。
+共 315 題，其中 258 題超過 8 個月未練習（可作為 /q 複習候選）。
 
 依「最後練習時間」新到舊排序，沒有紀錄的排在最後。
 
 | 題號 | 標題 | 難度 | 標籤 | 最後練習時間 | 連結 |
 | --- | --- | --- | --- | --- | --- |
+| 33 | 33. Search in Rotated Sorted Array | Medium | Array, Binary Search | 2026-08-29 | https://leetcode.com/problems/search-in-rotated-sorted-array/ |
+| 34 | 34. Find First and Last Position of Element in Sorted Array | Medium | Array, Binary Search | 2026-08-29 | https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/ |
 | 449 | 449. Serialize and Deserialize BST | Medium | String, Tree, Depth-First Search, Breadth-First Search, Design, Binary Search Tree, Binary Tree | 2026-08-27 | https://leetcode.com/problems/serialize-and-deserialize-bst/ |
 | 450 | 450. Delete Node in a BST | Medium | Tree, Binary Search Tree, Binary Tree | 2026-08-27 | https://leetcode.com/problems/delete-node-in-a-bst/ |
 | 173 | 173. Binary Search Tree Iterator | Medium | Stack, Tree, Design, Binary Search Tree, Binary Tree, Iterator | 2026-08-26 | https://leetcode.com/problems/binary-search-tree-iterator/ |
@@ -115,7 +117,6 @@
 | 380 | 380. Insert Delete GetRandom O(1) | Medium | Array, Hash Table, Math, Design, Randomized | 2024-04-26 | https://leetcode.com/problems/insert-delete-getrandom-o1/ |
 | 398 | 398. Random Pick Index | Medium | Hash Table, Math, Reservoir Sampling, Randomized | 2024-04-26 | https://leetcode.com/problems/random-pick-index/ |
 | 378 | 378. Kth Smallest Element in a Sorted Matrix | Medium | Array, Binary Search, Sorting, Heap (Priority Queue), Matrix | 2024-04-23 | https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/ |
-| 34 | 34. Find First and Last Position of Element in Sorted Array | Medium | Array, Binary Search | 2024-04-22 | https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/ |
 | 47 | 47. Permutations II | Medium | Array, Backtracking, Sorting | 2024-04-22 | https://leetcode.com/problems/permutations-ii/ |
 | 542 | 542. 01 Matrix | Medium | Array, Dynamic Programming, Breadth-First Search, Matrix | 2024-04-22 | https://leetcode.com/problems/01-matrix/ |
 | 18 | 18. 4Sum | Medium | Array, Two Pointers, Sorting | 2024-04-21 | https://leetcode.com/problems/4sum/ |
@@ -255,7 +256,6 @@
 | 417 | 417. Pacific Atlantic Water Flow | Medium | Array, Depth-First Search, Breadth-First Search, Matrix | 2022-10-29 | https://leetcode.com/problems/pacific-atlantic-water-flow/ |
 | 518 | 518. Coin Change II | Medium | Array, Dynamic Programming, Knapsack Problem, Complete Knapsack | 2022-10-29 | https://leetcode.com/problems/coin-change-ii/ |
 | 994 | 994. Rotting Oranges | Medium | Array, Breadth-First Search, Matrix | 2022-10-29 | https://leetcode.com/problems/rotting-oranges/ |
-| 33 | 33. Search in Rotated Sorted Array | Medium | Array, Binary Search | 2022-10-27 | https://leetcode.com/problems/search-in-rotated-sorted-array/ |
 | 43 | 43. Multiply Strings | Medium | Math, String, Simulation | 2022-10-27 | https://leetcode.com/problems/multiply-strings/ |
 | 110 | 110. Balanced Binary Tree | Easy | Tree, Depth-First Search, Binary Tree | 2022-10-27 | https://leetcode.com/problems/balanced-binary-tree/ |
 | 187 | 187. Repeated DNA Sequences | Medium | Hash Table, String, Bit Manipulation, Sliding Window, Rolling Hash, Hash Function, Z Algorithm, Boyer–Moore String-Search Algorithm | 2022-10-27 | https://leetcode.com/problems/repeated-dna-sequences/ |

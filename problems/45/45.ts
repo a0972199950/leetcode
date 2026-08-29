@@ -110,7 +110,7 @@ function jump(nums: number[]): number {
   return res
 }
 
-console.log(jump([2, 3, 1, 1, 4])) // Expected: 2
-console.log(jump([2, 3, 0, 1, 4])) // Expected: 2
-console.log(jump([0])) // Expected: 0
+console.log(jump([2, 3, 1, 1, 4])) // 2
+console.log(jump([2, 3, 0, 1, 4])) // 2
+console.log(jump([0])) // 0
 

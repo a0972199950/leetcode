@@ -132,8 +132,8 @@ function trimBST(root: TreeNode | null, low: number, high: number): TreeNode | n
   return traverse(root)
 }
 
-console.log(trimBST(new BinaryTree([1, 0, 2]).root, 1, 2)) // Expected: TreeNode { val: 1, left: null, right: TreeNode { val: 2, ... } }
-console.log(trimBST(new BinaryTree([3, 0, 4, null, 2, null, null, 1]).root, 1, 3)) // Expected: TreeNode { val: 3, left: TreeNode { val: 2, left: TreeNode { val: 1, ... }, right: null }, right: null }
+console.log(trimBST(new BinaryTree([1, 0, 2]).root, 1, 2)) // TreeNode { val: 1, left: null, right: TreeNode { val: 2, ... } }
+console.log(trimBST(new BinaryTree([3, 0, 4, null, 2, null, null, 1]).root, 1, 3)) // TreeNode { val: 3, left: TreeNode { val: 2, left: TreeNode { val: 1, ... }, right: null }, right: null }
 
 const t3 = new BinaryTree([3, 1, 4, null, 2])
 t3.print()

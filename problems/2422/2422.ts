@@ -34,10 +34,10 @@ function minimumOperations(nums: number[]): number {
   return operations
 }
 
-console.log(minimumOperations([4, 3, 2, 1, 2, 3, 1])) // Expected: 2
-console.log(minimumOperations([1, 2, 3, 4])) // Expected: 3
-console.log(minimumOperations([1, 2, 3, 1])) // Expected: 1
-console.log(minimumOperations([10])) // Expected: 0
-console.log(minimumOperations([1, 2, 3, 4, 5, 4, 3, 2, 1])) // Expected: 0
-console.log(minimumOperations([1, 2, 3, 4, 5, 5, 4, 3, 2, 1])) // Expected: 0
+console.log(minimumOperations([4, 3, 2, 1, 2, 3, 1])) // 2
+console.log(minimumOperations([1, 2, 3, 4])) // 3
+console.log(minimumOperations([1, 2, 3, 1])) // 1
+console.log(minimumOperations([10])) // 0
+console.log(minimumOperations([1, 2, 3, 4, 5, 4, 3, 2, 1])) // 0
+console.log(minimumOperations([1, 2, 3, 4, 5, 5, 4, 3, 2, 1])) // 0
 

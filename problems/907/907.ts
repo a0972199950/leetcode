@@ -45,5 +45,5 @@ function sumSubarrayMins(arr: number[]): number {
   return result
 }
 
-console.log(sumSubarrayMins([3, 1, 2, 4])) // Expected: 17
-console.log(sumSubarrayMins([11, 81, 94, 43, 3])) // Expected: 444
+console.log(sumSubarrayMins([3, 1, 2, 4])) // 17
+console.log(sumSubarrayMins([11, 81, 94, 43, 3])) // 444

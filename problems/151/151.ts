@@ -56,7 +56,7 @@ function reverseWords(s: string): string {
   return words.join(' ')
 }
 
-console.log(reverseWords('the sky is blue')) // Expected: blue is sky the
-console.log(reverseWords('  hello world  ')) // Expected: world hello
-console.log(reverseWords('a good   example')) // Expected: example good a
+console.log(reverseWords('the sky is blue')) // blue is sky the
+console.log(reverseWords('  hello world  ')) // world hello
+console.log(reverseWords('a good   example')) // example good a
 

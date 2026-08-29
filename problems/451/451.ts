@@ -16,7 +16,7 @@ function frequencySort(s: string): string {
     .reduce((sum, char) => sum + Array(record[char]).fill(char).join(''), '')
 }
 
-console.log(frequencySort('tree')) // Expected: eetr
-console.log(frequencySort('cccaaa')) // Expected: cccaaa
-console.log(frequencySort('Aabb')) // Expected: bbAa
+console.log(frequencySort('tree')) // eetr
+console.log(frequencySort('cccaaa')) // cccaaa
+console.log(frequencySort('Aabb')) // bbAa
 

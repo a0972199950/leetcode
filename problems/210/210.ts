@@ -285,12 +285,12 @@ function findOrder(numCourses: number, prerequisites: number[][]): number[] {
   return orders
 }
 
-console.log(findOrder(2, [[1, 0]])) // Expected: [ 0, 1 ]
-console.log(findOrder(4, [[1, 0], [2, 0], [3, 1], [3, 2]])) // Expected: [ 0, 1, 2, 3 ]
-console.log(findOrder(5, [[1, 2], [1, 3], [3, 4], [0, 1], [0, 3]])) // Expected: [ 2, 4, 3, 1, 0 ]
+console.log(findOrder(2, [[1, 0]])) // [ 0, 1 ]
+console.log(findOrder(4, [[1, 0], [2, 0], [3, 1], [3, 2]])) // [ 0, 1, 2, 3 ]
+console.log(findOrder(5, [[1, 2], [1, 3], [3, 4], [0, 1], [0, 3]])) // [ 2, 4, 3, 1, 0 ]
 // console.log(findOrder(6, [[5, 0], [4, 0], [0, 1], [0, 2], [1, 3], [3, 2]]))
 // console.log(findOrder(1, []))
-console.log(findOrder(2, [[0, 1], [1, 0]])) // Expected: []
+console.log(findOrder(2, [[0, 1], [1, 0]])) // []
 // console.log(findOrder(3, [[2, 0], [2, 1]]))
 // console.log(findOrder(3, [[1, 0], [0, 2], [2, 1]]))
 // console.log(findOrder(3, [[1, 0], [1, 2], [0, 1]]))

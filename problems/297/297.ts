@@ -102,5 +102,5 @@ function deserialize(data: string): TreeNode | null {
 // console.log(serialize(deserialize('[1,2,3,null,null,4,5]')))
 // console.log(serialize(deserialize('[1,2,3,null,null,4,5,6,7]')))
 // console.log(serialize(deserialize('[]')))
-console.log(serialize(new BinaryTree([4, -7, -3, null, null, -9, -3, 9, -7, -4, null, 6, null, -6, -6, null, null, 0, 6, 5, null, 9, null, null, -1, -4, null, null, null, -2]).root)) // Expected: [4,-7,-3,null,null,-9,-3,9,-7,-4,null,6,null,-6,-6,null,null,0,6,5,null,9,null,null,-1,-4,null,null,null,-2]
+console.log(serialize(new BinaryTree([4, -7, -3, null, null, -9, -3, 9, -7, -4, null, 6, null, -6, -6, null, null, 0, 6, 5, null, 9, null, null, -1, -4, null, null, null, -2]).root)) // [4,-7,-3,null,null,-9,-3,9,-7,-4,null,6,null,-6,-6,null,null,0,6,5,null,9,null,null,-1,-4,null,null,null,-2]
 

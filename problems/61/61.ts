@@ -31,7 +31,7 @@ function rotateRight(head: ListNode | null, k: number): ListNode | null {
   return newHead
 }
 
-console.log(rotateRight(new LinkedList([1, 2, 3, 4, 5]).head, 2)) // Expected: ListNode { val: 4, next: ListNode { val: 5, next: ListNode { val: 1, next: ListNode { val: 2, next: ListNode { val: 3, next: null } } } } }
-console.log(rotateRight(new LinkedList([0, 1, 2]).head, 4)) // Expected: ListNode { val: 2, next: ListNode { val: 0, next: ListNode { val: 1, next: null } } }
-console.log(rotateRight(new LinkedList([0, 1, 2]).head, 3)) // Expected: ListNode { val: 0, next: ListNode { val: 1, next: ListNode { val: 2, next: null } } }
-console.log(rotateRight(new LinkedList([]).head, 0)) // Expected: null
+console.log(rotateRight(new LinkedList([1, 2, 3, 4, 5]).head, 2)) // ListNode { val: 4, next: ListNode { val: 5, next: ListNode { val: 1, next: ListNode { val: 2, next: ListNode { val: 3, next: null } } } } }
+console.log(rotateRight(new LinkedList([0, 1, 2]).head, 4)) // ListNode { val: 2, next: ListNode { val: 0, next: ListNode { val: 1, next: null } } }
+console.log(rotateRight(new LinkedList([0, 1, 2]).head, 3)) // ListNode { val: 0, next: ListNode { val: 1, next: ListNode { val: 2, next: null } } }
+console.log(rotateRight(new LinkedList([]).head, 0)) // null

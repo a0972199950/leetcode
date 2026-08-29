@@ -85,4 +85,4 @@ function search(nums: number[], target: number): boolean {
 // console.log(search([1], 0))
 // console.log(search([2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2], 3))
 // console.log(search([2, 2, 2, 2, 2, 2, 2], 3))
-console.log(search([5, 1, 3], 1)) // Expected: true
+console.log(search([5, 1, 3], 1)) // true

@@ -47,5 +47,5 @@ function longestPalindromeSubseq(s: string): number {
 // console.log(longestPalindromeSubseq('bbbab'))
 // console.log(longestPalindromeSubseq('cbbd'))
 // console.log(longestPalindromeSubseq('a'))
-console.log(longestPalindromeSubseq('aabaa')) // Expected: 5
+console.log(longestPalindromeSubseq('aabaa')) // 5
 

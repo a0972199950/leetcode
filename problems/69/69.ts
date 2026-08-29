@@ -46,5 +46,5 @@ function mySqrt(x: number): number {
 
 // console.log(mySqrt(4))
 // console.log(mySqrt(8))
-console.log(mySqrt(0)) // Expected: 0
+console.log(mySqrt(0)) // 0
 

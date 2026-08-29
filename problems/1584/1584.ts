@@ -141,5 +141,5 @@ function minCostConnectPoints(points: number[][]): number {
 // console.log(minCostConnectPoints([[0, 0], [2, 2], [3, 10], [5, 2], [7, 0]]))
 // console.log(minCostConnectPoints([[3, 12], [-2, 5], [-4, 1]]))
 // console.log(minCostConnectPoints([[0, 0], [1, 1], [1, 0], [-1, 1]]))
-console.log(minCostConnectPoints([[0, 0]])) // Expected: 0
+console.log(minCostConnectPoints([[0, 0]])) // 0
 

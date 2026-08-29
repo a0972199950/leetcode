@@ -23,6 +23,6 @@ function decode(s: string): string[] {
  * decode(encode(strs));
  */
 
-console.log(encode(['Hello', 'World'])) // Expected: Hello😀World
-console.log(decode('Hello😀World')) // Expected: [ 'Hello', 'World' ]
+console.log(encode(['Hello', 'World'])) // Hello😀World
+console.log(decode('Hello😀World')) // [ 'Hello', 'World' ]
 

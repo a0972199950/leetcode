@@ -32,5 +32,5 @@ function findErrorNums(nums: number[]): number[] {
   return [duplicate, missing]
 }
 
-console.log(findErrorNums([1, 2, 2, 4])) // Expected: [ 2, 3 ]
-console.log(findErrorNums([1, 1])) // Expected: [ 1, 2 ]
+console.log(findErrorNums([1, 2, 2, 4])) // [ 2, 3 ]
+console.log(findErrorNums([1, 1])) // [ 1, 2 ]

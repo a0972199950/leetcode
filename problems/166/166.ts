@@ -32,6 +32,6 @@ function fractionToDecimal(numerator: number, denominator: number): string {
   return result
 }
 
-console.log(fractionToDecimal(4, 333)) // Expected: 0.(012)
-console.log(4 / 333) // Expected: 0.012012012012012012
+console.log(fractionToDecimal(4, 333)) // 0.(012)
+console.log(4 / 333) // 0.012012012012012012
 

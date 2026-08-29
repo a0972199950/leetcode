@@ -81,5 +81,5 @@ function removeKdigits(s: string, k: number): string {
 // console.log(removeKdigits('10', 2))
 // console.log(removeKdigits('111222', 3))
 // console.log(removeKdigits('9991', 1))
-console.log(removeKdigits('123456', 3)) // Expected: 123
+console.log(removeKdigits('123456', 3)) // 123
 

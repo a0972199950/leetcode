@@ -88,5 +88,5 @@ function copyRandomList(head: Node | null): Node | null {
   }
 }
 
-console.log(copyRandomList()) // Expected: undefined
+console.log(copyRandomList()) // undefined
 

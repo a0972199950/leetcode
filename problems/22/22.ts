@@ -27,5 +27,5 @@ function generateParenthesis(n: number): string[] {
   return result
 }
 
-console.log(generateParenthesis(2)) // Expected: [ '(())', '()()' ]
+console.log(generateParenthesis(2)) // [ '(())', '()()' ]
 

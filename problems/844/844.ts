@@ -62,6 +62,5 @@ function backspaceCompare(s: string, t: string): boolean {
   return sIndex === tIndex
 }
 
-console.log(backspaceCompare('y#fo##f', 'y#f#o##f')) // Expected: true
-
+console.log(backspaceCompare('y#fo##f', 'y#f#o##f')) // true
 
