@@ -2,7 +2,7 @@
 
 > 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-08-29
 
-共 315 題，其中 258 題超過 8 個月未練習（可作為 /q 複習候選）。
+共 315 題，其中 257 題超過 8 個月未練習（可作為 /q 複習候選）。
 
 依「最後練習時間」新到舊排序，沒有紀錄的排在最後。
 
@@ -10,6 +10,7 @@
 | --- | --- | --- | --- | --- | --- |
 | 33 | 33. Search in Rotated Sorted Array | Medium | Array, Binary Search | 2026-08-29 | https://leetcode.com/problems/search-in-rotated-sorted-array/ |
 | 34 | 34. Find First and Last Position of Element in Sorted Array | Medium | Array, Binary Search | 2026-08-29 | https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/ |
+| 153 | 153. Find Minimum in Rotated Sorted Array | Medium | Array, Binary Search | 2026-08-29 | https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/ |
 | 449 | 449. Serialize and Deserialize BST | Medium | String, Tree, Depth-First Search, Breadth-First Search, Design, Binary Search Tree, Binary Tree | 2026-08-27 | https://leetcode.com/problems/serialize-and-deserialize-bst/ |
 | 450 | 450. Delete Node in a BST | Medium | Tree, Binary Search Tree, Binary Tree | 2026-08-27 | https://leetcode.com/problems/delete-node-in-a-bst/ |
 | 173 | 173. Binary Search Tree Iterator | Medium | Stack, Tree, Design, Binary Search Tree, Binary Tree, Iterator | 2026-08-26 | https://leetcode.com/problems/binary-search-tree-iterator/ |
@@ -110,7 +111,6 @@
 | 703 | 703. Kth Largest Element in a Stream | Easy | Tree, Design, Binary Search Tree, Heap (Priority Queue), Binary Tree, Data Stream | 2024-04-29 | https://leetcode.com/problems/kth-largest-element-in-a-stream/ |
 | 146 | 146. LRU Cache | Medium | Hash Table, Linked List, Design, Doubly-Linked List | 2024-04-28 | https://leetcode.com/problems/lru-cache/ |
 | 287 | 287. Find the Duplicate Number | Medium | Array, Two Pointers, Binary Search, Bit Manipulation, Pigeonhole Principle, Floyd's Cycle Finding Algorithm | 2024-04-28 | https://leetcode.com/problems/find-the-duplicate-number/ |
-| 153 | 153. Find Minimum in Rotated Sorted Array | Medium | Array, Binary Search | 2024-04-27 | https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/ |
 | 271 | 271. Encode and Decode Strings | Medium | - | 2024-04-27 | https://leetcode.com/problems/encode-and-decode-strings/ |
 | 981 | 981. Time Based Key-Value Store | Medium | Hash Table, String, Binary Search, Design | 2024-04-27 | https://leetcode.com/problems/time-based-key-value-store/ |
 | 1901 | 1901. Find a Peak Element II | Medium | Array, Binary Search, Matrix | 2024-04-27 | https://leetcode.com/problems/find-a-peak-element-ii/ |
