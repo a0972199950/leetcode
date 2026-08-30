@@ -25,5 +25,6 @@
   "markdown.updateLinksOnFileMove.enabled": "never",
   "search.exclude": {
     "**/node_modules": true
-  }
+  },
+  "js/ts.experimental.useTsgo": false
 }

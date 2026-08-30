@@ -2,13 +2,14 @@
 
 > 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-08-30
 
-共 315 題，其中 255 題超過 8 個月未練習（可作為 /q 複習候選）。
+共 315 題，其中 254 題超過 8 個月未練習（可作為 /q 複習候選）。
 
 依「最後練習時間」新到舊排序，沒有紀錄的排在最後。
 
 | 題號 | 標題 | 難度 | 標籤 | 最後練習時間 | 連結 |
 | --- | --- | --- | --- | --- | --- |
 | 162 | 162. Find Peak Element | Medium | Array, Binary Search | 2026-08-30 | https://leetcode.com/problems/find-peak-element/ |
+| 287 | 287. Find the Duplicate Number | Medium | Array, Two Pointers, Binary Search, Bit Manipulation, Pigeonhole Principle, Floyd's Cycle Finding Algorithm | 2026-08-30 | https://leetcode.com/problems/find-the-duplicate-number/ |
 | 1901 | 1901. Find a Peak Element II | Medium | Array, Binary Search, Matrix | 2026-08-30 | https://leetcode.com/problems/find-a-peak-element-ii/ |
 | 33 | 33. Search in Rotated Sorted Array | Medium | Array, Binary Search | 2026-08-29 | https://leetcode.com/problems/search-in-rotated-sorted-array/ |
 | 34 | 34. Find First and Last Position of Element in Sorted Array | Medium | Array, Binary Search | 2026-08-29 | https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/ |
@@ -112,7 +113,6 @@
 | 131 | 131. Palindrome Partitioning | Medium | String, Dynamic Programming, Backtracking | 2024-04-29 | https://leetcode.com/problems/palindrome-partitioning/ |
 | 703 | 703. Kth Largest Element in a Stream | Easy | Tree, Design, Binary Search Tree, Heap (Priority Queue), Binary Tree, Data Stream | 2024-04-29 | https://leetcode.com/problems/kth-largest-element-in-a-stream/ |
 | 146 | 146. LRU Cache | Medium | Hash Table, Linked List, Design, Doubly-Linked List | 2024-04-28 | https://leetcode.com/problems/lru-cache/ |
-| 287 | 287. Find the Duplicate Number | Medium | Array, Two Pointers, Binary Search, Bit Manipulation, Pigeonhole Principle, Floyd's Cycle Finding Algorithm | 2024-04-28 | https://leetcode.com/problems/find-the-duplicate-number/ |
 | 271 | 271. Encode and Decode Strings | Medium | - | 2024-04-27 | https://leetcode.com/problems/encode-and-decode-strings/ |
 | 981 | 981. Time Based Key-Value Store | Medium | Hash Table, String, Binary Search, Design | 2024-04-27 | https://leetcode.com/problems/time-based-key-value-store/ |
 | 380 | 380. Insert Delete GetRandom O(1) | Medium | Array, Hash Table, Math, Design, Randomized | 2024-04-26 | https://leetcode.com/problems/insert-delete-getrandom-o1/ |

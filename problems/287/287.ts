@@ -1,9 +1,11 @@
 // 287. Find the Duplicate Number
-// 最後練習時間：2024-04-28
+// 最後練習時間：2026-08-30
 // https://leetcode.com/problems/find-the-duplicate-number/
 
 console.clear()
 
+// Time O(n log n + n)
+// Space O(1)
 // function findDuplicate(nums: number[]): number {
 //   let last: number | null = null
 
@@ -26,6 +28,8 @@ console.clear()
 //   return last as unknown as number
 // }
 
+// Time: O(n)
+// Space: O(n)
 // function findDuplicate(nums: number[]): number {
 //   const history = new Set()
 
@@ -71,8 +75,49 @@ function findDuplicate(nums: number[]): number {
   return slow
 }
 
-// console.log(findDuplicate([1, 3, 4, 2, 2]))
-// console.log(findDuplicate([3, 1, 3, 4, 2]))
-// console.log(findDuplicate([3, 3, 3, 3, 3]))
+// Time: O(n)
+// Space: O(n)
+// function findDuplicate(nums: number[]): number {
+//   const record = {}
+
+//   for (const num of nums) {
+//     record[num] = ++record[num] || 1
+//     if (record[num] > 1) {
+//       return num
+//     }
+//   }
+// }
+
+// Time: O(n log n)
+// Space: O(1)
+// function findDuplicate(nums: number[]): number {
+//   let left = 1
+//   let right = nums.length - 1
+
+//   while (left < right) {
+//     const middle = Math.floor(left + (right - left) / 2)
+//     // console.log(left, right, middle)
+
+//     let lessOrEqualThanMiddleCount = 0
+
+//     for (const num of nums) {
+//       if (num <= middle) {
+//         lessOrEqualThanMiddleCount++
+//       }
+//     }
+
+//     if (lessOrEqualThanMiddleCount > middle) {
+//       right = middle
+//     } else {
+//       left = middle + 1
+//     }
+//   }
+
+//   return left
+// }
+
+console.log(findDuplicate([1, 3, 4, 2, 2])) // 2
+console.log(findDuplicate([3, 1, 3, 4, 2])) // 3
+console.log(findDuplicate([3, 3, 3, 3, 3])) // 3
 console.log(findDuplicate([1, 3, 5, 2, 2, 4, 6])) // 2
 
