@@ -79,12 +79,12 @@ function coinChange(coins: number[], maxAmount: number): number {
   return lastCoinResult[maxAmount]
 }
 
-console.log(coinChange([1, 2, 5], 11))
-console.log(coinChange([1, 2, 5, 7], 11))
-console.log(coinChange([1, 2, 5, 7, 10, 11], 11))
-console.log(coinChange([2], 3))
-console.log(coinChange([1], 0))
-console.log(coinChange([493, 416, 144, 164, 314, 25], 5607))
-console.log(coinChange([411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422], 9864))
-console.log(coinChange([186, 419, 83, 408], 6249))
+console.log(coinChange([1, 2, 5], 11)) // 3
+console.log(coinChange([1, 2, 5, 7], 11)) // 3
+console.log(coinChange([1, 2, 5, 7, 10, 11], 11)) // 1
+console.log(coinChange([2], 3)) // -1
+console.log(coinChange([1], 0)) // 0
+console.log(coinChange([493, 416, 144, 164, 314, 25], 5607)) // 14
+console.log(coinChange([411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422], 9864)) // 24
+console.log(coinChange([186, 419, 83, 408], 6249)) // 20
 

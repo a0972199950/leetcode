@@ -118,9 +118,9 @@ function intToRoman(num: number): string {
   return result
 }
 
-console.log(intToRoman(9))
-console.log(intToRoman(13))
-console.log(intToRoman(3749))
-console.log(intToRoman(58))
-console.log(intToRoman(1994))
+console.log(intToRoman(9)) // IX
+console.log(intToRoman(13)) // XIII
+console.log(intToRoman(3749)) // MMMDCCXLIX
+console.log(intToRoman(58)) // LVIII
+console.log(intToRoman(1994)) // MCMXCIV
 

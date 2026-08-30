@@ -1,13 +1,15 @@
 # 題目練習總覽
 
-> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-08-29
+> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-08-30
 
-共 315 題，其中 257 題超過 8 個月未練習（可作為 /q 複習候選）。
+共 315 題，其中 255 題超過 8 個月未練習（可作為 /q 複習候選）。
 
 依「最後練習時間」新到舊排序，沒有紀錄的排在最後。
 
 | 題號 | 標題 | 難度 | 標籤 | 最後練習時間 | 連結 |
 | --- | --- | --- | --- | --- | --- |
+| 162 | 162. Find Peak Element | Medium | Array, Binary Search | 2026-08-30 | https://leetcode.com/problems/find-peak-element/ |
+| 1901 | 1901. Find a Peak Element II | Medium | Array, Binary Search, Matrix | 2026-08-30 | https://leetcode.com/problems/find-a-peak-element-ii/ |
 | 33 | 33. Search in Rotated Sorted Array | Medium | Array, Binary Search | 2026-08-29 | https://leetcode.com/problems/search-in-rotated-sorted-array/ |
 | 34 | 34. Find First and Last Position of Element in Sorted Array | Medium | Array, Binary Search | 2026-08-29 | https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/ |
 | 153 | 153. Find Minimum in Rotated Sorted Array | Medium | Array, Binary Search | 2026-08-29 | https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/ |
@@ -113,7 +115,6 @@
 | 287 | 287. Find the Duplicate Number | Medium | Array, Two Pointers, Binary Search, Bit Manipulation, Pigeonhole Principle, Floyd's Cycle Finding Algorithm | 2024-04-28 | https://leetcode.com/problems/find-the-duplicate-number/ |
 | 271 | 271. Encode and Decode Strings | Medium | - | 2024-04-27 | https://leetcode.com/problems/encode-and-decode-strings/ |
 | 981 | 981. Time Based Key-Value Store | Medium | Hash Table, String, Binary Search, Design | 2024-04-27 | https://leetcode.com/problems/time-based-key-value-store/ |
-| 1901 | 1901. Find a Peak Element II | Medium | Array, Binary Search, Matrix | 2024-04-27 | https://leetcode.com/problems/find-a-peak-element-ii/ |
 | 380 | 380. Insert Delete GetRandom O(1) | Medium | Array, Hash Table, Math, Design, Randomized | 2024-04-26 | https://leetcode.com/problems/insert-delete-getrandom-o1/ |
 | 398 | 398. Random Pick Index | Medium | Hash Table, Math, Reservoir Sampling, Randomized | 2024-04-26 | https://leetcode.com/problems/random-pick-index/ |
 | 378 | 378. Kth Smallest Element in a Sorted Matrix | Medium | Array, Binary Search, Sorting, Heap (Priority Queue), Matrix | 2024-04-23 | https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/ |
@@ -132,7 +133,6 @@
 | 680 | 680. Valid Palindrome II | Easy | Two Pointers, String, Greedy | 2024-04-19 | https://leetcode.com/problems/valid-palindrome-ii/ |
 | 456 | 456. 132 Pattern | Medium | Array, Binary Search, Stack, Monotonic Stack, Ordered Set | 2024-04-17 | https://leetcode.com/problems/132-pattern/ |
 | 503 | 503. Next Greater Element II | Medium | Array, Stack, Monotonic Stack | 2024-04-17 | https://leetcode.com/problems/next-greater-element-ii/ |
-| 162 | 162. Find Peak Element | Medium | Array, Binary Search | 2024-04-16 | https://leetcode.com/problems/find-peak-element/ |
 | 165 | 165. Compare Version Numbers | Medium | Two Pointers, String | 2024-04-16 | https://leetcode.com/problems/compare-version-numbers/ |
 | 1268 | 1268. Search Suggestions System | Medium | Array, String, Binary Search, Trie, Sorting, Heap (Priority Queue) | 2024-04-16 | https://leetcode.com/problems/search-suggestions-system/ |
 | 2089 | 2089. Find Target Indices After Sorting Array | Easy | Array, Binary Search, Sorting | 2024-04-15 | https://leetcode.com/problems/find-target-indices-after-sorting-array/ |
