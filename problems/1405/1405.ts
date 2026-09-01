@@ -43,7 +43,7 @@ console.log(longestDiverseString(1, 1, 7)) // ccaccbcc
 console.log(longestDiverseString(7, 1, 0)) // aabaa
 console.log(longestDiverseString(1, 0, 5)) // ccacc
 console.log(longestDiverseString(7, 0, 0)) // aa
-console.log(longestDiverseString(0, 0, 0)) // 
+console.log(longestDiverseString(0, 0, 0)) // ''
 console.log(longestDiverseString(1, 1, 1)) // abc
 console.log(longestDiverseString(6, 6, 6)) // abcabcabcabcabcabc
 console.log(longestDiverseString(0, 8, 11)) // ccbccbcbcbcbcbcbcbc

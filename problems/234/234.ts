@@ -102,6 +102,6 @@ for (let i = 0; i < input.length; i++) {
   input[i].next = input[i + 1] || null
 }
 
-console.log(isPalindrome(input[0]))
+console.log(isPalindrome(input[0])) // false
 
 

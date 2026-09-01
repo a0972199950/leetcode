@@ -102,5 +102,5 @@ function findPeakElement(nums: number[]): number {
 // console.log(findPeakElement([1, 2, 3, 4, 5])) // 4
 // console.log(findPeakElement([5, 4, 3, 2, 1])) // 0
 // console.log(findPeakElement([3, 4, 3, 2, 1])) // 1
-console.log(findPeakElement([-5, -8]))
+console.log(findPeakElement([-5, -8])) // 0
 

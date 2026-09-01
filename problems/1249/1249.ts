@@ -36,7 +36,7 @@ console.log(minRemoveToMakeValid('lee(t(c)o)de)')) // lee(t(c)o)de
 console.log(minRemoveToMakeValid('lee(t(c)o(de)')) // leet(c)o(de)
 console.log(minRemoveToMakeValid('leet(c)ode)')) // leet(c)ode
 console.log(minRemoveToMakeValid('a)b(c)d')) // ab(c)d
-console.log(minRemoveToMakeValid('))((')) // 
+console.log(minRemoveToMakeValid('))((')) // ''
 console.log(minRemoveToMakeValid('))abc((')) // abc
 console.log(minRemoveToMakeValid('()')) // ()
 console.log(minRemoveToMakeValid('((()((')) // ()

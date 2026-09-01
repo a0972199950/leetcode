@@ -110,10 +110,10 @@ function removeKdigits(num: string, _k: number): string {
 }
 
 console.log(removeKdigits('1432219', 3)) // 1219
-console.log(removeKdigits('10200', 1))
-console.log(removeKdigits('10', 2))
+console.log(removeKdigits('10200', 1)) // 200
+console.log(removeKdigits('10', 2)) // 0
 console.log(removeKdigits('111222', 3)) // 111
-console.log(removeKdigits('9991', 1))
+console.log(removeKdigits('9991', 1)) // 991
 console.log(removeKdigits('123456', 3)) // 123
 console.log(removeKdigits('10', 1)) // 0
 

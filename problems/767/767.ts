@@ -51,9 +51,9 @@ function reorganizeString(s: string): string {
   return ans.join('')
 }
 
-console.log(reorganizeString('aab'))
-console.log(reorganizeString('aaab'))
-console.log(reorganizeString('bbbbbbb'))
-console.log(reorganizeString('aabb'))
-console.log(reorganizeString('aabbb'))
+console.log(reorganizeString('aab')) // aba
+console.log(reorganizeString('aaab')) // ''
+console.log(reorganizeString('bbbbbbb')) // ''
+console.log(reorganizeString('aabb')) // abab 或 baba（不唯一）
+console.log(reorganizeString('aabbb')) // babab
 

@@ -138,5 +138,5 @@ console.log(trimBST(new BinaryTree([3, 0, 4, null, 2, null, null, 1]).root, 1, 3
 const t3 = new BinaryTree([3, 1, 4, null, 2])
 t3.print()
 trimBST(t3.root, 3, 4).print()
-console.log(trimBST(t3.root, 3, 4))
+console.log(trimBST(t3.root, 3, 4)) // TreeNode { val: 3, left: null, right: TreeNode { val: 4, left: null, right: null } }
 
