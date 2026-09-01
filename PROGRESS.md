@@ -1,15 +1,16 @@
 # 題目練習總覽
 
-> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-08-30
+> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-01
 
-共 315 題，其中 254 題超過 8 個月未練習（可作為 /q 複習候選）。
+共 315 題，其中 253 題超過 8 個月未練習（可作為 /q 複習候選）。
 
 依「最後練習時間」新到舊排序，沒有紀錄的排在最後。
 
 | 題號 | 標題 | 難度 | 標籤 | 最後練習時間 | 連結 |
 | --- | --- | --- | --- | --- | --- |
+| 287 | 287. Find the Duplicate Number | Medium | Array, Two Pointers, Binary Search, Bit Manipulation, Pigeonhole Principle, Floyd's Cycle Finding Algorithm | 2026-09-01 | https://leetcode.com/problems/find-the-duplicate-number/ |
+| 402 | 402. Remove K Digits | Medium | String, Stack, Greedy, Monotonic Stack | 2026-09-01 | https://leetcode.com/problems/remove-k-digits/ |
 | 162 | 162. Find Peak Element | Medium | Array, Binary Search | 2026-08-30 | https://leetcode.com/problems/find-peak-element/ |
-| 287 | 287. Find the Duplicate Number | Medium | Array, Two Pointers, Binary Search, Bit Manipulation, Pigeonhole Principle, Floyd's Cycle Finding Algorithm | 2026-08-30 | https://leetcode.com/problems/find-the-duplicate-number/ |
 | 1901 | 1901. Find a Peak Element II | Medium | Array, Binary Search, Matrix | 2026-08-30 | https://leetcode.com/problems/find-a-peak-element-ii/ |
 | 33 | 33. Search in Rotated Sorted Array | Medium | Array, Binary Search | 2026-08-29 | https://leetcode.com/problems/search-in-rotated-sorted-array/ |
 | 34 | 34. Find First and Last Position of Element in Sorted Array | Medium | Array, Binary Search | 2026-08-29 | https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/ |
@@ -90,7 +91,6 @@
 | 28 | 28. Find the Index of the First Occurrence in a String | Easy | Two Pointers, String, String Matching, Z Algorithm, Knuth–Morris–Pratt Algorithm, Boyer–Moore String-Search Algorithm | 2024-05-26 | https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/ |
 | 58 | 58. Length of Last Word | Easy | String | 2024-05-26 | https://leetcode.com/problems/length-of-last-word/ |
 | 73 | 73. Set Matrix Zeroes | Medium | Array, Hash Table, Matrix | 2024-05-26 | https://leetcode.com/problems/set-matrix-zeroes/ |
-| 402 | 402. Remove K Digits | Medium | String, Stack, Greedy, Monotonic Stack | 2024-05-26 | https://leetcode.com/problems/remove-k-digits/ |
 | 13 | 13. Roman to Integer | Easy | Hash Table, Math, String | 2024-05-25 | https://leetcode.com/problems/roman-to-integer/ |
 | 27 | 27. Remove Element | Easy | Array, Two Pointers | 2024-05-19 | https://leetcode.com/problems/remove-element/ |
 | 80 | 80. Remove Duplicates from Sorted Array II | Medium | Array, Two Pointers | 2024-05-19 | https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/ |
