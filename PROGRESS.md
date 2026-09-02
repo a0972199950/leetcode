@@ -1,13 +1,14 @@
 # 題目練習總覽
 
-> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-01
+> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-02
 
-共 315 題，其中 253 題超過 8 個月未練習（可作為 /q 複習候選）。
+共 316 題，其中 253 題超過 8 個月未練習（可作為 /q 複習候選）。
 
 依「最後練習時間」新到舊排序，沒有紀錄的排在最後。
 
 | 題號 | 標題 | 難度 | 標籤 | 最後練習時間 | 連結 |
 | --- | --- | --- | --- | --- | --- |
+| 84 | 84. Largest Rectangle in Histogram | Hard | Array, Stack, Monotonic Stack, Range Minimum/Maximum Query | 2026-09-02 | https://leetcode.com/problems/largest-rectangle-in-histogram/ |
 | 287 | 287. Find the Duplicate Number | Medium | Array, Two Pointers, Binary Search, Bit Manipulation, Pigeonhole Principle, Floyd's Cycle Finding Algorithm | 2026-09-01 | https://leetcode.com/problems/find-the-duplicate-number/ |
 | 402 | 402. Remove K Digits | Medium | String, Stack, Greedy, Monotonic Stack | 2026-09-01 | https://leetcode.com/problems/remove-k-digits/ |
 | 162 | 162. Find Peak Element | Medium | Array, Binary Search | 2026-08-30 | https://leetcode.com/problems/find-peak-element/ |
