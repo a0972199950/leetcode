@@ -6,6 +6,7 @@ const PROBLEMS_DIR = path.join(ROOT, 'problems')
 const OUT_FILE = path.join(ROOT, 'PROGRESS.md')
 
 const NOTE_RE = /^\/\/\s*最後練習時間[：:]\s*(\d{4}-\d{2}-\d{2})\s*$/
+const STATUS_RE = /^\/\/\s*解題狀態[：:]\s*(\S+)\s*$/
 
 function todayStr(): string {
   const d = new Date()
@@ -55,6 +56,8 @@ interface Row {
   difficulty: string
   tags: string
   lastPracticed: string | null
+  /** 解題狀態註解的值（例如「未解出」）；沒寫這行註解時為 null */
+  solveStatus: string | null
   url: string
 }
 
@@ -74,6 +77,12 @@ function parseProblem(folder: string): Row | null {
     if (m) { lastPracticed = m[1]; break }
   }
 
+  let solveStatus: string | null = null
+  for (let i = 0; i <= 5 && i < tsLines.length; i++) {
+    const m = tsLines[i].match(STATUS_RE)
+    if (m) { solveStatus = m[1]; break }
+  }
+
   if (fs.existsSync(mdPath)) {
     const md = fs.readFileSync(mdPath, 'utf8')
     const titleMatch = md.match(/^#\s*(.+)$/m)
@@ -86,6 +95,7 @@ function parseProblem(folder: string): Row | null {
       difficulty: diffMatch ? diffMatch[1].trim() : '-',
       tags: tagMatch ? tagMatch[1].trim() : '-',
       lastPracticed,
+      solveStatus,
       url: urlMatch ? urlMatch[1].trim() : '-',
     }
   }
@@ -98,6 +108,7 @@ function parseProblem(folder: string): Row | null {
     difficulty: '-',
     tags: '自訂',
     lastPracticed,
+    solveStatus,
     url: '-',
   }
 }
@@ -145,10 +156,12 @@ function generate() {
   lines.push('')
   lines.push('依「最後練習時間」新到舊排序，沒有紀錄的排在最後。')
   lines.push('')
-  lines.push('| 題號 | 標題 | 難度 | 標籤 | 最後練習時間 | 連結 |')
-  lines.push('| --- | --- | --- | --- | --- | --- |')
+  lines.push('| 題號 | 標題 | 難度 | 標籤 | 解題狀態 | 最後練習時間 | 連結 |')
+  lines.push('| --- | --- | --- | --- | --- | --- | --- |')
   for (const r of rows) {
-    lines.push(`| ${r.id} | ${r.title} | ${r.difficulty} | ${r.tags} | ${r.lastPracticed ?? '未提交'} | ${r.url} |`)
+    // 狀態欄留空、但有最後練習時間 → 預設「已解出」；連練習紀錄都沒有 → 用「—」
+    const status = r.solveStatus ?? (r.lastPracticed ? '已解出' : '—')
+    lines.push(`| ${r.id} | ${r.title} | ${r.difficulty} | ${r.tags} | ${status} | ${r.lastPracticed ?? '未提交'} | ${r.url} |`)
   }
   lines.push('')
 
