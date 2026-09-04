@@ -2,7 +2,7 @@
 
 > 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-04
 
-共 317 題，其中 249 題超過 8 個月未練習（可作為 /q 複習候選）。
+共 318 題，其中 248 題超過 8 個月未練習（可作為 /q 複習候選）。
 
 依「最後練習時間」新到舊排序，沒有紀錄的排在最後。
 
@@ -11,6 +11,8 @@
 | 42 | 42. Trapping Rain Water | Hard | Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack | 已解出 | 2026-09-04 | https://leetcode.com/problems/trapping-rain-water/ |
 | 232 | 232. Implement Queue using Stacks | Easy | Stack, Design, Queue | 已解出 | 2026-09-04 | https://leetcode.com/problems/implement-queue-using-stacks/ |
 | 844 | 844. Backspace String Compare | Easy | Two Pointers, String, Stack, Simulation | 已解出 | 2026-09-04 | https://leetcode.com/problems/backspace-string-compare/ |
+| 856 | 856. Score of Parentheses | Medium | String, Stack, Bracket Sequences | 已解出 | 2026-09-04 | https://leetcode.com/problems/score-of-parentheses/ |
+| 901 | 901. Online Stock Span | Medium | Stack, Design, Monotonic Stack, Data Stream | 已解出 | 2026-09-04 | https://leetcode.com/problems/online-stock-span/ |
 | 921 | 921. Minimum Add to Make Parentheses Valid | Medium | String, Stack, Greedy, Bracket Sequences | 已解出 | 2026-09-04 | https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/ |
 | 946 | 946. Validate Stack Sequences | Medium | Array, Stack, Simulation | 已解出 | 2026-09-04 | https://leetcode.com/problems/validate-stack-sequences/ |
 | 84 | 84. Largest Rectangle in Histogram | Hard | Array, Stack, Monotonic Stack, Range Minimum/Maximum Query | 未解出 | 2026-09-03 | https://leetcode.com/problems/largest-rectangle-in-histogram/ |
@@ -187,7 +189,6 @@
 | 694 | 694. Number of Distinct Islands | Medium | Array, Hash Table, Depth-First Search, Breadth-First Search, Union-Find, Sorting, Matrix, Hash Function | 已解出 | 2024-03-29 | https://leetcode.com/problems/number-of-distinct-islands/ |
 | 1530 | 1530. Number of Good Leaf Nodes Pairs | Medium | Tree, Depth-First Search, Binary Tree, DP on Trees | 已解出 | 2024-03-29 | https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/ |
 | 1541 | 1541. Minimum Insertions to Balance a Parentheses String | Medium | String, Stack, Greedy, Bracket Sequences | 已解出 | 2024-03-29 | https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/ |
-| 856 | 856. Score of Parentheses | Medium | String, Stack, Bracket Sequences | 已解出 | 2024-03-27 | https://leetcode.com/problems/score-of-parentheses/ |
 | 2422 | 2422. Merge Operations to Turn Array Into a Palindrome | Medium | - | 已解出 | 2024-03-27 | https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/ |
 | 207 | 207. Course Schedule | Medium | Depth-First Search, Breadth-First Search, Graph, Topological Sort, Directed Acyclic Graph | 已解出 | 2024-03-26 | https://leetcode.com/problems/course-schedule/ |
 | 785 | 785. Is Graph Bipartite? | Medium | Depth-First Search, Breadth-First Search, Union-Find, Graph Theory, Graph Coloring, Bipartite Graph | 已解出 | 2024-03-25 | https://leetcode.com/problems/is-graph-bipartite/ |
