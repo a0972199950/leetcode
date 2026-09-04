@@ -1,13 +1,18 @@
 # 題目練習總覽
 
-> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-03
+> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-04
 
-共 316 題，其中 253 題超過 8 個月未練習（可作為 /q 複習候選）。
+共 317 題，其中 249 題超過 8 個月未練習（可作為 /q 複習候選）。
 
 依「最後練習時間」新到舊排序，沒有紀錄的排在最後。
 
 | 題號 | 標題 | 難度 | 標籤 | 解題狀態 | 最後練習時間 | 連結 |
 | --- | --- | --- | --- | --- | --- | --- |
+| 42 | 42. Trapping Rain Water | Hard | Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack | 已解出 | 2026-09-04 | https://leetcode.com/problems/trapping-rain-water/ |
+| 232 | 232. Implement Queue using Stacks | Easy | Stack, Design, Queue | 已解出 | 2026-09-04 | https://leetcode.com/problems/implement-queue-using-stacks/ |
+| 844 | 844. Backspace String Compare | Easy | Two Pointers, String, Stack, Simulation | 已解出 | 2026-09-04 | https://leetcode.com/problems/backspace-string-compare/ |
+| 921 | 921. Minimum Add to Make Parentheses Valid | Medium | String, Stack, Greedy, Bracket Sequences | 已解出 | 2026-09-04 | https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/ |
+| 946 | 946. Validate Stack Sequences | Medium | Array, Stack, Simulation | 已解出 | 2026-09-04 | https://leetcode.com/problems/validate-stack-sequences/ |
 | 84 | 84. Largest Rectangle in Histogram | Hard | Array, Stack, Monotonic Stack, Range Minimum/Maximum Query | 未解出 | 2026-09-03 | https://leetcode.com/problems/largest-rectangle-in-histogram/ |
 | 287 | 287. Find the Duplicate Number | Medium | Array, Two Pointers, Binary Search, Bit Manipulation, Pigeonhole Principle, Floyd's Cycle Finding Algorithm | 已解出 | 2026-09-01 | https://leetcode.com/problems/find-the-duplicate-number/ |
 | 402 | 402. Remove K Digits | Medium | String, Stack, Greedy, Monotonic Stack | 已解出 | 2026-09-01 | https://leetcode.com/problems/remove-k-digits/ |
@@ -139,7 +144,6 @@
 | 2089 | 2089. Find Target Indices After Sorting Array | Easy | Array, Binary Search, Sorting | 已解出 | 2024-04-15 | https://leetcode.com/problems/find-target-indices-after-sorting-array/ |
 | 2863 | 2863. Maximum Length of Semi-Decreasing Subarrays | Medium | Array, Stack, Sorting, Monotonic Stack | 已解出 | 2024-04-15 | https://leetcode.com/problems/maximum-length-of-semi-decreasing-subarrays/ |
 | 652 | 652. Find Duplicate Subtrees | Medium | Hash Table, Tree, Depth-First Search, Binary Tree | 已解出 | 2024-04-14 | https://leetcode.com/problems/find-duplicate-subtrees/ |
-| 921 | 921. Minimum Add to Make Parentheses Valid | Medium | String, Stack, Greedy, Bracket Sequences | 已解出 | 2024-04-14 | https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/ |
 | 2958 | 2958. Length of Longest Subarray With at Most K Frequency | Medium | Array, Hash Table, Sliding Window | 已解出 | 2024-04-14 | https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/ |
 | 159 | 159. Longest Substring with At Most Two Distinct Characters | Medium | Hash Table, String, Sliding Window | 已解出 | 2024-04-13 | https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/ |
 | 416 | 416. Partition Equal Subset Sum | Medium | Array, Dynamic Programming, Knapsack Problem, 0-1 Knapsack | 已解出 | 2024-04-13 | https://leetcode.com/problems/partition-equal-subset-sum/ |
@@ -200,7 +204,6 @@
 | 400 | 400. Nth Digit | Medium | Math, Binary Search | 已解出 | 2024-03-18 | https://leetcode.com/problems/nth-digit/ |
 | 79 | 79. Word Search | Medium | Array, String, Backtracking, Depth-First Search, Matrix | 已解出 | 2024-03-17 | https://leetcode.com/problems/word-search/ |
 | 238 | 238. Product of Array Except Self | Medium | Array, Prefix Sum | 已解出 | 2024-03-16 | https://leetcode.com/problems/product-of-array-except-self/ |
-| 946 | 946. Validate Stack Sequences | Medium | Array, Stack, Simulation | 已解出 | 2024-03-16 | https://leetcode.com/problems/validate-stack-sequences/ |
 | 2046 | 2046. Sort Linked List Already Sorted Using Absolute Values | Medium | - | 已解出 | 2024-03-15 | https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/ |
 | 474 | 474. Ones and Zeroes | Medium | Array, String, Dynamic Programming, Knapsack Problem, 0-1 Knapsack | 已解出 | 2023-08-21 | https://leetcode.com/problems/ones-and-zeroes/ |
 | 647 | 647. Palindromic Substrings | Medium | Two Pointers, String, Dynamic Programming | 已解出 | 2023-08-19 | https://leetcode.com/problems/palindromic-substrings/ |
@@ -237,7 +240,6 @@
 | 103 | 103. Binary Tree Zigzag Level Order Traversal | Medium | Tree, Breadth-First Search, Binary Tree | 已解出 | 2022-11-06 | https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/ |
 | 105 | 105. Construct Binary Tree from Preorder and Inorder Traversal | Medium | Array, Hash Table, Divide and Conquer, Tree, Binary Tree | 已解出 | 2022-11-06 | https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/ |
 | 108 | 108. Convert Sorted Array to Binary Search Tree | Easy | Array, Divide and Conquer, Tree, Binary Search Tree, Binary Tree | 已解出 | 2022-11-06 | https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/ |
-| 232 | 232. Implement Queue using Stacks | Easy | Stack, Design, Queue | 已解出 | 2022-11-06 | https://leetcode.com/problems/implement-queue-using-stacks/ |
 | 236 | 236. Lowest Common Ancestor of a Binary Tree | Medium | Tree, Depth-First Search, Binary Tree, Binary Lifting, Lowest Common Ancestor | 已解出 | 2022-11-06 | https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/ |
 | 621 | 621. Task Scheduler | Medium | Array, Hash Table, Greedy, Sorting, Heap (Priority Queue), Counting | 已解出 | 2022-11-06 | https://leetcode.com/problems/task-scheduler/ |
 | 735 | 735. Asteroid Collision | Medium | Array, Stack, Simulation | 已解出 | 2022-11-06 | https://leetcode.com/problems/asteroid-collision/ |
@@ -297,7 +299,6 @@
 | 1567 | 1567. Maximum Length of Subarray With Positive Product | Medium | Array, Dynamic Programming, Greedy | 已解出 | 2022-10-16 | https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product/ |
 | 740 | 740. Delete and Earn | Medium | Array, Hash Table, Dynamic Programming | 已解出 | 2022-10-12 | https://leetcode.com/problems/delete-and-earn/ |
 | 653 | 653. Two Sum IV - Input is a BST | Easy | Hash Table, Two Pointers, Tree, Depth-First Search, Breadth-First Search, Binary Search Tree, Binary Tree | 已解出 | 2022-08-14 | https://leetcode.com/problems/two-sum-iv-input-is-a-bst/ |
-| 844 | 844. Backspace String Compare | Easy | Two Pointers, String, Stack, Simulation | 已解出 | 2022-08-13 | https://leetcode.com/problems/backspace-string-compare/ |
 | 1046 | 1046. Last Stone Weight | Easy | Array, Heap (Priority Queue) | 已解出 | 2022-08-13 | https://leetcode.com/problems/last-stone-weight/ |
 | 299 | 299. Bulls and Cows | Medium | Hash Table, String, Counting | 已解出 | 2022-08-11 | https://leetcode.com/problems/bulls-and-cows/ |
 | 200 | 200. Number of Islands | Medium | Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix | 已解出 | 2022-08-07 | https://leetcode.com/problems/number-of-islands/ |
