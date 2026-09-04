@@ -11,16 +11,14 @@
 | 844 | Backspace String Compare | Easy | stack 模擬；另有 O(1) space 雙指標解（從右往左掃，backs counter） |
 | 946 | Validate Stack Sequences | Medium | greedy pop：每次 push 後立刻盡量 pop；可 in-place 重用 pushed 陣列省 O(n) space |
 | 921 | Minimum Add to Make Parentheses Valid | Medium | bracket matching 入門；leftCount / move 兩計數器即可 O(1) space，不用真的開 stack |
+| 856 | Score of Parentheses | Medium | stack 存數字：`0` 當邊界 marker，遇 `)` 往回收兄弟分數到 marker 為止，`sum ? 2*sum : 1` 回填。信任 constraint 拿掉 `-1` 防呆。累加器版（每層一格）看過但不採用，不直覺 |
 
-## 下一題（已 touch）
+## 下一題（待 /q 依本層出題）
 
-**856. Score of Parentheses**（Medium）— 超過 8 個月沒練，這次當複習
-https://leetcode.com/problems/score-of-parentheses/
+**層級：expression eval / 複雜 stack 狀態**（856 是這層第一題，已完成）
 
-- expression eval / 複雜 stack 狀態層的第一題
-- 承接 921 的 bracket 結構，但 stack 這次存的是「累積出來的分數值」而非括號本身 → 進入「stack 存狀態」
-- 舊解（2024-03-27）：遇 `)` 就把棧頂數字一路加總到 `(` 為止，`sum === 0 ? 1 : 2 * sum` 回填
-- 這層後續候選：227 Basic Calculator II（運算子優先級）
+- 下一題候選：227 Basic Calculator II（運算子優先級，池內 2022-11-07）
+- 150 Evaluate RPN、394 Decode String、636 Exclusive Time 都在 8 個月內，不在池裡
 
 ## 學習曲線進度
 
@@ -29,7 +27,7 @@ https://leetcode.com/problems/score-of-parentheses/
 stack 模擬（844）✅
 stack 序列驗證（946）✅
 bracket matching（921）✅
-expression eval / 複雜 stack 狀態 ← 目前在這裡
+expression eval / 複雜 stack 狀態 ← 目前在這裡（856 ✅ / 227 待做）
 monotonic stack
 Next Greater Element 類
 ```
