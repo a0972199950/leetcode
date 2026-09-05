@@ -1,6 +1,5 @@
 // 84. Largest Rectangle in Histogram
-// 最後練習時間：2026-09-03
-// 解題狀態：未解出
+// 最後練習時間：2026-09-05
 // https://leetcode.com/problems/largest-rectangle-in-histogram/
 console.clear()
 
@@ -90,36 +89,28 @@ console.clear()
 //   return max
 // }
 
-// 遞增 stack（不用哨兵，改用收尾迴圈把剩下的清掉）
+// 嚴格非遞減(可以是平的) stack，遇到變小的，就計算 "每一次 pop 掉的" 最大面積
 // Time: O(n)
 // Space: O(n)
 function largestRectangleArea(heights: number[]): number {
-  const n = heights.length
-  const stack: { index: number, height: number }[] = []
+  const stack: { index: number, height: number}[] = []
   let max = 0
 
-  for (let i = 0; i < n; i++) {
-    const height = heights[i]
+  for (let index = 0; index <= heights.length; index++) {
+    const height = heights[index] ?? 0
 
-    // 遇到比堆疊頂端矮的 bar，就結算頂端 node
-    while (stack.length && stack.at(-1)!.height > height) {
-      const node = stack.pop()!
-      // node 的矩形實際站在 [l, r] 這幾格上（含兩端），每一格都 ≥ node.height
-      const left = stack.length ? stack.at(-1)!.index + 1 : 0 // 左邊那根的下一格；沒有就從第 0 格
-      const right = i - 1                                       // 當前 bar 的前一格
-      max = Math.max(max, node.height * (right - left + 1))
+    const rightBoundary = index
+
+    while (stack.length && stack.at(-1).height > height) {
+      const node = stack.pop()
+      
+      const leftBoundary = stack.at(-1)?.index ?? -1
+      // 這兩個都是 "不包含" width 的邊界
+      const width = rightBoundary - leftBoundary - 1
+      max = Math.max(max, width * node.height)
     }
 
-    stack.push({ index: i, height })
-  }
-
-  // 收尾：剩下的 bar 右邊都沒有更矮的，矩形一路站到最後一格 n-1。
-  // 由左到右掃，左邊那根就是 stack[k-1]
-  for (let k = 0; k < stack.length; k++) {
-    const node = stack[k]
-    const l = k > 0 ? stack[k - 1].index + 1 : 0
-    const r = n - 1
-    max = Math.max(max, node.height * (r - l + 1))
+    stack.push({ height, index })
   }
 
   return max
@@ -131,3 +122,4 @@ console.log(largestRectangleArea([1, 2, 3, 4, 5])) // 9
 console.log(largestRectangleArea([5, 4, 3])) // 9
 console.log(largestRectangleArea([2, 0, 2])) // 2
 console.log(largestRectangleArea([5, 5, 5, 5])) // 20
+console.log(largestRectangleArea([0])) // 0

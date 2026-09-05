@@ -1,13 +1,18 @@
 # 題目練習總覽
 
-> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-04
+> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-05
 
-共 318 題，其中 248 題超過 8 個月未練習（可作為 /q 複習候選）。
+共 319 題，其中 245 題超過 8 個月未練習（可作為 /q 複習候選）。
 
 依「最後練習時間」新到舊排序，沒有紀錄的排在最後。
 
 | 題號 | 標題 | 難度 | 標籤 | 解題狀態 | 最後練習時間 | 連結 |
 | --- | --- | --- | --- | --- | --- | --- |
+| 84 | 84. Largest Rectangle in Histogram | Hard | Array, Stack, Monotonic Stack, Range Minimum/Maximum Query | 已解出 | 2026-09-05 | https://leetcode.com/problems/largest-rectangle-in-histogram/ |
+| 227 | 227. Basic Calculator II | Medium | Math, String, Stack | 已解出 | 2026-09-05 | https://leetcode.com/problems/basic-calculator-ii/ |
+| 503 | 503. Next Greater Element II | Medium | Array, Stack, Monotonic Stack | 已解出 | 2026-09-05 | https://leetcode.com/problems/next-greater-element-ii/ |
+| 735 | 735. Asteroid Collision | Medium | Array, Stack, Simulation | 已解出 | 2026-09-05 | https://leetcode.com/problems/asteroid-collision/ |
+| 962 | 962. Maximum Width Ramp | Medium | Array, Two Pointers, Stack, Monotonic Stack | 已解出 | 2026-09-05 | https://leetcode.com/problems/maximum-width-ramp/ |
 | 42 | 42. Trapping Rain Water | Hard | Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack | 已解出 | 2026-09-04 | https://leetcode.com/problems/trapping-rain-water/ |
 | 232 | 232. Implement Queue using Stacks | Easy | Stack, Design, Queue | 已解出 | 2026-09-04 | https://leetcode.com/problems/implement-queue-using-stacks/ |
 | 844 | 844. Backspace String Compare | Easy | Two Pointers, String, Stack, Simulation | 已解出 | 2026-09-04 | https://leetcode.com/problems/backspace-string-compare/ |
@@ -15,7 +20,6 @@
 | 901 | 901. Online Stock Span | Medium | Stack, Design, Monotonic Stack, Data Stream | 已解出 | 2026-09-04 | https://leetcode.com/problems/online-stock-span/ |
 | 921 | 921. Minimum Add to Make Parentheses Valid | Medium | String, Stack, Greedy, Bracket Sequences | 已解出 | 2026-09-04 | https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/ |
 | 946 | 946. Validate Stack Sequences | Medium | Array, Stack, Simulation | 已解出 | 2026-09-04 | https://leetcode.com/problems/validate-stack-sequences/ |
-| 84 | 84. Largest Rectangle in Histogram | Hard | Array, Stack, Monotonic Stack, Range Minimum/Maximum Query | 未解出 | 2026-09-03 | https://leetcode.com/problems/largest-rectangle-in-histogram/ |
 | 287 | 287. Find the Duplicate Number | Medium | Array, Two Pointers, Binary Search, Bit Manipulation, Pigeonhole Principle, Floyd's Cycle Finding Algorithm | 已解出 | 2026-09-01 | https://leetcode.com/problems/find-the-duplicate-number/ |
 | 402 | 402. Remove K Digits | Medium | String, Stack, Greedy, Monotonic Stack | 已解出 | 2026-09-01 | https://leetcode.com/problems/remove-k-digits/ |
 | 162 | 162. Find Peak Element | Medium | Array, Binary Search | 已解出 | 2026-08-30 | https://leetcode.com/problems/find-peak-element/ |
@@ -140,7 +144,6 @@
 | 414 | 414. Third Maximum Number | Easy | Array, Sorting | 已解出 | 2024-04-19 | https://leetcode.com/problems/third-maximum-number/ |
 | 680 | 680. Valid Palindrome II | Easy | Two Pointers, String, Greedy | 已解出 | 2024-04-19 | https://leetcode.com/problems/valid-palindrome-ii/ |
 | 456 | 456. 132 Pattern | Medium | Array, Binary Search, Stack, Monotonic Stack, Ordered Set | 已解出 | 2024-04-17 | https://leetcode.com/problems/132-pattern/ |
-| 503 | 503. Next Greater Element II | Medium | Array, Stack, Monotonic Stack | 已解出 | 2024-04-17 | https://leetcode.com/problems/next-greater-element-ii/ |
 | 165 | 165. Compare Version Numbers | Medium | Two Pointers, String | 已解出 | 2024-04-16 | https://leetcode.com/problems/compare-version-numbers/ |
 | 1268 | 1268. Search Suggestions System | Medium | Array, String, Binary Search, Trie, Sorting, Heap (Priority Queue) | 已解出 | 2024-04-16 | https://leetcode.com/problems/search-suggestions-system/ |
 | 2089 | 2089. Find Target Indices After Sorting Array | Easy | Array, Binary Search, Sorting | 已解出 | 2024-04-15 | https://leetcode.com/problems/find-target-indices-after-sorting-array/ |
@@ -235,7 +238,6 @@
 | 46 | 46. Permutations | Medium | Array, Backtracking | 已解出 | 2022-11-07 | https://leetcode.com/problems/permutations/ |
 | 101 | 101. Symmetric Tree | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree | 已解出 | 2022-11-07 | https://leetcode.com/problems/symmetric-tree/ |
 | 215 | 215. Kth Largest Element in an Array | Medium | Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect | 已解出 | 2022-11-07 | https://leetcode.com/problems/kth-largest-element-in-an-array/ |
-| 227 | 227. Basic Calculator II | Medium | Math, String, Stack | 已解出 | 2022-11-07 | https://leetcode.com/problems/basic-calculator-ii/ |
 | 347 | 347. Top K Frequent Elements | Medium | Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect | 已解出 | 2022-11-07 | https://leetcode.com/problems/top-k-frequent-elements/ |
 | 57 | 57. Insert Interval | Medium | Array | 已解出 | 2022-11-06 | https://leetcode.com/problems/insert-interval/ |
 | 103 | 103. Binary Tree Zigzag Level Order Traversal | Medium | Tree, Breadth-First Search, Binary Tree | 已解出 | 2022-11-06 | https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/ |
@@ -243,7 +245,6 @@
 | 108 | 108. Convert Sorted Array to Binary Search Tree | Easy | Array, Divide and Conquer, Tree, Binary Search Tree, Binary Tree | 已解出 | 2022-11-06 | https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/ |
 | 236 | 236. Lowest Common Ancestor of a Binary Tree | Medium | Tree, Depth-First Search, Binary Tree, Binary Lifting, Lowest Common Ancestor | 已解出 | 2022-11-06 | https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/ |
 | 621 | 621. Task Scheduler | Medium | Array, Hash Table, Greedy, Sorting, Heap (Priority Queue), Counting | 已解出 | 2022-11-06 | https://leetcode.com/problems/task-scheduler/ |
-| 735 | 735. Asteroid Collision | Medium | Array, Stack, Simulation | 已解出 | 2022-11-06 | https://leetcode.com/problems/asteroid-collision/ |
 | 997 | 997. Find the Town Judge | Easy | Array, Hash Table, Graph Theory | 已解出 | 2022-11-06 | https://leetcode.com/problems/find-the-town-judge/ |
 | 1823 | 1823. Find the Winner of the Circular Game | Medium | Array, Math, Recursion, Queue, Simulation | 已解出 | 2022-11-06 | https://leetcode.com/problems/find-the-winner-of-the-circular-game/ |
 | 198 | 198. House Robber | Medium | Array, Dynamic Programming | 已解出 | 2022-10-30 | https://leetcode.com/problems/house-robber/ |

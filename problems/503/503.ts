@@ -1,23 +1,45 @@
 // 503. Next Greater Element II
-// 最後練習時間：2024-04-17
+// 最後練習時間：2026-09-05
 // https://leetcode.com/problems/next-greater-element-ii/
 
 console.clear()
 
+// Time: O(3n)
+// Space: O(n)
+// function nextGreaterElements(nums: number[]): number[] {
+//   const stack: { val: number, index: number }[] = []
+//   const result = Array(nums.length).fill(-1)
+
+//   for (let index = 0; index < nums.length * 2; index++) {
+//     const num = nums[index % nums.length]
+
+//     while (num > stack.at(-1)?.val) {
+//       result[stack.pop().index] = num
+//     }
+
+//     if (index < nums.length) {
+//       stack.push({ val: num, index })
+//     }
+//   }
+
+//   return result
+// }
+
+// Time: O(3n)
+// Space: O(n)
 function nextGreaterElements(nums: number[]): number[] {
-  const stack: { val: number, index: number }[] = []
-  const result = Array(nums.length).fill(-1)
+  const stack: { index: number, num: number }[] = []
+  const result: number[] = Array(nums.length).fill(-1)
 
-  for (let index = 0; index < nums.length * 2; index++) {
-    const num = nums[index % nums.length]
+  for (let i = 0; i < nums.length * 2; i++) {
+    const index = i % nums.length
+    const num = nums[index]
 
-    while (num > stack.at(-1)?.val) {
+    while (stack.length && stack.at(-1).num < num) {
       result[stack.pop().index] = num
     }
 
-    if (index < nums.length) {
-      stack.push({ val: num, index })
-    }
+    stack.push({ index, num })
   }
 
   return result

@@ -1,11 +1,56 @@
 // 735. Asteroid Collision
-// 最後練習時間：2022-11-06
+// 最後練習時間：2026-09-05
 // https://leetcode.com/problems/asteroid-collision/
 
 console.clear()
 
+// function asteroidCollision(asteroids: number[]): number[] {
+//   const stack = []
+
+//   for (const asteroid of asteroids) {
+//     if (asteroid > 0) {
+//       stack.push(asteroid)
+//       continue
+//     }
+
+//     if (asteroid < 0) {
+//       if (!stack.at(-1) || stack.at(-1) < 0) {
+//         stack.push(asteroid)
+//         continue
+//       }
+
+//       while (true) {
+//         const lastAsteroid = stack.at(-1)
+
+//         if (!lastAsteroid || lastAsteroid < 0) {
+//           stack.push(asteroid)
+//           break
+//         }
+//         else {
+//           if (Math.abs(asteroid) > lastAsteroid) {
+//             stack.pop()
+//             continue
+//           }
+//           else if (Math.abs(asteroid) === lastAsteroid) {
+//             stack.pop()
+//             break
+//           }
+//           else if (Math.abs(asteroid) < lastAsteroid) {
+//             break
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   console.log(stack)
+//   return stack
+// }
+
+// Time: O(n)
+// Space: O(n)
 function asteroidCollision(asteroids: number[]): number[] {
-  const stack = []
+  const stack: number[] = []
 
   for (const asteroid of asteroids) {
     if (asteroid > 0) {
@@ -13,43 +58,26 @@ function asteroidCollision(asteroids: number[]): number[] {
       continue
     }
 
-    if (asteroid < 0) {
-      if (!stack.at(-1) || stack.at(-1) < 0) {
-        stack.push(asteroid)
-        continue
-      }
+    while (stack.at(-1) > 0 && stack.at(-1) < -asteroid) {
+      stack.pop()
+    }
 
-      while (true) {
-        const lastAsteroid = stack.at(-1)
+    if (stack.at(-1) + asteroid === 0) {
+      stack.pop()
+      continue
+    }
 
-        if (!lastAsteroid || lastAsteroid < 0) {
-          stack.push(asteroid)
-          break
-        }
-        else {
-          if (Math.abs(asteroid) > lastAsteroid) {
-            stack.pop()
-            continue
-          }
-          else if (Math.abs(asteroid) === lastAsteroid) {
-            stack.pop()
-            break
-          }
-          else if (Math.abs(asteroid) < lastAsteroid) {
-            break
-          }
-        }
-      }
+    if (!stack.length || stack.at(-1) < 0) {
+      stack.push(asteroid)
     }
   }
 
-  console.log(stack)
   return stack
 }
 
-asteroidCollision([5, 10, -5])
-asteroidCollision([8, -8])
-asteroidCollision([10, 2, -5])
-asteroidCollision([-8, 8])
-asteroidCollision([1, 2, -10])
+console.log(asteroidCollision([5, 10, -5])) // [ 5, 10 ]
+console.log(asteroidCollision([8, -8])) // []
+console.log(asteroidCollision([10, 2, -5])) // [ 10 ]
+console.log(asteroidCollision([-8, 8])) // [ -8, 8 ]
+console.log(asteroidCollision([1, 2, -10])) // [ -10 ]
 
