@@ -2,12 +2,13 @@
 
 > 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-06
 
-共 320 題，其中 245 題超過 8 個月未練習（可作為 /q 複習候選）。
+共 320 題，其中 244 題超過 8 個月未練習（可作為 /q 複習候選）。
 
 依「最後練習時間」新到舊排序，沒有紀錄的排在最後。
 
 | 題號 | 標題 | 難度 | 標籤 | 解題狀態 | 最後練習時間 | 連結 |
 | --- | --- | --- | --- | --- | --- | --- |
+| 99 | 99. Recover Binary Search Tree | Medium | Tree, Depth-First Search, Binary Search Tree, Binary Tree | 已解出 | 2026-09-06 | https://leetcode.com/problems/recover-binary-search-tree/ |
 | 1552 | 1552. Magnetic Force Between Two Balls | Medium | Array, Binary Search, Sorting | 已解出 | 2026-09-06 | https://leetcode.com/problems/magnetic-force-between-two-balls/ |
 | 84 | 84. Largest Rectangle in Histogram | Hard | Array, Stack, Monotonic Stack, Range Minimum/Maximum Query | 已解出 | 2026-09-05 | https://leetcode.com/problems/largest-rectangle-in-histogram/ |
 | 227 | 227. Basic Calculator II | Medium | Math, String, Stack | 已解出 | 2026-09-05 | https://leetcode.com/problems/basic-calculator-ii/ |
@@ -230,7 +231,6 @@
 | 116 | 116. Populating Next Right Pointers in Each Node | Medium | Linked List, Tree, Depth-First Search, Breadth-First Search, Binary Tree | 已解出 | 2023-05-23 | https://leetcode.com/problems/populating-next-right-pointers-in-each-node/ |
 | 129 | 129. Sum Root to Leaf Numbers | Medium | Tree, Depth-First Search, Binary Tree | 已解出 | 2023-05-23 | https://leetcode.com/problems/sum-root-to-leaf-numbers/ |
 | 211 | 211. Design Add and Search Words Data Structure | Medium | String, Depth-First Search, Design, Trie | 已解出 | 2023-05-23 | https://leetcode.com/problems/design-add-and-search-words-data-structure/ |
-| 99 | 99. Recover Binary Search Tree | Medium | Tree, Depth-First Search, Binary Search Tree, Binary Tree | 已解出 | 2023-05-21 | https://leetcode.com/problems/recover-binary-search-tree/ |
 | 547 | 547. Number of Provinces | Medium | Depth-First Search, Breadth-First Search, Union-Find, Graph Theory | 已解出 | 2022-11-09 | https://leetcode.com/problems/number-of-provinces/ |
 | 841 | 841. Keys and Rooms | Medium | Depth-First Search, Breadth-First Search, Graph Theory | 已解出 | 2022-11-09 | https://leetcode.com/problems/keys-and-rooms/ |
 | 1249 | 1249. Minimum Remove to Make Valid Parentheses | Medium | String, Stack | 已解出 | 2022-11-09 | https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/ |

@@ -1,7 +1,7 @@
 
 console.clear()
 
-class MinHeap {
+export class MinHeap {
   data = []
   getVal: (node: any) => number
 
@@ -106,4 +106,3 @@ console.log('next: ', heap.dequeue())
 console.log('next: ', heap.dequeue())
 console.log('next: ', heap.dequeue())
 
-export default MinHeap
