@@ -1,6 +1,6 @@
 # 題目練習總覽
 
-> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-06
+> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-07
 
 共 320 題，其中 244 題超過 8 個月未練習（可作為 /q 複習候選）。
 
@@ -8,7 +8,7 @@
 
 | 題號 | 標題 | 難度 | 標籤 | 解題狀態 | 最後練習時間 | 連結 |
 | --- | --- | --- | --- | --- | --- | --- |
-| 99 | 99. Recover Binary Search Tree | Medium | Tree, Depth-First Search, Binary Search Tree, Binary Tree | 已解出 | 2026-09-06 | https://leetcode.com/problems/recover-binary-search-tree/ |
+| 99 | 99. Recover Binary Search Tree | Medium | Tree, Depth-First Search, Binary Search Tree, Binary Tree | 已解出 | 2026-09-07 | https://leetcode.com/problems/recover-binary-search-tree/ |
 | 1552 | 1552. Magnetic Force Between Two Balls | Medium | Array, Binary Search, Sorting | 已解出 | 2026-09-06 | https://leetcode.com/problems/magnetic-force-between-two-balls/ |
 | 84 | 84. Largest Rectangle in Histogram | Hard | Array, Stack, Monotonic Stack, Range Minimum/Maximum Query | 已解出 | 2026-09-05 | https://leetcode.com/problems/largest-rectangle-in-histogram/ |
 | 227 | 227. Basic Calculator II | Medium | Math, String, Stack | 已解出 | 2026-09-05 | https://leetcode.com/problems/basic-calculator-ii/ |

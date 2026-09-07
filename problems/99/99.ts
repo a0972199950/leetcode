@@ -1,26 +1,10 @@
 // 99. Recover Binary Search Tree
-// 最後練習時間：2026-09-06
+// 最後練習時間：2026-09-07
 // https://leetcode.com/problems/recover-binary-search-tree/
 import { BinaryTree, TreeNode } from '../../data-structure/BinaryTree'
 
 console.clear()
-/**
- * Definition for a binary tree node.
- * class TreeNode {
- *     val: number
- *     left: TreeNode | null
- *     right: TreeNode | null
- *     constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
- *         this.val = (val===undefined ? 0 : val)
- *         this.left = (left===undefined ? null : left)
- *         this.right = (right===undefined ? null : right)
- *     }
- * }
- */
 
-/**
- Do not return anything, modify root in-place instead.
-*/
 // function recoverTree(root: TreeNode | null): void {
 //   if (!root) {
 //     return
@@ -66,106 +50,95 @@ console.clear()
 //   swap(mistakes[0], mistakes[1])
 // }
 
+// Time: O(n + n log n)
+// Space: O(n)
+// function recoverTree(root: TreeNode | null): void {
+//   const inOrder: TreeNode[] = []
+
+//   const inOrderTraverse = (node: TreeNode) => {
+//     node.left && (inOrderTraverse(node.left))
+//     inOrder.push(node)
+//     node.right && (inOrderTraverse(node.right))
+//   }
+
+//   inOrderTraverse(root)
+
+//   const order = inOrder.toSorted((a, b) => a.val - b.val)
+
+//   const swap: TreeNode[] = []
+
+//   for (let i = 0; i < inOrder.length; i++) {
+//     const swapNode = inOrder[i]
+//     const shouldBe = order[i]
+
+//     if (swapNode !== shouldBe) {
+//       swap.push(swapNode)
+//     }
+//   }
+
+//   const [a, b] = swap
+//   const temp = a.val
+//   a.val = b.val
+//   b.val = temp
+// }
+
+// Time: O(n)
+// Space: O(h)
 function recoverTree(root: TreeNode | null): void {
-  interface Item {
-    node: TreeNode
-    parent: TreeNode | null
-    connect: 'left' | 'right'
-  }
+  let first: TreeNode
 
-  if (!root) {
-    return
-  }
+  let prev: TreeNode
+  let reverseCount = 0
 
-  const findSwapRoot = (): Item => {
-    let swapRoot: Item = null
-
-    const isValid = (node: TreeNode | null, min: number, max: number, parent: TreeNode, connect?: 'left' | 'right') => {
-      if (!node || !!swapRoot) {
-        return true
-      }
-
-      const isSelfValid = min < node.val && node.val < max
-      const isLeftValid = isValid(node.left, min, node.val, node, 'left')
-      const isRightValid = isValid(node.right, node.val, max, node, 'right')
-
-      const valid = isSelfValid && isLeftValid && isRightValid
-
-      console.log(node.val, isSelfValid, isLeftValid, isRightValid)
-
-      if (!valid) {
-        swapRoot = { node, parent, connect }
-      }
-
-      return valid
+  const traverse = (node: TreeNode) => {
+    if (reverseCount === 2) {
+      return
     }
 
-    isValid(root, -Infinity, Infinity, null)
-
-    return swapRoot
-  }
-
-  const swapRoot: Item = findSwapRoot()
-
-  console.log('swapRoot: ', swapRoot)
-
-  const inOrder: Item[] = []
-  
-  const inOrderTraverse = (node: TreeNode, parent: TreeNode | null, connect?: 'left' | 'right') => {
     if (node.left) {
-      inOrderTraverse(node.left, parent, 'left')
+      traverse(node.left)
     }
 
-    inOrder.push({ node, parent, connect })
+    if (prev && node.val < prev.val) {
+      !first && (first = prev)
+      second = node
+      reverseCount++
+    }
+
+    prev = node
+    // console.log(node.val, prev?.val)
 
     if (node.right) {
-      inOrderTraverse(node.right, parent, 'right')
+      traverse(node.right)
     }
   }
 
-  inOrderTraverse(swapRoot.node, swapRoot.parent, swapRoot.connect)
+  traverse(root)
 
-  console.log('inOrder: ', inOrder)
+  // console.log(first, second)
 
-  const order: Item[] = inOrder.toSorted((a, b) => {
-    return a.node.val < b.node.val ? -1 : 1
-  })
-
-  const swap = []
-
-  for (let i = 0; i < inOrder.length; i++) {
-    if (inOrder[i] !== order[i]) {
-      swap.push(inOrder[i])
-    }
-  }
-
-  const [a, b] = swap
-
-  a.parent[a.connect] = b
-  b.parent[b.connect] = a
+  const temp = first.val
+  first.val = second.val
+  second.val = temp
 }
 
-recoverTree(new BinaryTree([4, 2, null, 3, 1]).root)
-
 // Example 1: root = [1,3,null,null,2]，交換的是 1 和 3（中序 3,_,1，隔一個，兩處逆序）
-// const tree1 = new BinaryTree([1, 3, null, null, 2])
-// recoverTree(tree1.root)
-// console.log(tree1.printInOrder()) // [ 1, 2, 3 ]
+const tree1 = new BinaryTree([1, 3, null, null, 2])
+recoverTree(tree1.root)
+tree1.print()
 
 // Example 2: root = [3,1,4,null,null,2]，交換的是 3 和 2（中序相鄰，只有一處逆序）
-// const tree2 = new BinaryTree([3, 1, 4, null, null, 2])
-// recoverTree(tree2.root)
-// console.log(tree2.printInOrder()) // [ 1, 2, 3, 4 ]
+const tree2 = new BinaryTree([3, 1, 4, null, null, 2])
+recoverTree(tree2.root)
+tree2.print()
 
-// // --- 補充（非官方，用來擋回歸）---
+// 最小輸入：2 個 node，中序相鄰逆序
+const tree3 = new BinaryTree([1, 2])
+recoverTree(tree3.root)
+tree3.print()
 
-// // 最小輸入：2 個 node，中序相鄰逆序
-// const tree3 = new BinaryTree([1, 2])
-// recoverTree(tree3.root)
-// console.log(tree3.printInOrder()) // [ 1, 2 ]
-
-// // 較大的樹，交換 15 與 5（中序不相鄰，first 取第一處逆序的較大者、second 取最後一處的較小者）
-// const tree4 = new BinaryTree([10, 15, 5, 2, 7, null, 20])
-// recoverTree(tree4.root)
-// console.log(tree4.printInOrder()) // [ 2, 5, 7, 10, 15, 20 ]
+// 較大的樹，交換 15 與 5（中序不相鄰，first 取第一處逆序的較大者、second 取最後一處的較小者）
+const tree4 = new BinaryTree([10, 15, 5, 2, 7, null, 20])
+recoverTree(tree4.root)
+tree4.print()
 

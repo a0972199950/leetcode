@@ -69,14 +69,12 @@ monotonic stack ← 目前在這裡（503 ✅；962 進行中，需補 stack pus
 | 173 | Binary Search Tree Iterator | Medium | 設計題。最終版用 `parentStack` 模擬中序遍歷：建構時先把最左路徑上的祖先都推進 stack；`next()` 若有右子樹就換到右子樹再把新的最左路徑推進去，否則直接 pop 祖先；amortized O(1)、space O(h)。另一版直接中序遍歷攤平成陣列存起來，space O(n) |
 | 450 | Delete Node in a BST | Medium | 遞迴定位到要刪除的節點：沒有左小孩直接讓右小孩頂上；有左小孩則去左子樹裡找最大值（一路往右走到底）當替代節點，把它拔下來接上原本的左右子樹。O(h) time / space |
 | 449 | Serialize and Deserialize BST | Medium | 利用 BST 有序性省掉 null 佔位符：pre-order 序列化只存有值的 node；反序列化時用遞迴傳遞 (min, max) 值域邊界配合一個共用 pointer，單一次掃過陣列就能還原整棵樹 |
+| 99 | Recover Binary Search Tree | Medium | 中序走訪時用 `prev` 追上一個 node，找逆序（`prev.val > curr.val`）：第一次逆序時 `first = prev`，每次逆序都更新 `second = curr`；一次逆序（相鄰 case）和兩次逆序（非相鄰 case）同一套邏輯都對。最後只 swap `.val`，不動指標。O(n) time / O(h) space |
 
 ## 下一題（待 /q 依本層出題）
 
-**層級：BST 基本操作與性質應用都已覆蓋**（驗證、排序性質、剪枝、LCA、反向遍歷、迭代器設計、刪除、序列化都做過）
+**層級：BST 性質被破壞後的修復 / 結合其他技巧**
 
-下一步可以往「BST 性質被破壞、需要修復或結合其他技巧」的方向：
-
-- 99 Recover Binary Search Tree（Medium，恰好兩個節點被交換，中序遍歷找逆序 pair 修復；池內 2023-05-21）
 - 333 Largest BST Subtree（Medium，DP on tree + BST 驗證合併在一起判斷，較有挑戰；池內 2024-04-01）
 - 1382 Balance a Binary Search Tree（Medium，中序攤平成排序陣列再用 108 的技巧重建平衡樹；池內 2024-04-06）
 
@@ -89,7 +87,8 @@ monotonic stack ← 目前在這裡（503 ✅；962 進行中，需補 stack pus
 BST 上的設計題（173 Iterator）✅
 結構修改：刪除節點（450）✅
 序列化／還原，省略 null 佔位符（449）✅
-← 目前在這裡：BST 性質被破壞後的修復 / 結合其他技巧（99 / 333 / 1382 待做）
+BST 性質被破壞後的修復（99）✅
+← 目前在這裡：結合其他技巧（333 / 1382 待做）
 ```
 
 ---
