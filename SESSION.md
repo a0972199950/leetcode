@@ -93,6 +93,35 @@ BST 性質被破壞後的修復（99）✅
 
 ---
 
+# Binary Tree BFS / DFS 複習進度
+
+> 完成狀態依 PROGRESS.md 裡最後練習時間落在**近兩個月內**（2026-07-05 之後）的紀錄認定，由淺入深排列。
+
+## 已完成
+
+（近兩個月內無相關題目）
+
+## 下一題（待 /q 依本層出題）
+
+**層級：基本 DFS 遞迴**（從「問一棵樹的性質」開始，遞迴回傳值給上層用）
+
+- 104 Maximum Depth of Binary Tree（Easy，最基礎，左右子樹深度取 max + 1）
+- 543 Diameter of Binary Tree（Easy，後序 DFS 入門：DFS 回傳深度給上層、同時在當前節點更新直徑）
+- 112 Path Sum（Easy，DFS 遞迴，根到葉路徑和是否等於 target）
+
+## 學習曲線進度
+
+```
+基本 DFS 遞迴（問性質：最大深度、直徑、路徑和）← 目前在這裡
+BFS 層序遍歷（queue，逐層處理，102 Level Order）
+DFS 路徑記錄（根到葉累積路徑，113 Path Sum II、257 Binary Tree Paths）
+BFS 層序變形（199 Right Side View、103 Zigzag）
+一般樹的 LCA（非 BST 版，後序 DFS 往上傳是否找到 p/q，236）
+進階後序 DFS：子樹值往上合併（124 Maximum Path Sum）
+```
+
+---
+
 # Binary Search 複習進度
 
 > 完成狀態依 PROGRESS.md 裡最後練習時間落在**近兩個月內**（2026-07-05 之後）的紀錄認定，由淺入深排列。
