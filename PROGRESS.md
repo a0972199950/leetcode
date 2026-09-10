@@ -1,13 +1,18 @@
 # 題目練習總覽
 
-> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-09
+> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-10
 
-共 321 題，其中 244 題超過 8 個月未練習（可作為 /q 複習候選）。
+共 324 題，其中 242 題超過 8 個月未練習（可作為 /q 複習候選）。
 
 依「最後練習時間」新到舊排序，沒有紀錄的排在最後。
 
 | 題號 | 標題 | 難度 | 標籤 | 解題狀態 | 最後練習時間 | 連結 |
 | --- | --- | --- | --- | --- | --- | --- |
+| 102 | 102. Binary Tree Level Order Traversal | Medium | Tree, Breadth-First Search, Binary Tree | 已解出 | 2026-09-10 | https://leetcode.com/problems/binary-tree-level-order-traversal/ |
+| 104 | 104. Maximum Depth of Binary Tree | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree | 已解出 | 2026-09-10 | https://leetcode.com/problems/maximum-depth-of-binary-tree/ |
+| 112 | 112. Path Sum | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree | 已解出 | 2026-09-10 | https://leetcode.com/problems/path-sum/ |
+| 113 | 113. Path Sum II | Medium | Backtracking, Tree, Depth-First Search, Binary Tree | 已解出 | 2026-09-10 | https://leetcode.com/problems/path-sum-ii/ |
+| 543 | 543. Diameter of Binary Tree | Easy | Tree, Depth-First Search, Binary Tree, DP on Trees | 已解出 | 2026-09-10 | https://leetcode.com/problems/diameter-of-binary-tree/ |
 | 1020 | 1020. Number of Enclaves | Medium | Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix | 已解出 | 2026-09-09 | https://leetcode.com/problems/number-of-enclaves/ |
 | 99 | 99. Recover Binary Search Tree | Medium | Tree, Depth-First Search, Binary Search Tree, Binary Tree | 已解出 | 2026-09-07 | https://leetcode.com/problems/recover-binary-search-tree/ |
 | 1552 | 1552. Magnetic Force Between Two Balls | Medium | Array, Binary Search, Sorting | 已解出 | 2026-09-06 | https://leetcode.com/problems/magnetic-force-between-two-balls/ |
@@ -203,7 +208,6 @@
 | 167 | 167. Two Sum II - Input Array Is Sorted | Medium | Array, Two Pointers, Binary Search | 已解出 | 2024-03-24 | https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/ |
 | 259 | 259. 3Sum Smaller | Medium | - | 已解出 | 2024-03-24 | https://leetcode.com/problems/3sum-smaller/ |
 | 853 | 853. Car Fleet | Medium | Array, Stack, Sorting, Monotonic Stack | 已解出 | 2024-03-22 | https://leetcode.com/problems/car-fleet/ |
-| 102 | 102. Binary Tree Level Order Traversal | Medium | Tree, Breadth-First Search, Binary Tree | 已解出 | 2024-03-21 | https://leetcode.com/problems/binary-tree-level-order-traversal/ |
 | 56 | 56. Merge Intervals | Medium | Array, Sorting, Quicksort | 已解出 | 2024-03-19 | https://leetcode.com/problems/merge-intervals/ |
 | 253 | 253. Meeting Rooms II | Medium | - | 已解出 | 2024-03-19 | https://leetcode.com/problems/meeting-rooms-ii/ |
 | 45 | 45. Jump Game II | Medium | Array, Dynamic Programming, Greedy | 已解出 | 2024-03-18 | https://leetcode.com/problems/jump-game-ii/ |
@@ -270,7 +274,6 @@
 | 437 | 437. Path Sum III | Medium | Tree, Depth-First Search, Binary Tree | 已解出 | 2022-10-27 | https://leetcode.com/problems/path-sum-iii/ |
 | 1143 | 1143. Longest Common Subsequence | Medium | String, Dynamic Programming, Longest Common Subsequence | 已解出 | 2022-10-27 | https://leetcode.com/problems/longest-common-subsequence/ |
 | 516 | 516. Longest Palindromic Subsequence | Medium | String, Dynamic Programming | 已解出 | 2022-10-26 | https://leetcode.com/problems/longest-palindromic-subsequence/ |
-| 543 | 543. Diameter of Binary Tree | Easy | Tree, Depth-First Search, Binary Tree, DP on Trees | 已解出 | 2022-10-26 | https://leetcode.com/problems/diameter-of-binary-tree/ |
 | 62 | 62. Unique Paths | Medium | Math, Dynamic Programming, Combinatorics | 已解出 | 2022-10-24 | https://leetcode.com/problems/unique-paths/ |
 | 63 | 63. Unique Paths II | Medium | Array, Dynamic Programming, Matrix | 已解出 | 2022-10-24 | https://leetcode.com/problems/unique-paths-ii/ |
 | 64 | 64. Minimum Path Sum | Medium | Array, Dynamic Programming, Matrix | 已解出 | 2022-10-24 | https://leetcode.com/problems/minimum-path-sum/ |
