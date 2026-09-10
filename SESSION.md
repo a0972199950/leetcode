@@ -122,6 +122,39 @@ BFS 層序變形（199 Right Side View、103 Zigzag）
 
 ---
 
+# Grid / Matrix BFS / DFS 複習進度
+
+> 跟上面「Binary Tree BFS / DFS」是不同題型：這裡是把 grid 當隱式圖做連通塊遍歷（需要 visited、處理四方向與邊界）。
+> 完成狀態依 PROGRESS.md 裡最後練習時間落在**近兩個月內**（2026-07-05 之後）的紀錄認定，由淺入深排列。
+
+## 已完成
+
+| 題號 | 題目 | 難度 | 重點 |
+|------|------|------|------|
+| 1020 | Number of Enclaves | Medium | 反向思考：不要逐格問「這格能不能逃到邊界」，改問「哪些格從邊界灌得到」。從四條邊上的陸地做 flood fill 把連通塊全沉成 `0`，最後數剩下的 `1` 就是答案。這是「條件＝有沒有連到邊界」題（130 / 417 / 1254）的標準招。只需**一種**標記（灌到＝逃得出＝設 `0`），「逃不出」靠最後還是 `1` 的用扣算得到，沒有「懸而未決」的中間態。曾走過的錯路：逐格 DFS 回傳 boolean「能否逃出」＋記憶化（`2` 逃得出 / `0` 逃不出 / `history` set 正在問），三種狀態並存、四方向 OR 串接的短路正確性要另外論證、`// down` 複製貼上寫成 `row - 1`（三個官方範例都沒踩到這個方向 bug）。純遞迴 flood fill 在 500×500 蛇形陸地會爆 call stack → 改**顯式 stack**。使用者偏好：外層用雙迴圈掃全圖挑邊界格（不特別只跑周長）。O(m·n) time / O(m·n) space（worst case stack 裝過所有格） |
+
+## 下一題（待 /q 依本層出題）
+
+**層級：從邊界往內灌 / 反向連通（1020 已站穩）**
+
+同一招的鞏固題，或往「多源 BFS」推：
+
+- 1254 Number of Closed Islands（Medium，跟 1020 幾乎同型：先從邊界沉掉開放島，再數剩下的島「數量」而非格數；全新題）
+- 130 Surrounded Regions（Medium，一樣邊界 flood fill 標記，把沒被標到的 `O` 翻成 `X`；池內 2024-05-09）
+- 994 Rotting Oranges（Medium，往下一層「多源 BFS」：所有腐爛橘子同時入隊、逐層擴散計時間；池內 2022-10-29）
+
+## 學習曲線進度
+
+```
+連通塊 flood fill / 計數（200 Number of Islands、695 Max Area of Island；PROGRESS.md 2022–2024 練過，本輪未重做）
+從邊界往內灌 / 反向連通 ← 目前在這裡（1020 ✅；1254 / 130 待做）
+多源 BFS（994 Rotting Oranges、542 01 Matrix、286 Walls and Gates）
+grid 上的最短路 BFS（1091 Shortest Path in Binary Matrix、909 Snakes and Ladders）
+狀態編碼 BFS（1293 這類帶額外狀態維度：剩幾次消除障礙）
+```
+
+---
+
 # Binary Search 複習進度
 
 > 完成狀態依 PROGRESS.md 裡最後練習時間落在**近兩個月內**（2026-07-05 之後）的紀錄認定，由淺入深排列。
