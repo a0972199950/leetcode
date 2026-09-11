@@ -70,13 +70,16 @@ monotonic stack ← 目前在這裡（503 ✅；962 進行中，需補 stack pus
 | 450 | Delete Node in a BST | Medium | 遞迴定位到要刪除的節點：沒有左小孩直接讓右小孩頂上；有左小孩則去左子樹裡找最大值（一路往右走到底）當替代節點，把它拔下來接上原本的左右子樹。O(h) time / space |
 | 449 | Serialize and Deserialize BST | Medium | 利用 BST 有序性省掉 null 佔位符：pre-order 序列化只存有值的 node；反序列化時用遞迴傳遞 (min, max) 值域邊界配合一個共用 pointer，單一次掃過陣列就能還原整棵樹 |
 | 99 | Recover Binary Search Tree | Medium | 中序走訪時用 `prev` 追上一個 node，找逆序（`prev.val > curr.val`）：第一次逆序時 `first = prev`，每次逆序都更新 `second = curr`；一次逆序（相鄰 case）和兩次逆序（非相鄰 case）同一套邏輯都對。最後只 swap `.val`，不動指標。O(n) time / O(h) space |
+| 1382 | Balance a Binary Search Tree | Medium | 中序遍歷攤平成排序陣列，再用 108 的技巧遞迴取中點重建平衡樹（`node.left = selectMiddle(...)`、`node.right = selectMiddle(...)`）。舊版試過反覆 `splice` 出中間值、重用原節點手動 BST insert 建樹，因為 `splice` 挖中間要搬移陣列是 O(k)、n 次插入加總成 O(n²) 而放棄，改成一次性攤平 + 遞迴切半後降到 O(n)。`selectMiddle` 內先判斷 `right < left` 直接回傳，才不會在丟棄前先多建一個用不到的 TreeNode。Time O(2n)（中序 O(n) + 建樹 O(n)），Space O(n)（`inOrder` 陣列本身的額外空間，不是只有 O(h) 的遞迴堆疊）。頂端 `if (!root) return null`：題目 Constraints 保證節點數 ≥ 1，這個 guard 其實永遠不會觸發，使用者確認後選擇保留 |
 
 ## 下一題（待 /q 依本層出題）
 
-**層級：BST 性質被破壞後的修復 / 結合其他技巧**
+**層級：多棵 BST 一起處理**（結合其他技巧層：1382 已完成；333 Premium 無法練習，跳過）
 
-- 333 Largest BST Subtree（Medium，DP on tree + BST 驗證合併在一起判斷，較有挑戰；池內 2024-04-01）
-- 1382 Balance a Binary Search Tree（Medium，中序攤平成排序陣列再用 108 的技巧重建平衡樹；池內 2024-04-06）
+已掃過 PROGRESS.md 裡所有 `Binary Search Tree` 標籤的題目 + LeetCode 上幾個常見但不在 PROGRESS.md 裡的題目，確認過：530、703、96、108、653 都跟現有已完成清單技巧重複，不用再排；Two Sum BSTs、Closest BST Value(s) 是 Premium，直接排除。真正還沒碰過、公開可看的只剩：
+
+- 1305 All Elements in Two Binary Search Trees（Medium，讚 3209/倒讚 99，第一次要同時處理兩棵 BST；全新題）
+- 1932 Merge BSTs to Create Single BST（Hard，讚 680/倒讚 49，比 1305 更進一步，多棵 BST 互相合併；全新題）
 
 ## 學習曲線進度
 
@@ -88,7 +91,8 @@ BST 上的設計題（173 Iterator）✅
 結構修改：刪除節點（450）✅
 序列化／還原，省略 null 佔位符（449）✅
 BST 性質被破壞後的修復（99）✅
-← 目前在這裡：結合其他技巧（333 / 1382 待做）
+結合其他技巧（1382 ✅；333 Premium 無法練習，略過）
+← 目前在這裡：多棵 BST 一起處理（1305 / 1932 待做，其餘同標籤題目已重複或 Premium 排除）
 ```
 
 ---

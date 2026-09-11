@@ -2,7 +2,7 @@
 
 > 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-11
 
-共 326 題，其中 239 題超過 8 個月未練習（可作為 /q 複習候選）。
+共 326 題，其中 238 題超過 8 個月未練習（可作為 /q 複習候選）。
 
 依「最後練習時間」新到舊排序，沒有紀錄的排在最後。
 
@@ -13,6 +13,7 @@
 | 199 | 199. Binary Tree Right Side View | Medium | Tree, Depth-First Search, Breadth-First Search, Binary Tree | 已解出 | 2026-09-11 | https://leetcode.com/problems/binary-tree-right-side-view/ |
 | 236 | 236. Lowest Common Ancestor of a Binary Tree | Medium | Tree, Depth-First Search, Binary Tree, Binary Lifting, Lowest Common Ancestor | 已解出 | 2026-09-11 | https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/ |
 | 257 | 257. Binary Tree Paths | Easy | String, Backtracking, Tree, Depth-First Search, Binary Tree | 已解出 | 2026-09-11 | https://leetcode.com/problems/binary-tree-paths/ |
+| 1382 | 1382. Balance a Binary Search Tree | Medium | Divide and Conquer, Greedy, Tree, Depth-First Search, Binary Search Tree, Binary Tree | 已解出 | 2026-09-11 | https://leetcode.com/problems/balance-a-binary-search-tree/ |
 | 102 | 102. Binary Tree Level Order Traversal | Medium | Tree, Breadth-First Search, Binary Tree | 已解出 | 2026-09-10 | https://leetcode.com/problems/binary-tree-level-order-traversal/ |
 | 104 | 104. Maximum Depth of Binary Tree | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree | 已解出 | 2026-09-10 | https://leetcode.com/problems/maximum-depth-of-binary-tree/ |
 | 112 | 112. Path Sum | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree | 已解出 | 2026-09-10 | https://leetcode.com/problems/path-sum/ |
@@ -181,7 +182,6 @@
 | 468 | 468. Validate IP Address | Medium | String | 已解出 | 2024-04-07 | https://leetcode.com/problems/validate-ip-address/ |
 | 556 | 556. Next Greater Element III | Medium | Math, Two Pointers, String | 已解出 | 2024-04-07 | https://leetcode.com/problems/next-greater-element-iii/ |
 | 926 | 926. Flip String to Monotone Increasing | Medium | String, Dynamic Programming | 已解出 | 2024-04-07 | https://leetcode.com/problems/flip-string-to-monotone-increasing/ |
-| 1382 | 1382. Balance a Binary Search Tree | Medium | Divide and Conquer, Greedy, Tree, Depth-First Search, Binary Search Tree, Binary Tree | 已解出 | 2024-04-06 | https://leetcode.com/problems/balance-a-binary-search-tree/ |
 | 163 | 163. Missing Ranges | Easy | Array | 已解出 | 2024-04-05 | https://leetcode.com/problems/missing-ranges/ |
 | 666 | 666. Path Sum IV | Medium | - | 已解出 | 2024-04-05 | https://leetcode.com/problems/path-sum-iv/ |
 | 799 | 799. Champagne Tower | Medium | Dynamic Programming | 已解出 | 2024-04-05 | https://leetcode.com/problems/champagne-tower/ |
