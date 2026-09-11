@@ -103,27 +103,29 @@ BST 性質被破壞後的修復（99）✅
 |------|------|------|------|
 | 104 | Maximum Depth of Binary Tree | Easy | 遞迴函式語義 =「以此節點為根的子樹有多深」：base case `null → 0`、遞迴式 `max(左, 右) + 1`。O(n) time / O(h) space（歪斜樹最壞 O(n)、平衡 O(log n)）。因為沒有要邊走邊更新的外層累計變數，helper 其實可省、`maxDepth` 自己就能遞迴；使用者選擇保留巢狀 `dfs` helper 讓寫法跟 110 / 543 一致。曾多包一層 `if (!root) return 0`，與 helper 的 base case 重複，已移除 |
 | 543 | Diameter of Binary Tree | Easy | 這層的代表技巧：`dfs` 回傳「子樹高度」給上層（同 104），但**在每個節點順手更新外層答案** `max = Math.max(max, left + right)`——後序 DFS「回傳值 + side-effect 更新累計」的模子（110 同型）。base case 從 2022 版的 `node.left ? ... : 0` 三元守衛換成 `if (!node) return 0`，一併涵蓋空樹。diameter 是邊數不是節點數，故取 `left + right` 不 +1。任一路徑都有唯一「最高點」，枚舉每個節點當最高點即覆蓋所有路徑。O(n) time / O(h) space。命名小點：`max` 緊鄰 `Math.max` 讀起來繞，`maxDiameter` 更直說（未改） |
-| 102 | Binary Tree Level Order Traversal | Medium | 核心：queue 逐層展開，一輪處理一整層、把下一層小孩塞進 queue。**關鍵教訓是 JS 的 `Array.prototype.shift()` 是 O(佇列長)**——用 `queue.shift()` 抽乾一層 L 個節點 = O(L²)，最寬層 ~n/2 → 整體 O(n²)。修法：`queue` 只增不減 + 一根 `index` 指標往前走（或 2024 舊版的 `for...of` 掃整個 queue 再整包換 `queue = nextQueue`），才是真 O(n)。分層方式使用者定案用「佇列裡塞 `''` 當層分隔符」：消耗到 `''` 就 `result.push([])` 並補推下一層的 `''`；終止判斷 `index === queue.length - 1 && node === ''` 是 load-bearing——同時「停迴圈」和「擋掉尾端多一個 `[]`」，成立理由：尾端 `''` 若是最後一個 ⟺ 上一層沒生出任何下一層節點。另一種等價寫法是不用哨兵、每層開頭記 `levelSize = queue.length - index` 跑固定次數（使用者知道但選了 marker，之後 199 / 103 分層也會用到）。O(n) time / O(n) space。曾走過的錯路：把單迴圈拆成 `bfs()` helper + 外層 `while` 並改用 `shift()`（複雜度回歸 + 只被呼叫一次的贅餘 helper，已移除） |
+| 102 | Binary Tree Level Order Traversal | Medium | 核心：queue 逐層展開，一輪處理一整層、把下一層小孩塞進 queue。**關鍵教訓是 JS 的 `Array.prototype.shift()` 是 O(佇列長)**——用 `queue.shift()` 抽乾一層 L 個節點 = O(L²)，最寬層 ~n/2 → 整體 O(n²)。修法：`queue` 只增不減 + 一根 `index` 指標往前走（或 2024 舊版的 `for...of` 掃整個 queue 再整包換 `queue = nextQueue`），才是真 O(n)。分層方式使用者定案用**每層開頭記 `levelSize = queue.length - index` 跑固定次數**：`levelSize` 在 for 迴圈開始前先鎖住，代表「目前還沒處理的節點數」＝ 目前總共塞過幾個（`queue.length`）減掉已經處理過幾個（`index`）；迴圈中途陸續 push 下一層小孩不影響這個已鎖住的次數。另一種試過但沒採用的等價寫法是「佇列裡塞 `''` 當層分隔符」：消耗到 `''` 就 `result.push([])` 並補推下一層的 `''`，終止判斷 `index === queue.length - 1 && node === ''` 同時兼顧「停迴圈」和「擋掉尾端多一個 `[]`」——這版留作註解對照，之後 199 / 103 分層時使用者反映 `queue.length - index` 這個減法在面試現場不夠直覺，可以退回最上面那版 `queue = nextQueue` 整包置換（2024 舊版，同樣沒有這個問題）。O(n) time / O(n) space。曾走過的錯路：把單迴圈拆成 `bfs()` helper + 外層 `while` 並改用 `shift()`（複雜度回歸 + 只被呼叫一次的贅餘 helper，已移除） |
 | 112 | Path Sum | Easy | DFS 路徑記錄層的**暖身**（存在性判斷，還沒用到 path 陣列 / 回溯）。重點對比 543：112 是「存不存在一條根到葉路徑」，找到一條就夠 → **不需要外層 mutable flag**，`dfs` 回傳 boolean、`dfs(left) \|\| dfs(right)` 往上合成，`\|\|` 左邊 `true` 時右邊自動不算（短路免費）。曾走過的錯路：套 543 的模子用外層 `hasAnswer` flag + void `dfs`，還在 guard 手動寫 `\|\| hasAnswer` 去複製 `\|\|` 本來就有的短路，已改回 return-based。新技巧（104/543 沒有的）：累加值（`lastSum`）**往下當參數傳**、到葉子 `!node.left && !node.right` 才結算——`&& isLeaf` 不能拿掉（`Node.val` 可負、且限定必須到葉）。`dfs` helper 這裡確實需要（要帶 `lastSum` 參數）。O(n) time / O(h) space |
 | 113 | Path Sum II | Medium | 這層的代表技巧：**backtracking**——一個共用 `history` 陣列，`push` 緊接 null guard 後、`pop` 在函式**最後、無條件**執行（每個非空節點剛好一次 push 一次 pop，天然平衡），只在命中葉子時 `result.push([...history])` 抄一次快照（那次複製是輸出，省不掉）。四個易錯點：命中後**不要 `return`**（會跳過 `pop()`，路徑變髒——這是最常見 backtracking bug）、`pop()` 位置在遞迴呼叫之後、快照一定要 `[...history]` 不能直接推 `history` 本身、`&& isLeaf` 同 112。曾走過的錯路：先寫「不可變路徑」版 `const history = [...lastHistory, node.val]` 每個節點複製整條祖先路徑——正確但 O(n·h)（歪斜樹 O(n²)），且繞過了這層要練的 push/pop；已改成共用陣列 + 回溯，走訪回到 O(n)（快照另計 O(命中數·h)）。immutable 版留作註解對照。O(n) time / O(h) space（不含輸出） |
+| 199 | Binary Tree Right Side View | Medium | 一題寫出兩種派系，都站穩。**BFS 版**（102 骨架延伸，現留作註解）：沿用 index 指標逐層掃描，迴圈內把 `node = layer[index]` 一路推進，故意不直接寫 `layer[layer.length-1].val`，改用「跑完整層迴圈後 `node` 剛好停在最後一個」的殘留狀態去拿最右節點——使用者確認這是刻意選擇，不是失誤。**DFS 版**（最終採用，自己想出，過程中沒被直接告知做法）：先右子樹再左子樹遞迴，`depth` 當 index，只在 `result[depth] === undefined`（該深度第一次被踩到）才寫入，right-first 保證第一次踩到的就是最右邊那個節點；不用額外 `!root` guard，`dfs(null, depth)` 直接短路涵蓋空樹。BFS 版 O(n) space（取決於最寬層的 queue 大小），DFS 版遞迴堆疊 O(h)——兩者在歪斜樹都退化成 O(n)，但一般情況 DFS 版常數更小。都 O(n) time |
+| 103 | Binary Tree Zigzag Level Order Traversal | Medium | 這層的代表技巧：雙指標 `i`（頭）／`j`（尾）同步走訪同一層——因為 `i + j` 恆等於 `length - 1`，迴圈其實跑滿整層（不是提早相遇停下）。`iNode`（`i` 指到的節點）永遠負責蒐集下一層小孩，維持樹結構左到右順序、不受本層是否反向影響；`jNode` 是 `iNode` 的鏡像位置，`isReverse` 只決定這次要記錄 `iNode.val` 還是鏡像的 `jNode.val`——單一次掃描內同時完成子節點蒐集跟鏡像讀值，不必額外呼叫 `reverse()`/`unshift()`。這個寫法是在不確定 `reverse()` 成本時先選的保守版；後來透過 `/clarify` 確認 `reverse()` 對長度 L 的陣列是 O(L)，所有層加總只有 O(n)（`n ≤ 2000` 不會 TLE），跟「先正常蒐集、`isReverse` 才整層 `reverse()`」複雜度同量級，使用者知道兩者等價後仍選擇保留雙指標版。O(n) time / O(n) space |
+| 236 | Lowest Common Ancestor of a Binary Tree | Medium | 後序 DFS，讓每個節點回傳「這棵子樹裡有沒有找到 p 或 q」，往上合併判斷。核心不變量：`isSelfMatch`／`isLeftMatch`／`isRightMatch` 三個布林轉數字加總，`=== 2`（任兩者成立）就是 LCA——這行直接表達「兩兩收斂」的原意；比另一版拆成兩個 if/else 分支（自己是目標+任一邊有 vs. 自己不是目標+兩邊都有）更好懂，使用者反而覺得拆分支版更難懂，最終選加總版（同一條規則被拆成兩種情境描述，不如直接寫出不變量本身）。比對用 `.val` 而非 `===` 參考比對：透過 `/clarify` 確認題目沒保證傳入的 `p`、`q` 是樹裡同一個物件參考，只保證 `All Node.val are unique` + 存在於樹中，靠值比對才安全，測資也刻意用 `new TreeNode(...)` 另外建的節點驗證這點。加了 `!!lca` 提早剪枝，找到答案後其餘分支不再往下展開。O(n) time / O(h) space |
+| 124 | Binary Tree Maximum Path Sum | Hard | 跟 543 Diameter 同型的後序 DFS：每個節點回傳「往下延伸的最大單邊路徑和」，同時在每個節點更新全局 `max`（允許同時走左右兩邊的「轉彎」候選）。負貢獻怎麼不採用：寫出並比較了兩版——(a) 最終採用版，`max`／回傳值的 `Math.max(...)` 都把 `val` 自己單獨列為候選項，靠這點隱性排除負的 `leftSum`／`rightSum`；(b) 教科書版，子節點回傳前先 `Math.max(0, leftSum)` 明確砍負貢獻。兩版邏輯等價、同一組測資結果一致，使用者實測後者呼叫 `Math.max` 次數較多（4 次 vs 2 次）、多了約 1ms，決定保留呼叫次數較少的版本（這個差異在測試樹規模下多半是量測雜訊，不影響 O(n) 這個收斂複雜度）。O(n) time / O(h) space |
+| 257 | Binary Tree Paths | Easy | 選做，113 backtracking 模板的直接應用：`push` 緊接 null guard 後、`pop` 函式最後無條件執行，命中葉子（`isLeaf`）時用 `paths.join('->')` 直接把目前路徑轉成輸出字串，比 113 的 `[...history]` 陣列快照更省一步（不用另外複製，join 本身就是要的輸出格式）。複雜度討論：一開始寫 `O(n)`，被問到 `join()` 本身是 O(k)（k = 當前路徑長度）之後，一起用「長鏈接完全二元樹」「毛毛蟲樹」兩個反例推翻了「化簡成 O(n)」跟「w×h」（w=最大寬度）這兩個猜測——都會被特定樹形舉出反例（前者可證明是 Θ(n²)、後者在毛毛蟲樹上嚴重低估），確認全部 `join()` 加總的正確上界是 **O(n·h)**，跟走訪本身的 O(n) 分開算，這跟 113 的「快照另計 O(命中數·h)」是同一件事，只是字串接合換了個形式。最終註解改成 `O(n * h)`。O(n·h) time / O(n) space |
 
 ## 下一題（待 /q 依本層出題）
 
-**層級：BFS 層序變形**（DFS 路徑記錄層已站穩：113 backtracking push/pop 寫對。下一步：在 102 的逐層 BFS 骨架上做變形——只取每層最後一個、或奇偶層反向）
-
-- 199 Binary Tree Right Side View（Medium，102 骨架 + 每層只收最後一個節點值（或 DFS 先右後左、用深度當 index 第一次到就記）；全新題）
-- 103 Binary Tree Zigzag Level Order Traversal（Medium，102 骨架 + 偶數層正序、奇數層反序（層陣列 `reverse()` 或 `unshift`）；池內 2022-11-06）
-- （選做，同屬 DFS 路徑記錄層）257 Binary Tree Paths（Easy，所有根到葉路徑轉字串，同款 push/pop 回溯；全新題）
+**本題型學習曲線已全部走完，包含選做的 257 也做完了**——Binary Tree BFS/DFS 這個題型目前沒有排定的下一題，等下次 `/q tree` 再依 PROGRESS.md 找新的複習或新題。
 
 ## 學習曲線進度
 
 ```
 基本 DFS 遞迴（問性質：最大深度、直徑、路徑和）✅（104 純回傳、543 回傳+節點更新累計；112 選做未做）
-BFS 層序遍歷（queue，逐層處理，102 Level Order）✅（102：shift() O(n²) 陷阱 → index 指標 / 整包換；分層用 '' 哨兵，marker 版定案）
-DFS 路徑記錄（根到葉累積路徑，113 Path Sum II、257 Binary Tree Paths）✅（112 暖身：存在性用 `||` 合成免 flag；113：共用陣列 + push/pop 回溯，命中後不 return、快照要 [...copy]；257 選做未做）
-BFS 層序變形（199 Right Side View、103 Zigzag）← 目前在這裡
-一般樹的 LCA（非 BST 版，後序 DFS 往上傳是否找到 p/q，236）
-進階後序 DFS：子樹值往上合併（124 Maximum Path Sum）
+BFS 層序遍歷（queue，逐層處理，102 Level Order）✅（102：shift() O(n²) 陷阱 → index 指標 / 整包換；levelSize = queue.length - index 定案，面試現場不直覺時可退回 queue = nextQueue 整包置換）
+DFS 路徑記錄（根到葉累積路徑，113 Path Sum II、257 Binary Tree Paths）✅（112 暖身：存在性用 `||` 合成免 flag；113：共用陣列 + push/pop 回溯，命中後不 return、快照要 [...copy]；257：同模板換成 join('->') 輸出字串，順便釐清 join 總成本是 O(n·h) 不是 O(n)）
+BFS 層序變形（199 Right Side View、103 Zigzag）✅（199：BFS index 版 + DFS depth 版都寫對；103：雙指標鏡像 index 單次掃描完成蒐集+反向讀值，避開額外 reverse()/unshift() pass，確認複雜度同量級後仍選擇保留）
+一般樹的 LCA（非 BST 版，後序 DFS 往上傳是否找到 p/q，236）✅（三個布林轉數字加總 `=== 2` 判斷兩兩收斂；`.val` 比對搭配 `/clarify` 確認的「無保證參考相等」）
+進階後序 DFS：子樹值往上合併（124 Maximum Path Sum）✅（val 自己當候選項 vs Math.max(0,...) 明確砍負貢獻，兩版等價，選了呼叫次數較少的版本）
+← 本題型複習到此結束（含選做 257，全部完成）
 ```
 
 ---

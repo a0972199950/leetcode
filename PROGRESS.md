@@ -1,13 +1,18 @@
 # 題目練習總覽
 
-> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-10
+> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-11
 
-共 324 題，其中 242 題超過 8 個月未練習（可作為 /q 複習候選）。
+共 326 題，其中 239 題超過 8 個月未練習（可作為 /q 複習候選）。
 
 依「最後練習時間」新到舊排序，沒有紀錄的排在最後。
 
 | 題號 | 標題 | 難度 | 標籤 | 解題狀態 | 最後練習時間 | 連結 |
 | --- | --- | --- | --- | --- | --- | --- |
+| 103 | 103. Binary Tree Zigzag Level Order Traversal | Medium | Tree, Breadth-First Search, Binary Tree | 已解出 | 2026-09-11 | https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/ |
+| 124 | 124. Binary Tree Maximum Path Sum | Hard | Dynamic Programming, Tree, Depth-First Search, Binary Tree, DP on Trees | 已解出 | 2026-09-11 | https://leetcode.com/problems/binary-tree-maximum-path-sum/ |
+| 199 | 199. Binary Tree Right Side View | Medium | Tree, Depth-First Search, Breadth-First Search, Binary Tree | 已解出 | 2026-09-11 | https://leetcode.com/problems/binary-tree-right-side-view/ |
+| 236 | 236. Lowest Common Ancestor of a Binary Tree | Medium | Tree, Depth-First Search, Binary Tree, Binary Lifting, Lowest Common Ancestor | 已解出 | 2026-09-11 | https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/ |
+| 257 | 257. Binary Tree Paths | Easy | String, Backtracking, Tree, Depth-First Search, Binary Tree | 已解出 | 2026-09-11 | https://leetcode.com/problems/binary-tree-paths/ |
 | 102 | 102. Binary Tree Level Order Traversal | Medium | Tree, Breadth-First Search, Binary Tree | 已解出 | 2026-09-10 | https://leetcode.com/problems/binary-tree-level-order-traversal/ |
 | 104 | 104. Maximum Depth of Binary Tree | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree | 已解出 | 2026-09-10 | https://leetcode.com/problems/maximum-depth-of-binary-tree/ |
 | 112 | 112. Path Sum | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree | 已解出 | 2026-09-10 | https://leetcode.com/problems/path-sum/ |
@@ -94,7 +99,6 @@
 | 309 | 309. Best Time to Buy and Sell Stock with Cooldown | Medium | Array, Dynamic Programming | 已解出 | 2024-07-07 | https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/ |
 | 433 | 433. Minimum Genetic Mutation | Medium | Hash Table, String, Breadth-First Search, Bidirectional Search | 已解出 | 2024-06-23 | https://leetcode.com/problems/minimum-genetic-mutation/ |
 | 909 | 909. Snakes and Ladders | Medium | Array, Breadth-First Search, Matrix | 已解出 | 2024-06-23 | https://leetcode.com/problems/snakes-and-ladders/ |
-| 124 | 124. Binary Tree Maximum Path Sum | Hard | Dynamic Programming, Tree, Depth-First Search, Binary Tree, DP on Trees | 已解出 | 2024-06-16 | https://leetcode.com/problems/binary-tree-maximum-path-sum/ |
 | 222 | 222. Count Complete Tree Nodes | Medium | Binary Search, Bit Manipulation, Tree, Binary Tree | 已解出 | 2024-06-16 | https://leetcode.com/problems/count-complete-tree-nodes/ |
 | 399 | 399. Evaluate Division | Medium | Array, String, Depth-First Search, Breadth-First Search, Union-Find, Graph Theory, Shortest Path, Bellman–Ford Algorithm, Floyd–Warshall Algorithm | 已解出 | 2024-06-16 | https://leetcode.com/problems/evaluate-division/ |
 | 530 | 530. Minimum Absolute Difference in BST | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Search Tree, Binary Tree | 已解出 | 2024-06-16 | https://leetcode.com/problems/minimum-absolute-difference-in-bst/ |
@@ -246,10 +250,8 @@
 | 215 | 215. Kth Largest Element in an Array | Medium | Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect | 已解出 | 2022-11-07 | https://leetcode.com/problems/kth-largest-element-in-an-array/ |
 | 347 | 347. Top K Frequent Elements | Medium | Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect | 已解出 | 2022-11-07 | https://leetcode.com/problems/top-k-frequent-elements/ |
 | 57 | 57. Insert Interval | Medium | Array | 已解出 | 2022-11-06 | https://leetcode.com/problems/insert-interval/ |
-| 103 | 103. Binary Tree Zigzag Level Order Traversal | Medium | Tree, Breadth-First Search, Binary Tree | 已解出 | 2022-11-06 | https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/ |
 | 105 | 105. Construct Binary Tree from Preorder and Inorder Traversal | Medium | Array, Hash Table, Divide and Conquer, Tree, Binary Tree | 已解出 | 2022-11-06 | https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/ |
 | 108 | 108. Convert Sorted Array to Binary Search Tree | Easy | Array, Divide and Conquer, Tree, Binary Search Tree, Binary Tree | 已解出 | 2022-11-06 | https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/ |
-| 236 | 236. Lowest Common Ancestor of a Binary Tree | Medium | Tree, Depth-First Search, Binary Tree, Binary Lifting, Lowest Common Ancestor | 已解出 | 2022-11-06 | https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/ |
 | 621 | 621. Task Scheduler | Medium | Array, Hash Table, Greedy, Sorting, Heap (Priority Queue), Counting | 已解出 | 2022-11-06 | https://leetcode.com/problems/task-scheduler/ |
 | 997 | 997. Find the Town Judge | Easy | Array, Hash Table, Graph Theory | 已解出 | 2022-11-06 | https://leetcode.com/problems/find-the-town-judge/ |
 | 1823 | 1823. Find the Winner of the Circular Game | Medium | Array, Math, Recursion, Queue, Simulation | 已解出 | 2022-11-06 | https://leetcode.com/problems/find-the-winner-of-the-circular-game/ |
