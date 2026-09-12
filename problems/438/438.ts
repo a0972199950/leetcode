@@ -1,6 +1,8 @@
 // 438. Find All Anagrams in a String
-// 最後練習時間：2026-03-26
+// 最後練習時間：2026-09-12
 // https://leetcode.com/problems/find-all-anagrams-in-a-string/
+
+console.clear()
 
 // function findAnagrams(s: string, p: string): number[] {
 //   if (s.length < p.length) {
@@ -42,36 +44,78 @@
 
 // Time: O(n)
 // Space: O(1)
-function findAnagrams(s: string, p: string): number[] {
-  let pHash: string | number[] = Array(26).fill(0)
+// function findAnagrams(s: string, p: string): number[] {
+//   let pHash: string | number[] = Array(26).fill(0)
 
-  for (const c of p) {
-    const charCodeAt = c.charCodeAt(0) - 'a'.charCodeAt(0)
-    pHash[charCodeAt]++
+//   for (const c of p) {
+//     const charCodeAt = c.charCodeAt(0) - 'a'.charCodeAt(0)
+//     pHash[charCodeAt]++
+//   }
+
+//   pHash = pHash.join(',')
+
+//   const sRecord = Array(26).fill(0)
+//   let left = 0
+//   const result = []
+//   for (let right = 0; right < s.length; right++) {
+//     const rightC = s[right]
+
+//     const rightCharCodeAt = rightC.charCodeAt(0) - 'a'.charCodeAt(0)
+//     sRecord[rightCharCodeAt]++
+
+//     if ((right - left + 1) < p.length) {
+//       continue
+//     }
+
+//     if (sRecord.join(',') === pHash) {
+//       result.push(left)
+//     }
+
+//     const leftChar = s[left]
+//     const leftCharCodeAt = leftChar.charCodeAt(0) - 'a'.charCodeAt(0)
+//     sRecord[leftCharCodeAt]--
+//     left++
+//   }
+
+//   return result
+// }
+
+// Time: O(26n)
+// Space: O(1)
+function findAnagrams(s: string, p: string): number[] {
+  const SPLIT = ','
+
+  const getCharCode = (c: string) => {
+    return c.charCodeAt(0) - 'a'.charCodeAt(0)
   }
 
-  pHash = pHash.join(',')
+  let id: number[] | string = Array(26).fill(0)
 
-  const sRecord = Array(26).fill(0)
+  for (const c of p) {
+    id[getCharCode(c)]++
+  }
+
+  id = id.join(SPLIT)
+
+  const result: number[] = []
   let left = 0
-  const result = []
+  const history = Array(26).fill(0)
+
   for (let right = 0; right < s.length; right++) {
-    const rightC = s[right]
+    const c = s[right]
 
-    const rightCharCodeAt = rightC.charCodeAt(0) - 'a'.charCodeAt(0)
-    sRecord[rightCharCodeAt]++
-
-    if ((right - left + 1) < p.length) {
+    if (right - left + 1 < p.length) {
+      history[getCharCode(c)]++
       continue
     }
 
-    if (sRecord.join(',') === pHash) {
+    history[getCharCode(c)]++
+
+    if (history.join(SPLIT) === id) {
       result.push(left)
     }
 
-    const leftChar = s[left]
-    const leftCharCodeAt = leftChar.charCodeAt(0) - 'a'.charCodeAt(0)
-    sRecord[leftCharCodeAt]--
+    history[getCharCode(s[left])]--
     left++
   }
 

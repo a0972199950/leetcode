@@ -1,35 +1,59 @@
 // 643. Maximum Average Subarray I
-// 最後練習時間：2026-03-25
+// 最後練習時間：2026-09-12
 
 console.clear()
 
 // Time: O(n)
 // Space: O(1)
+// function findMaxAverage(nums: number[], k: number): number {
+//   let left = 0
+//   let right = left + k - 1
+
+//   let sum = 0
+//   for (let i = left; i <= right; i++) {
+//     sum += nums[i]
+//   }
+
+//   let max = sum / k
+//   // console.log('max: ', max)
+//   while (right < nums.length - 1) {
+    
+//     right++
+//     sum += nums[right]
+
+//     sum -= nums[left]
+//     left++
+
+//     // console.log(left, right)
+//     max = Math.max(max, sum / k)
+//     // console.log('max: ', max)
+//   }
+
+//   return max
+// }
+
+// Time: O(n)
+// Space: O(1)
 function findMaxAverage(nums: number[], k: number): number {
   let left = 0
-  let right = left + k - 1
-
   let sum = 0
-  for (let i = left; i <= right; i++) {
-    sum += nums[i]
-  }
+  let max = -Infinity
 
-  let max = sum / k
-  // console.log('max: ', max)
-  while (right < nums.length - 1) {
-    
-    right++
+  for (let right = 0; right < nums.length; right++) {
+    while (right - left + 1 > k) {
+      sum -= nums[left]
+      left++
+    }
+
     sum += nums[right]
 
-    sum -= nums[left]
-    left++
-
-    // console.log(left, right)
-    max = Math.max(max, sum / k)
-    // console.log('max: ', max)
+    if (right - left + 1 === k) {
+      max = Math.max(max, sum)
+    }
   }
 
-  return max
+  return max / k
 }
 
 console.log(findMaxAverage([1, 12, -5, -6, 50, 3], 4)) // 12.75
+console.log(findMaxAverage([5], 1)) // 5

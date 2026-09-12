@@ -1,5 +1,5 @@
 // 3. Longest Substring Without Repeating Characters
-// 最後練習時間：2026-03-26
+// 最後練習時間：2026-09-12
 // https://leetcode.com/problems/longest-substring-without-repeating-characters/
 
 console.clear()
@@ -64,32 +64,53 @@ console.clear()
 //   return max
 // }
 
+// function lengthOfLongestSubstring(s: string): number {
+//   // { [char]: [index] }
+//   const record = new Map<string, number>()
+
+//   let left = 0
+//   let max = 0
+
+//   for (let right = 0; right < s.length; right++) {
+//     // console.log(record)
+//     const char = s[right]
+
+//     if (record.has(char)) {
+//       left = Math.max(left, record.get(char) + 1)
+//     }
+
+//     record.set(char, right)
+//     // console.log(s.slice(left, right + 1))
+//     max = Math.max(max, right - left + 1)
+//   }
+
+//   return max
+// }
+
+// Time: O(n)
+// Space: O(n)
 function lengthOfLongestSubstring(s: string): number {
-  // { [char]: [index] }
-  const record = new Map<string, number>()
+  const history = new Set()
 
   let left = 0
-  let max = 0
+  let length = 0
 
   for (let right = 0; right < s.length; right++) {
-    // console.log(record)
-    const char = s[right]
-
-    if (record.has(char)) {
-      left = Math.max(left, record.get(char) + 1)
+    while (history.has(s[right])) {
+      history.delete(s[left])
+      left++
     }
 
-    record.set(char, right)
-    // console.log(s.slice(left, right + 1))
-    max = Math.max(max, right - left + 1)
+    history.add(s[right])
+    length = Math.max(length, right - left + 1)
   }
 
-  return max
+  return length
 }
 
-// console.log(lengthOfLongestSubstring('abcabcbb'))
-// console.log(lengthOfLongestSubstring('bbbbb'))
-// console.log(lengthOfLongestSubstring('pwwkew'))
-// console.log(lengthOfLongestSubstring(''))
+console.log(lengthOfLongestSubstring('abcabcbb')) // 3
+console.log(lengthOfLongestSubstring('bbbbb')) // 1
+console.log(lengthOfLongestSubstring('pwwkew')) // 3
+console.log(lengthOfLongestSubstring('')) // 0
 console.log(lengthOfLongestSubstring('abba')) // 2
 

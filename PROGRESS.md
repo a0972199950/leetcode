@@ -8,7 +8,10 @@
 
 | 題號 | 標題 | 難度 | 標籤 | 解題狀態 | 最後練習時間 | 連結 |
 | --- | --- | --- | --- | --- | --- | --- |
+| 3 | 3. Longest Substring Without Repeating Characters | Medium | Hash Table, String, Sliding Window | 已解出 | 2026-09-12 | https://leetcode.com/problems/longest-substring-without-repeating-characters/ |
 | 333 | 333. Largest BST Subtree | Medium | Dynamic Programming, Tree, Depth-First Search, Binary Search Tree, Binary Tree, DP on Trees | 已解出 | 2026-09-12 | https://leetcode.com/problems/largest-bst-subtree/ |
+| 438 | 438. Find All Anagrams in a String | Medium | Hash Table, String, Sliding Window | 已解出 | 2026-09-12 | https://leetcode.com/problems/find-all-anagrams-in-a-string/ |
+| 643 | 643. Maximum Average Subarray I | Easy | Array, Sliding Window | 已解出 | 2026-09-12 | https://leetcode.com/problems/maximum-average-subarray-i/ |
 | 1305 | 1305. All Elements in Two Binary Search Trees | Medium | Tree, Depth-First Search, Binary Search Tree, Sorting, Binary Tree | 已解出 | 2026-09-12 | https://leetcode.com/problems/all-elements-in-two-binary-search-trees/ |
 | 1932 | 1932. Merge BSTs to Create Single BST | Hard | Array, Hash Table, Tree, Depth-First Search, Binary Search Tree, Binary Tree | 已解出 | 2026-09-12 | https://leetcode.com/problems/merge-bsts-to-create-single-bst/ |
 | 103 | 103. Binary Tree Zigzag Level Order Traversal | Medium | Tree, Breadth-First Search, Binary Tree | 已解出 | 2026-09-11 | https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/ |
@@ -69,9 +72,6 @@
 | 443 | 443. String Compression | Medium | Two Pointers, String | 已解出 | 2026-04-02 | https://leetcode.com/problems/string-compression/ |
 | 209 | 209. Minimum Size Subarray Sum | Medium | Array, Binary Search, Sliding Window, Prefix Sum | 已解出 | 2026-03-31 | https://leetcode.com/problems/minimum-size-subarray-sum/ |
 | 424 | 424. Longest Repeating Character Replacement | Medium | Hash Table, String, Sliding Window | 已解出 | 2026-03-31 | https://leetcode.com/problems/longest-repeating-character-replacement/ |
-| 3 | 3. Longest Substring Without Repeating Characters | Medium | Hash Table, String, Sliding Window | 已解出 | 2026-03-26 | https://leetcode.com/problems/longest-substring-without-repeating-characters/ |
-| 438 | 438. Find All Anagrams in a String | Medium | Hash Table, String, Sliding Window | 已解出 | 2026-03-26 | https://leetcode.com/problems/find-all-anagrams-in-a-string/ |
-| 643 | 643. Maximum Average Subarray I | Easy | Array, Sliding Window | 已解出 | 2026-03-25 | https://leetcode.com/problems/maximum-average-subarray-i/ |
 | 992 | 992. Subarrays with K Different Integers | Hard | Array, Hash Table, Sliding Window, Counting | 已解出 | 2026-03-25 | https://leetcode.com/problems/subarrays-with-k-different-integers/ |
 | 713 | 713. Subarray Product Less Than K | Medium | Array, Binary Search, Sliding Window, Prefix Sum | 已解出 | 2026-03-23 | https://leetcode.com/problems/subarray-product-less-than-k/ |
 | 904 | 904. Fruit Into Baskets | Medium | Array, Hash Table, Sliding Window | 已解出 | 2026-03-23 | https://leetcode.com/problems/fruit-into-baskets/ |
