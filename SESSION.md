@@ -71,15 +71,13 @@ monotonic stack ← 目前在這裡（503 ✅；962 進行中，需補 stack pus
 | 449 | Serialize and Deserialize BST | Medium | 利用 BST 有序性省掉 null 佔位符：pre-order 序列化只存有值的 node；反序列化時用遞迴傳遞 (min, max) 值域邊界配合一個共用 pointer，單一次掃過陣列就能還原整棵樹 |
 | 99 | Recover Binary Search Tree | Medium | 中序走訪時用 `prev` 追上一個 node，找逆序（`prev.val > curr.val`）：第一次逆序時 `first = prev`，每次逆序都更新 `second = curr`；一次逆序（相鄰 case）和兩次逆序（非相鄰 case）同一套邏輯都對。最後只 swap `.val`，不動指標。O(n) time / O(h) space |
 | 1382 | Balance a Binary Search Tree | Medium | 中序遍歷攤平成排序陣列，再用 108 的技巧遞迴取中點重建平衡樹（`node.left = selectMiddle(...)`、`node.right = selectMiddle(...)`）。舊版試過反覆 `splice` 出中間值、重用原節點手動 BST insert 建樹，因為 `splice` 挖中間要搬移陣列是 O(k)、n 次插入加總成 O(n²) 而放棄，改成一次性攤平 + 遞迴切半後降到 O(n)。`selectMiddle` 內先判斷 `right < left` 直接回傳，才不會在丟棄前先多建一個用不到的 TreeNode。Time O(2n)（中序 O(n) + 建樹 O(n)），Space O(n)（`inOrder` 陣列本身的額外空間，不是只有 O(h) 的遞迴堆疊）。頂端 `if (!root) return null`：題目 Constraints 保證節點數 ≥ 1，這個 guard 其實永遠不會觸發，使用者確認後選擇保留 |
+| 333 | Largest BST Subtree | Medium | 之前因 Premium 跳過，現已可練習補上。後序 DFS 往上回傳 `(isBst, size, min, max)`：node 是 `null` 時用 `min: Infinity, max: -Infinity` 當哨兵值，讓「葉節點」跟「只有單邊小孩」共用同一個比較式，不用另外分支。子樹不合法時直接 `return { isBst: false, bstNodeCount: 0 }`，不計算 min/max——因為 `isBst: false` 會沿遞迴鏈往上傳染，父層一定連鎖失敗，不合法子樹的 min/max 永遠不會被用到。比較用嚴格 `<=`/`>=` 排除重複值（第二個官方測資本身就含重複值 `2`，驗證過這點）。曾考慮「inorder 找最長遞增連續段」的捷徑，透過反例確認不可行：遞增段不保證對應「某節點+其全部子孫」的合法子樹（子樹定義必須包含全部子孫），才改回後序 DFS。O(n) time / O(h) space，符合官方 follow-up 要求 |
+| 1305 | All Elements in Two Binary Search Trees | Medium | 第一次同時處理兩棵 BST。分別對兩棵樹做中序遍歷拿到各自的排序陣列，再用「merge 兩個已排序陣列」（跟 merge sort 的合併步驟、21 Merge Two Sorted Lists 同招）取代整個攤平後重新 `sort()`：後者是 O(n log n)，merge 版只要 O(n)，因為 sort 是「log n 層、每層都要碰過全部 n 個元素」的乘法關係，不是 O(n + log n) 的加法關係。合併迴圈用 `inOrder1[i] ?? Infinity` 當哨兵，指標超出範圍時視為「保證輸」的極大值，讓另一側自動撈完剩下的，省掉「哪一側還有剩」的額外分支判斷——這是可選的小 trick，換兩個分支、犧牲一點點「為什麼可以這樣比」的直覺。Time O(2n)、Space O(2n)（n = 兩棵樹節點數總和：中序攤平 O(n) + 合併結果 O(n)）|
+| 1932 | Merge BSTs to Create Single BST | Hard | 舊版對每個 head 線性掃過整個 `leafs` 陣列找值相等的 leaf，O(heads × leafs) ≈ O(n²)，在最大測資（n 到 5萬棵樹）TLE（474/475，最後一筆卡住）。改用 `leafMap`：用「值 → leaf 候選陣列」建表，把線性掃描換成 O(1) 查表定位到 bucket。複雜度是 amortized O(n) 不是 O(n²)：雖然結構上還是巢狀迴圈，但因為「所有 root 值互不相同」，每個 head 只會查詢自己 val 對應的那個唯一 bucket，且每個 bucket 只會被查一次；所有 leaf entries 總量固定在 O(n)，不管這個量集中在一個大 bucket 還是分散在很多小 bucket，全部 head 加總檢查過的 entries 不會超過這個固定預算，跟舊版「每個 head 都重新掃過同一份完整陣列」的真正 n×n 結構本質不同。找到匹配就用 `linkToParent` 把該 head 接上去、更新其子樹的 `.root` 元件標記；找不到匹配的 head 若是第一個則設為候選 `root`，若已經有 `root` 則代表無法合併成一棵樹、直接 `return null`。最後對 `root` 做一次標準中序遍歷驗證嚴格遞增。與官方 DFS 版解法（從唯一沒被任何 leaf 值瞄準的 root 開始，往下遇到值相符的 leaf 就替換）是同一個核心概念，只是這版由下往上用 while/pop 拼、DFS 版由上往下遞迴建，殊途同歸。跑分 700ms / 100MB+，屬於 JS 在這種節點數（近 15 萬）下的正常範圍（V8 runtime 底噪 + `linkToParent` 閉包物件配置成本），不代表複雜度分析錯誤 |
 
 ## 下一題（待 /q 依本層出題）
 
-**層級：多棵 BST 一起處理**（結合其他技巧層：1382 已完成；333 Premium 無法練習，跳過）
-
-已掃過 PROGRESS.md 裡所有 `Binary Search Tree` 標籤的題目 + LeetCode 上幾個常見但不在 PROGRESS.md 裡的題目，確認過：530、703、96、108、653 都跟現有已完成清單技巧重複，不用再排；Two Sum BSTs、Closest BST Value(s) 是 Premium，直接排除。真正還沒碰過、公開可看的只剩：
-
-- 1305 All Elements in Two Binary Search Trees（Medium，讚 3209/倒讚 99，第一次要同時處理兩棵 BST；全新題）
-- 1932 Merge BSTs to Create Single BST（Hard，讚 680/倒讚 49，比 1305 更進一步，多棵 BST 互相合併；全新題）
+**本題型學習曲線已全部走完**——從驗證 BST 性質、中序遍歷應用、剪枝定位、設計題、結構修改（刪除）、序列化還原、性質修復，一路到結合其他技巧（1382、333）、多棵 BST 一起處理（1305、1932），已掃過 PROGRESS.md 裡所有 `Binary Search Tree` 標籤題目 + LeetCode 上其他常見公開題目（938 跟 669 技巧重複、653/96/703/108/530 都跟現有清單重複、Two Sum BSTs / Closest BST Value(s) / Split BST 是 Premium），沒有更多還沒碰過、公開可看、且代表新技巧的題目了。BST 這個題型目前沒有排定的下一題，等下次 `/q bst` 再依 PROGRESS.md 找新的複習或新題。
 
 ## 學習曲線進度
 
@@ -91,8 +89,9 @@ BST 上的設計題（173 Iterator）✅
 結構修改：刪除節點（450）✅
 序列化／還原，省略 null 佔位符（449）✅
 BST 性質被破壞後的修復（99）✅
-結合其他技巧（1382 ✅；333 Premium 無法練習，略過）
-← 目前在這裡：多棵 BST 一起處理（1305 / 1932 待做，其餘同標籤題目已重複或 Premium 排除）
+結合其他技巧（1382 ✅、333 ✅）
+多棵 BST 一起處理（1305 ✅：兩棵 BST 各自中序攤平 + merge 取代 sort；1932 ✅：value→node 建表把線性掃描換成 O(1) 查找，O(n²) 降到 amortized O(n)）
+← 本題型複習到此結束（已掃過所有公開、非重複的 BST 候選，全部完成）
 ```
 
 ---
