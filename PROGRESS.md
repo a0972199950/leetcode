@@ -2,7 +2,7 @@
 
 > 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-13
 
-共 328 題，其中 236 題超過 8 個月未練習（可作為 /q 複習候選）。
+共 329 題，其中 236 題超過 8 個月未練習（可作為 /q 複習候選）。
 
 依「最後練習時間」新到舊排序，沒有紀錄的排在最後。
 
@@ -12,6 +12,7 @@
 | 239 | 239. Sliding Window Maximum | Hard | Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue, Range Minimum/Maximum Query | 已解出 | 2026-09-13 | https://leetcode.com/problems/sliding-window-maximum/ |
 | 424 | 424. Longest Repeating Character Replacement | Medium | Hash Table, String, Sliding Window | 已解出 | 2026-09-13 | https://leetcode.com/problems/longest-repeating-character-replacement/ |
 | 904 | 904. Fruit Into Baskets | Medium | Array, Hash Table, Sliding Window | 已解出 | 2026-09-13 | https://leetcode.com/problems/fruit-into-baskets/ |
+| 1438 | 1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit | Medium | Array, Queue, Sliding Window, Heap (Priority Queue), Ordered Set, Monotonic Queue | 已解出 | 2026-09-13 | https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/ |
 | 3 | 3. Longest Substring Without Repeating Characters | Medium | Hash Table, String, Sliding Window | 已解出 | 2026-09-12 | https://leetcode.com/problems/longest-substring-without-repeating-characters/ |
 | 333 | 333. Largest BST Subtree | Medium | Dynamic Programming, Tree, Depth-First Search, Binary Search Tree, Binary Tree, DP on Trees | 已解出 | 2026-09-12 | https://leetcode.com/problems/largest-bst-subtree/ |
 | 438 | 438. Find All Anagrams in a String | Medium | Hash Table, String, Sliding Window | 已解出 | 2026-09-12 | https://leetcode.com/problems/find-all-anagrams-in-a-string/ |
