@@ -1,5 +1,5 @@
 // 424. Longest Repeating Character Replacement [不會的題]
-// 最後練習時間：2026-03-31
+// 最後練習時間：2026-09-13
 // https://leetcode.com/problems/longest-repeating-character-replacement/
 // 解析: https://www.youtube.com/watch?v=SLAKjysDODM
 
@@ -131,30 +131,58 @@ console.clear()
 
 // Time: O(n)
 // Space: O(1)
-function characterReplacement(s: string, k: number): number {
-  let left = 0
-  let max = 0
-  // { char: count }
-  const record: Record<string, number> = {}
-  let maxCharCount = 0
+// function characterReplacement(s: string, k: number): number {
+//   let left = 0
+//   let max = 0
+//   // { char: count }
+//   const record: Record<string, number> = {}
+//   let maxCharCount = 0
 
+//   for (let right = 0; right < s.length; right++) {
+//     const rightChar = s[right]
+//     record[rightChar] = (record[rightChar] ?? 0) + 1
+
+//     maxCharCount = Math.max(maxCharCount, record[rightChar])
+
+//     // 窗口減最多重複 > k
+//     while (right - left + 1 - maxCharCount > k) {
+//       const leftChar = s[left]
+//       record[leftChar]--
+//       left++
+//     }
+
+//     max = Math.max(max, right - left + 1)
+//   }
+
+//   return max
+// }
+
+// Time: O(n)
+// Space: O(1)
+function characterReplacement(s: string, k: number): number {
+  const record: Record<string, number> = {}
+  let maxDupCount = 0
+  let result = 0
+
+  let left = 0
   for (let right = 0; right < s.length; right++) {
     const rightChar = s[right]
+
     record[rightChar] = (record[rightChar] ?? 0) + 1
+    maxDupCount = Math.max(maxDupCount, record[rightChar])
 
-    maxCharCount = Math.max(maxCharCount, record[rightChar])
-
-    // 窗口減最多重複 > k
-    while (right - left + 1 - maxCharCount > k) {
-      const leftChar = s[left]
-      record[leftChar]--
-      left++
+    if ((right - left + 1) - maxDupCount <= k) {
+      result = Math.max(result, right - left + 1)
+      continue
     }
 
-    max = Math.max(max, right - left + 1)
+    // 視窗平行往右滑
+    const leftChar = s[left]
+    record[leftChar]--
+    left++
   }
 
-  return max
+  return result
 }
 
 console.log(characterReplacement('ABAB', 2)) // 4

@@ -1,6 +1,6 @@
 # 題目練習總覽
 
-> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-12
+> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-13
 
 共 328 題，其中 237 題超過 8 個月未練習（可作為 /q 複習候選）。
 
@@ -8,6 +8,9 @@
 
 | 題號 | 標題 | 難度 | 標籤 | 解題狀態 | 最後練習時間 | 連結 |
 | --- | --- | --- | --- | --- | --- | --- |
+| 76 | 76. Minimum Window Substring | Hard | Hash Table, String, Sliding Window | 已解出 | 2026-09-13 | https://leetcode.com/problems/minimum-window-substring/ |
+| 424 | 424. Longest Repeating Character Replacement | Medium | Hash Table, String, Sliding Window | 已解出 | 2026-09-13 | https://leetcode.com/problems/longest-repeating-character-replacement/ |
+| 904 | 904. Fruit Into Baskets | Medium | Array, Hash Table, Sliding Window | 已解出 | 2026-09-13 | https://leetcode.com/problems/fruit-into-baskets/ |
 | 3 | 3. Longest Substring Without Repeating Characters | Medium | Hash Table, String, Sliding Window | 已解出 | 2026-09-12 | https://leetcode.com/problems/longest-substring-without-repeating-characters/ |
 | 333 | 333. Largest BST Subtree | Medium | Dynamic Programming, Tree, Depth-First Search, Binary Search Tree, Binary Tree, DP on Trees | 已解出 | 2026-09-12 | https://leetcode.com/problems/largest-bst-subtree/ |
 | 438 | 438. Find All Anagrams in a String | Medium | Hash Table, String, Sliding Window | 已解出 | 2026-09-12 | https://leetcode.com/problems/find-all-anagrams-in-a-string/ |
@@ -71,11 +74,8 @@
 | 763 | 763. Partition Labels | Medium | Hash Table, Two Pointers, String, Greedy | 已解出 | 2026-04-03 | https://leetcode.com/problems/partition-labels/ |
 | 443 | 443. String Compression | Medium | Two Pointers, String | 已解出 | 2026-04-02 | https://leetcode.com/problems/string-compression/ |
 | 209 | 209. Minimum Size Subarray Sum | Medium | Array, Binary Search, Sliding Window, Prefix Sum | 已解出 | 2026-03-31 | https://leetcode.com/problems/minimum-size-subarray-sum/ |
-| 424 | 424. Longest Repeating Character Replacement | Medium | Hash Table, String, Sliding Window | 已解出 | 2026-03-31 | https://leetcode.com/problems/longest-repeating-character-replacement/ |
 | 992 | 992. Subarrays with K Different Integers | Hard | Array, Hash Table, Sliding Window, Counting | 已解出 | 2026-03-25 | https://leetcode.com/problems/subarrays-with-k-different-integers/ |
 | 713 | 713. Subarray Product Less Than K | Medium | Array, Binary Search, Sliding Window, Prefix Sum | 已解出 | 2026-03-23 | https://leetcode.com/problems/subarray-product-less-than-k/ |
-| 904 | 904. Fruit Into Baskets | Medium | Array, Hash Table, Sliding Window | 已解出 | 2026-03-23 | https://leetcode.com/problems/fruit-into-baskets/ |
-| 76 | 76. Minimum Window Substring | Hard | Hash Table, String, Sliding Window | 已解出 | 2026-03-22 | https://leetcode.com/problems/minimum-window-substring/ |
 | 560 | 560. Subarray Sum Equals K | Medium | Array, Hash Table, Prefix Sum | 已解出 | 2026-03-22 | https://leetcode.com/problems/subarray-sum-equals-k/ |
 | 567 | 567. Permutation in String | Medium | Hash Table, Two Pointers, String, Sliding Window | 已解出 | 2026-03-22 | https://leetcode.com/problems/permutation-in-string/ |
 | 1004 | 1004. Max Consecutive Ones III | Medium | Array, Binary Search, Sliding Window, Prefix Sum | 已解出 | 2026-03-22 | https://leetcode.com/problems/max-consecutive-ones-iii/ |

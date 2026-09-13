@@ -218,21 +218,24 @@ grid 上的最短路 BFS（1091 Shortest Path in Binary Matrix、909 Snakes and 
 | 643 | Maximum Average Subarray I | Easy | 固定視窗大小入門。先用一個迴圈墊出前 k-1 個元素的和，再用一個迴圈每次右邊進一個、左邊出一個維護 `sum`，全程只在最後除一次 `k` 拿平均（比每次迭代都除一次的舊版少做 n-1 次除法）。抓到一個真正的 bug：`return max / 4` 忘記把除數換成變數 `k`，硬編碼剛好蒙對唯一那組測資，換 k 就會錯。還挖到一個 V8 效能陷阱：拿掉除法數量後，交出去實測反而比舊版慢，原因是 `sum -= nums[left - 1] ?? 0` 這行第一次迭代會存取 `nums[-1]`——JS 陣列的負數索引不算合法 element 存取，會走具名屬性查找的慢路徑，同一個存取點混雜「有時候是負數、有時候是合法索引」讓 V8 沒辦法把這行內聯快取最佳化成穩定的快速路徑，拖慢整個迴圈；改成明確的 `if (left > 0) sum -= nums[left - 1]`，讓這行存取模式從頭到尾一致，實測驗證變快了。O(n) time / O(1) space |
 | 3 | Longest Substring Without Repeating Characters | Medium | 可變視窗入門。檔案裡留著三版演進：一開始用「往前看一格 `s[right+1]`」判斷要不要收縮，邏輯繞了一圈；後來簡化成標準 sliding window 模板：`right` 右移，`while(history.has(s[right])) { 收縮左界 }`；還試過用 `Map` 記每個字元上次出現的 index、`left` 直接跳過去（省掉內層 while，每次 O(1)）。最後選擇維持 Set 收縮版而不是 Map 跳躍版：理由是收縮版才是「sliding window 通用模板」——`while(不符合條件) 收縮左界` 這個骨架能套到很多變形題（條件不限於「有沒有重複」），Map 直接跳的技巧只在「能一步算出新左界該跳到哪」的情境才成立，不是每題都能用，故意選好遷移、好記的版本。Time O(n) / Space O(n)，嚴謹一點可寫成 O(min(n, Σ))（Σ 是字元集大小，因為 Set 最多同時存在的元素數被字元集卡住），O(n) 當保守上界也成立 |
 | 438 | Find All Anagrams in a String | Medium | 頻率表核心技巧之一：精確比對目標頻率向量。演進：最早用 `reduce` 把「index+count」直接串接成無分隔符的字串當簽名（多位數次數理論上可能撞字串）；改成 `Array(26).fill(0)` 統計次數、`.join(',')` 產生有分隔符的字串簽名再比對，避免撞字串；最終版把初始填窗跟後續滑動合併進同一個迴圈，用 `continue` 分開兩個階段。`.join()` 是對固定長度 26 的陣列呼叫，O(26)=O(1)，不隨 s 長度成長，所以整體仍是 O(n) time / O(1) space，這題的收斂點。討論過更進一步的常數優化：用一個 `matches` 計數器（記錄「有幾個字母的次數剛好跟目標相等」，每次變動前後各檢查一次相等狀態去更新）取代每次都重新 `.join()` 比較整個陣列，把逐次比較也壓成 O(1)；但這個 trick 需要想清楚「改動前退訂舊的相等狀態、改動後登記新的相等狀態」這個雙重檢查的理由，判斷過於繞、犧牲可讀性換來的常數優化不上算，最終選擇保留 `.join()` 版本 |
+| 904 | Fruit Into Baskets | Medium | 頻率表核心技巧之一：相異元素數量門檻，同時也是「恰好 K 個→at most K」這層的 Medium 代表題。用 `Map<水果種類, 數量>` 追蹪視窗內容，`Map.size > 2` 就收縮左界直到某個種類數量歸零、整個 key 被刪掉；用 `Map`（而非 `Set`）記數量的理由是收縮時必須知道某個種類在視窗裡是否真的歸零，不能只看「有沒有出現過」——不相鄰的重複元素一樣會踩到這個問題，跟是否連續無關。第一版直接寫出就是 O(n) time / O(1) space 的收斂解，沒有繞路。之後討論常數優化：因為 `0 <= fruits[i] < fruits.length`，把 `Map` 換成 `Array(fruits.length).fill(0)` 直接用型別索引取代雜湊查找，另外自己維護 `nonZeroCount` 變數取代 `Map.size`——實測跟 `Map.size`（O(1)，內部維護計數器）比較過，`Object.keys(obj).length` 是 O(k) 因為要先整個列舉出 key 陣列再讀長度，`Map.size` 明顯更快。這個換法把 space 複雜度從 O(1)（Map 最多只存在 3 個 entry）變成 O(n)（陣列固定配置 fruits.length 長度），是用空間換時間的取捨，複雜度註解也照實更新成 Space: O(n) |
+| 76 | Minimum Window Substring | Hard | 最小覆蓋子字串，公認必學模式。用固定長度 `number[]`（`countLength = 'z'.charCodeAt(0) - 'A'.charCodeAt(0) + 1`，涵蓋大小寫字母整段 charCode 範圍）取代 `Record`，`tCount`/`sCount` 各自統計目標與視窗內字元次數；`matches` 是核心技巧：以 `countLength` 這個固定常數當「全部命中」基準值，前處理時每出現一種新字元就先扣 1 分，之後視窗內每次有一種字元湊滿需求次數就加回 1 分，湊滿全部字元時 `matches` 自然等於 `countLength`——這個比較方式跟陣列大小綁在一起是刻意設計、非巧合，只要陣列夠大蓋住所有可能字元即可，不需要另外拆一個語意上的「相異字元數」變數。踩到一個真正的 off-by-one：`countLength` 一開始沒有 `+1`，導致 `z`（charCode offset 剛好等於未修正前的 `countLength`）存取陣列時越界，`undefined`/`NaN` 污染比較邏輯，在只有單一字元的測資中恰好蒙對答案，但在字元重複出現、且含 `z` 的長測資中會產生「假命中」（回傳太短的無效視窗），修好 `+1` 後所有本地測資與該長測資皆正確。也順帶推導出 `range = [0, -1]` 這個哨兵值本身就是「找不到時回傳空字串」的 trick（`s.slice(0, 0) === ''`），以及 `t.length > s.length` 不需要 early return 也會自動算出正確結果，但 early return 是可選的常數優化、非本題收斂點必要條件。Time O(n) / Space O(1)（固定字母表大小） |
+| 424 | Longest Repeating Character Replacement | Medium | 頻率表容忍度公式分支（跟 438 精確比對、904 相異數量門檻同層的第三種變化）。核心 trick：`maxDupCount` 只會單調上升（`Math.max`），視窗左界收縮時完全不下修。推導出這樣仍正確的理由：視窗長度全程單調不減（合法時右界前進、左界不動 → 變長；不合法時左右界一起 +1 → 長度打平「平行右滑」），所以不需要去找一個「當下真正合法」的更短視窗（反正贏不了已記錄的 `max`），`maxDupCount` 只要用來判斷「還能不能繼續變長」就夠，就算是過期的歷史高點，也不會讓 `max` 被更新成不存在的錯誤答案。使用者把舊版的 `while` 收縮迴圈改寫成 `if (...) { 更新 result; continue }` + 「不合法只做一次平行右滑」，並自己推導出「上一輪迭代已合法 → 這輪落差最多超出 1」，證明 `while` 本體本來就只會跑 0 或 1 次，`if` 寫法嚴格等價、更精確表達不變量。另抓到一個 V8 效能坑：`record[c] = ++record[c] || 1` 比 `record[c] = (record[c] ?? 0) + 1` 慢 12~15%（實測隔離驗證，排除了 `if/continue` 分支結構的影響），原因是 `++undefined` 會先產生 `NaN`（浮點數）寫入該屬性，即使立刻被 `\|\| 1` 蓋成整數，V8 已經把該屬性的內部表示法定調成要能裝浮點數的較慢模式；`?? 0` 完全不經過 `NaN`，全程整數運算，representation 穩定。Time O(n) / Space O(1) |
 
 ## 下一題（待 /q 依本層出題）
 
-**層級：頻率表為核心的中階技巧**（438 已完成：精確比對目標頻率向量這個分支站穩）——還有兩個平行分支待做，無強制先後：
+**層級：頻率表為核心的中階技巧、「at most K」、最小覆蓋子字串皆已滿足**（438、904、76、424 已完成；904 同時代表「恰好 K 個→at most K」這層的 Medium 版本，992 非必經）。
 
-- 容忍度公式檢查：424 Longest Repeating Character Replacement
-- 相異元素數量門檻：904 Fruit Into Baskets
+- 239 Sliding Window Maximum（Hard 但公認必學模式，單調佇列維護視窗極值這層）
 
 ## 學習曲線進度
 
 ```
 固定視窗大小（643）✅
 可變視窗，簡單擴縮條件（3）✅
-← 目前在這裡：頻率表為核心的中階技巧（438 ✅ 精確比對分支已完成；424、904 待做，三種平行技巧無強制先後）
-「恰好 K 個」→「at most K」相減技巧（904 已代表 Medium 版本；992 是 Hard 但不算公認簡單，非必經）
-最小覆蓋子字串（76，Hard 但公認必學模式）
-搭配單調佇列維護視窗極值（239，Hard 但公認必學模式）
+頻率表為核心的中階技巧（438 ✅ 精確比對；904 ✅ 相異元素數量門檻；424 ✅ 容忍度公式）✅
+「恰好 K 個」→「at most K」相減技巧（904 已代表 Medium 版本；992 非必經）✅
+最小覆蓋子字串（76）✅
+← 目前在這裡：搭配單調佇列維護視窗極值（239，Hard 但公認必學模式）
+單調佇列 + 可變視窗（1438 Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit，Medium，239 之後的延伸，同時維護 max/min 兩個單調佇列；全新題）
 ```
