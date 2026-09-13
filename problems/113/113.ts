@@ -1,7 +1,7 @@
 // 113. Path Sum II
 // 最後練習時間：2026-09-10
 // https://leetcode.com/problems/path-sum-ii/
-import { BinaryTree, TreeNode } from '../../data-structure/BinaryTree'
+import { BinaryTree, TreeNode } from '~/data-structure/BinaryTree'
 
 console.clear()
 

@@ -2,7 +2,7 @@
 // 最後練習時間：2026-09-11
 // https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
 
-import { BinaryTree, TreeNode } from '../../data-structure/BinaryTree'
+import { BinaryTree, TreeNode } from '~/data-structure/BinaryTree'
 
 // function lowestCommonAncestor(root: TreeNode | null, p: TreeNode | null, q: TreeNode | null): TreeNode | null {
 //   if (!root) {

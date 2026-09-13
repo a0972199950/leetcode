@@ -1,7 +1,7 @@
 // 572. Subtree of Another Tree
 // 最後練習時間：2023-07-15
 // https://leetcode.com/problems/subtree-of-another-tree/
-import { TreeNode, BinaryTree } from '../../data-structure/BinaryTree'
+import { TreeNode, BinaryTree } from '~/data-structure/BinaryTree'
 
 console.clear()
 

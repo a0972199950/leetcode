@@ -1,7 +1,7 @@
 // 1305. All Elements in Two Binary Search Trees
 // 最後練習時間：2026-09-12
 // https://leetcode.com/problems/all-elements-in-two-binary-search-trees/
-import { TreeNode, BinaryTree } from '../../data-structure/BinaryTree'
+import { TreeNode, BinaryTree } from '~/data-structure/BinaryTree'
 
 console.clear()
 

@@ -1,7 +1,7 @@
 // 102. Binary Tree Level Order Traversal
 // 最後練習時間：2026-09-10
 // https://leetcode.com/problems/binary-tree-level-order-traversal/
-import { TreeNode, BinaryTree } from '../../data-structure/BinaryTree'
+import { TreeNode, BinaryTree } from '~/data-structure/BinaryTree'
 
 console.clear()
 

@@ -1,7 +1,7 @@
 // 1038. Binary Search Tree to Greater Sum Tree
 // 最後練習時間：2026-08-25
 // https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/
-import { BinaryTree, TreeNode } from '../../data-structure/BinaryTree'
+import { BinaryTree, TreeNode } from '~/data-structure/BinaryTree'
 
 console.clear()
 

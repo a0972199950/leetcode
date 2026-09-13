@@ -2,7 +2,7 @@
 // 最後練習時間：2026-09-10
 // https://leetcode.com/problems/diameter-of-binary-tree/
 
-import { BinaryTree, TreeNode } from '../../data-structure/BinaryTree'
+import { BinaryTree, TreeNode } from '~/data-structure/BinaryTree'
 
 console.clear()
 

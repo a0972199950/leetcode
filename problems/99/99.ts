@@ -1,7 +1,7 @@
 // 99. Recover Binary Search Tree
 // 最後練習時間：2026-09-07
 // https://leetcode.com/problems/recover-binary-search-tree/
-import { BinaryTree, TreeNode } from '../../data-structure/BinaryTree'
+import { BinaryTree, TreeNode } from '~/data-structure/BinaryTree'
 
 console.clear()
 

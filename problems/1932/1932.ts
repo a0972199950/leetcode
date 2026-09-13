@@ -1,7 +1,7 @@
 // 1932. Merge BSTs to Create Single BST
 // 最後練習時間：2026-09-12
 // https://leetcode.com/problems/merge-bsts-to-create-single-bst/
-import { BinaryTree } from '../../data-structure/BinaryTree'
+import { BinaryTree } from '~/data-structure/BinaryTree'
 
 console.clear()
 

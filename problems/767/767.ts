@@ -1,7 +1,7 @@
 // 767. Reorganize String
 // 最後練習時間：2024-03-31
 // https://leetcode.com/problems/reorganize-string/
-import MinHeap from '../../data-structure/Heap'
+import MinHeap from '~/data-structure/Heap'
 
 console.clear()
 
