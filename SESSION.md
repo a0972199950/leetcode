@@ -221,12 +221,13 @@ grid 上的最短路 BFS（1091 Shortest Path in Binary Matrix、909 Snakes and 
 | 904 | Fruit Into Baskets | Medium | 頻率表核心技巧之一：相異元素數量門檻，同時也是「恰好 K 個→at most K」這層的 Medium 代表題。用 `Map<水果種類, 數量>` 追蹪視窗內容，`Map.size > 2` 就收縮左界直到某個種類數量歸零、整個 key 被刪掉；用 `Map`（而非 `Set`）記數量的理由是收縮時必須知道某個種類在視窗裡是否真的歸零，不能只看「有沒有出現過」——不相鄰的重複元素一樣會踩到這個問題，跟是否連續無關。第一版直接寫出就是 O(n) time / O(1) space 的收斂解，沒有繞路。之後討論常數優化：因為 `0 <= fruits[i] < fruits.length`，把 `Map` 換成 `Array(fruits.length).fill(0)` 直接用型別索引取代雜湊查找，另外自己維護 `nonZeroCount` 變數取代 `Map.size`——實測跟 `Map.size`（O(1)，內部維護計數器）比較過，`Object.keys(obj).length` 是 O(k) 因為要先整個列舉出 key 陣列再讀長度，`Map.size` 明顯更快。這個換法把 space 複雜度從 O(1)（Map 最多只存在 3 個 entry）變成 O(n)（陣列固定配置 fruits.length 長度），是用空間換時間的取捨，複雜度註解也照實更新成 Space: O(n) |
 | 76 | Minimum Window Substring | Hard | 最小覆蓋子字串，公認必學模式。用固定長度 `number[]`（`countLength = 'z'.charCodeAt(0) - 'A'.charCodeAt(0) + 1`，涵蓋大小寫字母整段 charCode 範圍）取代 `Record`，`tCount`/`sCount` 各自統計目標與視窗內字元次數；`matches` 是核心技巧：以 `countLength` 這個固定常數當「全部命中」基準值，前處理時每出現一種新字元就先扣 1 分，之後視窗內每次有一種字元湊滿需求次數就加回 1 分，湊滿全部字元時 `matches` 自然等於 `countLength`——這個比較方式跟陣列大小綁在一起是刻意設計、非巧合，只要陣列夠大蓋住所有可能字元即可，不需要另外拆一個語意上的「相異字元數」變數。踩到一個真正的 off-by-one：`countLength` 一開始沒有 `+1`，導致 `z`（charCode offset 剛好等於未修正前的 `countLength`）存取陣列時越界，`undefined`/`NaN` 污染比較邏輯，在只有單一字元的測資中恰好蒙對答案，但在字元重複出現、且含 `z` 的長測資中會產生「假命中」（回傳太短的無效視窗），修好 `+1` 後所有本地測資與該長測資皆正確。也順帶推導出 `range = [0, -1]` 這個哨兵值本身就是「找不到時回傳空字串」的 trick（`s.slice(0, 0) === ''`），以及 `t.length > s.length` 不需要 early return 也會自動算出正確結果，但 early return 是可選的常數優化、非本題收斂點必要條件。Time O(n) / Space O(1)（固定字母表大小） |
 | 424 | Longest Repeating Character Replacement | Medium | 頻率表容忍度公式分支（跟 438 精確比對、904 相異數量門檻同層的第三種變化）。核心 trick：`maxDupCount` 只會單調上升（`Math.max`），視窗左界收縮時完全不下修。推導出這樣仍正確的理由：視窗長度全程單調不減（合法時右界前進、左界不動 → 變長；不合法時左右界一起 +1 → 長度打平「平行右滑」），所以不需要去找一個「當下真正合法」的更短視窗（反正贏不了已記錄的 `max`），`maxDupCount` 只要用來判斷「還能不能繼續變長」就夠，就算是過期的歷史高點，也不會讓 `max` 被更新成不存在的錯誤答案。使用者把舊版的 `while` 收縮迴圈改寫成 `if (...) { 更新 result; continue }` + 「不合法只做一次平行右滑」，並自己推導出「上一輪迭代已合法 → 這輪落差最多超出 1」，證明 `while` 本體本來就只會跑 0 或 1 次，`if` 寫法嚴格等價、更精確表達不變量。另抓到一個 V8 效能坑：`record[c] = ++record[c] || 1` 比 `record[c] = (record[c] ?? 0) + 1` 慢 12~15%（實測隔離驗證，排除了 `if/continue` 分支結構的影響），原因是 `++undefined` 會先產生 `NaN`（浮點數）寫入該屬性，即使立刻被 `\|\| 1` 蓋成整數，V8 已經把該屬性的內部表示法定調成要能裝浮點數的較慢模式；`?? 0` 完全不經過 `NaN`，全程整數運算，representation 穩定。Time O(n) / Space O(1) |
+| 239 | Sliding Window Maximum | Hard | 單調佇列（monotonic queue/deque）維護視窗極值，公認必學模式。檔案演進很長：頻率計數 + 重算最大值 → 存值不存 index 的 queue（重複值會拿錯目標）→ 自寫 MaxHeap class + hash 懶惰刪除 → 存 index 的 queue，前端用 `queue.shift()` 過期。最終定案：改成單一陣列 `stack`（尾端 push/pop 維持非嚴格遞減）+ `head` 指標懶惰標記前端過期位置，`left === stack[head].index` 才 `head++`。抓到一個真正的 bug：`head` 的重置條件原本寫 `if (!stack.length) head = 0`，只處理「stack 完全清空」這個特例，但尾端 pop 讓 stack 縮短、`head` 卻還停在舊 index 時（stack 沒清空但 `head` 已經越界）就會讀到 `undefined`；改成 `if (stack.length < head) head = stack.length` 才是通用修正，用 2 萬組隨機測資對暴力解驗證，舊寫法真的會丟例外（例：`nums=[2,1,0,-1,-1,1,-1,2,1], k=2`），新寫法全過。也實測驗證了 `queue.shift()` 版本的效能陷阱：`shift()` 是 O(當前陣列長度) 不是攤銷 O(1)，`n` 從 20 萬長到 80 萬（`k=n/2`）時，`shift()` 版對 head 指標版的耗時倍率從 1.5x 惡化到 3.7x，不是單純線性關係；改用 `head` 指標後才是真正的攤銷 O(n)。另外釐清了 monotonic queue 與 monotonic stack 的定義差異（是否需要「前端因外部條件而過期」的獨立移除行為，而非變數命名或底層陣列操作方式），以及 queue（單端 FIFO）跟 deque（雙端皆可插入/移除）的差異——本題實際只用到 push back / pop back / pop front 三種操作，沒用到 push front，是 deque 能力的子集。Time: amortized O(n) / Space: O(n) |
 
 ## 下一題（待 /q 依本層出題）
 
-**層級：頻率表為核心的中階技巧、「at most K」、最小覆蓋子字串皆已滿足**（438、904、76、424 已完成；904 同時代表「恰好 K 個→at most K」這層的 Medium 版本，992 非必經）。
+**層級：頻率表為核心的中階技巧、「at most K」、最小覆蓋子字串、單調佇列維護視窗極值皆已滿足**（438、904、76、424、239 已完成；904 同時代表「恰好 K 個→at most K」這層的 Medium 版本，992 非必經）。
 
-- 239 Sliding Window Maximum（Hard 但公認必學模式，單調佇列維護視窗極值這層）
+- 1438 Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit（Medium，239 之後的延伸，同時維護 max/min 兩個單調佇列；全新題）
 
 ## 學習曲線進度
 
@@ -236,6 +237,6 @@ grid 上的最短路 BFS（1091 Shortest Path in Binary Matrix、909 Snakes and 
 頻率表為核心的中階技巧（438 ✅ 精確比對；904 ✅ 相異元素數量門檻；424 ✅ 容忍度公式）✅
 「恰好 K 個」→「at most K」相減技巧（904 已代表 Medium 版本；992 非必經）✅
 最小覆蓋子字串（76）✅
-← 目前在這裡：搭配單調佇列維護視窗極值（239，Hard 但公認必學模式）
-單調佇列 + 可變視窗（1438 Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit，Medium，239 之後的延伸，同時維護 max/min 兩個單調佇列；全新題）
+搭配單調佇列維護視窗極值（239）✅
+← 目前在這裡：單調佇列 + 可變視窗（1438 Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit，Medium，239 之後的延伸，同時維護 max/min 兩個單調佇列；全新題）
 ```

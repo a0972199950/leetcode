@@ -2,13 +2,14 @@
 
 > 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-13
 
-共 328 題，其中 237 題超過 8 個月未練習（可作為 /q 複習候選）。
+共 328 題，其中 236 題超過 8 個月未練習（可作為 /q 複習候選）。
 
 依「最後練習時間」新到舊排序，沒有紀錄的排在最後。
 
 | 題號 | 標題 | 難度 | 標籤 | 解題狀態 | 最後練習時間 | 連結 |
 | --- | --- | --- | --- | --- | --- | --- |
 | 76 | 76. Minimum Window Substring | Hard | Hash Table, String, Sliding Window | 已解出 | 2026-09-13 | https://leetcode.com/problems/minimum-window-substring/ |
+| 239 | 239. Sliding Window Maximum | Hard | Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue, Range Minimum/Maximum Query | 已解出 | 2026-09-13 | https://leetcode.com/problems/sliding-window-maximum/ |
 | 424 | 424. Longest Repeating Character Replacement | Medium | Hash Table, String, Sliding Window | 已解出 | 2026-09-13 | https://leetcode.com/problems/longest-repeating-character-replacement/ |
 | 904 | 904. Fruit Into Baskets | Medium | Array, Hash Table, Sliding Window | 已解出 | 2026-09-13 | https://leetcode.com/problems/fruit-into-baskets/ |
 | 3 | 3. Longest Substring Without Repeating Characters | Medium | Hash Table, String, Sliding Window | 已解出 | 2026-09-12 | https://leetcode.com/problems/longest-substring-without-repeating-characters/ |
@@ -99,7 +100,6 @@
 | 1365 | 1365. How Many Numbers Are Smaller Than the Current Number | Easy | Array, Hash Table, Sorting, Counting Sort | 已解出 | 2026-02-06 | https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/ |
 | 1441 | 1441. Build an Array With Stack Operations | Medium | Array, Stack, Simulation | 已解出 | 2026-02-06 | https://leetcode.com/problems/build-an-array-with-stack-operations/ |
 | 442 | 442. Find All Duplicates in an Array | Medium | Array, Hash Table, Sorting | 已解出 | 2026-02-05 | https://leetcode.com/problems/find-all-duplicates-in-an-array/ |
-| 239 | 239. Sliding Window Maximum | Hard | Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue, Range Minimum/Maximum Query | 已解出 | 2024-07-07 | https://leetcode.com/problems/sliding-window-maximum/ |
 | 309 | 309. Best Time to Buy and Sell Stock with Cooldown | Medium | Array, Dynamic Programming | 已解出 | 2024-07-07 | https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/ |
 | 433 | 433. Minimum Genetic Mutation | Medium | Hash Table, String, Breadth-First Search, Bidirectional Search | 已解出 | 2024-06-23 | https://leetcode.com/problems/minimum-genetic-mutation/ |
 | 909 | 909. Snakes and Ladders | Medium | Array, Breadth-First Search, Matrix | 已解出 | 2024-06-23 | https://leetcode.com/problems/snakes-and-ladders/ |

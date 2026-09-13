@@ -1,5 +1,5 @@
 // 239. Sliding Window Maximum
-// 最後練習時間：2024-07-07
+// 最後練習時間：2026-09-13
 // https://leetcode.com/problems/sliding-window-maximum/
 
 console.clear()
@@ -87,63 +87,6 @@ console.clear()
 //   return maxes
 // }
 
-class MaxHeap {
-  data: number[] = []
-
-  insert (val: number) {
-    this.data.push(val)
-
-    let current = this.data.length - 1
-    while (current > 0) {
-      const parent = Math.floor((current - 1) / 2)
-      if (this.data[parent] > this.data[current]) {
-        break
-      }
-
-      [this.data[parent], this.data[current]] = [this.data[current], this.data[parent]]
-      current = parent
-    }
-  }
-
-  extract () {
-    if (!this.data.length) {
-      return null
-    }
-
-    const val = this.data.shift()
-
-    if (!this.data.length) {
-      return val
-    }
-
-    this.data.unshift(this.data.pop())
-
-    let current = 0
-    while (current < this.data.length) {
-      const left = current * 2 + 1
-      const right = current * 2 + 2
-      let swap = current
-
-      if (this.data[left] !== undefined && this.data[left] > this.data[swap]) {
-        swap = left
-      }
-      
-      if (this.data[right] !== undefined && this.data[right] > this.data[swap]) {
-        swap = right
-      }
-
-      if (swap === current) {
-        break
-      }
-
-      [this.data[current], this.data[swap]] = [this.data[swap], this.data[current]]
-      current = swap
-    }
-    
-    return val
-  }
-}
-
 // for (const num of data) {
 //   heap.insert(num)
 // }
@@ -219,36 +162,78 @@ class MaxHeap {
 //   return result
 // }
 
+// function maxSlidingWindow(nums: number[], k: number): number[] {
+//   const queue = [] // store indexes
+//   const result = []
+
+//   for (let i = 0; i < k; i++) {
+//     const num = nums[i]
+
+//     while (nums[queue.at(-1)] <= num) {
+//       queue.pop()
+//     }
+
+//     queue.push(i)
+//   }
+
+//   result.push(nums[queue[0]])
+
+//   for (let i = k; i < nums.length; i++) {
+//     const newNum = nums[i]
+
+//     if (i - k + 1 > queue[0]) {
+//       queue.shift()
+//     }
+
+//     while (nums[queue.at(-1)] <= newNum) {
+//       queue.pop()
+//     }
+
+//     queue.push(i)
+
+//     result.push(nums[queue[0]])
+//   }
+
+//   return result
+// }
+
+// Time: amortized O(n)
+// Space: O(n)
 function maxSlidingWindow(nums: number[], k: number): number[] {
-  const queue = [] // store indexes
-  const result = []
+  const result: number[] = []
+  const stack: ({ val: number, index: number })[] = [] // mono desc stack
 
-  for (let i = 0; i < k; i++) {
-    const num = nums[i]
+  let head = 0
+  let left = -1
 
-    while (nums[queue.at(-1)] <= num) {
-      queue.pop()
+  for (let right = 0; right < nums.length; right++) {
+    while (stack.length && stack.at(-1).val < nums[right]) {
+      stack.pop()
     }
 
-    queue.push(i)
-  }
-
-  result.push(nums[queue[0]])
-
-  for (let i = k; i < nums.length; i++) {
-    const newNum = nums[i]
-
-    if (i - k + 1 > queue[0]) {
-      queue.shift()
+    if (stack.length < head) {
+      head = stack.length
     }
 
-    while (nums[queue.at(-1)] <= newNum) {
-      queue.pop()
+    stack.push({ val: nums[right], index: right })
+
+    if (right + 1 < k) {
+      continue
     }
 
-    queue.push(i)
+    // console.log('left 之前的 stack', stack, head)
 
-    result.push(nums[queue[0]])
+    if (left === stack[head].index) {
+      head++
+    }
+
+    left++
+
+    // console.log([left, right])
+
+    result.push(stack[head].val)
+
+    // console.log('結尾', stack, head, [left, right], result)
   }
 
   return result
@@ -259,5 +244,4 @@ console.log(maxSlidingWindow([1], 1)) // [ 1 ]
 console.log(maxSlidingWindow([1, -1], 1)) // [ 1, -1 ]
 console.log(maxSlidingWindow([1, 3, 1, 2, 0, 5], 3)) // [ 3, 3, 2, 5 ]
 console.log(maxSlidingWindow([5, 4, 3, 2, 1, 0, -1], 3)) // [ 5, 4, 3, 2, 1 ]
-console.log(maxSlidingWindow([-5769, -7887, -5709, 4600, -7919, 9807, 1303, -2644, 1144, -6410, -7159, -2041, 9059, -663, 4612, -257, 2870, -6646, 8161, 3380, 6823, 1871, -4030, -1758, 4834, -5317, 6218, -4105, 6869, 8595, 8718, -4141, -3893, -4259, -3440, -5426, 9766, -5396, -7824, -3941, 4600, -1485, -1486, -4530, -1636, -2088, -5295, -5383, 5786, -9489, 3180, -4575, -7043, -2153, 1123, 1750, -1347, -4299, -4401, -7772, 5872, 6144, -4953, -9934, 8507, 951, -8828, -5942, -3499, -174, 7629, 5877, 3338, 8899, 4223, -8068, 3775, 7954, 8740, 4567, 6280, -7687, -4811, -8094, 2209, -4476, -8328, 2385, -2156, 7028, -3864, 7272, -1199, -1397, 1581, -9635, 9087, -6262, -3061, -6083, -2825, -8574, 5534, 4006, -2691, 6699, 7558, -453, 3492, 3416, 2218, 7537, 8854, -3321, -5489, -945, 1302, -7176, -9201, -9588, -140, 1369, 3322, -7320, -8426, -8446, -2475, 8243, -3324, 8993, 8315, 2863, -7580, -7949, 4400], 6)) // [ 9807, 9807, 9807, 9807, 9807, 9807, 1303, 9059, 9059, 9059, 9059, 9059, 9059, 8161, 8161, 8161, 8161, 8161, 8161, 6823, 6823, 6218, 6218, 6869, 8595, 8718, 8718, 8718, 8718, 8718, 8718, 9766, 9766, 9766, 9766, 9766, 9766, 4600, 4600, 4600, 4600, -1485, -1486, 5786, 5786, 5786, 5786, 5786, 5786, 3180, 3180, 1750, 1750, 1750, 1750, 5872, 6144, 6144, 6144, 8507, 8507, 8507, 8507, 8507, 8507, 7629, 7629, 7629, 8899, 8899, 8899, 8899, 8899, 8899, 8740, 8740, 8740, 8740, 8740, 6280, 6280, 2209, 2385, 2385, 7028, 7028, 7272, 7272, 7272, 7272, 7272, 9087, 9087, 9087, 9087, 9087, 9087, 5534, 5534, 5534, 6699, 7558, 7558, 7558, 7558, 7558, 7558, 8854, 8854, 8854, 8854, 8854, 8854, 1302, 1302, 1302, 1369, 3322, 3322, 3322, 3322, 3322, 8243, 8243, 8993, 8993, 8993, 8993, 8993, 8993 ]
 
