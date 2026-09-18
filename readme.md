@@ -7,12 +7,11 @@
 ```
 leetcode/
 ├── data-structure/        # 資料結構實作
-│   ├── LinkedList.ts     # 鏈結串列
-│   ├── BinaryTree.ts     # 二元樹
-│   ├── AVL.ts           # AVL 平衡樹
-│   ├── Heap.ts          # 堆積
-│   ├── MaxBinaryHeap.ts # 最大二元堆積
-│   └── AgencyList.ts    # 代理列表
+│   ├── linked-list.ts    # 鏈結串列
+│   ├── binary-tree.ts    # 二元樹
+│   ├── avl.ts            # AVL 平衡樹
+│   ├── heap.ts           # 堆積（compare 決定 min/max）
+│   └── agency-list.ts    # 代理列表
 ├── interviews/           # 面試題目實作
 │   ├── asus/            # 華碩面試題
 │   ├── binance/         # 幣安面試題

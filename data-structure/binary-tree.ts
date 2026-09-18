@@ -75,6 +75,10 @@ function printTree (root: TreeNode | null): void {
     }
 
     // 左右子樹都有：兩塊並排，父節點置中，用對角線接上兩邊
+    if (!node.left || !node.right) {
+      return { lines: [label], width: L, center: L >> 1 }
+    }
+
     const left = render(node.left)
     const right = render(node.right)
     const gap = 1
@@ -124,13 +128,13 @@ function printTree (root: TreeNode | null): void {
 }
 
 class BinaryTree {
-  root: TreeNode = null
+  root: TreeNode | null = null
 
   constructor (nums: number[]) {
     if (!nums.length) {
       return
     }
-    
+
     const head = new TreeNode(nums[0])
 
     const queue: TreeNode[] = [head]
@@ -138,6 +142,10 @@ class BinaryTree {
 
     while (queue.length) {
       const node = queue.shift()
+      if (!node) {
+        break
+      }
+
       const leftChild = Number.isInteger(nums[index]) ? new TreeNode(nums[index]) : null
       index++
       const rightChild = Number.isInteger(nums[index]) ? new TreeNode(nums[index]) : null
@@ -154,7 +162,7 @@ class BinaryTree {
   }
 
   printInOrder () {
-    const result = []
+    const result: number[] = []
 
     const treverse = (node: TreeNode | null) => {
       if (!node) {
@@ -189,13 +197,13 @@ class Node {
 }
 
 class NodeTree {
-  root: Node = null
+  root: Node | null = null
 
   constructor (nums: number[]) {
     if (!nums.length) {
       return
     }
-    
+
     const head = new Node(nums[0])
 
     const queue: Node[] = [head]
@@ -203,6 +211,10 @@ class NodeTree {
 
     while (queue.length) {
       const node = queue.shift()
+      if (!node) {
+        break
+      }
+
       const leftChild = Number.isInteger(nums[index]) ? new Node(nums[index]) : null
       index++
       const rightChild = Number.isInteger(nums[index]) ? new Node(nums[index]) : null
@@ -219,7 +231,7 @@ class NodeTree {
   }
 
   printInOrder () {
-    const result = []
+    const result: number[] = []
 
     const treverse = (node: Node | null) => {
       if (!node) {

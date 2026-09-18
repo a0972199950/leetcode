@@ -2,7 +2,7 @@
 // 最後練習時間：2026-08-23
 // https://leetcode.com/problems/kth-smallest-element-in-a-bst/
 
-import { BinaryTree, TreeNode } from '~/data-structure/BinaryTree'
+import { BinaryTree, TreeNode } from '~/data-structure/binary-tree'
 
 console.clear()
 

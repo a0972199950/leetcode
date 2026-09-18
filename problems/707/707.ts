@@ -1,7 +1,7 @@
 // 707. Design Linked List
 // 最後練習時間：2022-10-30
 // https://leetcode.com/problems/design-linked-list/
-import { ListNode } from '~/data-structure/LinkedList'
+import { ListNode } from '~/data-structure/linked-list'
 
 console.clear()
 

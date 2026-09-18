@@ -1,7 +1,7 @@
 // 450. Delete Node in a BST
 // 最後練習時間：2026-08-27
 // https://leetcode.com/problems/delete-node-in-a-bst/
-import { TreeNode, BinaryTree } from '~/data-structure/BinaryTree'
+import { TreeNode, BinaryTree } from '~/data-structure/binary-tree'
 
 console.clear()
 

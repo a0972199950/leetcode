@@ -32,7 +32,7 @@
 // - Part 1 的解法能不能直接把「2」換成「k」就泛化？
 // - 是否有辦法不用遍歷整棵樹、找到第 k 大就提前結束？（提示：反向中序遍歷 right -> node -> left）
 
-import { BinaryTree, TreeNode } from '~/data-structure/BinaryTree'
+import { BinaryTree, TreeNode } from '~/data-structure/binary-tree'
 
 console.clear()
 

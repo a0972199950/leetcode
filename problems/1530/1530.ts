@@ -1,7 +1,7 @@
 // 1530. Number of Good Leaf Nodes Pairs
 // 最後練習時間：2024-03-29
 // https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/
-import { TreeNode, BinaryTree } from '~/data-structure/BinaryTree'
+import { TreeNode, BinaryTree } from '~/data-structure/binary-tree'
 
 console.clear()
 

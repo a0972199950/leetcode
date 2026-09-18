@@ -50,12 +50,11 @@ console.log(solutionName(testInput))
 
 | 檔案 | 內容 |
 |------|------|
-| `LinkedList.ts` | `ListNode` 類別與 `LinkedList` 建構函式 |
-| `BinaryTree.ts` | 二元樹實作 |
-| `Heap.ts` | `MinHeap`（enqueue / dequeue / bubbleUp / bubbleDown） |
-| `MaxBinaryHeap.ts` | 最大二元堆積 |
-| `AVL.ts` | AVL 平衡樹 |
-| `AgencyList.ts` | 鄰接表（圖） |
+| `linked-list.ts` | `ListNode` 類別與 `LinkedList` 建構函式 |
+| `binary-tree.ts` | 二元樹實作 |
+| `heap.ts` | `Heap`（泛型，傳入 compare 決定 min/max，push / shift / isValid） |
+| `avl.ts` | AVL 平衡樹 |
+| `agency-list.ts` | 鄰接表（圖） |
 
 ## 常見解題模式
 

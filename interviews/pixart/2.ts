@@ -1,6 +1,6 @@
 console.clear()
 
-import { TreeNode } from '../../data-structure/BinaryTree'
+import { TreeNode } from '../../data-structure/binary-tree'
 
 function solution(root: TreeNode | null) {
   const isLeaf = (node) => {

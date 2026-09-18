@@ -2,7 +2,7 @@
 // 最後練習時間：2026-09-11
 // https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
 
-import { BinaryTree, TreeNode } from '~/data-structure/BinaryTree'
+import { BinaryTree, TreeNode } from '~/data-structure/binary-tree'
 
 console.clear()
 

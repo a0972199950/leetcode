@@ -1,7 +1,7 @@
 // 652. Find Duplicate Subtrees
 // 最後練習時間：2024-04-14
 // https://leetcode.com/problems/find-duplicate-subtrees/
-import { TreeNode, BinaryTree } from '~/data-structure/BinaryTree'
+import { TreeNode, BinaryTree } from '~/data-structure/binary-tree'
 
 console.clear()
 

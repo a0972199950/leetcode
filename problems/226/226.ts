@@ -1,7 +1,7 @@
 // 226. Invert Binary Tree
 // 最後練習時間：2023-07-12
 // https://leetcode.com/problems/invert-binary-tree/
-import { TreeNode, BinaryTree } from '~/data-structure/BinaryTree'
+import { TreeNode, BinaryTree } from '~/data-structure/binary-tree'
 
 console.clear()
 

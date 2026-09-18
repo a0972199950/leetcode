@@ -1,7 +1,7 @@
 // 129. Sum Root to Leaf Numbers
 // 最後練習時間：2023-05-23
 // https://leetcode.com/problems/sum-root-to-leaf-numbers/
-import { TreeNode, BinaryTree } from '~/data-structure/BinaryTree'
+import { TreeNode, BinaryTree } from '~/data-structure/binary-tree'
 
 console.clear()
 

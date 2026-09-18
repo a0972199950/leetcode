@@ -2,7 +2,7 @@
 // 最後練習時間：2022-10-21
 // https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 
-import { LinkedList } from '~/data-structure/LinkedList'
+import { LinkedList } from '~/data-structure/linked-list'
 
 console.clear()
 

@@ -1,7 +1,7 @@
 // 61. Rotate List
 // 最後練習時間：2024-06-15
 // https://leetcode.com/problems/rotate-list/
-import { ListNode, LinkedList } from '~/data-structure/LinkedList'
+import { ListNode, LinkedList } from '~/data-structure/linked-list'
 
 console.clear()
 

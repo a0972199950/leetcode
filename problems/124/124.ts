@@ -1,7 +1,7 @@
 // 124. Binary Tree Maximum Path Sum
 // 最後練習時間：2026-09-11
 // https://leetcode.com/problems/binary-tree-maximum-path-sum/
-import { TreeNode, BinaryTree } from '~/data-structure/BinaryTree'
+import { TreeNode, BinaryTree } from '~/data-structure/binary-tree'
 
 console.clear()
 

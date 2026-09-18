@@ -8,6 +8,7 @@
     "sync-progress": "tsx ./scripts/sync-progress.ts",
     "dev": "tsx watch ./scripts/start.ts",
     "start": "tsx ./scripts/start.ts",
+    "test": "tsx ./scripts/test.ts",
     "lint": "eslint **/*.ts",
     "lint:fix": "eslint **/*.ts --fix"
   },

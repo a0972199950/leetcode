@@ -1,7 +1,7 @@
 // 993. Cousins in Binary Tree
 // 最後練習時間：2024-04-03
 // https://leetcode.com/problems/cousins-in-binary-tree/
-import { TreeNode, BinaryTree } from '~/data-structure/BinaryTree'
+import { TreeNode, BinaryTree } from '~/data-structure/binary-tree'
 
 console.clear()
 

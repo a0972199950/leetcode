@@ -2,7 +2,7 @@
 // 最後練習時間：2022-10-22
 // https://leetcode.com/problems/sort-list/
 
-import { LinkedList, ListNode } from '~/data-structure/LinkedList'
+import { LinkedList, ListNode } from '~/data-structure/linked-list'
 
 console.clear()
 

@@ -1,7 +1,7 @@
 // 449. Serialize and Deserialize BST
 // 最後練習時間：2026-08-27
 // https://leetcode.com/problems/serialize-and-deserialize-bst/
-import { TreeNode, BinaryTree } from '~/data-structure/BinaryTree'
+import { TreeNode, BinaryTree } from '~/data-structure/binary-tree'
 
 console.clear()
 

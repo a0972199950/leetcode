@@ -1,6 +1,3 @@
-
-console.clear()
-
 class TreeNode {
   val: number
   left: TreeNode | null = null
@@ -23,31 +20,21 @@ enum NodeDirection {
   RIGHT = 'RIGHT'
 }
 
-class AVL {
-  root: TreeNode | null
+export class AVL {
+  root: TreeNode | null = null
 
-  constructor (val: number) {
+  constructor (val?: number) {
     if (val !== undefined) {
       this.root = new TreeNode(val)
     }
   }
 
-  _calculateBalance () {
-    const calculate = (node: TreeNode | null): number => {
-      if (!node) {
-        return 0
-      }
+  _updateHeight (node: TreeNode) {
+    const leftHeight = node.left?.height ?? 0
+    const rightHeight = node.right?.height ?? 0
 
-      const leftNodeHeight = calculate(node.left)
-      const rightNodeHeight = calculate(node.right)
-
-      node.height = Math.max(leftNodeHeight, rightNodeHeight) + 1
-      node.balance = Math.abs(leftNodeHeight - rightNodeHeight)
-
-      return node.height
-    }
-
-    calculate(this.root)
+    node.height = Math.max(leftHeight, rightHeight) + 1
+    node.balance = Math.abs(leftHeight - rightHeight)
   }
 
   _rotate (child: TreeNode, parent: TreeNode, grandParent?: TreeNode) {
@@ -129,11 +116,10 @@ class AVL {
         }
       }
       else {
-        throw '值不可重複'
+        throw new Error('值不可重複')
       }
 
-      node.height = Math.max(node.left?.height ?? 0, node.right?.height ?? 0) + 1
-      node.balance = Math.abs((node.left?.height ?? 0) - (node.right?.height ?? 0))
+      this._updateHeight(node)
     }
 
     recrusive(this.root, null)
@@ -154,22 +140,33 @@ class AVL {
 
       if (child.isDirectionOfParent === grandChild.isDirectionOfParent) {
         this._rotate(child.node, parent.node, grandParent?.node)
+        this._updateHeight(parent.node)
+        this._updateHeight(child.node)
       }
       else {
         this._rotate(grandChild.node, child.node, parent.node)
         this._rotate(grandChild.node, parent.node, grandParent?.node)
+        this._updateHeight(child.node)
+        this._updateHeight(parent.node)
+        this._updateHeight(grandChild.node)
       }
 
-      this._calculateBalance()
+      for (let i = lastUnBalancedNodeIndex - 1; i >= 0; i--) {
+        this._updateHeight(treverseHistory[i].node)
+      }
     }
 
     return this.root
   }
 
   printInOrder () {
-    const result = []
+    const result: number[] = []
 
-    const inOrderTreverse = (node: TreeNode) => {
+    const inOrderTreverse = (node: TreeNode | null) => {
+      if (!node) {
+        return
+      }
+
       if (node.left) {
         inOrderTreverse(node.left)
       }
@@ -186,10 +183,4 @@ class AVL {
     console.log(result)
   }
 }
-
-const avl = new AVL(0)
-Array.from(Array(100)).forEach((_item, index) => avl.insert(index + 1))
-
-console.log(avl.root)
-avl.printInOrder()
 

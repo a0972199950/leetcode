@@ -1,7 +1,7 @@
 // 767. Reorganize String
 // 最後練習時間：2024-03-31
 // https://leetcode.com/problems/reorganize-string/
-import MinHeap from '~/data-structure/Heap'
+import { Heap } from '~/data-structure/heap'
 
 console.clear()
 
@@ -13,22 +13,22 @@ function reorganizeString(s: string): string {
   }
 
   const ans: string[] = []
-  const heap = new MinHeap<{ key: string, value: number }>(node => node.value)
+  const heap = new Heap<{ key: string, value: number }>((a, b) => a.value - b.value)
 
   Object
     .entries(map)
     .forEach(([key, value]) => {
-      heap.insert({ key, value: -value })
+      heap.push({ key, value: -value })
     })
 
   const findNext = () => {
-    const nexts = [heap.extract(), heap.extract()]
+    const nexts = [heap.shift(), heap.shift()]
 
     if (nexts[0].key === ans[ans.length - 1]) {
-      heap.insert(nexts[0])
+      heap.push(nexts[0])
       return nexts[1]
     } else {
-      heap.insert(nexts[1])
+      heap.push(nexts[1])
       return nexts[0]
     }
   }
@@ -44,7 +44,7 @@ function reorganizeString(s: string): string {
     next.value++
 
     if (next.value) {
-      heap.insert(next)
+      heap.push(next)
     }
   }
 

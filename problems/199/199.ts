@@ -1,7 +1,7 @@
 // 199. Binary Tree Right Side View
 // 最後練習時間：2026-09-11
 // https://leetcode.com/problems/binary-tree-right-side-view/
-import { TreeNode, BinaryTree } from '~/data-structure/BinaryTree'
+import { TreeNode, BinaryTree } from '~/data-structure/binary-tree'
 
 console.clear()
 

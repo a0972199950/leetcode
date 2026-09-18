@@ -1,7 +1,7 @@
 // 101. Symmetric Tree
 // 最後練習時間：2022-11-07
 // https://leetcode.com/problems/symmetric-tree/
-import { TreeNode, BinaryTree } from '~/data-structure/BinaryTree'
+import { TreeNode, BinaryTree } from '~/data-structure/binary-tree'
 
 console.clear()
 
