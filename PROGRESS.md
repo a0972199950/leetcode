@@ -1,6 +1,6 @@
 # 題目練習總覽
 
-> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-17
+> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-18
 
 共 330 題，其中 236 題超過 8 個月未練習（可作為 /q 複習候選）。
 
@@ -8,7 +8,7 @@
 
 | 題號 | 標題 | 難度 | 標籤 | 解題狀態 | 最後練習時間 | 連結 |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1898 | 1898. Maximum Number of Removable Characters | Medium | Array, Two Pointers, String, Binary Search | 已解出 | 2026-09-17 | https://leetcode.com/problems/maximum-number-of-removable-characters/ |
+| 1898 | 1898. Maximum Number of Removable Characters | Medium | Array, Two Pointers, String, Binary Search | 已解出 | 2026-09-18 | https://leetcode.com/problems/maximum-number-of-removable-characters/ |
 | 76 | 76. Minimum Window Substring | Hard | Hash Table, String, Sliding Window | 已解出 | 2026-09-13 | https://leetcode.com/problems/minimum-window-substring/ |
 | 239 | 239. Sliding Window Maximum | Hard | Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue, Range Minimum/Maximum Query | 已解出 | 2026-09-13 | https://leetcode.com/problems/sliding-window-maximum/ |
 | 424 | 424. Longest Repeating Character Replacement | Medium | Hash Table, String, Sliding Window | 已解出 | 2026-09-13 | https://leetcode.com/problems/longest-repeating-character-replacement/ |

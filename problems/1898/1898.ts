@@ -1,5 +1,5 @@
 // 1898. Maximum Number of Removable Characters
-// 最後練習時間：2026-09-17
+// 最後練習時間：2026-09-18
 // https://leetcode.com/problems/maximum-number-of-removable-characters/
 
 console.clear()
@@ -74,16 +74,66 @@ console.clear()
 //   return 0
 // }
 
-// Time: O(n^2)
+// Time: O((s+r) * log r)
 // Space: O(n)
-function maximumRemovals(s: string, p: string, removable: number[]): number {
-  const history = new Set()
+// function maximumRemovals(s: string, p: string, removable: number[]): number {
 
-  const isSubsequence = () => {
+//   const isSubsequence = (index: number) => {
+//     const history = new Set(removable.slice(0, index + 1))
+//     let pIndex = 0
+
+//     for (let sIndex = 0; sIndex < s.length; sIndex++) {
+//       if (history.has(sIndex)) {
+//         continue
+//       }
+
+//       if (s[sIndex] === p[pIndex]) {
+//         if (pIndex === p.length - 1) {
+//           // 構成子字串
+//           return true
+//         } else {
+//           pIndex++
+//         }
+//       }
+//     }
+
+//     return false
+//   }
+
+//   let left = 0
+//   let right = removable.length - 1
+//   let count = 0
+
+//   while (right >= left) {
+//     const middle = Math.floor(left + (right - left) / 2)
+
+//     if (isSubsequence(middle)) {
+//       count = Math.max(count, middle + 1)
+//       left = middle + 1
+//     } else {
+//       right = middle - 1
+//     }
+//   }
+
+//   return count
+// }
+
+// Time: O(n log m)
+// Space: O(s)
+function maximumRemovals(s: string, p: string, removable: number[]): number {
+  const beingRemovedAt = Array(s.length).fill(Infinity)
+
+  for (let i = 0; i < removable.length; i++) {
+    beingRemovedAt[removable[i]] = i
+  }
+
+  // console.log(beingRemovedAt)
+
+  const isSubsequence = (index: number) => {
     let pIndex = 0
 
     for (let sIndex = 0; sIndex < s.length; sIndex++) {
-      if (history.has(sIndex)) {
+      if (beingRemovedAt[sIndex] <= index) {
         continue
       }
 
@@ -100,22 +150,26 @@ function maximumRemovals(s: string, p: string, removable: number[]): number {
     return false
   }
 
-  let index = 0
+  let left = 0
+  let right = removable.length - 1
+  let count = 0
 
-  for (index = 0; index < removable.length; index++) {
-    history.add(removable[index])
+  while (right >= left) {
+    const middle = Math.floor(left + (right - left) / 2)
 
-    if (isSubsequence()) {
-      continue
+    if (isSubsequence(middle)) {
+      count = Math.max(count, middle + 1)
+      left = middle + 1
     } else {
-      break
+      right = middle - 1
     }
   }
 
-  return index
+  return count
 }
 
 console.log(maximumRemovals('abcacb', 'ab', [3, 1, 0])) // 2
 console.log(maximumRemovals('abcbddddd', 'abcd', [3, 2, 1, 4, 5, 6])) // 1
 console.log(maximumRemovals('abcab', 'abc', [0, 1, 2, 3, 4])) // 0
-// console.log(maximumRemovals('iiaiibiiciizzzzzzzzabczz', 'abc', [])) // 0
+console.log(maximumRemovals('iiaiibiiciizzzzzzzzabczz', 'abc', [])) // 0
+console.log(maximumRemovals('qobftgcueho', 'obue', [5, 3, 0, 6, 4, 9, 10, 7, 2, 8])) // 7
