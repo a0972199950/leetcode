@@ -2,14 +2,14 @@
 // [Coding] Calculate the CSS selector’s weight
 
 // 题目描述
-// When the browser renders the html page with css, it will calculate the weight of different css selectors to decide the rendering priority of each css rule.​
+// When the browser renders the html page with css, it will calculate the weight of different css selectors to decide the rendering priority of each css rule.
 
-// To simplify the question, assuming that the weight of selector is decided by the sum of the atom selector’s weight, the weight of each atom selector are list as below:​
-// ID selector, weight is 1000, e.g. “#container”, “#sidebar”​
-// class, attribute, and pseudo-class selectors, weight is 100, e.g. “.element”, “[type=text]”, “:hover”​
-// type and pseudo element selectors, weight is 10, e.g. “body”, “input”, “::before”​
+// To simplify the question, assuming that the weight of selector is decided by the sum of the atom selector’s weight, the weight of each atom selector are list as below:
+// ID selector, weight is 1000, e.g. “#container”, “#sidebar”
+// class, attribute, and pseudo-class selectors, weight is 100, e.g. “.element”, “[type=text]”, “:hover”
+// type and pseudo element selectors, weight is 10, e.g. “body”, “input”, “::before”
 
-// According to the algorithm above, the weight of “#container .section > .header::before” is the sum of “#container”, “.section”, “.header”, "::before", which is 1210. Please write a function to implement the algorithm.​
+// According to the algorithm above, the weight of “#container .section > .header::before” is the sum of “#container”, “.section”, “.header”, "::before", which is 1210. Please write a function to implement the algorithm.
 
 const BYBASS_CHAR = new Map();
 [
@@ -80,10 +80,10 @@ function calculateWeight(selector: string) {
   return weight
 }
 
-console.log(calculateWeight('#container')) //1000​
-console.log(calculateWeight('body .element')) // 110​
-console.log(calculateWeight('body.element')) // 110​
-console.log(calculateWeight('input[type=button]:hover')) // 210​
+console.log(calculateWeight('#container')) //1000
+console.log(calculateWeight('body .element')) // 110
+console.log(calculateWeight('body.element')) // 110
+console.log(calculateWeight('input[type=button]:hover')) // 210
 console.log(calculateWeight('#container .section > .header::before')) // 1210
 console.log(calculateWeight('#container.section>.header::before')) // 1210
 console.log(calculateWeight('::before')) // 10
