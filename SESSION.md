@@ -38,24 +38,12 @@ stack 序列驗證（946）✅
 bracket matching（921）✅
 expression eval / 複雜 stack 狀態（856 ✅ / 227 ✅ / 735 ✅）
 monotonic stack ← 目前在這裡（503 ✅；962 進行中，需補 stack push/pop 版；456 待做；84、901 已提前做過）
-（這層走完後 stack 題型複習告一段落，不再另立 「Next Greater Element 類」關卡——
- 739/496 純 NGE、503 循環變形都已練過，NGE 本身是 monotonic stack 最基礎的應用，
- 不是比 84/962/456 更進階的下一站，原本的分層順序反了）
+（這層走完後 stack 題型複習告一段落；739/496 純 NGE、503 循環變形都已練過，NGE 是 monotonic stack 最基礎的應用，不另立關卡）
 ```
-
-## 備註
-
-- 901 Online Stock Span（monotonic stack 層）在 2026-09-04 因 /q 誤判進度被提早出題並完成。
-  這**不代表**複習進度推進到 monotonic stack 層——照上面的曲線，該層還在後面。
-  等複習走到 monotonic stack 層時，901 已寫過可略過。
-- 84 Largest Rectangle in Histogram（monotonic stack 層）是 2026-09-03 卡住、2026-09-05 補完的題目，不是照曲線出的。
-  跟 901 一樣**不推進**曲線位置；走到 monotonic stack 層時 84、901 都可略過，直接出該層其他題。
 
 ---
 
 # BST 複習進度
-
-> 完成狀態依 PROGRESS.md 裡最後練習時間落在**近兩個月內**（2026-07-05 之後）的紀錄認定，由淺入深排列。
 
 ## 已完成
 
@@ -98,8 +86,6 @@ BST 性質被破壞後的修復（99）✅
 
 # Binary Tree BFS / DFS 複習進度
 
-> 完成狀態依 PROGRESS.md 裡最後練習時間落在**近兩個月內**（2026-07-05 之後）的紀錄認定，由淺入深排列。
-
 ## 已完成
 
 | 題號 | 題目 | 難度 | 重點 |
@@ -122,7 +108,7 @@ BST 性質被破壞後的修復（99）✅
 ## 學習曲線進度
 
 ```
-基本 DFS 遞迴（問性質：最大深度、直徑、路徑和）✅（104 純回傳、543 回傳+節點更新累計；112 選做未做）
+基本 DFS 遞迴（問性質：最大深度、直徑、路徑和）✅（104 純回傳、543 回傳+節點更新累計）
 BFS 層序遍歷（queue，逐層處理，102 Level Order）✅（102：shift() O(n²) 陷阱 → index 指標 / 整包換；levelSize = queue.length - index 定案，面試現場不直覺時可退回 queue = nextQueue 整包置換）
 DFS 路徑記錄（根到葉累積路徑，113 Path Sum II、257 Binary Tree Paths）✅（112 暖身：存在性用 `||` 合成免 flag；113：共用陣列 + push/pop 回溯，命中後不 return、快照要 [...copy]；257：同模板換成 join('->') 輸出字串，順便釐清 join 總成本是 O(n·h) 不是 O(n)）
 BFS 層序變形（199 Right Side View、103 Zigzag）✅（199：BFS index 版 + DFS depth 版都寫對；103：雙指標鏡像 index 單次掃描完成蒐集+反向讀值，避開額外 reverse()/unshift() pass，確認複雜度同量級後仍選擇保留）
@@ -136,7 +122,6 @@ BFS 層序變形（199 Right Side View、103 Zigzag）✅（199：BFS index 版 
 # Grid / Matrix BFS / DFS 複習進度
 
 > 跟上面「Binary Tree BFS / DFS」是不同題型：這裡是把 grid 當隱式圖做連通塊遍歷（需要 visited、處理四方向與邊界）。
-> 完成狀態依 PROGRESS.md 裡最後練習時間落在**近兩個月內**（2026-07-05 之後）的紀錄認定，由淺入深排列。
 
 ## 已完成
 
@@ -174,8 +159,6 @@ grid 上的最短路 BFS（1091 Shortest Path in Binary Matrix、909 Snakes and 
 
 # Binary Search 複習進度
 
-> 完成狀態依 PROGRESS.md 裡最後練習時間落在**近兩個月內**（2026-07-05 之後）的紀錄認定，由淺入深排列。
-
 ## 已完成
 
 | 題號 | 題目 | 難度 | 重點 |
@@ -192,10 +175,6 @@ grid 上的最短路 BFS（1091 Shortest Path in Binary Matrix、909 Snakes and 
 
 **本題型複習到此結束**（2026-09-19）
 
-`410`、`1011`、`875`、`1283` 這類典型「二分答案」題在 2026-05 做過，距今超過兩個月，不算本次複習已完成，但都在 8 個月內、不會被 `/q` 當新題選中。
-
-- **2026-09-19 修正曲線框架**：原本把「二分結合其他結構」（DFS/Union-Find/Heap 等完整另一套演算法）當成二分本身的下一層，使用者提出質疑後確認是誤判——疊加另一個完整演算法網域是 Hard 題解題廣度的組合，不是二分搜尋本身的深度。
-- **2026-09-19 再修正，直接結束本題型**：接著提出的「二分邊界／check function 本身變複雜」這個替代曲線終點也站不住腳——為了驗證它挑的 4 Median of Two Sorted Arrays 是公認數一數二難的 Hard 題（不是「公認簡單的 Hard」），已經超出 `/q` 規則第 1 條的難度上限（Easy／Medium 為主，Hard 僅限公認簡單）。在這條上限內，33/153/34/162/1901/287/1552 已經涵蓋 Medium 範圍常見的二分變化，沒有更多能合理推進的下一層——追求更難的邊界技巧本身就是違反難度上限，不是合理的下一步。
 - 1898 Maximum Number of Removable Characters：二分邊界 off-by-one 是 `/judge` 引導下才想到，使用者表示自己沒想到，技巧上沒有透過自主推導站穩。依使用者決定不再另外找題驗證，這個缺口保留紀錄、不繼續追。
 - 1631 Path With Minimum Effort、4 Median of Two Sorted Arrays 都練過，但難度或卡點不屬於本題型範圍（1631 卡在 DFS；4 超出難度上限，且兩個關鍵 bug 都是引導修的），皆不計入本題型進度。
 
@@ -210,15 +189,11 @@ grid 上的最短路 BFS（1091 Shortest Path in Binary Matrix、909 Snakes and 
 對值域二分（不是對 index），二分答案入門（287）✅
 二分答案完整應用：對答案二分 + 貪心 check（1552）✅
 ← 本題型複習到此結束（2026-09-19：在 Easy/Medium 為主、Hard 僅限公認簡單的難度上限內，已經沒有更多題型可以推進；1898 的邊界 off-by-one 仍是未透過自主推導解決的缺口，但依使用者決定不再繼續追）
-
-（備註 2026-09-19：原本這層寫成「二分結合其他結構」，經使用者質疑後移除——那其實是 Hard 題疊加另一個完整演算法網域的廣度問題，不是二分本身的深度軸。1631 練過，但卡點在 DFS 不在二分，不算走過這層，也不推進曲線位置）
 ```
 
 ---
 
 # Sliding Window 複習進度（從頭開始）
-
-> PROGRESS.md 裡 `Sliding Window` 標籤的紀錄最近一筆是 658（2026-05-17），已經超過兩個月，不算「近期進度」——照 SESSION.md 的慣例（比照 Stack 那段），這個題型視為從頭重新複習，不拿舊手感回填進度。
 
 ## 已完成
 
