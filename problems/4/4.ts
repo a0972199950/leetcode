@@ -1,5 +1,5 @@
 // 4. Median of Two Sorted Arrays
-// 最後練習時間：2024-04-02
+// 最後練習時間：2026-09-19
 // https://leetcode.com/problems/median-of-two-sorted-arrays/
 
 console.clear()
@@ -38,39 +38,80 @@ console.clear()
 //   }
 // }
 
+// function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
+//   const half = Math.floor((nums1.length + nums2.length) / 2)
+//   let min = 0
+//   let max = nums2.length - 1
+//   let middle = Math.floor(min + (max - min) / 2)
+
+//   while (max > min) {
+//     middle = Math.floor(min + (max - min) / 2)
+//     console.log('min: ', min, 'max: ', max, 'middle: ', middle)
+//     const diff = half - (middle + 1)
+
+//     if (nums2[middle + 1] <= nums1[diff + 2] && nums1[diff + 1] <= nums2[middle + 2]) {
+//       break
+//     }
+//     else if (nums2[middle + 1] > nums1[diff + 2]) {
+//       max = middle
+//     }
+//     else {
+//       min = middle + 1
+//     }
+//   }
+
+//   if ((nums1.length + nums2.length) % 2 === 1) {
+//     return Math.min(nums2[middle + 1], nums1[half - middle + 1])
+//   } else {
+//     return (Math.min(nums2[middle + 1], nums1[half - middle + 1]) + Math.max(nums2[middle], nums1[half - middle])) / 2
+
+//   }
+// }
+
+// Time: O((m+n) / 2)
+// Space: O(1)
 function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
-  const half = Math.floor((nums1.length + nums2.length) / 2)
-  let min = 0
-  let max = nums2.length - 1
-  let middle = Math.floor(min + (max - min) / 2)
+  let i = 0
+  let j = 0
+  
+  let prev = 0
+  let curr = null
 
-  while (max > min) {
-    middle = Math.floor(min + (max - min) / 2)
-    console.log('min: ', min, 'max: ', max, 'middle: ', middle)
-    const diff = half - (middle + 1)
+  let count = 0
+  const max = Math.floor((nums1.length + nums2.length) / 2) + 1
 
-    if (nums2[middle + 1] <= nums1[diff + 2] && nums1[diff + 1] <= nums2[middle + 2]) {
-      break
+  while (count < max) {
+    const num1 = nums1[i] ?? Infinity
+    const num2 = nums2[j] ?? Infinity
+
+    if (num1 <= num2) {
+      prev = curr
+      curr = num1
+      i++
+    } else {
+      prev = curr
+      curr = num2
+      j++
     }
-    else if (nums2[middle + 1] > nums1[diff + 2]) {
-      max = middle
-    }
-    else {
-      min = middle + 1
-    }
+
+    count++
   }
 
-  if ((nums1.length + nums2.length) % 2 === 1) {
-    return Math.min(nums2[middle + 1], nums1[half - middle + 1])
-  } else {
-    return (Math.min(nums2[middle + 1], nums1[half - middle + 1]) + Math.max(nums2[middle], nums1[half - middle])) / 2
+  const length = nums1.length + nums2.length
 
+  if (length % 2 !== 0) {
+    return curr
+  } else {
+    return (prev + curr) / 2
   }
 }
 
-// console.log(findMedianSortedArrays([1, 3], [2]))
-// console.log(findMedianSortedArrays([1, 2, 3, 4, 5, 6, 7, 8], [1, 2, 3, 4]))
+console.log(findMedianSortedArrays([1, 3], [2])) // 2
+console.log(findMedianSortedArrays([1, 2, 3, 4, 5, 6, 7, 8], [1, 2, 3, 4])) // 3.5
+console.log(findMedianSortedArrays([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], [1, 2, 3, 4])) // 4.5
 console.log(findMedianSortedArrays([1, 2], [3, 4])) // 2.5
-// console.log(findMedianSortedArrays([2], []))
-// console.log(findMedianSortedArrays([], []))
+console.log(findMedianSortedArrays([2], [])) // 2
+console.log(findMedianSortedArrays([3, 4], [1, 2])) // 2.5
+console.log(findMedianSortedArrays([2, 2, 4, 4], [2, 2, 2, 4, 4])) // 2
+console.log(findMedianSortedArrays([-10, -9, -8], [1, 2])) // -8
 

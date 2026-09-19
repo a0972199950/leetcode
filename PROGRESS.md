@@ -1,13 +1,15 @@
 # 題目練習總覽
 
-> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-18
+> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-19
 
-共 330 題，其中 236 題超過 8 個月未練習（可作為 /q 複習候選）。
+共 332 題，其中 236 題超過 8 個月未練習（可作為 /q 複習候選）。
 
 依「最後練習時間」新到舊排序，沒有紀錄的排在最後。
 
 | 題號 | 標題 | 難度 | 標籤 | 解題狀態 | 最後練習時間 | 連結 |
 | --- | --- | --- | --- | --- | --- | --- |
+| 4 | 4. Median of Two Sorted Arrays | Hard | Array, Binary Search, Divide and Conquer | 已解出 | 2026-09-19 | https://leetcode.com/problems/median-of-two-sorted-arrays/ |
+| 1631 | 1631. Path With Minimum Effort | Medium | Array, Binary Search, Depth-First Search, Breadth-First Search, Union-Find, Heap (Priority Queue), Matrix, Dijkstra's Algorithm | 已解出 | 2026-09-19 | https://leetcode.com/problems/path-with-minimum-effort/ |
 | 1898 | 1898. Maximum Number of Removable Characters | Medium | Array, Two Pointers, String, Binary Search | 已解出 | 2026-09-18 | https://leetcode.com/problems/maximum-number-of-removable-characters/ |
 | 76 | 76. Minimum Window Substring | Hard | Hash Table, String, Sliding Window | 已解出 | 2026-09-13 | https://leetcode.com/problems/minimum-window-substring/ |
 | 239 | 239. Sliding Window Maximum | Hard | Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue, Range Minimum/Maximum Query | 已解出 | 2026-09-13 | https://leetcode.com/problems/sliding-window-maximum/ |
@@ -195,7 +197,6 @@
 | 919 | 919. Complete Binary Tree Inserter | Medium | Tree, Breadth-First Search, Design, Binary Tree | 已解出 | 2024-04-03 | https://leetcode.com/problems/complete-binary-tree-inserter/ |
 | 993 | 993. Cousins in Binary Tree | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree | 已解出 | 2024-04-03 | https://leetcode.com/problems/cousins-in-binary-tree/ |
 | 1573 | 1573. Number of Ways to Split a String | Medium | Math, String | 已解出 | 2024-04-03 | https://leetcode.com/problems/number-of-ways-to-split-a-string/ |
-| 4 | 4. Median of Two Sorted Arrays | Hard | Array, Binary Search, Divide and Conquer | 已解出 | 2024-04-02 | https://leetcode.com/problems/median-of-two-sorted-arrays/ |
 | 395 | 395. Longest Substring with At Least K Repeating Characters | Medium | Hash Table, String, Divide and Conquer, Sliding Window | 已解出 | 2024-04-02 | https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/ |
 | 1507 | 1507. Reformat Date | Easy | String | 已解出 | 2024-04-02 | https://leetcode.com/problems/reformat-date/ |
 | 528 | 528. Random Pick with Weight | Medium | Array, Math, Binary Search, Prefix Sum, Randomized | 已解出 | 2024-04-01 | https://leetcode.com/problems/random-pick-with-weight/ |
@@ -329,6 +330,7 @@
 | async-graph-bfs | Async Graph BFS | - | 自訂 | — | 未提交 | - |
 | balance-point | Balance Point | - | 自訂 | — | 未提交 | - |
 | bst-kth-largest | bst-kth-largest. Kth Largest Element in a BST | - | 自訂 | — | 未提交 | - |
+| css-selector-weight | 标题 | - | 自訂 | — | 未提交 | - |
 | debounce | 題目：實作 Enhanced Debounce | - | - | — | 未提交 | - |
 | deep-equal | Deep Equal | - | 自訂 | — | 未提交 | - |
 | job-queue-concurrency-limit | Job Queue Concurrency Limit | - | 自訂 | — | 未提交 | - |
