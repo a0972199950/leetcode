@@ -5,138 +5,173 @@ description: 出一個 LeetCode 練習題目給使用者，可選擇指定題型
 
 # /q — 出 LeetCode 練習題
 
-`args` 若有提供，代表題目類型（例如 `stack` 代表出一題 stack 相關的題目）。
+`args` 若有提供，代表題型（例如 `stack`）；沒有則為隨機出題。
 
-## 出題前：第一步一定要先檢查 SESSION.md
+流程：決定候選題 → 取得題目資料 → 核對清單 → 建檔或更新日期 → 回覆。
 
-**在做任何 PROGRESS.md 判斷之前，第一個動作必須是檢查根目錄是否存在 `SESSION.md`（或使用者指定的其他進度文件）。這一步不可省略，即使 `args` 只是一個看起來像 PROGRESS.md 標籤的字（例如 `binary search`）。**
+## 通用規則
 
-- 若 `SESSION.md` 存在，且裡面有對應本次 `/q <type>` 的題型段落：**該段落是唯一事實來源**——「已完成」表格、「下一題」候選、「學習曲線進度」都以文件內容為準，直接依它出下一題，完全跳過下面「讀取總覽表決定策略」那套用 `PROGRESS.md` 日期推論近期進度的邏輯。不要拿 `PROGRESS.md` 裡其他時間／其他題型的紀錄去校準或覆蓋 SESSION.md 標的曲線位置。
-- 若某題被 SESSION.md 標記「進行中，尚未算完成」：預設下次出題／`/judge` 會回頭練這題。但如果使用者明確表示不想重練該題（例如認為時間間隔太短、重練沒有鑑別度），改成同一深度的其他候選（SESSION.md 的「下一題」清單通常已經列好），並在 SESSION.md 相應段落註記這個決定，不要靜默略過。
-- 只有在 `SESSION.md` 不存在、或該 type 沒有對應段落時，才進入下面「讀取總覽表決定策略」，改用 `PROGRESS.md` 推論。
-- 無 `type`（隨機出題）時：`SESSION.md` 通常是分題型記錄，可略過此檢查，直接用 PROGRESS.md 全體邏輯。
+- 難度以前端工程師的普遍面試難度為準：Easy、Medium，或公認簡單的 Hard。
+- 優先選大型科技公司的考古題。
+- 最後練習時間距今 8 個月以內的題目不出（依 `PROGRESS.md`；SESSION.md 標記「進行中」的題除外）。
+- 只出 LeetCode 公開題（非 Premium）。
 
-## 讀取總覽表決定策略（SESSION.md 沒有對應段落時才用這套）
+## 一、決定候選題
 
-根目錄的 `PROGRESS.md` 是由 `yarn sync-progress` 自動維護的題目練習總覽表（欄位：題號、標題、難度、標籤、最後練習時間、連結，依最後練習時間新到舊排序）。依以下步驟決定要怎麼出題：
+### 無 type
 
-**核心原則：選題以「當前進度合適的難度」為主軸，8 個月只是入池條件，不是優先條件。**
+不看 SESSION.md。在通用規則範圍內，依前端面試常見題型隨機挑一題，題型與難度不做遞進判斷。
 
-1. **判斷近期進度，決定這次的難度落點**：找出總覽表中最後練習時間最近的數筆紀錄（有指定 type 時優先看同標籤的紀錄，同 type 沒有近期紀錄再看全體最近紀錄），綜合判斷：
+### 有 type
 
-   **只有「最後練習時間距今在 8 個月以內」的紀錄才算數，超過 8 個月沒練的一律不納入「近期進度」的判斷**（那些題目屬於步驟 2 的複習候選，不代表當前手感）。若指定 type 的同標籤紀錄全部都超過 8 個月，就當作該 type 沒有近期紀錄，改看全體 8 個月內的最近紀錄；若全體也都超過 8 個月，視為沒有可參考的近期進度，從該 type（或整體）學習曲線的基礎難度重新起步。
+先看根目錄 `SESSION.md`（或使用者指定的其他進度文件），找出對應該 type 的題型段落（對應方式由你判斷）。
 
+**有對應段落，且尚有下一題**：該段落是唯一依據。「已完成」表格、「下一題」候選、「學習曲線進度」都以文件內容為準，直接依它出下一題。
+
+- 某題標記「進行中，尚未算完成」：預設下次出題回頭練這題。使用者若明確表示不想重練（例如覺得時間間隔太短、沒有鑑別度），改出同一深度的其他候選（通常 SESSION.md 的「下一題」已列好），並在該段落註記這個決定。
+
+**沒有對應段落，或段落顯示學習曲線已走完**：改用 `PROGRESS.md` 決定，見下節。
+
+### 用 PROGRESS.md 決定（有 type、SESSION.md 沒有可用下一題時）
+
+`PROGRESS.md` 由 `yarn sync-progress` 維護，欄位：題號、標題、難度、標籤、解題狀態（已解出／未解出／—）、最後練習時間（沒有紀錄為「未提交」）、連結，依最後練習時間新到舊排序。
+
+1. **判斷近期進度**：取最後練習時間在 8 個月以內、標籤符合該 type 的紀錄；同 type 沒有，就看全體 8 個月內的最近紀錄；仍沒有，從該 type 學習曲線的基礎難度起步。綜合判斷：
    - 最近練到的難度落點（Easy / Medium / 公認簡單的 Hard）
    - 用過哪些技巧或題型變化
-   - 是否穩定通過（未提交、卡關的視為該難度還沒站穩）
+   - 是否站穩（解題狀態為「未解出」或最後練習時間為「未提交」，視為該深度還沒站穩）
 
-   然後沿著**業界公認的該演算法學習曲線**，由淺到深挑下一題。學習曲線不要寫死成固定幾個階段，依該題型實際的常見進階路徑判斷（例如 stack：括號匹配 → 雙 stack／表達式求值 → stack 存物件狀態 → monotonic stack → Next Greater Element 類；binary search：標準找值 → 找邊界／lower_bound → 旋轉陣列 → 對答案二分）。無指定 type 時，改用整體難度落點做同樣的遞進判斷。
+2. **沿學習曲線推進**：依該題型業界公認的常見進階路徑，由淺到深挑下一題。不設固定題數：同一深度連續穩定通過、且用過該深度的代表性技巧 → 往下一個深度；有卡關 → 留在同深度換個角度。
 
-   推進**不設固定題數**，靠近期紀錄判斷：同一深度連續穩定通過、且已用過該深度的代表性技巧 → 往下一個深度；有卡關或未提交紀錄 → 留在同深度換個角度再出一題。難度上下界一律遵守下方「出題規則」第 1 點（Easy/Medium 為主，除非公認簡單的 Hard）。
+   曲線示意（僅為示意，以 SESSION.md 為準）：
+   - stack：括號匹配 → 雙 stack／表達式求值 → stack 存物件狀態 → monotonic stack → Next Greater Element 類
+   - binary search：標準找值 → 找邊界／lower_bound → 旋轉陣列 → 對答案二分
 
-2. **組可選題池**：從總覽表中**排除**「最後練習時間距今在 8 個月以內」的題目；剩下的（從沒練過、或超過 8 個月沒練的）都在可選池。有指定 type 時只看標籤符合的題目。
+3. **選題**：從標籤符合、且不在 8 個月內的題目中，挑最符合上述難度落點的一題，不分新題或舊題。找不到合適的舊題時，直接出符合該難度的新題。
 
-3. **選題**：從可選池中挑一題最符合步驟 1 判斷出的下一題難度的題目，**不分全新題或既有舊題，純看難度契合度**：
-   - 挑到的是**既有檔案的舊題**（超過 8 個月沒練）：不用跑 `yarn template`（檔案已存在），直接告訴使用者題號、標題、連結，並註明「這題已經超過 8 個月沒練習了，這次當複習」。收尾走第 15 步的 `--touch`。
-   - 挑到的是**全新題目**：依下方「出題規則」與「建立 template 後的後續步驟」完整跑一遍。
-   - 該難度找不到合適的既有舊題時，直接出一題符合該難度的全新題目——這是常態，不是例外。
+## 二、取得題目資料
 
-### 選題定案前的最終核對清單（每次選出候選題、正式告訴使用者之前，逐條打勾，不可省略）
+候選題定案前，先向 LeetCode GraphQL 取得資料（核對清單需要讚數、倒讚數與 Premium 標記，建檔也會用到同一份）：
 
-長對話裡很容易只顧著剛才最在意的那個判斷（例如剛推導完學習曲線、或剛回應完使用者的質疑），結果漏掉其他早就該遵守的規則。所以候選題選出來之後、正式回覆或動手跑後續流程之前，**必須**把它套進下面五條逐一核對，全部通過才能定案；只要有一條沒過，直接換下一個候選重新核對，不能因為「已經想到這題了」就跳過：
+```bash
+curl -s -X POST "https://leetcode.com/graphql" \
+  -H "Content-Type: application/json" \
+  -H "Referer: https://leetcode.com/problems/<slug>/" \
+  -d '{"query":"query q($titleSlug: String!) { question(titleSlug: $titleSlug) { questionFrontendId title difficulty likes dislikes isPaidOnly content topicTags { name } codeSnippets { langSlug code } } }","variables":{"titleSlug":"<slug>"}}'
+```
 
-1. **難度上限**（對應出題規則 1）：這題是 Easy／Medium，還是「公認簡單的 Hard」？如果是 Hard，有沒有**實際查過**評論／討論區風向（不是憑「這是經典/知名技巧題」的直覺判斷）？查不到明確證據支持「簡單」就不能選。
-2. **技巧深度 vs 廣度**：這題除了正在複習的技巧本身，需不需要一整套完全不同的演算法才能解出 check function 或子問題（例如二分題的判斷函式需要整套 DFS/Union-Find/Heap）？如果需要，這代表的是 Hard 題的廣度組合，不是正在複習那個技巧的深度推進，不能當「下一層」的代表題。
-3. **負評比例**（對應出題規則 9）：查過讚／倒讚數字了嗎？倒讚有沒有超過讚？
-4. **是否為數學題**（對應出題規則 8）：核心解法是不是靠數論／公式推導？
-5. **SESSION.md 一致性**：如果有 SESSION.md 對應段落，這題是不是該段落「下一題」清單裡的候選，或至少不牴觸該段落記錄的曲線位置？
+- 用 Bash 工具執行；`<slug>` 是題目網址中的那段（例如 `valid-parentheses`）。
+- `codeSnippets` 中 `langSlug === "typescript"` 那筆的 `code` 是官方 TypeScript 函式簽名。
+- `content` 是題目本文 HTML，其中 `<pre>` 區塊是官方範例。
+- GraphQL 不可用時，改用 firecrawl 或 browser 類工具讀題目頁。
 
-## 出題規則
+## 三、核對清單
 
-1. **題目難度**：根據前端工程師的普遍面試難度出題。除非是公認簡單的 hard 題目，否則以 Easy 和 Medium 為主。**「這題是經典/知名技巧題」不能當作「符合難度上限」的證據**——很多題目出名正是因為它極端難（例如 4. Median of Two Sorted Arrays，評論區公認「50 分鐘內不可能獨立解出，只有背過解答或沒看過兩種人」），知名度和親民度是兩回事。任何要出的 Hard 題，出題前必須**主動查一次該題的評論／討論區風向**（例如搜尋該題是否被普遍認為是「hardest」「impossible without knowing beforehand」之類的說法），確認它是「公認簡單的 Hard」才能選，不能只憑「這是常見教學題」的直覺判斷就當作過關——這條沒有像規則 9 的讚/倒讚數字那樣的機械化檢查，必須每次都主動查證，不能省略。
-2. **循序漸進**：使用者會重複練習同樣題型，因此以循序漸進的方式，將該類型題目從基本到進階出題。例如 stack 題型可以從簡單的括號匹配題開始，逐步增加難度到雙 stack、stack 物件儲存、monotonic stack、Next Greater Element 等。實際的「進階到哪裡了」以上面步驟 1「判斷近期進度，決定這次的難度落點」的判斷為準，不要單純憑空猜測。
-3. **輸出**：必須輸出題目編號、標題與連結。例如：`20. Valid Parentheses - https://leetcode.com/problems/valid-parentheses/`
-4. **創建 template**：執行 `yarn template <題號>. <題目名稱>`（題號和題目名稱之間必須有一個 `.`），以創建對應題目的解答檔案。例如 `yarn template 20. Valid Parentheses` 會在 `problems/20/20.ts` 創建一個新的解答檔案（資料夾與檔案同名）。若檔案已存在，不用再出新的一題，直接告訴使用者該題目已經存在，並提供該題目的編號、標題與連結。
-5. **無 type 時**：這代表使用者要隨機練習題目，請根據前端工程師的普遍面試題目類型與難度，隨機選擇一題出題。
-6. **出題範圍**：優先考慮大型科技公司考古題，並告訴使用者該題目常被哪家公司使用。
-7. **忽略已完成題目**：不用考慮使用者是否做過該題，也就是不用檢查 `/problems/` 目錄下是否已經有該題的解答檔案（可選池中挑到既有舊題的情況除外，那本來就是要挑已存在的題目）。
-8. **避免數學題**：盡量不要出需要數學公式推導或數論技巧的題目（例如取餘數性質、質因數分解、幾何公式等），優先出邏輯與資料結構導向的題目。
-9. **濾除負評題目**：不要出 LeetCode 上倒讚（dislike）數量大於讚（like）數量的題目，這類題目通常題意不清或品質較差。
+每個候選題（有 type、無 type，SESSION.md 或 PROGRESS.md 來源都一樣）都要逐條通過。任何一條沒過，換下一個候選重新核對。
 
-## 建立 template 後的後續步驟（重要，每次出全新題目都要做）
+1. **難度上限**：Easy 或 Medium 通過。Hard 必須實際查過該題評論／討論區的風向（用 WebSearch 或 firecrawl 搜尋），有明確說法顯示它是公認簡單的 Hard 才通過；查不到就不選。
+2. **技巧深度**：這題的難處在正在複習的技巧本身。如果 check function 或子問題需要一整套完全不同的演算法（例如二分的判斷函式需要 DFS／Union-Find／Heap），它屬於 Hard 的廣度組合，不當作該技巧的下一層。
+3. **評價**：`dislikes` 不得大於 `likes`。
+4. **非數學題**：核心解法不靠數論、公式推導、幾何公式這類數學技巧，而是邏輯與資料結構導向。
+5. **非 Premium**：`isPaidOnly` 為 `false`。
+6. **SESSION.md 一致性**（走 SESSION.md 路徑時）：這題是該段落「下一題」中的候選，或至少不牴觸段落記錄的曲線位置。
 
-`yarn template` 執行完只會產生一個空殼檔案（`// ${題號}. ${題目名稱}` + `// paste function here` + 空的 `console.log()`），**不會**包含題目網址。接下來必須自動完成以下步驟，不用額外詢問使用者：
+## 四、建檔或更新日期
 
-10. **加上最後練習時間與題目網址註解**：在檔案第一行（`// ${題號}. ${題目名稱}`）的正下方，依序插入兩行：
-    ```
-    // 最後練習時間：<今天日期，格式 YYYY-MM-DD>
-    // <題目網址>
-    ```
-    例如：
-    ```
-    // 20. Valid Parentheses
-    // 最後練習時間：2026-08-25
-    // https://leetcode.com/problems/valid-parentheses/
-    ```
-    自訂題目（非 LeetCode 原題）不需要網址那一行，改以說明文字取代（可參考現有的自訂題目檔案格式），但「最後練習時間」那行仍要加。
+以 `problems/<題號>/<題號>.ts` 是否存在分流。
 
-11. **抓取官方題目內容**：對 LeetCode GraphQL API 發 POST 請求取得題目本文、範例、標籤與 TypeScript 函式簽名：
+### 檔案已存在（舊題、或 SESSION.md 指定重練的題）
 
-    ```
-    curl -s -X POST "https://leetcode.com/graphql" \
-      -H "Content-Type: application/json" \
-      -H "Referer: https://leetcode.com/problems/<slug>/" \
-      -d '{"query":"query questionContent($titleSlug: String!) { question(titleSlug: $titleSlug) { title content difficulty topicTags { name } codeSnippets { langSlug code } } }","variables":{"titleSlug":"<slug>"}}'
-    ```
+只更新日期，不建立任何檔案：
 
-    `<slug>` 是題目網址那段（例如 `valid-parentheses`）。回傳的 `data.question.codeSnippets` 陣列裡，`langSlug === "typescript"` 的那筆 `code` 就是 LeetCode 官方提供的 TypeScript 函式簽名（例如 `function isValid(s: string): boolean {\n    \n};`）；`data.question.content` 是題目本文 HTML，裡面的 `<pre>Input: ...\nOutput: ...</pre>` 區塊就是官方範例；`data.question.topicTags` 是題目標籤陣列；`data.question.difficulty` 是難度。若題目是 LeetCode Premium，`content` 會是 `null`。
+```bash
+yarn sync-progress --touch <題號>
+```
 
-12. **寫入函式簽名**：把檔案裡的 `// paste function here` 換成上一步抓到的官方 TypeScript 函式簽名（維持函式主體是空的，讓使用者自己實作，不要幫使用者寫解法）。
+這會把該題 `.ts` 開頭的「最後練習時間」改成今天，並重新產生 `PROGRESS.md`。
 
-13. **補上驗證測試資料**：把檔案最下面的 `console.log()` 換成一行以上的 `console.log(<函式名稱>(<官方範例的輸入>)) // <官方範例的輸出>`，每個官方 Example 對應一行，順序跟題目描述一致。格式必須跟專案裡其他題目一致（值尾端加 `// <值>`）。
+### 檔案不存在（新題）
 
-    - **只能用題目本身列出的 Example 當測資，絕對不能自己編造額外的隱藏測資或邊界案例。**
-    - 多參數的函式，`console.log` 要照函式簽名的參數順序把 Example 的 Input 拆開傳入（例如 `Input: nums = [-1,0,3,5,9,12], target = 9` 要寫成 `console.log(search([-1,0,3,5,9,12], 9)) // 4`）。
-    - 若輸出是陣列/物件等非原始值，`// Expected:` 後面直接照 Node.js `console.log` 印出來的樣子寫（例如 `[ 7, 0, 8 ]`），不要照抄 LeetCode 網頁上的 JSON 格式（`[7,0,8]`）。
+依序完成 1–5。全程不需詢問使用者。
 
-14. **建立題目說明 md 檔**：在同一個資料夾（`problems/<題號>/`）建立 `<題號>.md`，把第 11 步抓到的內容整理成 Markdown，格式固定如下：
+1. **建立 template**：`yarn template <題號>. <題目名稱>`（題號與題目名稱之間有一個 `.`，例如 `yarn template 20. Valid Parentheses`），會建立 `problems/<題號>/<題號>.ts`，內容是題號標題、`console.clear()`、`// paste function here`、空的 `console.log()`。
 
-    > ⚠️ **絕對不能漏掉圖片！** 第 11 步抓到的 `content` HTML 裡若有 `<img>` 標籤（很多題目的 Example 是用圖片呈現的，例如樹、直方圖、格子圖），**每一張都必須轉成 `![](原始 src)` 寫進 md**，位置對應原文（通常在對應的 Example 區塊上方或該範例說明處）。這是最常被遺忘的一步，寫完 md 後務必回頭比對 `content` 裡的 `<img>` 數量，確認 md 裡的 `![]()` 數量一致才算完成。
+2. **加上最後練習時間與網址**：在檔案第一行下方插入兩行：
 
-    ```markdown
-    # <題號>. <題目名稱>
+   ```
+   // 20. Valid Parentheses
+   // 最後練習時間：2026-08-25
+   // https://leetcode.com/problems/valid-parentheses/
+   ```
 
-    - **難度**：<Easy|Medium|Hard>
-    - **連結**：<題目網址>
-    - **標籤**：<topicTags 以逗號串接，例如 Array, Hash Table>
+   日期為今天，格式 `YYYY-MM-DD`。
 
-    ## 題目描述
+3. **寫入函式簽名**：把 `// paste function here` 換成官方 TypeScript 函式簽名，函式主體留空，由使用者自己實作。
 
-    <content 轉成 Markdown 後的正文，LeetCode 慣用的 HTML 標籤對應轉換：<code> → `反引號`、<strong>/<b> → **粗體**、<em>/<i> → _斜體_、<ul>/<li> → - 項目、<img> → ![](原始 src)、<sup> 上標數字直接接在數字後面不用特殊語法（例如 10^4 寫成 104，維持跟 LeetCode 原文一致的視覺呈現）>
+4. **補上驗證測資**：把最後的 `console.log()` 換成每個官方 Example 一行，順序與題目描述一致：
 
-    ## 範例
+   ```
+   console.log(<函式名稱>(<Example 的輸入>)) // <Example 的輸出>
+   ```
 
-    **Example 1:**
+   - 測資只用題目列出的 Example。
+   - 多參數函式照簽名的參數順序拆開傳入。例如 `Input: nums = [-1,0,3,5,9,12], target = 9` 寫成 `console.log(search([-1,0,3,5,9,12], 9)) // 4`。
+   - 輸出若是陣列或物件，`//` 後面照 Node.js `console.log` 印出的樣子寫（例如 `[ 7, 0, 8 ]`），不用 LeetCode 網頁的 JSON 格式（`[7,0,8]`）。
 
-    \`\`\`
-    Input: ...
-    Output: ...
-    Explanation: ...（若原文有 Explanation 才寫）
-    \`\`\`
+5. **建立題目說明檔**：在 `problems/<題號>/<題號>.md` 用第二節取得的 `content` 整理成 Markdown，格式如下：
 
-    <依序列出所有 Example，Explanation 沒有就省略該行>
+   ````markdown
+   # <題號>. <題目名稱>
 
-    ## 限制條件
+   - **難度**：<Easy|Medium|Hard>
+   - **連結**：<題目網址>
+   - **標籤**：<topicTags 以逗號串接，例如 Array, Hash Table>
 
-    <Constraints 區塊逐條轉成條列，程式碼片段一樣用反引號包住>
-    ```
+   ## 題目描述
 
-    - 若題目是 LeetCode Premium（`content` 為 `null`），md 內容只需保留標題、難度、連結三行，並加一行「此題為 LeetCode Premium 題目，內容無法公開取得。」，不用寫「題目描述」「範例」「限制條件」等區塊。
-    - 自訂題目（非 LeetCode 原題，沒有走 GraphQL 這條路）不需要建立 md 檔。
-    - 排版與轉換風格請直接參考現有的 `problems/994/994.md`、`problems/997/997.md`、`problems/666/666.md` 這幾個檔案。
+   <正文>
 
-## 收尾：更新總覽表（每次執行 /q 都要做，不管是全新題目還是複習候選）
+   ## 範例
 
-15. **更新最後練習時間與總覽表**：
-    - 若是從可選池挑到的既有舊題，執行 `yarn sync-progress --touch <題號>`（會把該題 `.ts` 檔開頭的「最後練習時間」註解更新成今天，並重新產生 `PROGRESS.md`）。
-    - 若是全新出的題目，因為第 10 步已經手動把「最後練習時間」寫進 `.ts` 檔了，這裡只需要執行 `yarn sync-progress`（不用加 `--touch`）重新產生 `PROGRESS.md` 即可。
+   **Example 1:**
+
+   ```
+   Input: ...
+   Output: ...
+   Explanation: ...
+   ```
+
+   （依序列出所有 Example；原文沒有 Explanation 就省略該行）
+
+   ## 限制條件
+
+   - <Constraints 逐條列出>
+   ````
+
+   HTML 轉換對照：
+
+   | HTML | Markdown |
+   | --- | --- |
+   | `<code>` | `` `反引號` `` |
+   | `<strong>`、`<b>` | `**粗體**` |
+   | `<em>`、`<i>` | `_斜體_` |
+   | `<ul>`、`<li>` | `- 項目` |
+   | `<img src="X">` | `![](X)` |
+   | `10<sup>4</sup>` | `104`（上標數字直接接在後面，與現有 md 一致） |
+
+   `content` 中的每一張 `<img>` 都要轉成 `![](原始 src)`，放在原文對應的位置（通常在對應 Example 上方）。寫完後比對 `content` 的 `<img>` 數量與 md 的 `![]()` 數量，一致才算完成。
+
+   排版與轉換風格參考 `problems/994/994.md`、`problems/997/997.md`、`problems/666/666.md`。
+
+6. **更新總覽表**：執行 `yarn sync-progress`（不加 `--touch`），重新產生 `PROGRESS.md`。
+
+## 五、回覆格式
+
+```
+<題號>. <標題> - <連結>
+難度：<難度>｜標籤：<標籤>
+核對：讚 <likes> / 倒讚 <dislikes>（Hard 另附風向依據）
+選題理由：<一句話，說明它在學習曲線或難度上的位置>
+```
+
+從 PROGRESS.md 挑到超過 8 個月沒練的舊題時，另加一行：「這題已經超過 8 個月沒練習了，這次當複習」。
