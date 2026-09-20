@@ -43,7 +43,7 @@ monotonic stack ← 目前在這裡（503 ✅；962 進行中，需補 stack pus
 
 ---
 
-# BST 複習進度
+# BST 複習進度 (已完成)
 
 ## 已完成
 
@@ -84,7 +84,7 @@ BST 性質被破壞後的修復（99）✅
 
 ---
 
-# Binary Tree BFS / DFS 複習進度
+# Binary Tree BFS / DFS 複習進度 (已完成)
 
 ## 已完成
 
@@ -157,7 +157,7 @@ grid 上的最短路 BFS（1091 Shortest Path in Binary Matrix、909 Snakes and 
 
 ---
 
-# Binary Search 複習進度
+# Binary Search 複習進度 (已完成)
 
 ## 已完成
 
@@ -193,7 +193,7 @@ grid 上的最短路 BFS（1091 Shortest Path in Binary Matrix、909 Snakes and 
 
 ---
 
-# Sliding Window 複習進度（從頭開始）
+# Sliding Window 複習進度（從頭開始） (已完成)
 
 ## 已完成
 
@@ -222,4 +222,42 @@ grid 上的最短路 BFS（1091 Shortest Path in Binary Matrix、909 Snakes and 
 最小覆蓋子字串（76）✅
 搭配單調佇列維護視窗極值（239）✅
 單調佇列 + 可變視窗（1438）✅ ← 本題型複習到此結束
+```
+
+---
+
+# Linked List 複習進度（從頭開始）
+
+> 對應 FE_INTERVIEW Tier 2「Linked List：反轉、合併、偵測環」。**主線就是這三招**（反轉、合併、快慢指標），其餘是在這三招上加深。
+> 進度判定（2026-09-20）：依 PROGRESS.md，近兩個月（2026-07-20 起）沒有任何 Linked List 題目；標籤最近一筆是 1472（2026-03-18，超過兩個月），其餘 19、82、92、142、148、234、328、876 等都是 2022–2024 的舊紀錄。依「只認近兩個月」原則，全部不計入，本題型從零開始。
+
+## 已完成
+
+| 題號 | 題目 | 難度 | 重點 |
+|------|------|------|------|
+| 206 | Reverse Linked List | Easy | 迭代三指標 `prev` / `curr` / `next`：每輪先把 `curr.next` 存進 `next`，再 `curr.next = prev`，然後 `prev`、`curr` 各前進一格；`curr` 走到 `null` 時 `prev` 剛好停在新頭，空串列直接回傳 `prev`（`null`）不用另外 guard。自己寫出來，沒被引導。用 0~60 長度的串列對「陣列 reverse」暴力比對，零不符。O(n) time / O(1) space。測資踩到兩個小坑：`console.log(x.print())` 多包一層（`print()` 本身就會印）、空串列回傳的是 `null` 不是 `[]`（註解寫錯，已提醒）。題目 follow-up 的遞迴版也寫了（自己想出，沒被引導）：把迭代的 `prev` 當參數往下傳（`reverse(node, prev)`，先存 `next`、`node.next = prev`，再遞迴 `reverse(next, node)`），等於把迴圈原封不動改成遞迴；base case `node` 為 `null` 時回傳 `null`，靠上一層 `reverse(...) \|\| node` 把新頭撈回來——使用者的設計理由：刻意把 `null` 丟進去當終止點，順帶涵蓋 `head === null`。base case 改回傳 `prev` 也能涵蓋空串列（`reverse(null, null)` 回傳的 `prev` 就是 `null`），但使用者選擇保留 `\|\| node` 版，兩者等價。O(n) time / O(n) space（呼叫堆疊；n ≤ 5000 不會爆，實測 n = 5000 正確）。另一種「先遞迴反轉後半、再回頭接 `head.next.next = head`」的回溯式遞迴問過引導問題，未寫 |
+| 21 | Merge Two Sorted Lists | Easy | 兩根指標 `head1` / `head2` 比大小，較小的接到結果尾巴，`<=` 讓相等時取 list1；沒有新建節點，直接用原節點接起來（符合題目 splicing 要求）。自己寫出來，沒被引導；3000 組隨機測資對「合併後排序」暴力比對，值與節點重用都零不符。O(m+n) time / O(1) space。**這層的代表技巧 dummy head 沒用到**：改用 `head` / `prev` 兩個變數手動處理「第一個節點」，靠 `!head && (head = ...)`、`prev && (prev.next = ...)` 兩行每輪都檢查一次；另外 `(head1 && !head2) \|\| (head1 && head2) && ...` 的條件也偏繞。經 `/judge` 只給提問（沒給程式碼、沒講出技巧名稱）就自己改寫成最終版，依使用者標準算自己想出、站穩：(1) dummy head——`prev = new ListNode()` 先站在第一個真節點前面，`const prefix = prev` 記住假頭，最後回傳 `prefix.next`，`head` 變數和兩行首節點判斷都消失；(2) 迴圈條件改成 `while (head1 && head2)`，結束後至少一條已用完，一次 `prev.next = (head1 ? head1 : head2)` 把剩下的整條接上，不需要在迴圈裡處理「只剩一條」（兩條都空時 `prev.next = null`，空輸入自然回 `null`）。最終版 3000 組隨機測資值與節點重用都零不符。dummy head 技巧已在 21 站穩，203 是同層的刪除面向鞏固 |
+| 203 | Remove Linked List Elements | Easy | dummy head 的刪除面向：`prefix = new ListNode(null, head)` 站在頭節點前面，`prev` 從 `prefix` 出發、`curr` 從 `head` 出發；`curr.val === val` 就 `prev.next = curr.next`（`prev` 不動），否則 `prev` 前進；回傳 `prefix.next`，所以「頭節點就要被刪」「整串都被刪」（`[7,7,7,7]`）不用特判。自己寫出來，沒被引導，第一次就用 dummy head。5000 組隨機測資對 `filter` 暴力比對零不符、節點全是原節點；10^4 節點也正確。O(n) time / O(1) space。原版兩個分支都有 `curr = curr.next`、靠 `continue` 分流；經 `/judge` 一句提問後自己改成 `if / else`，`curr = curr.next` 只寫一次，並自己補了「刪頭節點」（`val = 1`）的測資。改寫後 5000 組隨機測資仍零不符 |
+
+## 下一題（待 /q 依本層出題）
+
+**層級：快慢指標**（dummy head 層已走完：21、203 都站穩）
+
+- 876 Middle of the Linked List（Easy，PROGRESS.md 只有 2022 年紀錄，早已超過八個月；快慢指標入門）
+- 141 Linked List Cycle（Easy，全新題；偵測環）
+- 142 Linked List Cycle II（Medium，PROGRESS.md 只有 2022 年紀錄；找環起點，放在 141 之後）
+
+## 學習曲線進度
+
+```
+就地反轉：prev / curr / next 三指標（206）✅（迭代 + 遞迴 follow-up 都完成）
+dummy head：合併與刪除（21 Merge Two Sorted Lists ✅（先手動 head/prev 版，只靠提問就自己改成 dummy head + `while (head1 && head2)` 最終版）；203 Remove Linked List Elements ✅（第一次就用 dummy head））✅
+快慢指標：找中點、偵測環、找環起點（876、141、142）← 目前在這裡
+兩指標保持固定間距：從尾端數第 n 個（19 Remove Nth Node From End）
+局部反轉：反轉區間、成對交換（92、24；25 k-Group 選做，出題前要查評論風向確認不是「假 Medium」）
+拆分再重組：奇偶分組、依值分割（328、86）
+組合題：中點 + 反轉 + 合併（234 Palindrome Linked List、143 Reorder List）
+鏈結上的 merge sort（148 Sort List，回收 21 + 876）
+鏈結搭配 hash 的設計題（146 LRU Cache、138 Copy List with Random Pointer）
+（23 Merge k Sorted Lists 需要 heap／分治，屬演算法廣度，不當作本題型的下一層）
 ```

@@ -1,13 +1,16 @@
 # 題目練習總覽
 
-> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-19
+> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-20
 
-共 332 題，其中 236 題超過 8 個月未練習（可作為 /q 複習候選）。
+共 335 題，其中 236 題超過 8 個月未練習（可作為 /q 複習候選）。
 
 依「最後練習時間」新到舊排序，沒有紀錄的排在最後。
 
 | 題號 | 標題 | 難度 | 標籤 | 解題狀態 | 最後練習時間 | 連結 |
 | --- | --- | --- | --- | --- | --- | --- |
+| 21 | 21. Merge Two Sorted Lists | Easy | Linked List, Recursion | 已解出 | 2026-09-20 | https://leetcode.com/problems/merge-two-sorted-lists/ |
+| 203 | 203. Remove Linked List Elements | Easy | Linked List, Recursion | 已解出 | 2026-09-20 | https://leetcode.com/problems/remove-linked-list-elements/ |
+| 206 | 206. Reverse Linked List | Easy | Linked List, Recursion | 已解出 | 2026-09-20 | https://leetcode.com/problems/reverse-linked-list/ |
 | 4 | 4. Median of Two Sorted Arrays | Hard | Array, Binary Search, Divide and Conquer | 已解出 | 2026-09-19 | https://leetcode.com/problems/median-of-two-sorted-arrays/ |
 | 1631 | 1631. Path With Minimum Effort | Medium | Array, Binary Search, Depth-First Search, Breadth-First Search, Union-Find, Heap (Priority Queue), Matrix, Dijkstra's Algorithm | 已解出 | 2026-09-19 | https://leetcode.com/problems/path-with-minimum-effort/ |
 | 1898 | 1898. Maximum Number of Removable Characters | Medium | Array, Two Pointers, String, Binary Search | 已解出 | 2026-09-18 | https://leetcode.com/problems/maximum-number-of-removable-characters/ |
