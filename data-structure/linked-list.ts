@@ -8,9 +8,16 @@ export class ListNode {
 
   print() {
     const values = [this.val]
+    const visited = new Set<ListNode>([this])
 
     for (let node = this.next; node; node = node.next) {
       values.push(node.val)
+
+      if (visited.has(node)) {
+        break
+      }
+
+      visited.add(node)
     }
 
     console.log(values)
@@ -22,11 +29,13 @@ export class ListNode {
 export class LinkedList {
   head: ListNode | null = null
 
-  constructor (val: number[]) {
+  constructor (val: number[], cycleIndex?: number) {
     let prev: ListNode | null = null
+    const nodes: ListNode[] = []
 
     for (const num of val) {
       const node = new ListNode(num)
+      nodes.push(node)
 
       if (!this.head) {
         this.head = node
@@ -34,6 +43,10 @@ export class LinkedList {
 
       prev && (prev.next = node)
       prev = node
+    }
+
+    if (prev && cycleIndex !== undefined && nodes[cycleIndex]) {
+      prev.next = nodes[cycleIndex]
     }
   }
 }

@@ -1,13 +1,16 @@
 # 題目練習總覽
 
-> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-20
+> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-24
 
-共 335 題，其中 236 題超過 8 個月未練習（可作為 /q 複習候選）。
+共 336 題，其中 234 題超過 8 個月未練習（可作為 /q 複習候選）。
 
 依「最後練習時間」新到舊排序，沒有紀錄的排在最後。
 
 | 題號 | 標題 | 難度 | 標籤 | 解題狀態 | 最後練習時間 | 連結 |
 | --- | --- | --- | --- | --- | --- | --- |
+| 142 | 142. Linked List Cycle II | Medium | Hash Table, Linked List, Two Pointers, Floyd's Cycle Finding Algorithm | 已解出 | 2026-09-24 | https://leetcode.com/problems/linked-list-cycle-ii/ |
+| 141 | 141. Linked List Cycle | Easy | Hash Table, Linked List, Two Pointers, Floyd's Cycle Finding Algorithm | 已解出 | 2026-09-23 | https://leetcode.com/problems/linked-list-cycle/ |
+| 876 | 876. Middle of the Linked List | Easy | Linked List, Two Pointers | 已解出 | 2026-09-23 | https://leetcode.com/problems/middle-of-the-linked-list/ |
 | 21 | 21. Merge Two Sorted Lists | Easy | Linked List, Recursion | 已解出 | 2026-09-20 | https://leetcode.com/problems/merge-two-sorted-lists/ |
 | 203 | 203. Remove Linked List Elements | Easy | Linked List, Recursion | 已解出 | 2026-09-20 | https://leetcode.com/problems/remove-linked-list-elements/ |
 | 206 | 206. Reverse Linked List | Easy | Linked List, Recursion | 已解出 | 2026-09-20 | https://leetcode.com/problems/reverse-linked-list/ |
@@ -270,7 +273,6 @@
 | 707 | 707. Design Linked List | Medium | Linked List, Design | 已解出 | 2022-10-30 | https://leetcode.com/problems/design-linked-list/ |
 | 2 | 2. Add Two Numbers | Medium | Linked List, Math, Recursion | 已解出 | 2022-10-29 | https://leetcode.com/problems/add-two-numbers/ |
 | 82 | 82. Remove Duplicates from Sorted List II | Medium | Linked List, Two Pointers | 已解出 | 2022-10-29 | https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/ |
-| 142 | 142. Linked List Cycle II | Medium | Hash Table, Linked List, Two Pointers, Floyd's Cycle Finding Algorithm | 已解出 | 2022-10-29 | https://leetcode.com/problems/linked-list-cycle-ii/ |
 | 279 | 279. Perfect Squares | Medium | Math, Dynamic Programming, Breadth-First Search, Knapsack Problem, Complete Knapsack | 已解出 | 2022-10-29 | https://leetcode.com/problems/perfect-squares/ |
 | 343 | 343. Integer Break | Medium | Math, Dynamic Programming | 已解出 | 2022-10-29 | https://leetcode.com/problems/integer-break/ |
 | 377 | 377. Combination Sum IV | Medium | Array, Dynamic Programming | 已解出 | 2022-10-29 | https://leetcode.com/problems/combination-sum-iv/ |
@@ -323,7 +325,6 @@
 | 733 | 733. Flood Fill | Easy | Array, Depth-First Search, Breadth-First Search, Matrix | 已解出 | 2022-08-07 | https://leetcode.com/problems/flood-fill/ |
 | 36 | 36. Valid Sudoku | Medium | Array, Hash Table, Matrix | 已解出 | 2022-08-05 | https://leetcode.com/problems/valid-sudoku/ |
 | 350 | 350. Intersection of Two Arrays II | Easy | Array, Hash Table, Two Pointers, Binary Search, Sorting | 已解出 | 2022-08-03 | https://leetcode.com/problems/intersection-of-two-arrays-ii/ |
-| 876 | 876. Middle of the Linked List | Easy | Linked List, Two Pointers | 已解出 | 2022-08-03 | https://leetcode.com/problems/middle-of-the-linked-list/ |
 | 1512 | 1512. Number of Good Pairs | Easy | Array, Hash Table, Math, Counting | 已解出 | 2022-07-30 | https://leetcode.com/problems/number-of-good-pairs/ |
 | 8 | 8. String to Integer (atoi) | Medium | String | — | 未提交 | https://leetcode.com/problems/string-to-integer-atoi/ |
 | 166 | 166. Fraction to Recurring Decimal | Medium | Hash Table, Math, String | — | 未提交 | https://leetcode.com/problems/fraction-to-recurring-decimal/ |

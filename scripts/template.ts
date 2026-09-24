@@ -5,8 +5,15 @@ const dotIndex = raw.indexOf('.')
 const problemNumber = dotIndex !== -1 ? raw.slice(0, dotIndex).trim() : raw.split(' ')[0].trim()
 const problemTitle = dotIndex !== -1 ? raw.slice(dotIndex + 1).trim() : raw.split(' ').slice(1).join(' ').trim()
 
-const template = `// ${problemNumber}. ${problemTitle}
+const today = new Date().toISOString().slice(0, 10)
+const slug = problemTitle
+  .toLowerCase()
+  .replace(/[^a-z0-9]+/g, '-')
+  .replace(/^-+|-+$/g, '')
 
+const template = `// ${problemNumber}. ${problemTitle}
+// 最後練習時間：${today}
+// https://leetcode.com/problems/${slug}/
 
 console.clear()
 

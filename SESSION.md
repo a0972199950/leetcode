@@ -238,22 +238,23 @@ grid 上的最短路 BFS（1091 Shortest Path in Binary Matrix、909 Snakes and 
 | 206 | Reverse Linked List | Easy | 迭代三指標 `prev` / `curr` / `next`：每輪先把 `curr.next` 存進 `next`，再 `curr.next = prev`，然後 `prev`、`curr` 各前進一格；`curr` 走到 `null` 時 `prev` 剛好停在新頭，空串列直接回傳 `prev`（`null`）不用另外 guard。自己寫出來，沒被引導。用 0~60 長度的串列對「陣列 reverse」暴力比對，零不符。O(n) time / O(1) space。測資踩到兩個小坑：`console.log(x.print())` 多包一層（`print()` 本身就會印）、空串列回傳的是 `null` 不是 `[]`（註解寫錯，已提醒）。題目 follow-up 的遞迴版也寫了（自己想出，沒被引導）：把迭代的 `prev` 當參數往下傳（`reverse(node, prev)`，先存 `next`、`node.next = prev`，再遞迴 `reverse(next, node)`），等於把迴圈原封不動改成遞迴；base case `node` 為 `null` 時回傳 `null`，靠上一層 `reverse(...) \|\| node` 把新頭撈回來——使用者的設計理由：刻意把 `null` 丟進去當終止點，順帶涵蓋 `head === null`。base case 改回傳 `prev` 也能涵蓋空串列（`reverse(null, null)` 回傳的 `prev` 就是 `null`），但使用者選擇保留 `\|\| node` 版，兩者等價。O(n) time / O(n) space（呼叫堆疊；n ≤ 5000 不會爆，實測 n = 5000 正確）。另一種「先遞迴反轉後半、再回頭接 `head.next.next = head`」的回溯式遞迴問過引導問題，未寫 |
 | 21 | Merge Two Sorted Lists | Easy | 兩根指標 `head1` / `head2` 比大小，較小的接到結果尾巴，`<=` 讓相等時取 list1；沒有新建節點，直接用原節點接起來（符合題目 splicing 要求）。自己寫出來，沒被引導；3000 組隨機測資對「合併後排序」暴力比對，值與節點重用都零不符。O(m+n) time / O(1) space。**這層的代表技巧 dummy head 沒用到**：改用 `head` / `prev` 兩個變數手動處理「第一個節點」，靠 `!head && (head = ...)`、`prev && (prev.next = ...)` 兩行每輪都檢查一次；另外 `(head1 && !head2) \|\| (head1 && head2) && ...` 的條件也偏繞。經 `/judge` 只給提問（沒給程式碼、沒講出技巧名稱）就自己改寫成最終版，依使用者標準算自己想出、站穩：(1) dummy head——`prev = new ListNode()` 先站在第一個真節點前面，`const prefix = prev` 記住假頭，最後回傳 `prefix.next`，`head` 變數和兩行首節點判斷都消失；(2) 迴圈條件改成 `while (head1 && head2)`，結束後至少一條已用完，一次 `prev.next = (head1 ? head1 : head2)` 把剩下的整條接上，不需要在迴圈裡處理「只剩一條」（兩條都空時 `prev.next = null`，空輸入自然回 `null`）。最終版 3000 組隨機測資值與節點重用都零不符。dummy head 技巧已在 21 站穩，203 是同層的刪除面向鞏固 |
 | 203 | Remove Linked List Elements | Easy | dummy head 的刪除面向：`prefix = new ListNode(null, head)` 站在頭節點前面，`prev` 從 `prefix` 出發、`curr` 從 `head` 出發；`curr.val === val` 就 `prev.next = curr.next`（`prev` 不動），否則 `prev` 前進；回傳 `prefix.next`，所以「頭節點就要被刪」「整串都被刪」（`[7,7,7,7]`）不用特判。自己寫出來，沒被引導，第一次就用 dummy head。5000 組隨機測資對 `filter` 暴力比對零不符、節點全是原節點；10^4 節點也正確。O(n) time / O(1) space。原版兩個分支都有 `curr = curr.next`、靠 `continue` 分流；經 `/judge` 一句提問後自己改成 `if / else`，`curr = curr.next` 只寫一次，並自己補了「刪頭節點」（`val = 1`）的測資。改寫後 5000 組隨機測資仍零不符 |
+| 876 | Middle of the Linked List | Easy | 快慢指標入門，自己直接寫出最終版（檔案裡沒有留暴力層）。`/judge` 時額外確認了兩條走過但被自己放棄的路：轉成 array 再用 index 取中間（O(n) time / O(n) space，多開了不需要的空間）；把尾端接回頭形成環、繞回起點偵測重複來得知長度（會多繞冗餘的一圈）。使用者自己推導出「做環」多餘：找 tail 那次走訪就能順便數長度，不必真的接環再偵測重複，簡化成「數長度再走到 n/2」的兩次走訪版（O(1.5n) time / O(1) space），並由此自行想通單一次走訪也能做到——快慢指標同時從頭出發、快的每次走 2 步、慢的每次走 1 步，快的碰到底時慢的剛好在中點，不需要事先知道長度。最終版 `fast?.next` / `fast.next?.next` 用 optional chaining 自然涵蓋空輸入與單一節點，不用額外 guard。O(n) time（快指標走 n/2 次）/ O(1) space，是 Easy 題的收斂點 |
+| 141 | Linked List Cycle | Easy | 快慢指標偵測環，檔案留了兩層演進：先自己寫出「在節點上做記號」（`hasReached` 屬性）記錄走過哪些節點，重複走到已標記節點就是有環（O(n) time / O(n) space，且會修改輸入節點本身）；再收斂到快慢指標（O(n) time / O(1) space）。這題的重點在 `/judge` 時把 Floyd's 算法的正確性想清楚：一開始的直覺「fast 永遠是 slow 的兩倍速」不足以說明兩者不會錯身而過，逐步逼近到「把兩者的總步數差 `d` 看成一個隨迭代次數 `t` 遞增的量」——標準 2 倍速版本裡 `d = t`，每次迭代恰好 +1，沿路踩過每一個餘數，保證最晚繞完一圈環（`C` 次以內）就撞上；使用者進一步自行推廣到「如果換成 3 倍速呢」，正確判斷出雖然這時 `d = 2t` 會跳過部分餘數，但因為是有限循環群裡不斷疊加同一個非零值，最終還是保證會撞回 0——比對照組更一般化的理解，不只是背下 1、2 倍速的特例。過程中也一併澄清「證明用的距離差是抽象量、不需要真的在程式裡存 index」，避免誤以為要維護額外狀態導致 space 變成 O(n)。額外把共用的 `LinkedList` 資料結構本身擴充 `cycleIndex` 參數、`print()` 加 `visited` Set 防止環狀 list 印出時無限迴圈，讓工具本身更完整，而不是為這題另開一次性 test helper。補測了單一節點自環（`cycleIndex = 0`）這個官方 Example 沒覆蓋到的邊界，結果為 `true`。LeetCode 網頁 runtime percentile 只有 50%，確認是評測機雜訊（V8 啟動開銷、當下伺服器負載），不是複雜度問題，沒有為了衝百分位再改寫法 |
+| 142 | Linked List Cycle II | Medium | 141 快慢指標找相遇點之後，再推「相遇後從 head 走 `a` 步會落在環起點」這個公式，全程使用者自己動代數，只靠提問跟時鐘同餘類比帶：設 `a`=head→環起點、`b`=環起點→相遇點、`c`=相遇點→環起點（沿環方向），先自己列出 `2(a+b) = a+b+x(b+c)`（`x`=fast 多繞的圈數）解出 `a=(x-1)(b+c)+c`；卡在「這是不是只在 x=1 時 a=c 才成立」，用時鐘類比（走 15 步跟走 3 步落點相同，`15=12+3`）想通「走的距離不同、停的位置相同」（`a ≡ c (mod L)`），才放掉「一定要 a=c」的誤解，改用「從相遇點走 `a` 步」跟「從 head 走 `a` 步」落點必相同這個等價敘述。最終程式碼用兩個各自 `new` 出來的 dummy node（`slow`／`fast` 各自 `new ListNode(null, head)`）取代標準的 do-while：使用者自己講出理由——如果 `slow`、`fast` 一開始就指向同一個 `head`，`slow !== fast` 這個迴圈條件會在起點就被誤判為真（尤其單節點自環，一步都還沒走就被判定「相遇」），兩個不同的 dummy 物件讓起點合法地不相等，才能用一般 `while` 寫、不用 do-while；第二階段 `slow2` 也用同一套 dummy 起手，位移量對兩階段一致所以能互相抵銷，不需要重新推一次含位移的公式。拿掉了 `slow = slow?.next` 多餘的 optional chaining（`fast` 恆比 `slow` 快，`slow` 不可能比 `fast` 先變 `null`）。9900 組隨機測資（n=1~30、環從各種位置起，含環從 head 開始跟完全無環）對 Set 版暴力解比對零不符。O(n) time / O(1) space |
 
 ## 下一題（待 /q 依本層出題）
 
-**層級：快慢指標**（dummy head 層已走完：21、203 都站穩）
+**層級：快慢指標已全部站穩**（dummy head 層：21、203；快慢指標層：876 找中點、141 偵測環、142 找環起點，全部完成）——下一層是「兩指標保持固定間距」。
 
-- 876 Middle of the Linked List（Easy，PROGRESS.md 只有 2022 年紀錄，早已超過八個月；快慢指標入門）
-- 141 Linked List Cycle（Easy，全新題；偵測環）
-- 142 Linked List Cycle II（Medium，PROGRESS.md 只有 2022 年紀錄；找環起點，放在 141 之後）
+- 19 Remove Nth Node From End（Medium，下一層第一題）
 
 ## 學習曲線進度
 
 ```
 就地反轉：prev / curr / next 三指標（206）✅（迭代 + 遞迴 follow-up 都完成）
 dummy head：合併與刪除（21 Merge Two Sorted Lists ✅（先手動 head/prev 版，只靠提問就自己改成 dummy head + `while (head1 && head2)` 最終版）；203 Remove Linked List Elements ✅（第一次就用 dummy head））✅
-快慢指標：找中點、偵測環、找環起點（876、141、142）← 目前在這裡
-兩指標保持固定間距：從尾端數第 n 個（19 Remove Nth Node From End）
+快慢指標：找中點、偵測環、找環起點（876 ✅ 找中點，自行推翻 array／做環兩條路，收斂到快慢指標；141 ✅ 偵測環，自己寫出「節點做記號」與快慢指標兩層，並自行推導出 Floyd's 算法的正確性證明；142 ✅ 找環起點，自己代數推出 `a=(x-1)(b+c)+c`，靠時鐘同餘類比想通「距離不同、落點相同」，用雙 dummy node 避開起點誤判）✅
+兩指標保持固定間距：從尾端數第 n 個（19 Remove Nth Node From End）← 目前在這裡
 局部反轉：反轉區間、成對交換（92、24；25 k-Group 選做，出題前要查評論風向確認不是「假 Medium」）
 拆分再重組：奇偶分組、依值分割（328、86）
 組合題：中點 + 反轉 + 合併（234 Palindrome Linked List、143 Reorder List）
