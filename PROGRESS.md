@@ -1,13 +1,17 @@
 # 題目練習總覽
 
-> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-24
+> 由 `yarn sync-progress` 自動產生，請勿手動編輯。最後更新：2026-09-25
 
-共 336 題，其中 234 題超過 8 個月未練習（可作為 /q 複習候選）。
+共 336 題，其中 231 題超過 8 個月未練習（可作為 /q 複習候選）。
 
 依「最後練習時間」新到舊排序，沒有紀錄的排在最後。
 
 | 題號 | 標題 | 難度 | 標籤 | 解題狀態 | 最後練習時間 | 連結 |
 | --- | --- | --- | --- | --- | --- | --- |
+| 19 | 19. Remove Nth Node From End of List | Medium | Linked List, Two Pointers | 已解出 | 2026-09-25 | https://leetcode.com/problems/remove-nth-node-from-end-of-list/ |
+| 92 | 92. Reverse Linked List II | Medium | Linked List | 已解出 | 2026-09-25 | https://leetcode.com/problems/reverse-linked-list-ii/ |
+| 202 | 202. Happy Number | Easy | Hash Table, Math, Two Pointers, Floyd's Cycle Finding Algorithm | 已解出 | 2026-09-25 | https://leetcode.com/problems/happy-number/ |
+| 287 | 287. Find the Duplicate Number | Medium | Array, Two Pointers, Binary Search, Bit Manipulation, Pigeonhole Principle, Floyd's Cycle Finding Algorithm | 已解出 | 2026-09-25 | https://leetcode.com/problems/find-the-duplicate-number/ |
 | 142 | 142. Linked List Cycle II | Medium | Hash Table, Linked List, Two Pointers, Floyd's Cycle Finding Algorithm | 已解出 | 2026-09-24 | https://leetcode.com/problems/linked-list-cycle-ii/ |
 | 141 | 141. Linked List Cycle | Easy | Hash Table, Linked List, Two Pointers, Floyd's Cycle Finding Algorithm | 已解出 | 2026-09-23 | https://leetcode.com/problems/linked-list-cycle/ |
 | 876 | 876. Middle of the Linked List | Easy | Linked List, Two Pointers | 已解出 | 2026-09-23 | https://leetcode.com/problems/middle-of-the-linked-list/ |
@@ -54,7 +58,6 @@
 | 901 | 901. Online Stock Span | Medium | Stack, Design, Monotonic Stack, Data Stream | 已解出 | 2026-09-04 | https://leetcode.com/problems/online-stock-span/ |
 | 921 | 921. Minimum Add to Make Parentheses Valid | Medium | String, Stack, Greedy, Bracket Sequences | 已解出 | 2026-09-04 | https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/ |
 | 946 | 946. Validate Stack Sequences | Medium | Array, Stack, Simulation | 已解出 | 2026-09-04 | https://leetcode.com/problems/validate-stack-sequences/ |
-| 287 | 287. Find the Duplicate Number | Medium | Array, Two Pointers, Binary Search, Bit Manipulation, Pigeonhole Principle, Floyd's Cycle Finding Algorithm | 已解出 | 2026-09-01 | https://leetcode.com/problems/find-the-duplicate-number/ |
 | 402 | 402. Remove K Digits | Medium | String, Stack, Greedy, Monotonic Stack | 已解出 | 2026-09-01 | https://leetcode.com/problems/remove-k-digits/ |
 | 162 | 162. Find Peak Element | Medium | Array, Binary Search | 已解出 | 2026-08-30 | https://leetcode.com/problems/find-peak-element/ |
 | 1901 | 1901. Find a Peak Element II | Medium | Array, Binary Search, Matrix | 已解出 | 2026-08-30 | https://leetcode.com/problems/find-a-peak-element-ii/ |
@@ -165,7 +168,6 @@
 | 50 | 50. Pow(x, n) | Medium | Math, Recursion | 已解出 | 2024-04-20 | https://leetcode.com/problems/powx-n/ |
 | 189 | 189. Rotate Array | Medium | Array, Math, Two Pointers | 已解出 | 2024-04-20 | https://leetcode.com/problems/rotate-array/ |
 | 283 | 283. Move Zeroes | Easy | Array, Two Pointers | 已解出 | 2024-04-20 | https://leetcode.com/problems/move-zeroes/ |
-| 92 | 92. Reverse Linked List II | Medium | Linked List | 已解出 | 2024-04-19 | https://leetcode.com/problems/reverse-linked-list-ii/ |
 | 314 | 314. Binary Tree Vertical Order Traversal | Medium | Hash Table, Tree, Depth-First Search, Breadth-First Search, Sorting, Binary Tree | 已解出 | 2024-04-19 | https://leetcode.com/problems/binary-tree-vertical-order-traversal/ |
 | 414 | 414. Third Maximum Number | Easy | Array, Sorting | 已解出 | 2024-04-19 | https://leetcode.com/problems/third-maximum-number/ |
 | 680 | 680. Valid Palindrome II | Easy | Two Pointers, String, Greedy | 已解出 | 2024-04-19 | https://leetcode.com/problems/valid-palindrome-ii/ |
@@ -298,7 +300,6 @@
 | 328 | 328. Odd Even Linked List | Medium | Linked List | 已解出 | 2022-10-22 | https://leetcode.com/problems/odd-even-linked-list/ |
 | 435 | 435. Non-overlapping Intervals | Medium | Array, Dynamic Programming, Greedy, Sorting | 已解出 | 2022-10-22 | https://leetcode.com/problems/non-overlapping-intervals/ |
 | 1314 | 1314. Matrix Block Sum | Medium | Array, Matrix, Prefix Sum | 已解出 | 2022-10-22 | https://leetcode.com/problems/matrix-block-sum/ |
-| 19 | 19. Remove Nth Node From End of List | Medium | Linked List, Two Pointers | 已解出 | 2022-10-21 | https://leetcode.com/problems/remove-nth-node-from-end-of-list/ |
 | 59 | 59. Spiral Matrix II | Medium | Array, Matrix, Simulation | 已解出 | 2022-10-21 | https://leetcode.com/problems/spiral-matrix-ii/ |
 | 75 | 75. Sort Colors | Medium | Array, Two Pointers, Sorting, Quicksort, Bubble Sort | 已解出 | 2022-10-21 | https://leetcode.com/problems/sort-colors/ |
 | 118 | 118. Pascal's Triangle | Easy | Array, Dynamic Programming | 已解出 | 2022-10-21 | https://leetcode.com/problems/pascals-triangle/ |
@@ -306,7 +307,6 @@
 | 234 | 234. Palindrome Linked List | Easy | Linked List, Two Pointers, Stack, Recursion | 已解出 | 2022-10-21 | https://leetcode.com/problems/palindrome-linked-list/ |
 | 931 | 931. Minimum Falling Path Sum | Medium | Array, Dynamic Programming, Matrix | 已解出 | 2022-10-21 | https://leetcode.com/problems/minimum-falling-path-sum/ |
 | 54 | 54. Spiral Matrix | Medium | Array, Matrix, Simulation | 已解出 | 2022-10-19 | https://leetcode.com/problems/spiral-matrix/ |
-| 202 | 202. Happy Number | Easy | Hash Table, Math, Two Pointers, Floyd's Cycle Finding Algorithm | 已解出 | 2022-10-19 | https://leetcode.com/problems/happy-number/ |
 | 1706 | 1706. Where Will the Ball Fall | Medium | Array, Matrix, Simulation | 已解出 | 2022-10-19 | https://leetcode.com/problems/where-will-the-ball-fall/ |
 | 91 | 91. Decode Ways | Medium | String, Dynamic Programming | 已解出 | 2022-10-18 | https://leetcode.com/problems/decode-ways/ |
 | 139 | 139. Word Break | Medium | Array, Hash Table, String, Dynamic Programming, Trie, Memoization, Brute-Force Search | 已解出 | 2022-10-18 | https://leetcode.com/problems/word-break/ |
